@@ -1,0 +1,451 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Anima 架构图</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@600;900&family=Noto+Sans+SC:wght@400;500;700&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+/* Layout: 一张可点击的数据流图（三条输入支路汇入 28 层 DiT，再到输出），右侧/下方是详情面板；之后是单个块的内部结构、参数构成条、分辨率换算器。与本系列其他页面共用色板和字体 */
+:root{
+  --bg:#F3F5F7; --surface:#FFFFFF; --ink:#141A21; --muted:#5B6673; --line:#D9DFE6;
+  --accent:#0A6C76; --accent-soft:#DCEEF0;
+  --text:#6B4FA0; --text-soft:#ECE6F5;
+  --img:#B5651D; --img-soft:#F5E8DA;
+  --time:#2C7A4E; --time-soft:#E1F1E7;
+  --frozen:#8A94A1; --frozen-soft:#ECEFF2;
+  --f-display:"Noto Serif SC","Songti SC","STSong",serif;
+  --f-body:"Noto Sans SC","PingFang SC","Microsoft YaHei",system-ui,sans-serif;
+  --f-mono:"JetBrains Mono",ui-monospace,"SFMono-Regular",Menlo,monospace;
+  --s2:.5rem; --s3:.75rem; --s4:1rem; --s5:1.5rem; --s6:2.25rem; --s7:3.5rem;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0E1216; --surface:#151B21; --ink:#E3E8ED; --muted:#97A2AF; --line:#28313B;
+  --accent:#5EC3CD; --accent-soft:#123339;
+  --text:#B49BE6; --text-soft:#2A2140; --img:#E59A55; --img-soft:#36261A;
+  --time:#62C38C; --time-soft:#14301F; --frozen:#7D8794; --frozen-soft:#1E252D; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0E1216; --surface:#151B21; --ink:#E3E8ED; --muted:#97A2AF; --line:#28313B;
+  --accent:#5EC3CD; --accent-soft:#123339;
+  --text:#B49BE6; --text-soft:#2A2140; --img:#E59A55; --img-soft:#36261A;
+  --time:#62C38C; --time-soft:#14301F; --frozen:#7D8794; --frozen-soft:#1E252D; color-scheme:dark}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:16px;line-height:1.7;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--bg)}
+a{color:var(--accent)}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:4px}
+.wrap{max-width:1120px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+h1,h2,h3{font-family:var(--f-display);text-wrap:balance;line-height:1.25;margin:0}
+h2{font-size:clamp(1.5rem,3vw,2.05rem);font-weight:900}
+h3{font-size:1.05rem;font-weight:600}
+p{margin:0}
+.mono{font-family:var(--f-mono);font-variant-numeric:tabular-nums}
+.eyebrow{font-family:var(--f-mono);font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
+.lede{color:var(--muted);max-width:44em}
+section{padding-block:var(--s7);border-top:1px solid var(--line)}
+.sec-head{display:grid;gap:var(--s3);margin-bottom:var(--s5)}
+
+.hero{padding-block:var(--s6);display:grid;gap:var(--s4)}
+.hero h1{font-size:clamp(2.2rem,5.6vw,3.8rem);font-weight:900}
+.facts{display:flex;flex-wrap:wrap;gap:var(--s5) var(--s6);margin-top:var(--s2)}
+.fact{display:grid}
+.fact b{font-family:var(--f-mono);font-size:1.35rem;font-weight:600}
+.fact span{font-size:.8rem;color:var(--muted)}
+
+/* toolbar */
+.bar{display:flex;flex-wrap:wrap;gap:var(--s3);align-items:center;margin-bottom:var(--s4)}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:999px;overflow:hidden;background:var(--surface)}
+.seg button{font:inherit;font-size:.82rem;border:0;background:transparent;color:var(--ink);padding:.3rem .9rem;cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+.legend{display:flex;flex-wrap:wrap;gap:var(--s4);font-size:.78rem;color:var(--muted)}
+.legend i{display:inline-block;width:12px;height:12px;border-radius:3px;margin-right:5px;vertical-align:-2px;border:2px solid}
+
+/* flow diagram */
+.flow-wrap{display:grid;grid-template-columns:minmax(0,1.75fr) minmax(0,1fr);gap:var(--s5);align-items:start}
+@media (max-width:900px){.flow-wrap{grid-template-columns:1fr}}
+.flow{display:grid;gap:var(--s3);min-width:0}
+.lanes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--s3)}
+@media (max-width:620px){.lanes{grid-template-columns:1fr}}
+.lane{display:grid;gap:.35rem;align-content:start;padding:var(--s3);border-radius:10px;border:1px dashed var(--line)}
+.lane-h{font-family:var(--f-mono);font-size:.72rem;letter-spacing:.08em;margin-bottom:.2rem}
+.lane.t .lane-h{color:var(--text)} .lane.i .lane-h{color:var(--img)} .lane.m .lane-h{color:var(--time)}
+.node{font:inherit;text-align:left;width:100%;display:grid;gap:.1rem;padding:.5rem .65rem;border-radius:7px;border:1.5px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer;transition:transform .12s}
+.node b{font-size:.88rem;font-weight:700;line-height:1.35}
+.node small{font-family:var(--f-mono);font-size:.7rem;color:var(--muted);line-height:1.4;overflow-wrap:anywhere}
+.node:hover{transform:translateY(-1px)}
+.node[aria-pressed="true"]{box-shadow:0 0 0 3px var(--accent-soft);border-color:var(--accent)}
+.lane.t .node{border-left:4px solid var(--text)} .lane.i .node{border-left:4px solid var(--img)} .lane.m .node{border-left:4px solid var(--time)}
+.arr{text-align:center;color:var(--muted);font-size:.8rem;line-height:1;font-family:var(--f-mono)}
+.merge{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--s3);font-family:var(--f-mono);font-size:.7rem;text-align:center}
+@media (max-width:620px){.merge{grid-template-columns:1fr}}
+.merge span:nth-child(1){color:var(--text)} .merge span:nth-child(2){color:var(--img)} .merge span:nth-child(3){color:var(--time)}
+.core{border:2px solid var(--accent);border-radius:12px;background:var(--surface);padding:var(--s3) var(--s4);display:grid;gap:var(--s3);cursor:pointer;font:inherit;color:inherit;text-align:left;width:100%}
+.core[aria-pressed="true"]{box-shadow:0 0 0 3px var(--accent-soft)}
+.core-h{display:flex;justify-content:space-between;flex-wrap:wrap;gap:var(--s2);align-items:baseline}
+.core-h b{font-family:var(--f-display);font-size:1.15rem}
+.core-h small{font-family:var(--f-mono);font-size:.74rem;color:var(--muted)}
+.stack{display:grid;grid-template-columns:repeat(28,minmax(0,1fr));gap:3px;height:46px}
+.stack i{display:block;border-radius:2px;background:var(--accent);opacity:.85}
+.stack i:nth-child(odd){opacity:.65}
+.core-io{display:flex;flex-wrap:wrap;gap:var(--s2) var(--s4);font-size:.76rem;color:var(--muted)}
+.core-io em{font-style:normal;font-family:var(--f-mono)}
+.out{display:flex;flex-wrap:wrap;gap:.35rem;align-items:stretch}
+.out .node{flex:1 1 140px;width:auto;border-left:4px solid var(--accent)}
+.out .arr{align-self:center}
+@media (max-width:620px){.out .arr{display:none}}
+
+/* LoRA view */
+.lora .node, .lora .core{opacity:.5}
+.lora .node[data-train="lora"], .lora .core[data-train="lora"]{opacity:1;border-color:var(--accent);background:var(--accent-soft)}
+.lora .node[data-train="frozen"]{border-style:dashed}
+
+/* detail panel */
+.detail{position:sticky;top:calc(env(safe-area-inset-top,0px) + 1rem);background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:var(--s4) var(--s5);display:grid;gap:var(--s3);min-width:0}
+@media (max-width:900px){.detail{position:static}}
+.detail h3{font-size:1.2rem}
+.detail p{font-size:.9rem;color:var(--muted)}
+.chip{display:inline-block;font-size:.74rem;padding:.08rem .55rem;border-radius:4px;font-weight:500}
+.chip.lora{background:var(--accent-soft);color:var(--accent)}
+.chip.frozen{background:var(--frozen-soft);color:var(--frozen)}
+.chip.no{background:var(--frozen-soft);color:var(--muted)}
+.kv{display:grid;grid-template-columns:auto 1fr;gap:.2rem var(--s4);font-size:.84rem;margin:0}
+.kv dt{color:var(--muted)}
+.kv dd{margin:0;font-family:var(--f-mono);font-size:.8rem;text-align:right;overflow-wrap:anywhere}
+.code{font-family:var(--f-mono);font-size:.78rem;background:var(--bg);border:1px solid var(--line);border-radius:6px;padding:var(--s2) var(--s3);overflow-x:auto;white-space:pre;color:var(--muted)}
+
+/* block internals */
+.blk-wrap{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:var(--s5);align-items:start}
+@media (max-width:900px){.blk-wrap{grid-template-columns:1fr}}
+.blk{display:grid;gap:0;position:relative;padding-left:2.2rem}
+.blk::before{content:"";position:absolute;left:.85rem;top:.6rem;bottom:.6rem;border-left:2px solid var(--muted);opacity:.5}
+.io{font-family:var(--f-mono);font-size:.78rem;color:var(--muted);padding:.4rem 0;position:relative}
+.io::before{content:"";position:absolute;left:-1.62rem;top:50%;width:10px;height:10px;border-radius:50%;background:var(--muted);transform:translateY(-50%)}
+.sub{position:relative;margin:.35rem 0;border:1px solid var(--line);border-radius:10px;background:var(--surface);padding:var(--s3);display:grid;gap:.45rem}
+.sub::before{content:"+";position:absolute;left:-1.95rem;bottom:-.15rem;width:1.2rem;height:1.2rem;border-radius:50%;background:var(--bg);border:2px solid var(--muted);display:grid;place-items:center;font-family:var(--f-mono);font-size:.8rem;line-height:1;color:var(--muted)}
+.sub-h{display:flex;justify-content:space-between;gap:var(--s2);flex-wrap:wrap;align-items:baseline}
+.sub-h b{font-size:.95rem}
+.sub-h small{font-family:var(--f-mono);font-size:.72rem;color:var(--muted)}
+.row{display:flex;flex-wrap:wrap;gap:.35rem;align-items:center}
+.op{font-family:var(--f-mono);font-size:.72rem;padding:.15rem .45rem;border-radius:4px;background:var(--bg);color:var(--muted);border:1px solid var(--line)}
+.op.mod{color:var(--time);border-color:var(--time);background:var(--time-soft)}
+.op.txt{color:var(--text);border-color:var(--text);background:var(--text-soft)}
+.lin{font:inherit;font-family:var(--f-mono);font-size:.74rem;padding:.2rem .55rem;border-radius:5px;border:1.5px solid var(--accent);background:var(--accent-soft);color:var(--ink);cursor:pointer}
+.lin.mo{border-color:var(--frozen);background:var(--frozen-soft)}
+.lin[aria-pressed="true"]{background:var(--accent);color:var(--surface)}
+.lin.mo[aria-pressed="true"]{background:var(--frozen);color:var(--surface)}
+.arrow-s{color:var(--muted);font-size:.75rem}
+
+/* params bar */
+.pbar{display:flex;height:34px;border-radius:6px;overflow:hidden;border:1px solid var(--line)}
+.pbar div{height:100%;min-width:2px}
+.plist{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr));gap:.4rem var(--s5);margin-top:var(--s4)}
+.pi{display:grid;grid-template-columns:14px 1fr auto;gap:var(--s2);align-items:center;font-size:.85rem}
+.pi i{width:12px;height:12px;border-radius:3px}
+.pi span:last-child{font-family:var(--f-mono);font-size:.8rem;color:var(--muted)}
+.ext{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:var(--s4);margin-top:var(--s5)}
+.ext > div{border:1px dashed var(--line);border-radius:10px;padding:var(--s3) var(--s4);display:grid;gap:.2rem}
+.ext b{font-family:var(--f-mono);font-size:1.1rem}
+.ext span{font-size:.82rem;color:var(--muted)}
+
+/* calculator */
+.calc{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:var(--s5);align-items:start}
+@media (max-width:760px){.calc{grid-template-columns:1fr}}
+.ctrl{display:flex;flex-wrap:wrap;gap:var(--s3);align-items:center}
+.ctrl label{font-size:.82rem;color:var(--muted);min-width:3em}
+.ctrl input[type=range]{flex:1;min-width:140px;accent-color:var(--accent)}
+.val{font-family:var(--f-mono);font-size:.82rem;min-width:4em;text-align:right}
+.pipe{display:grid;gap:.35rem}
+.pstep{display:grid;grid-template-columns:7.5rem 1fr;gap:var(--s3);align-items:baseline;padding:.45rem .7rem;border-radius:7px;background:var(--surface);border:1px solid var(--line)}
+.pstep span{font-size:.8rem;color:var(--muted)}
+.pstep b{font-family:var(--f-mono);font-size:.88rem;font-weight:600;overflow-wrap:anywhere}
+.grid-vis{display:grid;gap:1px;background:var(--line);border:1px solid var(--line);aspect-ratio:1;max-width:260px;width:100%}
+.grid-vis i{background:var(--accent-soft)}
+.cap{font-size:.8rem;color:var(--muted);line-height:1.6}
+.foot{padding-block:var(--s6);border-top:1px solid var(--line);font-size:.84rem;color:var(--muted);display:grid;gap:var(--s2)}
+.foot code{font-family:var(--f-mono);font-size:.78rem}
+</style>
+<style>body{margin:0}</style>
+</head>
+<body>
+
+<main class="wrap">
+  <header class="hero">
+    <span class="eyebrow">circlestone-labs/Anima · base v1.0</span>
+    <h1>Anima 架构图</h1>
+    <p class="lede">Anima 由三部分拼成：NVIDIA Cosmos-Predict2 的 2B 去噪网络（DiT），Qwen3 0.6B 文本编码器，以及 Qwen-Image 的 VAE。中间还有一个它特有的"LLM 适配器"，负责把 Qwen3 的输出翻译给 DiT。下面每个方块都可以点开看细节。</p>
+    <div class="facts">
+      <div class="fact"><b>2.09B</b><span>DiT 总参数（含适配器）</span></div>
+      <div class="fact"><b>28 × 2048</b><span>块数 × 隐藏维度</span></div>
+      <div class="fact"><b>16 × 128</b><span>注意力头数 × 每头维度</span></div>
+      <div class="fact"><b>4096</b><span>1024² 图像对应的 token 数</span></div>
+      <div class="fact"><b>Flow</b><span>Flow Matching，时间步 shift = 3</span></div>
+    </div>
+  </header>
+
+  <section id="flow" style="border-top:0;padding-top:var(--s4)">
+    <div class="sec-head">
+      <span class="eyebrow">数据流</span>
+      <h2>一张图是怎么流过 Anima 的</h2>
+      <p class="lede">文字、图像、时间步三条支路，在 28 层 DiT 里汇合。切换到"LoRA 视图"，可以看到训练 LoRA 时哪些部分在学习、哪些被冻结。</p>
+    </div>
+    <div class="bar">
+      <div class="seg" role="group" aria-label="视图">
+        <button type="button" id="vNormal" aria-pressed="true">结构视图</button>
+        <button type="button" id="vLora" aria-pressed="false">LoRA 视图</button>
+      </div>
+      <div class="legend">
+        <span><i style="border-color:var(--text)"></i>文本支路</span>
+        <span><i style="border-color:var(--img)"></i>图像支路</span>
+        <span><i style="border-color:var(--time)"></i>时间步支路</span>
+        <span><i style="border-color:var(--accent)"></i>DiT 主干与输出</span>
+      </div>
+    </div>
+    <div class="flow-wrap">
+      <div class="flow" id="flowRoot">
+        <div class="lanes">
+          <div class="lane t">
+            <div class="lane-h">文本支路</div>
+            <button class="node" type="button" data-id="prompt" data-train="no"><b>提示词</b><small>标签 + 自然语言</small></button>
+            <div class="arr">↓</div>
+            <button class="node" type="button" data-id="tok" data-train="no"><b>两个分词器</b><small>Qwen 词表 + T5 词表</small></button>
+            <div class="arr">↓</div>
+            <button class="node" type="button" data-id="qwen" data-train="frozen"><b>Qwen3 0.6B</b><small>28 层 · 1024 维</small></button>
+            <div class="arr">↓</div>
+            <button class="node" type="button" data-id="adapter" data-train="frozen"><b>LLM 适配器</b><small>6 块 · 1024 维 · 135M</small></button>
+            <div class="arr">↓</div>
+            <button class="node" type="button" data-id="ctx" data-train="no"><b>文本条件</b><small>512 × 1024</small></button>
+          </div>
+          <div class="lane i">
+            <div class="lane-h">图像支路</div>
+            <button class="node" type="button" data-id="img" data-train="no"><b>训练图 / 随机噪声</b><small>1024 × 1024 × 3</small></button>
+            <div class="arr">↓</div>
+            <button class="node" type="button" data-id="vaeenc" data-train="frozen"><b>VAE 编码器</b><small>Qwen-Image VAE · 8× 压缩</small></button>
+            <div class="arr">↓</div>
+            <button class="node" type="button" data-id="noise" data-train="no"><b>加噪</b><small>xₜ = (1−t)·x₀ + t·ε</small></button>
+            <div class="arr">↓</div>
+            <button class="node" type="button" data-id="patch" data-train="no"><b>分块嵌入</b><small>2×2 分块 · 68 → 2048</small></button>
+            <div class="arr">↓</div>
+            <button class="node" type="button" data-id="tokens" data-train="no"><b>图像 token</b><small>4096 × 2048</small></button>
+          </div>
+          <div class="lane m">
+            <div class="lane-h">时间步支路</div>
+            <button class="node" type="button" data-id="t" data-train="no"><b>时间步 t</b><small>0 干净 → 1 纯噪声</small></button>
+            <div class="arr">↓</div>
+            <button class="node" type="button" data-id="temb" data-train="no"><b>时间步嵌入</b><small>正弦编码 → 2048 → 6144</small></button>
+            <div class="arr">↓</div>
+            <button class="node" type="button" data-id="mod" data-train="no"><b>调制信号</b><small>每块的 shift / scale / gate</small></button>
+          </div>
+        </div>
+        <div class="merge" aria-hidden="true"><span>↓ 进入每块的交叉注意力</span><span>↓ 作为主干的输入</span><span>↓ 调节每块的归一化</span></div>
+        <button class="core" type="button" data-id="dit" data-train="lora">
+          <span class="core-h"><b>28 个 DiT 块</b><small>每块约 69M · 合计 1.94B</small></span>
+          <span class="stack" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span>
+          <span class="core-io"><span>每块：<em>自注意力 → 交叉注意力 → MLP</em></span><span>形状始终是 <em>4096 × 2048</em></span><span>点"单个块"一节看内部</span></span>
+        </button>
+        <div class="arr">↓</div>
+        <div class="out">
+          <button class="node" type="button" data-id="final" data-train="no"><b>输出层</b><small>2048 → 64</small></button>
+          <span class="arr">→</span>
+          <button class="node" type="button" data-id="unpatch" data-train="no"><b>反分块 = 速度 v</b><small>128 × 128 × 16</small></button>
+          <span class="arr">→</span>
+          <button class="node" type="button" data-id="loop" data-train="no"><b>采样循环</b><small>重复 8–50 步</small></button>
+          <span class="arr">→</span>
+          <button class="node" type="button" data-id="vaedec" data-train="frozen"><b>VAE 解码器</b><small>→ 1024² 图像</small></button>
+        </div>
+      </div>
+      <aside class="detail" id="detail" aria-live="polite"></aside>
+    </div>
+  </section>
+
+  <section id="block">
+    <div class="sec-head">
+      <span class="eyebrow">单个块</span>
+      <h2>一个 DiT 块的内部</h2>
+      <p class="lede">28 个块结构完全相同。每块有三个子层，每个子层都是同一个套路：先按时间步调制归一化，做运算，再乘一个门控值加回主干（残差连接）。点击青色的线性层，看它的形状和 LoRA 参数量。</p>
+    </div>
+    <div class="blk-wrap">
+      <div class="blk" id="blk">
+        <div class="io">输入 x · 4096 × 2048</div>
+        <div class="sub">
+          <div class="sub-h"><b>① 自注意力</b><small>图像 token 之间互相看</small></div>
+          <div class="row"><span class="op mod">adaLN: shift, scale</span><span class="arrow-s">→</span><span class="op">LayerNorm</span></div>
+          <div class="row"><button class="lin" type="button" data-l="sa_q">q_proj</button><button class="lin" type="button" data-l="sa_k">k_proj</button><button class="lin" type="button" data-l="sa_v">v_proj</button><span class="op">q/k RMSNorm</span><span class="op">3D RoPE</span></div>
+          <div class="row"><span class="op">16 头注意力</span><span class="arrow-s">→</span><button class="lin" type="button" data-l="sa_o">output_proj</button><span class="arrow-s">→</span><span class="op mod">× gate</span></div>
+          <div class="row"><button class="lin mo" type="button" data-l="mod_sa">adaln_modulation_self_attn</button></div>
+        </div>
+        <div class="sub">
+          <div class="sub-h"><b>② 交叉注意力</b><small>图像 token 去读提示词</small></div>
+          <div class="row"><span class="op mod">adaLN: shift, scale</span><span class="arrow-s">→</span><span class="op">LayerNorm</span></div>
+          <div class="row"><button class="lin" type="button" data-l="ca_q">q_proj（来自图像）</button><button class="lin" type="button" data-l="ca_k">k_proj（来自文本）</button><button class="lin" type="button" data-l="ca_v">v_proj（来自文本）</button><span class="op txt">文本条件 512 × 1024</span></div>
+          <div class="row"><span class="op">16 头注意力</span><span class="arrow-s">→</span><button class="lin" type="button" data-l="ca_o">output_proj</button><span class="arrow-s">→</span><span class="op mod">× gate</span></div>
+          <div class="row"><button class="lin mo" type="button" data-l="mod_ca">adaln_modulation_cross_attn</button></div>
+        </div>
+        <div class="sub">
+          <div class="sub-h"><b>③ MLP</b><small>逐个 token 加工，存放大量视觉知识</small></div>
+          <div class="row"><span class="op mod">adaLN: shift, scale</span><span class="arrow-s">→</span><span class="op">LayerNorm</span></div>
+          <div class="row"><button class="lin" type="button" data-l="mlp1">layer1 · 2048→8192</button><span class="arrow-s">→</span><span class="op">GELU</span><span class="arrow-s">→</span><button class="lin" type="button" data-l="mlp2">layer2 · 8192→2048</button><span class="arrow-s">→</span><span class="op mod">× gate</span></div>
+          <div class="row"><button class="lin mo" type="button" data-l="mod_mlp">adaln_modulation_mlp</button></div>
+        </div>
+        <div class="io">输出 x · 4096 × 2048 → 下一块</div>
+      </div>
+      <div class="detail" id="ldetail" style="position:static">
+        <div class="bar" style="margin:0">
+          <span class="cap">LoRA rank</span>
+          <div class="seg" role="group" aria-label="LoRA rank" id="rankSeg">
+            <button type="button" data-r="8" aria-pressed="false">8</button>
+            <button type="button" data-r="16" aria-pressed="false">16</button>
+            <button type="button" data-r="32" aria-pressed="true">32</button>
+            <button type="button" data-r="64" aria-pressed="false">64</button>
+          </div>
+        </div>
+        <div id="linInfo"></div>
+        <dl class="kv" id="loraTotal"></dl>
+        <p class="cap">"常规 LoRA"指 12 个青色线性层 × 28 块。灰色的调制层一般不训练。文件大小按 bf16（每个参数 2 字节）估算。</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="params">
+    <div class="sec-head">
+      <span class="eyebrow">参数构成</span>
+      <h2>2.09B 参数都花在哪了</h2>
+      <p class="lede">数据直接读自 <span class="mono">anima-base-v1.0.safetensors</span> 的文件头。条形长度按真实比例绘制。MLP 占了将近一半。</p>
+    </div>
+    <div class="pbar" id="pbar" role="img" aria-label="参数构成条形图"></div>
+    <div class="plist" id="plist"></div>
+    <div class="ext">
+      <div><b>Qwen3 0.6B</b><span>文本编码器，单独的文件（qwen_3_06b_base），28 层、隐藏维度 1024。训练时冻结。</span></div>
+      <div><b>约 1.2 亿</b><span>Qwen-Image VAE，按 242MB 的 bf16 文件估算。编码器加解码器，训练时冻结。</span></div>
+    </div>
+  </section>
+
+  <section id="calc">
+    <div class="sec-head">
+      <span class="eyebrow">分辨率换算</span>
+      <h2>图越大，DiT 要处理的 token 越多</h2>
+      <p class="lede">VAE 把长宽各缩小 8 倍，分块再缩小 2 倍，所以每 16×16 个像素变成一个 token。注意力的计算量和 token 数的平方成正比，这就是高分辨率又慢又容易崩的原因。</p>
+    </div>
+    <div class="calc">
+      <div style="display:grid;gap:var(--s3)">
+        <div class="ctrl"><label for="rw">宽</label><input id="rw" type="range" min="512" max="1536" step="64" value="1024"><span class="val" id="rwv">1024</span></div>
+        <div class="ctrl"><label for="rh">高</label><input id="rh" type="range" min="512" max="1536" step="64" value="1024"><span class="val" id="rhv">1024</span></div>
+        <div class="pipe" id="pipe"></div>
+        <p class="cap">官方推荐的分辨率范围是 512² 到 1536²。</p>
+      </div>
+      <div style="display:grid;gap:var(--s3);justify-items:start">
+        <div class="grid-vis" id="gridvis" aria-label="token 网格示意"></div>
+        <p class="cap" id="gridcap"></p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="foot">
+    <p>信息来源：Hugging Face <code>circlestone-labs/Anima</code> 的权重文件头与模型说明；ComfyUI 源码 <code>comfy/ldm/anima/model.py</code>、<code>comfy/text_encoders/anima.py</code>、<code>comfy/ldm/cosmos/predict2.py</code>、<code>comfy/supported_models.py</code>（Anima 使用 FLOW 模型类型，shift = 3.0，潜变量格式为 Wan21）。</p>
+    <p>标注"推测"的内容是根据代码结构做的解读，官方没有明确说明。</p>
+  </footer>
+</main>
+
+<script>
+const $=s=>document.querySelector(s);
+const TRAIN={lora:['训练 LoRA','lora'],frozen:['冻结','frozen'],no:['无参数 / 一般不训练','no']};
+const D={
+  prompt:{t:'提示词',train:'no',p:'你写的文字。Anima 训练时同时见过 Danbooru 标签、自然语言描述以及两者混合，所以三种写法都能用。',kv:[['推荐写法','英文，两三句以上'],['画师','@画师名']]},
+  tok:{t:'两个分词器',train:'no',p:'同一段提示词会被切分两次：Qwen 分词器的结果送进 Qwen3 0.6B；T5 分词器只提供一串 token 编号，T5 模型本身并不运行。适配器拿这串编号当"座位表"，再去 Qwen3 的输出里取信息填进去。',kv:[['Qwen 词表','约 15 万'],['T5 词表','32128'],['提示词权重','附在 T5 token 上']]},
+  qwen:{t:'Qwen3 0.6B 文本编码器',train:'frozen',p:'一个小型大语言模型，取最后一层的输出：每个 token 一个 1024 维向量。它取代了 SDXL 的 CLIP，所以 Anima 能读懂自然语言。训练 LoRA 时冻结。',kv:[['层数','28'],['隐藏维度','1024'],['参数量','约 0.6B'],['文件','qwen_3_06b_base.safetensors']]},
+  adapter:{t:'LLM 适配器',train:'frozen',p:'Anima 自己新加的模块，位于文本编码器和 DiT 之间。它用 T5 token 编号查表得到初始向量，经过 6 个 Transformer 块：自注意力（带 RoPE 位置编码）、对 Qwen3 输出的交叉注意力、MLP，最后线性投影加 RMSNorm。底模 Cosmos-Predict2 原本搭配 T5 文本编码器训练，从结构看（推测），这样设计是为了让 DiT 收到的仍是按 T5 分词排列的序列。官方说这里知识密度很高、很容易训坏，建议不训练。',kv:[['块数','6'],['维度 / 头数','1024 / 16'],['词嵌入表','32128 × 1024'],['MLP','1024 → 4096 → 1024'],['参数量','约 135M']],code:'x = embed(t5_ids)             # 查表\nfor blk in blocks:           # 6 块\n    x = blk(x, qwen3_hidden)  # 自注意力 + 交叉注意力 + MLP\nctx = norm(out_proj(x))'},
+  ctx:{t:'文本条件',train:'no',p:'适配器的输出先乘以每个 token 的提示词权重（例如 (chibi:2) 的 2），再补齐到 512 个 token。它会送进全部 28 个块的交叉注意力，作为 k 和 v 的来源。',kv:[['形状','512 × 1024'],['送往','每块的 cross_attn.k_proj / v_proj']]},
+  img:{t:'训练图 / 随机噪声',train:'no',p:'训练时这里是你的训练图；出图时这里不需要图，直接从随机噪声开始。官方推荐 512² 到 1536² 的分辨率。',kv:[['示例尺寸','1024 × 1024 × 3']]},
+  vaeenc:{t:'VAE 编码器',train:'frozen',p:'直接复用 Qwen-Image 的 VAE（和 Wan 2.1 视频模型同一套潜变量格式）。长宽各压缩 8 倍，16 个通道。只在训练时用到编码器；出图时只用解码器。',kv:[['压缩倍数','8 × 8'],['通道数','16'],['1024² 图像 →','128 × 128 × 16']]},
+  noise:{t:'加噪（训练时）',train:'no',p:'Flow Matching：在干净潜变量和随机噪声之间按 t 直线插值，模型要预测的目标是速度 ε − x₀。出图时没有这一步，而是从纯噪声（t = 1）出发。',kv:[['公式','xₜ = (1−t)·x₀ + t·ε'],['预测目标','v = ε − x₀']]},
+  patch:{t:'分块嵌入 x_embedder',train:'no',p:'先在 16 个通道后面拼一个"填充遮罩"通道（标记哪些位置是补齐的），变成 17 通道。再把每 2×2 个位置打包成一个 token：17 × 4 = 68 个数，经过一个线性层变成 2048 维。',kv:[['输入','68 = 17 通道 × 2 × 2'],['线性层','68 → 2048'],['参数量','约 14 万']]},
+  tokens:{t:'图像 token',train:'no',p:'1024² 的图最终变成 64 × 64 = 4096 个 token，每个 2048 维。DiT 的 28 个块全程保持这个形状。',kv:[['形状','4096 × 2048'],['换算','每 16×16 像素 = 1 个 token']]},
+  t:{t:'时间步 t',train:'no',p:'噪声程度，0 表示干净，1 表示纯噪声。ComfyUI 对 Anima 设置的时间步 shift = 3.0，作用是把更多采样步数分配给高噪声阶段，这对决定构图很重要。',kv:[['模型类型','FLOW'],['shift','3.0']]},
+  temb:{t:'时间步嵌入 t_embedder',train:'no',p:'先把 t 编码成 2048 维的正弦向量，经过 Linear 2048→2048、SiLU，再 Linear 2048→6144。6144 = 3 × 2048，分别对应 shift、scale、gate 三组调制值，供所有块共享。',kv:[['结构','2048 → 2048 → 6144'],['参数量','约 16.8M']]},
+  mod:{t:'调制信号（adaLN-LoRA）',train:'no',p:'每个子层归一化之后，用 shift 和 scale 做"平移和缩放"，输出时再乘以 gate。所以同一个块在 t 不同时会有不同的表现。Cosmos 用的是低秩版本（adaLN-LoRA）：每块自己的调制层只有 2048→256→6144，再加上时间步嵌入给的共享部分。',kv:[['每块','3 组（自注意力、交叉注意力、MLP）'],['每组','2048 → 256 → 6144'],['作用','x·(1+scale)+shift，输出 × gate']]},
+  dit:{t:'28 个 DiT 块',train:'lora',p:'Anima 的主体，来自 NVIDIA Cosmos-Predict2-2B。每块依次做自注意力（图像 token 互相看，带 3D RoPE 位置编码）、交叉注意力（读文本条件）和 MLP，每步都带时间步调制和残差连接。训练 LoRA 主要就是在这里加小矩阵。',kv:[['块数','28'],['隐藏维度','2048'],['注意力','16 头 × 128 维'],['MLP','2048 → 8192 → 2048（GELU）'],['每块参数','约 69.2M'],['合计','约 1.94B']]},
+  final:{t:'输出层 final_layer',train:'no',p:'最后一次时间步调制（只有 shift、scale），然后一个线性层把 2048 维压回 64 维。64 = 2 × 2 × 16，正好是一个 token 对应的潜变量。',kv:[['线性层','2048 → 64'],['参数量','约 1.7M']]},
+  unpatch:{t:'反分块 = 预测的速度 v',train:'no',p:'把 4096 个 64 维向量拼回 128 × 128 × 16 的潜变量形状。训练时它和真实速度 ε − x₀ 比较、算损失；出图时用它往干净图方向走一步。',kv:[['形状','128 × 128 × 16'],['训练时','loss = ‖v − (ε − x₀)‖²']]},
+  loop:{t:'采样循环（出图时）',train:'no',p:'从纯噪声出发，每一步都把整个 DiT 跑一遍，按预测的速度前进一小步。开 CFG 时每步要跑两遍（有提示词和无提示词各一次）。',kv:[['Base / Aesthetic','30–50 步，CFG 4–5'],['Turbo','8–12 步，CFG 1'],['常用采样器','er_sde、euler_a、dpmpp_2m_sde']]},
+  vaedec:{t:'VAE 解码器',train:'frozen',p:'把最终的 128 × 128 × 16 潜变量放大 8 倍，还原成 1024 × 1024 的 RGB 图像。',kv:[['输出','1024 × 1024 × 3']]}
+};
+function showNode(id){
+  const d=D[id];const [lab,cls]=TRAIN[d.train];
+  $('#detail').innerHTML=`<span class="eyebrow">组件</span><h3>${d.t}</h3><span><span class="chip ${cls}">LoRA 训练时：${lab}</span></span><p>${d.p}</p>`+
+    (d.kv?`<dl class="kv">${d.kv.map(r=>`<dt>${r[0]}</dt><dd>${r[1]}</dd>`).join('')}</dl>`:'')+(d.code?`<div class="code">${d.code}</div>`:'');
+  document.querySelectorAll('#flowRoot [data-id]').forEach(b=>b.setAttribute('aria-pressed',b.dataset.id===id?'true':'false'));
+}
+$('#flowRoot').addEventListener('click',e=>{const b=e.target.closest('[data-id]');if(b)showNode(b.dataset.id);});
+function setView(lora){$('#flowRoot').classList.toggle('lora',lora);$('#vNormal').setAttribute('aria-pressed',!lora);$('#vLora').setAttribute('aria-pressed',lora);}
+$('#vNormal').addEventListener('click',()=>setView(false));$('#vLora').addEventListener('click',()=>setView(true));
+showNode('dit');
+
+/* 单个块 */
+const L={
+  sa_q:['self_attn.q_proj',2048,2048,'把每个图像 token 变成"查询"：我想找什么。'],
+  sa_k:['self_attn.k_proj',2048,2048,'把每个图像 token 变成"键"：我有什么特征可以被找到。'],
+  sa_v:['self_attn.v_proj',2048,2048,'把每个图像 token 变成"值"：被找到时我提供什么信息。'],
+  sa_o:['self_attn.output_proj',2048,2048,'把 16 个注意力头的结果合并回 2048 维。'],
+  ca_q:['cross_attn.q_proj',2048,2048,'图像 token 发出查询：我这个位置该画什么。'],
+  ca_k:['cross_attn.k_proj',2048,1024,'输入来自文本条件（1024 维）：每个文字 token 的"键"。触发词、角色名主要通过这里起作用。'],
+  ca_v:['cross_attn.v_proj',2048,1024,'输入来自文本条件（1024 维）：每个文字 token 提供给画面的信息。'],
+  ca_o:['cross_attn.output_proj',2048,2048,'把读到的文字信息合并回主干。'],
+  mlp1:['mlp.layer1',8192,2048,'把每个 token 展开到 8192 维，是每块最大的两层之一，存放大量视觉知识。'],
+  mlp2:['mlp.layer2',2048,8192,'再压回 2048 维。'],
+  mod_sa:['adaln_modulation_self_attn',null,null,'两层：2048→256→6144，根据时间步生成自注意力子层的 shift、scale、gate。一般不加 LoRA，改它容易影响整体色调和对比度。'],
+  mod_ca:['adaln_modulation_cross_attn',null,null,'同上，作用于交叉注意力子层。'],
+  mod_mlp:['adaln_modulation_mlp',null,null,'同上，作用于 MLP 子层。']
+};
+const MAIN=['sa_q','sa_k','sa_v','sa_o','ca_q','ca_k','ca_v','ca_o','mlp1','mlp2'];
+let rank=32, curL='ca_k';
+const fmt=n=>n.toLocaleString('en-US');
+function showLin(){
+  const [name,out,inp,desc]=L[curL];
+  let html=`<span class="eyebrow">线性层</span><h3 class="mono" style="font-size:1rem">${name}</h3><p>${desc}</p>`;
+  if(out){const full=out*inp, lr=rank*(out+inp);
+    html+=`<dl class="kv"><dt>形状（输出 × 输入）</dt><dd>${out} × ${inp}</dd><dt>原始参数（每块）</dt><dd>${fmt(full)}</dd><dt>LoRA 参数 r·(输出+输入)</dt><dd>${fmt(lr)}</dd><dt>占比</dt><dd>${(lr/full*100).toFixed(2)}%</dd><dt>× 28 块</dt><dd>${fmt(lr*28)}</dd></dl>`;}
+  else html+=`<dl class="kv"><dt>形状</dt><dd>2048→256→6144</dd><dt>原始参数（每块）</dt><dd>${fmt(2048*256+256*6144)}</dd><dt>常规 LoRA</dt><dd>不训练</dd></dl>`;
+  $('#linInfo').innerHTML=html;
+  const per=MAIN.reduce((s,k)=>s+rank*(L[k][1]+L[k][2]),0);
+  $('#loraTotal').innerHTML=`<dt>常规 LoRA · 每块</dt><dd>${fmt(per)}</dd><dt>常规 LoRA · 28 块合计</dt><dd>${fmt(per*28)}</dd><dt>文件大小（bf16）</dt><dd>约 ${(per*28*2/1e6).toFixed(0)} MB</dd>`;
+  document.querySelectorAll('.lin').forEach(b=>b.setAttribute('aria-pressed',b.dataset.l===curL?'true':'false'));
+}
+$('#blk').addEventListener('click',e=>{const b=e.target.closest('.lin');if(b){curL=b.dataset.l;showLin();}});
+$('#rankSeg').addEventListener('click',e=>{const b=e.target.closest('[data-r]');if(!b)return;rank=+b.dataset.r;document.querySelectorAll('#rankSeg button').forEach(x=>x.setAttribute('aria-pressed',x===b?'true':'false'));showLin();});
+showLin();
+
+/* 参数构成 */
+const P=[
+  ['MLP（28 块）',939.52,'var(--accent)'],
+  ['自注意力（28 块）',469.76,'color-mix(in srgb,var(--accent) 60%,var(--surface))'],
+  ['交叉注意力（28 块）',352.32,'var(--text)'],
+  ['调制层 adaLN（28 块）',176.16,'var(--time)'],
+  ['LLM 适配器',134.6,'color-mix(in srgb,var(--text) 45%,var(--surface))'],
+  ['时间步嵌入',16.78,'var(--img)'],
+  ['输出层 + 分块嵌入',1.84,'var(--muted)']];
+const TOT=P.reduce((s,p)=>s+p[1],0);
+$('#pbar').innerHTML=P.map(p=>`<div title="${p[0]} ${p[1]}M" style="width:${(p[1]/TOT*100).toFixed(3)}%;background:${p[2]}"></div>`).join('');
+$('#plist').innerHTML=P.map(p=>`<div class="pi"><i style="background:${p[2]}"></i><span>${p[0]}</span><span>${p[1]>=100?p[1].toFixed(0):p[1].toFixed(1)}M · ${(p[1]/TOT*100).toFixed(1)}%</span></div>`).join('')+
+  `<div class="pi"><i style="background:transparent"></i><span><b>合计</b></span><span>${(TOT/1000).toFixed(3)}B</span></div>`;
+
+/* 分辨率换算 */
+function calc(){
+  const w=+$('#rw').value,h=+$('#rh').value;$('#rwv').textContent=w;$('#rhv').textContent=h;
+  const lw=w/8,lh=h/8,tw=w/16,th=h/16,tok=tw*th,rel=(tok/4096)**2;
+  const rows=[['输入图像',`${w} × ${h} × 3`],['VAE 潜变量',`${lw} × ${lh} × 16`],['加遮罩通道',`${lw} × ${lh} × 17`],['2×2 分块',`${tw} × ${th} = ${fmt(tok)} 个 token`],['每个 token','68 → 2048 维'],['注意力计算量',`约 ${rel.toFixed(2)} 倍（相对 1024²）`]];
+  $('#pipe').innerHTML=rows.map(r=>`<div class="pstep"><span>${r[0]}</span><b>${r[1]}</b></div>`).join('');
+  const g=$('#gridvis');const cols=Math.round(tw/4),rws=Math.round(th/4);
+  g.style.gridTemplateColumns=`repeat(${cols},1fr)`;g.style.aspectRatio=`${w}/${h}`;
+  g.innerHTML='<i></i>'.repeat(cols*rws);
+  $('#gridcap').textContent=`每个小格代表 4 × 4 = 16 个 token（${cols} × ${rws} 格），对应原图 64 × 64 像素。`;
+}
+$('#rw').addEventListener('input',calc);$('#rh').addEventListener('input',calc);calc();
+</script>
+
+</body>
+</html>
