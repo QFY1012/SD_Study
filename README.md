@@ -4,6 +4,7 @@
 
 - 📄 调研报告：[stable_diffusion_image_generation_survey.md](stable_diffusion_image_generation_survey.md)
 - 🌐 可视化讲解页（本地用浏览器打开）：[sd_explainer.html](sd_explainer.html)
+- 🧪 训练目标交互讲解页：[training_objectives.html](training_objectives.html)
 - 📊 开源/开放权重模型发布时间线数据：[data/open_image_models_timeline.csv](data/open_image_models_timeline.csv)
 
 调研截止：2026-11-02。2026 年条目以 Hugging Face 官方仓库元数据为准，商用前请核对各模型 LICENSE。

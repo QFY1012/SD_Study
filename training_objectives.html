@@ -1,0 +1,621 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>训练目标实验室</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@600;900&family=Noto+Sans+SC:wght@400;500;700&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+/* Layout: 单栏实验手册；每节 = 一段讲解 + 一个可操作的"实验台"（左右两栏，窄屏堆叠）；与《扩散生图编年史》共用同一套色彩与字体 */
+:root{
+  --bg:#F3F5F7; --surface:#FFFFFF; --ink:#141A21; --muted:#5B6673; --line:#D9DFE6;
+  --accent:#0A6C76; --accent-soft:#DCEEF0; --warm:#B5651D; --warm-soft:#F5E8DA;
+  --ok:#2C7A4E; --nc:#B03548; --ok-soft:#E1F1E7; --nc-soft:#F7E2E5;
+  --f-display:"Noto Serif SC","Songti SC","STSong",serif;
+  --f-body:"Noto Sans SC","PingFang SC","Microsoft YaHei",system-ui,sans-serif;
+  --f-mono:"JetBrains Mono",ui-monospace,"SFMono-Regular",Menlo,monospace;
+  --s1:.25rem; --s2:.5rem; --s3:.75rem; --s4:1rem; --s5:1.5rem; --s6:2.25rem; --s7:3.5rem;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0E1216; --surface:#151B21; --ink:#E3E8ED; --muted:#97A2AF; --line:#28313B;
+  --accent:#5EC3CD; --accent-soft:#123339; --warm:#E59A55; --warm-soft:#36261A;
+  --ok:#62C38C; --nc:#EE7D8B; --ok-soft:#14301F; --nc-soft:#3A1A20; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0E1216; --surface:#151B21; --ink:#E3E8ED; --muted:#97A2AF; --line:#28313B;
+  --accent:#5EC3CD; --accent-soft:#123339; --warm:#E59A55; --warm-soft:#36261A;
+  --ok:#62C38C; --nc:#EE7D8B; --ok-soft:#14301F; --nc-soft:#3A1A20; color-scheme:dark}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:16px;line-height:1.75;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--bg)}
+a{color:var(--accent)}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:4px}
+.wrap{max-width:1080px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+h1,h2,h3{font-family:var(--f-display);text-wrap:balance;line-height:1.25;margin:0}
+h2{font-size:clamp(1.5rem,3vw,2.1rem);font-weight:900}
+h3{font-size:1.08rem;font-weight:600}
+p{margin:0}
+.mono{font-family:var(--f-mono);font-variant-numeric:tabular-nums}
+.eyebrow{font-family:var(--f-mono);font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
+.lede{color:var(--muted);max-width:42em}
+.prose{display:grid;gap:var(--s3);max-width:40em;min-width:0}
+.prose p{color:var(--muted)}
+.prose p strong{color:var(--ink)}
+
+nav.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+nav.top .wrap{display:flex;gap:var(--s5);align-items:center;overflow-x:auto;scrollbar-width:none;padding-block:.6rem}
+nav.top .wrap::-webkit-scrollbar{display:none}
+nav.top .brand{font-family:var(--f-display);font-weight:900;white-space:nowrap;color:var(--ink);text-decoration:none}
+nav.top a.l{font-size:.88rem;color:var(--muted);text-decoration:none;white-space:nowrap}
+nav.top a.l:hover{color:var(--accent)}
+
+section{padding-block:var(--s7);border-top:1px solid var(--line)}
+.sec-head{display:grid;gap:var(--s3);margin-bottom:var(--s5)}
+.bench{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:var(--s6);align-items:start}
+@media (max-width:860px){.bench{grid-template-columns:1fr}}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:var(--s4);display:grid;gap:var(--s3);min-width:0}
+.panel svg{width:100%;height:auto;display:block;overflow:visible}
+.ctrl{display:flex;flex-wrap:wrap;gap:var(--s3);align-items:center}
+.ctrl label{font-size:.82rem;color:var(--muted)}
+.ctrl input[type=range]{flex:1;min-width:150px;accent-color:var(--accent)}
+.val{font-family:var(--f-mono);font-size:.82rem;min-width:3.5em;text-align:right}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:999px;overflow:hidden}
+.seg button{font:inherit;font-size:.8rem;border:0;background:transparent;color:var(--ink);padding:.25rem .8rem;cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+button.btn{font:inherit;font-size:.82rem;border:1px solid var(--line);background:var(--surface);color:var(--ink);padding:.25rem .8rem;border-radius:999px;cursor:pointer}
+button.btn:hover{border-color:var(--accent);color:var(--accent)}
+.cap{font-size:.8rem;color:var(--muted);line-height:1.6}
+.formula{font-family:var(--f-mono);font-size:.88rem;background:var(--bg);border:1px solid var(--line);border-radius:6px;padding:var(--s2) var(--s3);overflow-x:auto;white-space:nowrap}
+.kv{display:grid;grid-template-columns:auto 1fr;gap:.15rem var(--s4);font-size:.85rem}
+.kv dt{color:var(--muted)}
+.kv dd{margin:0;font-family:var(--f-mono);font-variant-numeric:tabular-nums;text-align:right}
+
+/* hero */
+.hero{padding-block:var(--s6) var(--s6);display:grid;gap:var(--s4)}
+.hero h1{font-size:clamp(2.2rem,6vw,4rem);font-weight:900}
+.hero h1 em{font-style:normal;color:var(--accent)}
+.bigf{font-family:var(--f-mono);font-size:clamp(1rem,2.6vw,1.45rem);padding:var(--s4) var(--s5);background:var(--surface);border:1px solid var(--line);border-radius:10px;overflow-x:auto;white-space:nowrap;max-width:100%}
+.bigf .t{color:var(--accent)} .bigf .w{color:var(--warm)}
+.legend3{display:flex;flex-wrap:wrap;gap:var(--s5);font-size:.88rem;color:var(--muted)}
+.legend3 b{font-family:var(--f-mono);color:var(--ink);font-weight:600;margin-right:.35em}
+
+/* flow canvas */
+.cv{width:100%;aspect-ratio:1;display:block;border-radius:8px;max-width:100%}
+.stats{display:flex;flex-wrap:wrap;gap:var(--s5)}
+.stat{display:grid}
+.stat b{font-family:var(--f-mono);font-size:1.3rem;font-weight:600}
+.stat span{font-size:.75rem;color:var(--muted)}
+.keys{display:flex;flex-wrap:wrap;gap:var(--s4);font-size:.78rem;color:var(--muted)}
+.keys i{display:inline-block;width:14px;height:3px;vertical-align:middle;margin-right:5px;border-radius:2px}
+
+/* svg styling via tokens */
+.s-axis{stroke:var(--line)}
+.s-muted{stroke:var(--muted)}
+.s-faint{stroke:var(--line)}
+.s-acc{stroke:var(--accent)}
+.s-warm{stroke:var(--warm)}
+.f-acc{fill:var(--accent)} .f-warm{fill:var(--warm)} .f-ink{fill:var(--ink)} .f-muted{fill:var(--muted)} .f-surface{fill:var(--surface)}
+.f-acc-soft{fill:var(--accent-soft)}
+svg text{font-family:var(--f-body);fill:var(--muted)}
+svg text.ink{fill:var(--ink)}
+svg text.m{font-family:var(--f-mono)}
+
+/* stepper */
+.steps{display:grid;gap:var(--s2);counter-reset:st}
+.step{display:grid;grid-template-columns:2rem 1fr;gap:var(--s3);padding:var(--s3);border-radius:8px;border:1px solid transparent;cursor:pointer;text-align:left;font:inherit;background:transparent;color:inherit;width:100%}
+.step .no{font-family:var(--f-mono);font-size:.8rem;color:var(--muted);padding-top:.15rem}
+.step b{display:block;font-size:.95rem}
+.step span{font-size:.84rem;color:var(--muted);line-height:1.55}
+.step[aria-current="step"]{background:var(--surface);border-color:var(--accent)}
+.step[aria-current="step"] .no{color:var(--accent)}
+pre.code{margin:0;font-family:var(--f-mono);font-size:.8rem;line-height:1.9;background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:var(--s3) 0;overflow-x:auto}
+pre.code span{display:block;padding:0 var(--s4);white-space:pre;color:var(--muted)}
+pre.code span.on{background:var(--accent-soft);color:var(--ink)}
+pre.code em{font-style:normal;color:var(--warm)}
+
+/* lora matrix */
+.mat{display:flex;align-items:center;gap:var(--s3);flex-wrap:wrap}
+.mat .box{background:var(--accent-soft);border:1px solid var(--accent);border-radius:2px}
+.mat .full{background:var(--line);border-color:var(--muted)}
+.mat .op{font-family:var(--f-mono);color:var(--muted)}
+.mat figure{margin:0;display:grid;gap:.3rem;justify-items:center}
+.mat figcaption{font-family:var(--f-mono);font-size:.72rem;color:var(--muted);text-align:center}
+
+/* grpo */
+.grpo{display:grid;gap:.4rem}
+.gr{display:grid;grid-template-columns:3.6rem minmax(90px,1fr) 2.6rem minmax(120px,1.4fr);gap:var(--s3);align-items:center}
+@media (max-width:520px){.gr{grid-template-columns:3rem 1fr 2.2rem;}.gr .adv{grid-column:1/-1}}
+.gr label{font-size:.8rem;color:var(--muted)}
+.gr input{width:100%;accent-color:var(--accent)}
+.adv{position:relative;height:18px;border-left:0}
+.adv::before{content:"";position:absolute;left:50%;top:-3px;bottom:-3px;border-left:1px solid var(--muted)}
+.adv .b{position:absolute;top:3px;height:12px;border-radius:2px}
+.adv .b.p{background:var(--ok)} .adv .b.n{background:var(--nc)}
+.adv .lab{position:absolute;top:0;font-family:var(--f-mono);font-size:.7rem;color:var(--muted)}
+
+/* table */
+.tbl{overflow-x:auto;border:1px solid var(--line);border-radius:10px;background:var(--surface)}
+table{border-collapse:collapse;width:100%;font-size:.88rem}
+th,td{text-align:left;padding:.6rem .8rem;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:.75rem;letter-spacing:.06em;color:var(--muted);font-weight:500;background:var(--bg)}
+td:first-child{font-weight:700;white-space:nowrap}
+td code{font-family:var(--f-mono);font-size:.8rem}
+.foot{padding-block:var(--s6);border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);display:grid;gap:var(--s2)}
+.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:var(--s5);margin-top:var(--s5)}
+</style>
+<style>body{margin:0}</style>
+</head>
+<body>
+
+<nav class="top" aria-label="章节">
+  <div class="wrap">
+    <a class="brand" href="#top">训练目标实验室</a>
+    <a class="l" href="#flow">直线与曲线</a>
+    <a class="l" href="#target">预测什么</a>
+    <a class="l" href="#tsample">抽哪个 t</a>
+    <a class="l" href="#onestep">一步训练</a>
+    <a class="l" href="#cfg">CFG</a>
+    <a class="l" href="#lora">LoRA</a>
+    <a class="l" href="#rl">RL</a>
+    <a class="l" href="#sum">总表</a>
+  </div>
+</nav>
+
+<main class="wrap" id="top">
+  <header class="hero">
+    <span class="eyebrow">扩散模型 · 训练目标</span>
+    <h1>模型到底在<em>学什么</em></h1>
+    <p class="lede">一句话：给模型一张加了噪声的图，让它猜"该往哪个方向走才能回到干净的图"，猜错多少就罚多少。FLUX、SD3、Anima 这一代模型的预训练、SFT 和 LoRA 微调，用的都是下面这一个式子。</p>
+    <div class="bigf">loss = ‖ <span class="t">v<sub>θ</sub>(x<sub>t</sub>, t, c)</span> − <span class="w">(ε − x<sub>0</sub>)</span> ‖²</div>
+    <div class="legend3">
+      <span><b>x₀</b>干净图（的潜变量）</span>
+      <span><b>ε</b>随机高斯噪声</span>
+      <span><b>t</b>噪声程度，0 到 1</span>
+      <span><b>x<sub>t</sub></b>加噪后的图</span>
+      <span><b>c</b>提示词</span>
+      <span><b>v<sub>θ</sub></b>模型的预测</span>
+    </div>
+    <p class="cap">下面每一节都有一个可以动手的实验台。所有演示都在浏览器里实时计算。</p>
+  </header>
+
+  <!-- 1 -->
+  <section id="flow">
+    <div class="sec-head">
+      <span class="eyebrow">实验 1</span>
+      <h2>训练时走直线，采样时走曲线</h2>
+    </div>
+    <div class="bench">
+      <div class="prose">
+        <p>右边是一个二维的"玩具世界"：灰点是训练数据（想象成每个点是一张图），青色线是从随机噪声出发、按模型指示一步步走回数据的轨迹。</p>
+        <p><strong>训练时</strong>，每次随机配一对"噪声点 ε"和"数据点 x₀"，连一条直线，让模型学沿这条线的速度 <span class="mono">ε − x₀</span>。打开"显示训练配对"可以看到这些橙色虚线，它们互相交叉，乱成一团。</p>
+        <p><strong>采样时</strong>，模型在同一个位置只能给出一个方向，所以它学到的是所有可能配对的<strong>平均方向</strong>。真实轨迹因此弯曲、互不交叉。</p>
+        <p>把<strong>采样步数调到 1</strong>：所有点都塌到数据的正中间。这就是"步数太少图会糊"的原因：一步跳过去，只能得到所有可能答案的平均。Turbo、LCM 这类蒸馏方法要解决的正是这个问题。</p>
+        <p class="cap">这里的"模型"是根据数据直接算出的理论最优解，不是神经网络，所以误差只来自步数不够。</p>
+      </div>
+      <div class="panel">
+        <canvas id="flowcv" class="cv" aria-label="二维流匹配采样轨迹"></canvas>
+        <div class="ctrl">
+          <label for="steps">采样步数</label>
+          <input id="steps" type="range" min="0" max="7" step="1" value="5">
+          <span class="val" id="stepsv">16</span>
+        </div>
+        <div class="ctrl">
+          <div class="seg" role="group" aria-label="数据集">
+            <button type="button" data-ds="spiral" aria-pressed="true">螺旋</button>
+            <button type="button" data-ds="moons" aria-pressed="false">双月</button>
+            <button type="button" data-ds="blobs" aria-pressed="false">八团</button>
+          </div>
+          <button class="btn" type="button" id="reseed">换一批噪声</button>
+          <label style="display:flex;gap:.4rem;align-items:center"><input type="checkbox" id="pairs"> 显示训练配对</label>
+        </div>
+        <div class="stats">
+          <div class="stat"><b id="mDist">–</b><span>终点到最近数据点的平均距离</span></div>
+          <div class="stat"><b id="mHit">–</b><span>落在数据上的比例（距离 &lt; 0.12）</span></div>
+        </div>
+        <div class="keys"><span><i style="background:var(--muted)"></i>训练数据</span><span><i style="background:var(--accent)"></i>采样轨迹与终点</span><span><i style="background:var(--warm)"></i>训练配对（直线）</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2 -->
+  <section id="target">
+    <div class="sec-head">
+      <span class="eyebrow">实验 2</span>
+      <h2>同一件事，三种问法：预测 ε、x₀ 还是 v</h2>
+    </div>
+    <div class="bench">
+      <div class="prose">
+        <p>加噪就是把干净图 x₀ 和噪声 ε 按比例混合：<span class="mono">x<sub>t</sub> = α·x₀ + σ·ε</span>。模型看到 x<sub>t</sub>，可以被要求回答三种问题：</p>
+        <p><strong>ε 预测</strong>（DDPM、SD 1.x）：猜加进去的噪声。<br><strong>x₀ 预测</strong>：直接猜干净图。<br><strong>v 预测</strong>（SD 2.x，以及 Flow Matching）：猜"速度"，也就是 x<sub>t</sub> 沿路径移动的方向。</p>
+        <p>三种问法知道一个就能推出另外两个，但<strong>误差被放大的程度不同</strong>。拖动 t 看右下角的表：t 接近 1 时，ε 预测反推干净图会把误差放大到无穷，这正是 SD 2 改用 v 预测的原因之一。</p>
+        <p>两条路径的差别：DDPM 族（VP）的混合满足 α² + σ² = 1，路径是<strong>圆弧</strong>；SD3 和 FLUX 用的 Rectified Flow 取 α = 1 − t、σ = t，路径是<strong>直线</strong>，速度处处相同，都等于 <span class="mono">ε − x₀</span>。</p>
+      </div>
+      <div class="panel">
+        <svg id="geo" viewBox="-0.32 -1.3 1.9 1.62" role="img" aria-label="加噪路径几何示意"></svg>
+        <div class="ctrl">
+          <div class="seg" role="group" aria-label="路径">
+            <button type="button" data-path="vp" aria-pressed="false">VP 圆弧（DDPM / SD1–2）</button>
+            <button type="button" data-path="rf" aria-pressed="true">RF 直线（SD3 / FLUX）</button>
+          </div>
+        </div>
+        <div class="ctrl">
+          <label for="tg">噪声程度 t</label>
+          <input id="tg" type="range" min="0" max="1" step="0.01" value="0.35">
+          <span class="val" id="tgv">0.35</span>
+        </div>
+        <dl class="kv" id="geokv"></dl>
+        <p class="cap">箭头为速度 v，两条路径按同一比例缩小显示。VP 的 t 映射为角度 φ = t·π/2。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3 -->
+  <section id="tsample">
+    <div class="sec-head">
+      <span class="eyebrow">实验 3</span>
+      <h2>每一步训练该抽哪个 t</h2>
+    </div>
+    <div class="bench">
+      <div class="prose">
+        <p>每个训练样本都要随机抽一个噪声程度 t。抽法决定了模型把精力花在哪里。</p>
+        <p><strong>t 接近 0</strong>：图几乎没被弄脏，任务太简单。<strong>t 接近 1</strong>：几乎只剩噪声，最好的答案就是"猜数据的平均"，学不到什么。<strong>中间</strong>才是决定构图和细节的关键区段。</p>
+        <p>SD3 论文比较了多种方案，最后选了 <strong>logit-normal</strong> 分布：先从正态分布 N(m, s²) 抽一个数，再用 sigmoid 压到 0 到 1 之间。默认 m = 0、s = 1，中间多、两头少。m 往右移会更多练习高噪声段，对高分辨率生成有帮助。</p>
+        <div class="formula">t = sigmoid(u),  u ~ N(m, s²)</div>
+      </div>
+      <div class="panel">
+        <svg id="dens" viewBox="0 0 600 270" role="img" aria-label="时间步采样分布"></svg>
+        <div class="ctrl"><label for="lm">m（中心）</label><input id="lm" type="range" min="-1.5" max="1.5" step="0.05" value="0"><span class="val" id="lmv">0.00</span></div>
+        <div class="ctrl"><label for="ls">s（宽度）</label><input id="ls" type="range" min="0.4" max="2" step="0.05" value="1"><span class="val" id="lsv">1.00</span></div>
+        <div class="ctrl"><button class="btn" type="button" id="sd3">恢复 SD3 默认（m=0, s=1）</button></div>
+        <div class="keys"><span><i style="background:var(--accent)"></i>logit-normal</span><span><i style="background:var(--muted)"></i>均匀分布（对照）</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4 -->
+  <section id="onestep">
+    <div class="sec-head">
+      <span class="eyebrow">实验 4</span>
+      <h2>拆开一步训练</h2>
+      <p class="lede">把前面几节拼起来，就是一个完整的训练步。点左边的步骤，右边对应的代码会高亮。预训练、SFT、LoRA 都是这段代码，区别只在于更新哪些参数、用什么数据。</p>
+    </div>
+    <div class="bench">
+      <div class="steps" id="stepper"></div>
+      <div class="panel">
+        <pre class="code" id="code"></pre>
+        <div class="ctrl"><button class="btn" type="button" id="prev">上一步</button><button class="btn" type="button" id="next">下一步</button><span class="cap" id="stepnote"></span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5 -->
+  <section id="cfg">
+    <div class="sec-head">
+      <span class="eyebrow">实验 5</span>
+      <h2>CFG：训练时丢掉 10% 的提示词</h2>
+    </div>
+    <div class="bench">
+      <div class="prose">
+        <p>训练时随机把约 10% 样本的提示词换成空字符串，模型就同时学会了两件事：<strong>有提示词时怎么画</strong>（条件预测），以及<strong>没有提示词时怎么画</strong>（无条件预测）。</p>
+        <p>出图时两个都算一遍，然后沿着"从无条件指向有条件"的方向继续往前推 w 倍。w = 1 就是普通的条件预测；w 越大，画面越贴合提示词，但走过头就会过饱和、发硬。</p>
+        <div class="formula">v̂ = v(x, ∅) + w · [ v(x, c) − v(x, ∅) ]</div>
+        <p>FLUX.1 dev 把这个"算两遍"蒸馏进了模型里（指导蒸馏），所以它的 CFG 设 1 就够；Turbo 类模型也通常用 CFG 1。</p>
+      </div>
+      <div class="panel">
+        <svg id="cfgsvg" viewBox="-0.15 -1.25 2.55 1.45" role="img" aria-label="CFG 向量示意"></svg>
+        <div class="ctrl"><label for="w">引导系数 w</label><input id="w" type="range" min="0" max="12" step="0.5" value="4.5"><span class="val" id="wv">4.5</span></div>
+        <p class="cap" id="cfgnote"></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6 -->
+  <section id="lora">
+    <div class="sec-head">
+      <span class="eyebrow">实验 6</span>
+      <h2>LoRA：损失不变，只改很少的参数</h2>
+    </div>
+    <div class="bench">
+      <div class="prose">
+        <p>LoRA 微调的<strong>损失函数和预训练完全一样</strong>，区别在于原始权重 W 被冻结，只训练两个细长的小矩阵 B 和 A：</p>
+        <div class="formula">W′ = W + (α / r) · B · A,   B: d×r（初始为 0），A: r×k</div>
+        <p>B 初始化为 0，所以训练开始时 LoRA 什么都不改，模型和原来一模一样。rank r 越大，LoRA 能表达的变化越多，也越容易过拟合。</p>
+        <p><strong>先验保留（正则图）</strong>就是在损失里再加一项：用底模自己生成的图，要求模型在通用提示词上保持原样。</p>
+        <div class="formula">L = ‖v − v̂(你的图, 触发词)‖² + λ · ‖v′ − v̂(正则图, 通用词)‖²</div>
+      </div>
+      <div class="panel">
+        <div class="mat" id="mat"></div>
+        <div class="ctrl"><label for="rk">rank r</label><input id="rk" type="range" min="0" max="5" step="1" value="2"><span class="val" id="rkv">16</span></div>
+        <dl class="kv" id="lorakv"></dl>
+        <p class="cap">以一个 3072×3072 的线性层为例（FLUX.1 的隐藏维度是 3072）。矩阵按真实比例绘制。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7 -->
+  <section id="rl">
+    <div class="sec-head">
+      <span class="eyebrow">实验 7</span>
+      <h2>RL：没有标准答案，只有打分</h2>
+      <p class="lede">前面的损失都有"标准答案"（真实速度 ε − x₀）。RL 没有，只有一个打分器告诉模型哪张图更好。它不教新知识，只调整模型更倾向于生成哪类图。</p>
+    </div>
+    <div class="bench">
+      <div class="prose">
+        <h3>GRPO（Flow-GRPO、DanceGRPO）</h3>
+        <p>同一个提示词生成一组图（右边是 6 张），打分后算每张图的<strong>优势</strong>：比组内平均好多少，再除以组内标准差。</p>
+        <div class="formula">A<sub>i</sub> = (r<sub>i</sub> − 平均) / 标准差</div>
+        <p>优势为正的图，模型会提高生成它的概率；为负的则降低。拖动右边的分数试试：<strong>当整组分数一样时，优势全是 0，模型什么也学不到。</strong></p>
+        <p>GRPO 需要知道"生成这张图的概率"，而普通的 Flow Matching 采样是确定性的。Flow-GRPO 的做法是把采样改成带随机性的 SDE 形式。另外要加 KL 约束，限制模型偏离原模型太远，防止它学会讨好打分器（刷分）。</p>
+        <h3 style="margin-top:var(--s3)">Diffusion-DPO</h3>
+        <p>不用打分器，直接用人工标注的"这张比那张好"的图片对。目标是：相比原模型，<strong>新模型在好图上的去噪误差下降得更多，在差图上下降得更少</strong>。</p>
+        <div class="formula">L = −log σ( −β · [ (e<sub>θ</sub>(好) − e<sub>ref</sub>(好)) − (e<sub>θ</sub>(差) − e<sub>ref</sub>(差)) ] )</div>
+        <p class="cap">e 表示去噪误差 ‖ε − ε<sub>θ</sub>(x<sub>t</sub>)‖²，ref 是冻结的原模型。省略了时间步权重。</p>
+      </div>
+      <div class="panel">
+        <div class="grpo" id="grpo"></div>
+        <dl class="kv" id="grpokv"></dl>
+        <div class="ctrl"><button class="btn" type="button" id="same">全部设为同分</button><button class="btn" type="button" id="resetg">恢复示例</button></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8 -->
+  <section id="sum">
+    <div class="sec-head">
+      <span class="eyebrow">总表</span>
+      <h2>不同阶段的训练目标</h2>
+    </div>
+    <div class="tbl">
+      <table>
+        <thead><tr><th>阶段</th><th>目标函数</th><th>数据</th><th>学到什么</th><th>谁在做</th></tr></thead>
+        <tbody>
+          <tr><td>预训练</td><td>Flow Matching：<code>‖v̂ − (ε − x₀)‖²</code>；早期为 ε 预测或 v 预测</td><td>亿级图文对</td><td>画画的全部基础能力</td><td>模型厂商</td></tr>
+          <tr><td>SFT / 美学精调</td><td>同上</td><td>精选的高质量图</td><td>更好看、更稳定的默认画风</td><td>厂商、社区底模作者</td></tr>
+          <tr><td>LoRA</td><td>同上，只更新 B、A；可加先验保留项</td><td>几十到几百张</td><td>新角色、新画风、新概念</td><td>个人用户</td></tr>
+          <tr><td>蒸馏（Turbo）</td><td>ADD：骗过判别器；DMD：匹配教师的分布；LCM：同一轨迹上的点映射到同一终点</td><td>教师模型的输出</td><td>用 1 到 8 步走完实验 1 里的弯路</td><td>厂商</td></tr>
+          <tr><td>RL 对齐</td><td>GRPO：按优势加权；DPO：好图误差降得更多</td><td>打分器或偏好对</td><td>审美、提示词遵循、数量和文字等可打分的能力</td><td>厂商、研究者</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <footer class="foot">
+    <p>参考：DDPM（Ho 等，2020）、v 预测（Salimans &amp; Ho，2022）、Rectified Flow（Liu 等，2022）、Flow Matching（Lipman 等，2022）、SD3 论文（Esser 等，2024）、CFG（Ho &amp; Salimans，2022）、LoRA（Hu 等，2021）、DreamBooth（Ruiz 等，2022）、Diffusion-DPO（Wallace 等，2023）、Flow-GRPO（2025）。</p>
+    <p>本页是《扩散生图编年史》的配套讲解。</p>
+  </footer>
+</main>
+
+<script>
+const $=s=>document.querySelector(s);
+const tok=n=>getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+const NS='http://www.w3.org/2000/svg';
+function el(tag,attrs,parent){const e=document.createElementNS(NS,tag);for(const k in attrs)e.setAttribute(k,attrs[k]);if(parent)parent.appendChild(e);return e;}
+function mulberry(a){return function(){a|=0;a=a+0x6D2B79F5|0;let t=Math.imul(a^a>>>15,1|a);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296;}}
+function gauss(r){let u=0;while(u===0)u=r();return Math.sqrt(-2*Math.log(u))*Math.cos(2*Math.PI*r());}
+const fmt=(x,d=3)=>Number.isFinite(x)?x.toFixed(d):'∞';
+
+/* ===== 实验 1：二维流匹配 ===== */
+const Flow=(function(){
+  const cv=$('#flowcv'), ctx=cv.getContext('2d');
+  const STEPS=[1,2,3,4,8,16,32,64];
+  let ds='spiral', seed=7, data=[], noise=[], pairIdx=[], traj=null;
+  function makeData(kind){
+    const r=mulberry(42), pts=[];
+    if(kind==='spiral'){for(let i=0;i<170;i++){const th=0.6*Math.PI+3.4*Math.PI*i/169;const rad=0.18+th/(4*Math.PI)*2.0;pts.push([rad*Math.cos(th)+gauss(r)*0.03,rad*Math.sin(th)+gauss(r)*0.03]);}}
+    else if(kind==='moons'){for(let i=0;i<85;i++){const a=Math.PI*i/84;pts.push([1.5*Math.cos(a)-0.75+gauss(r)*0.04,1.5*Math.sin(a)-0.35+gauss(r)*0.04]);pts.push([1.5*(1-Math.cos(a))-0.75+gauss(r)*0.04,1.5*(0.5-Math.sin(a))-0.35+gauss(r)*0.04]);}}
+    else {for(let c=0;c<8;c++){const a=2*Math.PI*c/8;for(let i=0;i<20;i++)pts.push([1.9*Math.cos(a)+gauss(r)*0.09,1.9*Math.sin(a)+gauss(r)*0.09]);}}
+    return pts;
+  }
+  function makeNoise(){const r=mulberry(seed*7919+13);noise=[];pairIdx=[];for(let i=0;i<220;i++){noise.push([gauss(r),gauss(r)]);pairIdx.push(Math.floor(r()*data.length));}}
+  function postMean(x,y,a,b){
+    let mx=-Infinity;const n=data.length, lw=new Float64Array(n), s2=2*b*b;
+    for(let i=0;i<n;i++){const dx=x-a*data[i][0],dy=y-a*data[i][1];lw[i]=-(dx*dx+dy*dy)/s2;if(lw[i]>mx)mx=lw[i];}
+    let Z=0,mxx=0,myy=0;for(let i=0;i<n;i++){const w=Math.exp(lw[i]-mx);Z+=w;mxx+=w*data[i][0];myy+=w*data[i][1];}
+    return [mxx/Z,myy/Z];
+  }
+  function simulate(N){
+    traj=noise.map(p=>[[p[0],p[1]]]);
+    for(let k=0;k<N;k++){const t=1-k/N,t2=1-(k+1)/N;
+      for(const path of traj){const [x,y]=path[path.length-1];const [mx,my]=postMean(x,y,1-t,t);
+        const vx=(x-mx)/t,vy=(y-my)/t;path.push([x+(t2-t)*vx,y+(t2-t)*vy]);}}
+  }
+  function metrics(){
+    let sum=0,hit=0;for(const path of traj){const [x,y]=path[path.length-1];let best=Infinity;for(const d of data){const dd=Math.hypot(x-d[0],y-d[1]);if(dd<best)best=dd;}sum+=best;if(best<0.12)hit++;}
+    $('#mDist').textContent=(sum/traj.length).toFixed(3);$('#mHit').textContent=Math.round(hit/traj.length*100)+'%';
+  }
+  function size(){const r=cv.getBoundingClientRect();const d=window.devicePixelRatio||1;cv.width=Math.round(r.width*d);cv.height=Math.round(r.width*d);}
+  function draw(){
+    if(!cv.width)size();
+    const W=cv.width,S=W/6.6,cx=W/2,cy=W/2,d=window.devicePixelRatio||1;
+    const P=p=>[cx+p[0]*S,cy-p[1]*S];
+    ctx.setTransform(1,0,0,1,0,0);ctx.globalAlpha=1;ctx.fillStyle=tok('--surface');ctx.fillRect(0,0,W,W);
+    ctx.strokeStyle=tok('--line');ctx.lineWidth=1*d;ctx.beginPath();ctx.moveTo(0,cy);ctx.lineTo(W,cy);ctx.moveTo(cx,0);ctx.lineTo(cx,W);ctx.stroke();
+    ctx.fillStyle=tok('--muted');ctx.globalAlpha=.55;for(const p of data){const [x,y]=P(p);ctx.beginPath();ctx.arc(x,y,1.8*d,0,7);ctx.fill();}
+    if($('#pairs').checked){ctx.strokeStyle=tok('--warm');ctx.globalAlpha=.55;ctx.lineWidth=1*d;ctx.setLineDash([3*d,3*d]);
+      for(let i=0;i<45;i++){const a=P(noise[i]),b=P(data[pairIdx[i]]);ctx.beginPath();ctx.moveTo(a[0],a[1]);ctx.lineTo(b[0],b[1]);ctx.stroke();}ctx.setLineDash([]);}
+    const acc=tok('--accent');ctx.strokeStyle=acc;ctx.lineWidth=1*d;ctx.globalAlpha=.28;
+    for(const path of traj){ctx.beginPath();path.forEach((p,i)=>{const [x,y]=P(p);i?ctx.lineTo(x,y):ctx.moveTo(x,y);});ctx.stroke();}
+    ctx.globalAlpha=.35;ctx.fillStyle=tok('--ink');for(const path of traj){const [x,y]=P(path[0]);ctx.beginPath();ctx.arc(x,y,1.2*d,0,7);ctx.fill();}
+    ctx.globalAlpha=1;ctx.fillStyle=acc;for(const path of traj){const [x,y]=P(path[path.length-1]);ctx.beginPath();ctx.arc(x,y,2.4*d,0,7);ctx.fill();}
+  }
+  function run(){const N=STEPS[+$('#steps').value];$('#stepsv').textContent=N;simulate(N);metrics();draw();}
+  data=makeData(ds);makeNoise();
+  $('#steps').addEventListener('input',run);
+  document.querySelectorAll('[data-ds]').forEach(b=>b.addEventListener('click',()=>{ds=b.dataset.ds;document.querySelectorAll('[data-ds]').forEach(x=>x.setAttribute('aria-pressed',x===b));data=makeData(ds);makeNoise();run();}));
+  $('#reseed').addEventListener('click',()=>{seed++;makeNoise();run();});
+  $('#pairs').addEventListener('change',draw);
+  new ResizeObserver(()=>{size();draw();}).observe(cv);
+  run();
+  return {draw};
+})();
+
+/* ===== 实验 2：路径几何 ===== */
+(function(){
+  const svg=$('#geo');let path='rf';
+  const defs=el('defs',{},svg);
+  for(const [id,cls] of [['ah-acc','f-acc'],['ah-warm','f-warm'],['ah-mut','f-muted']]){const m=el('marker',{id,viewBox:'0 0 10 10',refX:'8',refY:'5',markerWidth:'5',markerHeight:'5',orient:'auto-start-reverse'},defs);el('path',{d:'M0,0 L10,5 L0,10 z',class:cls},m);}
+  const g=el('g',{},svg);
+  function draw(){
+    const t=+$('#tg').value;$('#tgv').textContent=t.toFixed(2);g.innerHTML='';
+    const Y=y=>-y, sw=0.012;
+    el('line',{x1:0,y1:0,x2:1.25,y2:0,class:'s-axis','stroke-width':0.006,'marker-end':'url(#ah-mut)'},g);
+    el('line',{x1:0,y1:0,x2:0,y2:Y(1.2),class:'s-axis','stroke-width':0.006,'marker-end':'url(#ah-mut)'},g);
+    const vpOn=path==='vp';
+    el('path',{d:`M1,0 A1,1 0 0 0 0,${Y(1)}`,fill:'none',class:vpOn?'s-acc':'s-muted','stroke-width':vpOn?sw:0.006,'stroke-dasharray':vpOn?'':'0.03 0.02',opacity:vpOn?1:.6},g);
+    el('line',{x1:1,y1:0,x2:0,y2:Y(1),class:!vpOn?'s-acc':'s-muted','stroke-width':!vpOn?sw:0.006,'stroke-dasharray':!vpOn?'':'0.03 0.02',opacity:!vpOn?1:.6},g);
+    const phi=t*Math.PI/2;
+    const pv=[Math.cos(phi),Math.sin(phi)], pr=[1-t,t];
+    const vv=[-Math.sin(phi),Math.cos(phi)], vr=[-1,1];
+    const k=0.32;
+    const [p,v]=vpOn?[pv,vv]:[pr,vr];
+    el('circle',{cx:(vpOn?pr:pv)[0],cy:Y((vpOn?pr:pv)[1]),r:0.022,class:'f-muted',opacity:.6},g);
+    el('line',{x1:p[0],y1:Y(p[1]),x2:p[0]+v[0]*k,y2:Y(p[1]+v[1]*k),class:'s-warm','stroke-width':0.014,'marker-end':'url(#ah-warm)'},g);
+    el('circle',{cx:p[0],cy:Y(p[1]),r:0.032,class:'f-acc'},g);
+    el('circle',{cx:1,cy:0,r:0.028,class:'f-ink'},g);el('circle',{cx:0,cy:Y(1),r:0.028,class:'f-ink'},g);
+    const T=(x,y,s,cls,anchor)=>{const e=el('text',{x,y,'font-size':0.065,class:cls||'','text-anchor':anchor||'start'},g);e.textContent=s;};
+    T(1.0,0.1,'x₀ 干净图（t=0）','ink','middle');T(0.04,Y(1.06),'ε 纯噪声（t=1）','ink');
+    T(p[0]+v[0]*k+0.03,Y(p[1]+v[1]*k)-0.02,'v','m');
+    T(p[0]+0.05,Y(p[1])+0.07,'xₜ','m');
+    T(vpOn?0.74:0.5,vpOn?Y(0.78):Y(0.43),vpOn?'圆弧':'直线','', 'start');
+    const a=vpOn?Math.cos(phi):1-t, s=vpOn?Math.sin(phi):t;
+    const rows=[['α（干净图占比）',fmt(a)],['σ（噪声占比）',fmt(s)],['信噪比 α²/σ²',s===0?'∞':fmt(a*a/(s*s))],
+      ['ε 预测反推 x₀ 的误差放大',a===0?'∞':fmt(s/a)],['x₀ 预测的误差放大','1.000'],['v 预测反推 x₀ 的误差放大',fmt(s)+(vpOn?'  （= σ）':'  （= t）')]];
+    $('#geokv').innerHTML=rows.map(r=>`<dt>${r[0]}</dt><dd>${r[1]}</dd>`).join('');
+  }
+  document.querySelectorAll('[data-path]').forEach(b=>b.addEventListener('click',()=>{path=b.dataset.path;document.querySelectorAll('[data-path]').forEach(x=>x.setAttribute('aria-pressed',x===b));draw();}));
+  $('#tg').addEventListener('input',draw);draw();
+})();
+
+/* ===== 实验 3：logit-normal ===== */
+(function(){
+  const svg=$('#dens');const X0=52,X1=585,Y0=230,Y1=18;
+  function dens(t,m,s){const l=Math.log(t/(1-t));return Math.exp(-(l-m)*(l-m)/(2*s*s))/(s*Math.sqrt(2*Math.PI)*t*(1-t));}
+  function draw(){
+    const m=+$('#lm').value,s=+$('#ls').value;$('#lmv').textContent=m.toFixed(2);$('#lsv').textContent=s.toFixed(2);
+    svg.innerHTML='';const pts=[];let peak=1;
+    for(let i=1;i<400;i++){const t=i/400;const d=dens(t,m,s);pts.push([t,d]);if(d>peak)peak=d;}
+    const step=peak>4?1:0.5, ymax=Math.ceil(peak*1.08/step)*step;
+    const sx=t=>X0+t*(X1-X0), sy=d=>Y0-Math.min(d,ymax)/ymax*(Y0-Y1);
+    for(let v=0;v<=ymax+1e-9;v+=step){el('line',{x1:X0,x2:X1,y1:sy(v),y2:sy(v),class:'s-axis','stroke-width':1},svg);const tx=el('text',{x:X0-8,y:sy(v)+4,'font-size':11,'text-anchor':'end',class:'m'},svg);tx.textContent=v%1===0?v.toFixed(0):v.toFixed(1);}
+    for(const t of [0,0.25,0.5,0.75,1]){const tx=el('text',{x:sx(t),y:Y0+18,'font-size':11,'text-anchor':'middle',class:'m'},svg);tx.textContent=t;}
+    const lab=el('text',{x:(X0+X1)/2,y:Y0+36,'font-size':12,'text-anchor':'middle'},svg);lab.textContent='时间步 t（0 = 干净，1 = 纯噪声）';
+    const yl=el('text',{x:14,y:(Y0+Y1)/2,'font-size':12,'text-anchor':'middle',transform:`rotate(-90 14 ${(Y0+Y1)/2})`},svg);yl.textContent='概率密度';
+    el('line',{x1:sx(0),x2:sx(1),y1:sy(1),y2:sy(1),class:'s-muted','stroke-width':1.5,'stroke-dasharray':'5 4'},svg);
+    const d='M'+sx(0)+','+sy(0)+' '+pts.map(p=>'L'+sx(p[0]).toFixed(1)+','+sy(p[1]).toFixed(1)).join(' ')+' L'+sx(1)+','+sy(0)+' Z';
+    el('path',{d,class:'f-acc-soft',opacity:.9},svg);
+    el('path',{d:'M'+pts.map(p=>sx(p[0]).toFixed(1)+','+sy(p[1]).toFixed(1)).join(' L'),fill:'none',class:'s-acc','stroke-width':2.2},svg);
+    const notes=[[0.06,'太简单'],[0.5,'最关键'],[0.94,'只能猜平均']];
+    for(const [t,s2] of notes){const tx=el('text',{x:sx(t),y:Y1+2,'font-size':11,'text-anchor':'middle',class:'ink'},svg);tx.textContent=s2;}
+  }
+  $('#lm').addEventListener('input',draw);$('#ls').addEventListener('input',draw);
+  $('#sd3').addEventListener('click',()=>{$('#lm').value=0;$('#ls').value=1;draw();});draw();
+})();
+
+/* ===== 实验 4：一步训练 ===== */
+(function(){
+  const code=[
+    'x0  = vae.encode(image)                 <em># 图像压进潜空间</em>',
+    'cap = "" if random() < 0.1 else caption <em># 10% 丢弃提示词</em>',
+    'c   = text_encoder(cap)                 <em># 文字变向量</em>',
+    't   = sigmoid(randn())                  <em># logit-normal 抽时间步</em>',
+    'eps = randn_like(x0)                    <em># 抽一份高斯噪声</em>',
+    'xt  = (1 - t) * x0 + t * eps            <em># 沿直线加噪</em>',
+    'v   = model(xt, t, c)                   <em># 模型预测速度</em>',
+    'loss = ((v - (eps - x0)) ** 2).mean()   <em># 和真实速度比，取均方误差</em>',
+    'loss.backward(); optimizer.step()       <em># 反向传播，更新参数</em>'];
+  const steps=[
+    ['编码图像','VAE 把 1024×1024 的图压成小得多的潜变量，之后所有计算都在潜空间进行。',[0],'实验 1 里的每个灰点，就相当于一个这样的潜变量。'],
+    ['处理提示词','先以 10% 概率把提示词换成空的，再交给文本编码器（CLIP、T5 或 Qwen3 等）。',[1,2],'这 10% 的空提示词，就是出图时能用 CFG 的前提（实验 5）。'],
+    ['抽时间步','从 logit-normal 分布抽一个 t，决定这次练习"多脏"的图。',[3],'对应实验 3。'],
+    ['加噪','抽一份同样形状的高斯噪声，按 t 和干净图直线混合。',[4,5],'对应实验 1 里的橙色直线：训练配对。'],
+    ['模型预测','把脏图、t 和提示词一起交给去噪网络（U-Net 或 DiT），输出一个速度。',[6],'Anima 的 LLM 适配器在这里把文字向量转给 DiT。'],
+    ['计算损失','真实速度是 ε − x₀，和预测比，算均方误差。',[7],'对应实验 2：Rectified Flow 下速度处处等于 ε − x₀。'],
+    ['更新参数','反向传播算梯度，优化器更新参数。全量微调更新全部权重；LoRA 只更新 B 和 A。',[8],'对应实验 6。冻结 Anima 的 LLM 适配器，就是让它不参与这一步更新。']];
+  let cur=0;const st=$('#stepper'),pre=$('#code');
+  st.innerHTML=steps.map((s,i)=>`<button type="button" class="step" data-i="${i}"><span class="no">${String(i+1).padStart(2,'0')}</span><span><b>${s[0]}</b><span>${s[1]}</span></span></button>`).join('');
+  function draw(){
+    st.querySelectorAll('.step').forEach((b,i)=>i===cur?b.setAttribute('aria-current','step'):b.removeAttribute('aria-current'));
+    pre.innerHTML=code.map((c,i)=>`<span class="${steps[cur][2].includes(i)?'on':''}">${c}</span>`).join('');
+    $('#stepnote').textContent=steps[cur][3];
+  }
+  st.addEventListener('click',e=>{const b=e.target.closest('.step');if(b){cur=+b.dataset.i;draw();}});
+  $('#prev').addEventListener('click',()=>{cur=(cur+steps.length-1)%steps.length;draw();});
+  $('#next').addEventListener('click',()=>{cur=(cur+1)%steps.length;draw();});
+  draw();
+})();
+
+/* ===== 实验 5：CFG ===== */
+(function(){
+  const svg=$('#cfgsvg');
+  const defs=el('defs',{},svg);
+  for(const [id,cls] of [['c-acc','f-acc'],['c-warm','f-warm'],['c-mut','f-muted']]){const m=el('marker',{id,viewBox:'0 0 10 10',refX:'8',refY:'5',markerWidth:'5',markerHeight:'5',orient:'auto-start-reverse'},defs);el('path',{d:'M0,0 L10,5 L0,10 z',class:cls},m);}
+  const g=el('g',{},svg);const u=[0.25,0.85],c=[0.42,0.8];
+  function draw(){
+    const w=+$('#w').value;$('#wv').textContent=w.toFixed(1);g.innerHTML='';const Y=y=>-y;
+    const gd=[u[0]+w*(c[0]-u[0]),u[1]+w*(c[1]-u[1])];
+    el('line',{x1:u[0],y1:Y(u[1]),x2:u[0]+12*(c[0]-u[0]),y2:Y(u[1]+12*(c[1]-u[1])),class:'s-faint','stroke-width':0.006,'stroke-dasharray':'0.03 0.02'},g);
+    const arrow=(v,cls,mk,wd)=>el('line',{x1:0,y1:0,x2:v[0],y2:Y(v[1]),class:cls,'stroke-width':wd,'marker-end':`url(#${mk})`},g);
+    arrow(u,'s-muted','c-mut',0.012);arrow(c,'s-acc','c-acc',0.012);arrow(gd,'s-warm','c-warm',0.016);
+    const T=(x,y,s,cls,anchor)=>{const e=el('text',{x,y,'font-size':0.07,class:cls||'','text-anchor':anchor||'start'},g);e.textContent=s;};
+    T(u[0]-0.04,Y(u[1])-0.03,'无条件 v(x, ∅)','','end');T(c[0]+0.03,Y(c[1])-0.05,'有条件 v(x, c)','ink');
+    T(gd[0]+0.03,Y(gd[1])+0.09,`引导后（w = ${w.toFixed(1)}）`,'ink');
+    el('circle',{cx:0,cy:0,r:0.02,class:'f-ink'},g);
+    let note;
+    if(w===0) note='w = 0：完全不看提示词，只用无条件预测。';
+    else if(w<1) note='w < 1：介于无条件和有条件之间，提示词的作用被削弱。';
+    else if(w===1) note='w = 1：就是普通的条件预测，不额外放大。FLUX.1 dev 和 Turbo 模型常用这个值。';
+    else if(w<=7) note='常用区间：SDXL 系一般 5 到 7，Anima 推荐 4 到 5。画面会更贴合提示词。';
+    else note='w 太大：推得太远，容易过饱和、对比过强、画面发硬。';
+    $('#cfgnote').textContent=note;
+  }
+  $('#w').addEventListener('input',draw);draw();
+})();
+
+/* ===== 实验 6：LoRA ===== */
+(function(){
+  const RANKS=[4,8,16,32,64,128],D=3072,FULL=D*D,PX=180;
+  function draw(){
+    const r=RANKS[+$('#rk').value];$('#rkv').textContent=r;
+    const thin=Math.max(1.5,PX*r/D);
+    $('#mat').innerHTML=`
+      <figure><div class="box full" style="width:${PX}px;height:${PX}px;max-width:40vw;max-height:40vw"></div><figcaption>W 冻结<br>3072×3072</figcaption></figure>
+      <span class="op">+</span>
+      <figure><div class="box" style="width:${thin}px;height:${PX}px;max-height:40vw"></div><figcaption>B<br>3072×${r}</figcaption></figure>
+      <span class="op">·</span>
+      <figure><div class="box" style="width:${PX}px;height:${thin}px;max-width:40vw"></div><figcaption>A<br>${r}×3072</figcaption></figure>`;
+    const lp=r*(D+D);
+    $('#lorakv').innerHTML=`<dt>原始层参数</dt><dd>${FULL.toLocaleString()}</dd><dt>LoRA 参数 r·(d+k)</dt><dd>${lp.toLocaleString()}</dd><dt>占比</dt><dd>${(lp/FULL*100).toFixed(2)}%</dd>`;
+  }
+  $('#rk').addEventListener('input',draw);draw();
+})();
+
+/* ===== 实验 7：GRPO ===== */
+(function(){
+  const DEF=[7.5,4,9,5.5,3,6];let r=DEF.slice();const host=$('#grpo');
+  host.innerHTML=r.map((v,i)=>`<div class="gr"><label for="g${i}">样本 ${i+1}</label><input id="g${i}" type="range" min="0" max="10" step="0.5" value="${v}"><span class="val" id="gv${i}">${v}</span><div class="adv" id="ga${i}"></div></div>`).join('')+
+    `<div class="gr" aria-hidden="true"><span></span><span class="cap">分数（打分器给出）</span><span></span><span class="cap" style="display:flex;justify-content:space-between"><span>−2</span><span>优势 0</span><span>+2</span></span></div>`;
+  function draw(){
+    const n=r.length,mean=r.reduce((a,b)=>a+b,0)/n,sd=Math.sqrt(r.reduce((a,b)=>a+(b-mean)**2,0)/n);
+    r.forEach((v,i)=>{const A=sd<1e-9?0:(v-mean)/sd;$('#gv'+i).textContent=v.toFixed(1);
+      const w=Math.min(Math.abs(A),2)/2*50;const box=$('#ga'+i);
+      box.innerHTML=`<div class="b ${A>=0?'p':'n'}" style="${A>=0?'left:50%':'right:50%'};width:${w}%"></div><span class="lab" style="${A>=0?'right:0':'left:0'}">${A>=0?'+':''}${A.toFixed(2)}</span>`;});
+    $('#grpokv').innerHTML=`<dt>组内平均分</dt><dd>${mean.toFixed(2)}</dd><dt>组内标准差</dt><dd>${sd.toFixed(2)}</dd><dt>学习信号</dt><dd>${sd<1e-9?'无（优势全为 0）':'有'}</dd>`;
+  }
+  r.forEach((_,i)=>$('#g'+i).addEventListener('input',e=>{r[i]=+e.target.value;draw();}));
+  $('#same').addEventListener('click',()=>{r=r.map(()=>6);r.forEach((v,i)=>$('#g'+i).value=v);draw();});
+  $('#resetg').addEventListener('click',()=>{r=DEF.slice();r.forEach((v,i)=>$('#g'+i).value=v);draw();});
+  draw();
+})();
+
+/* 主题切换时重绘画布 */
+window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change',()=>Flow.draw());
+new MutationObserver(()=>Flow.draw()).observe(document.documentElement,{attributes:true,attributeFilter:['data-theme']});
+</script>
+
+</body>
+</html>
