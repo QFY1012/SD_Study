@@ -1,0 +1,222 @@
+{
+ "ckpt": "xaviernocturne_v3.safetensors",
+ "jobs": [
+  {
+   "name": "d000166_rhandB",
+   "source": "/content/ds_src/000166.png",
+   "stages": [
+    {
+     "kind": "hands",
+     "boxes": [
+      [
+       620,
+       680,
+       148,
+       180
+      ]
+     ],
+     "positive_suffix": "feline paw pads, one elongated lobed palm pad, small separate oval finger pads, one pad per finger, bright pale yellow paw pads, flat shading, white fur on hands, pale lavender hands, small pale claws",
+     "negative_suffix": "cluster of round balls, bubbly palm pad, multiple blobs, lumpy pad, many bumps, orange paw pads, brown paw pads, gray paw pads, dark pads, dark blue hands, large claws",
+     "params": {
+      "batch": 4
+     }
+    }
+   ],
+   "grid": {
+    "seeds": [
+     111
+    ],
+    "denoises": [
+     0.6,
+     0.7
+    ]
+   }
+  },
+  {
+   "name": "d000182_rhandB",
+   "source": "/content/ds_src/000182.png",
+   "stages": [
+    {
+     "kind": "hands",
+     "boxes": [
+      [
+       585,
+       490,
+       183,
+       180
+      ]
+     ],
+     "positive_suffix": "feline paw pads, one elongated lobed palm pad, small separate oval finger pads, one pad per finger, bright pale yellow paw pads, flat shading, white fur on hands, pale lavender hands, small pale claws",
+     "negative_suffix": "cluster of round balls, bubbly palm pad, multiple blobs, lumpy pad, many bumps, orange paw pads, brown paw pads, gray paw pads, dark pads, dark blue hands, large claws",
+     "params": {
+      "batch": 4
+     }
+    }
+   ],
+   "grid": {
+    "seeds": [
+     111
+    ],
+    "denoises": [
+     0.6,
+     0.7
+    ]
+   }
+  },
+  {
+   "name": "d000188_rhandB",
+   "source": "/content/ds_src/000188.png",
+   "stages": [
+    {
+     "kind": "hands",
+     "boxes": [
+      [
+       690,
+       55,
+       320,
+       260
+      ]
+     ],
+     "positive_suffix": "feline paw pads, one elongated lobed palm pad, small separate oval finger pads, one pad per finger, bright pale yellow paw pads, flat shading, white fur on hands, pale lavender hands, small pale claws",
+     "negative_suffix": "cluster of round balls, bubbly palm pad, multiple blobs, lumpy pad, many bumps, orange paw pads, brown paw pads, gray paw pads, dark pads, dark blue hands, large claws",
+     "params": {
+      "batch": 4
+     }
+    }
+   ],
+   "grid": {
+    "seeds": [
+     111
+    ],
+    "denoises": [
+     0.6,
+     0.7
+    ]
+   }
+  },
+  {
+   "name": "d000196_lhandB",
+   "source": "/content/ds_src/000196.png",
+   "stages": [
+    {
+     "kind": "hands",
+     "boxes": [
+      [
+       25,
+       505,
+       170,
+       185
+      ]
+     ],
+     "positive_suffix": "feline paw pads, one elongated lobed palm pad, small separate oval finger pads, one pad per finger, bright pale yellow paw pads, flat shading, white fur on hands, pale lavender hands, small pale claws",
+     "negative_suffix": "cluster of round balls, bubbly palm pad, multiple blobs, lumpy pad, many bumps, orange paw pads, brown paw pads, gray paw pads, dark pads, dark blue hands, large claws",
+     "params": {
+      "batch": 4
+     }
+    }
+   ],
+   "grid": {
+    "seeds": [
+     111
+    ],
+    "denoises": [
+     0.6,
+     0.7
+    ]
+   }
+  },
+  {
+   "name": "d000164_lhandB",
+   "source": "/content/ds_src/000164.png",
+   "stages": [
+    {
+     "kind": "hands",
+     "boxes": [
+      [
+       10,
+       265,
+       140,
+       175
+      ]
+     ],
+     "positive_suffix": "feline paw pads, one elongated lobed palm pad, small separate oval finger pads, one pad per finger, bright pale yellow paw pads, flat shading, white fur on hands, pale lavender hands, small pale claws, dark background",
+     "negative_suffix": "cluster of round balls, bubbly palm pad, multiple blobs, lumpy pad, many bumps, orange paw pads, brown paw pads, gray paw pads, dark pads, dark blue hands, large claws",
+     "params": {
+      "batch": 4
+     }
+    }
+   ],
+   "grid": {
+    "seeds": [
+     111
+    ],
+    "denoises": [
+     0.6,
+     0.7
+    ]
+   }
+  },
+  {
+   "name": "d000186_fistB",
+   "source": "/content/ds_src/000186.png",
+   "stages": [
+    {
+     "kind": "hands",
+     "boxes": [
+      [
+       735,
+       285,
+       125,
+       140
+      ]
+     ],
+     "positive_suffix": "feline paw pads, one elongated lobed palm pad, small separate oval finger pads, one pad per finger, bright pale yellow paw pads, flat shading, white fur on hands, pale lavender hands, small pale claws, white claws",
+     "negative_suffix": "cluster of round balls, bubbly palm pad, multiple blobs, lumpy pad, many bumps, orange paw pads, brown paw pads, gray paw pads, dark pads, dark blue hands, large claws, black claws",
+     "params": {
+      "batch": 4
+     }
+    }
+   ],
+   "grid": {
+    "seeds": [
+     111
+    ],
+    "denoises": [
+     0.6,
+     0.7
+    ]
+   }
+  },
+  {
+   "name": "d000204_lhandB",
+   "source": "/content/ds_src/000204.png",
+   "stages": [
+    {
+     "kind": "hands",
+     "boxes": [
+      [
+       95,
+       405,
+       150,
+       150
+      ]
+     ],
+     "positive_suffix": "feline paw pads, one elongated lobed palm pad, small separate oval finger pads, one pad per finger, bright pale yellow paw pads, flat shading, white fur on hands, pale lavender hands, small pale claws",
+     "negative_suffix": "cluster of round balls, bubbly palm pad, multiple blobs, lumpy pad, many bumps, orange paw pads, brown paw pads, gray paw pads, dark pads, dark blue hands, large claws",
+     "params": {
+      "batch": 4
+     }
+    }
+   ],
+   "grid": {
+    "seeds": [
+     111
+    ],
+    "denoises": [
+     0.6,
+     0.7
+    ]
+   }
+  }
+ ]
+}

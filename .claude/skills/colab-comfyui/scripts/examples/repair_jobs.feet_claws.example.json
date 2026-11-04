@@ -1,0 +1,116 @@
+{
+ "ckpt": "xaviernocturne_v3.safetensors",
+ "jobs": [
+  {
+   "name": "claw166",
+   "source": "/content/ds_src/000166.png",
+   "stages": [
+    {
+     "kind": "feet_strong",
+     "boxes": [
+      [
+       20,
+       1160,
+       240,
+       170
+      ],
+      [
+       470,
+       1110,
+       220,
+       130
+      ]
+     ],
+     "positive_suffix": "one claw on each toe, four toes with four claws, claws at the tips of the toes, sharp pale claws, yellow toe pads, symmetrical toes",
+     "negative_suffix": "missing claws, extra claws, claws between toes, merged toes, five toes, six toes, fused toes, blurry",
+     "params": {
+      "batch": 4
+     }
+    }
+   ],
+   "grid": {
+    "seeds": [
+     111
+    ],
+    "denoises": [
+     0.5,
+     0.6
+    ]
+   }
+  },
+  {
+   "name": "claw190",
+   "source": "/content/ds_src/000190.png",
+   "stages": [
+    {
+     "kind": "feet_strong",
+     "boxes": [
+      [
+       360,
+       975,
+       160,
+       170
+      ],
+      [
+       95,
+       1160,
+       175,
+       175
+      ]
+     ],
+     "positive_suffix": "one claw on each toe, four toes with four claws, claws at the tips of the toes, sharp pale claws, yellow toe pads, symmetrical toes",
+     "negative_suffix": "missing claws, extra claws, claws between toes, merged toes, five toes, six toes, fused toes, blurry",
+     "params": {
+      "batch": 4
+     }
+    }
+   ],
+   "grid": {
+    "seeds": [
+     111
+    ],
+    "denoises": [
+     0.5,
+     0.6
+    ]
+   }
+  },
+  {
+   "name": "claw186",
+   "source": "/content/ds_src/000186_v3.png",
+   "stages": [
+    {
+     "kind": "feet_strong",
+     "boxes": [
+      [
+       215,
+       680,
+       210,
+       150
+      ],
+      [
+       770,
+       685,
+       230,
+       140
+      ]
+     ],
+     "positive_suffix": "one claw on each toe, four toes with four claws, claws at the tips of the toes, sharp pale claws, yellow toe pads, symmetrical toes",
+     "negative_suffix": "missing claws, extra claws, claws between toes, merged toes, five toes, six toes, fused toes, blurry",
+     "params": {
+      "batch": 4
+     }
+    }
+   ],
+   "grid": {
+    "seeds": [
+     111
+    ],
+    "denoises": [
+     0.5,
+     0.6
+    ]
+   }
+  }
+ ]
+}

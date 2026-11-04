@@ -1,0 +1,6 @@
+{"defaults": {"prefix": "cheese_sports",
+ "negative": "worst quality, low quality, score_1, score_2, score_3, artist name, blurry, jpeg artifacts, lowres, censor, cluttered background, complex environment, photo, photorealistic, 3d render, symmetric pose, rigid posture, holding weapon, multi-angle, expression sheet, nude, nsfw, naked, pubic fur"},
+ "jobs": [
+  {"name": "t01_soccer", "seed": 101, "positive": "@cheese, masterpiece, best quality, score_9, score_8, score_7, anime coloring, fluffy, 1boy, solo, dynamic pose, expressive stance, 3/4 view, full body portrait, character design sheet, official art, looking at viewer, yellow eyes, curled tail, wearing soccer jersey, soccer shorts, soccer cleats, knee socks, solid white background, simple background, aesthetic lighting, soft shadows, safe"},
+  {"name": "t02_running", "seed": 102, "positive": "@cheese, masterpiece, best quality, score_9, score_8, score_7, anime coloring, fluffy, 1boy, solo, dynamic pose, expressive stance, 3/4 view, full body portrait, character design sheet, official art, looking at viewer, yellow eyes, curled tail, wearing sleeveless running tank top, running shorts, running shoes, headband, wristbands, solid white background, simple background, aesthetic lighting, soft shadows, safe"}
+ ]}
