@@ -62,6 +62,7 @@ Reference anatomy: **hands = 5 fingers with yellow paw pads and claws; feet = 4 
 Stages chain (hands then feet); `kind` is `hands`, `feet` (script's derived prompt) or `feet_strong` (refined prompt from the two-stage PNG workflows). Optional `restore_original` resets the boxed area to the pre-repaint image first. Boxes are `[x, y, w, h]` in source-image pixels - look at the image first to choose them.
 
 ### Repair lessons (hands/feet)
+- **NEVER review images with scripts** (no crops, montages, grids, auto-detection, colour sampling). Open each original file directly with Read and look. Scripts are only for generating/moving/merging images. (User's explicit, repeated instruction.)
 - **Check palm vs back first** (zoom in; brighten dark images). Forcing pads on the back of a hand grows brown blobs on the knuckles, and `hands_back` on a palm redraws the hand reversed. Wrong guesses cost a whole batch.
 - **Pad structure = feline/cheetah**: one large trilobed palm pad + one small separate oval pad per finger. Not a pile of balls. Suffix that works as a starting point:
   `positive_suffix`: `feline paw pads, cheetah paw pads, one large trilobed palm pad, four small separate oval toe beans, one pad per finger, light yellow paw pads, pale yellow, flat soft shading`
