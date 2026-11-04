@@ -7,5 +7,6 @@
 - 🧪 训练目标交互讲解页：[training_objectives.html](training_objectives.html)
 - 🧩 Anima 架构可视化：[anima_architecture.html](anima_architecture.html)
 - 📊 开源/开放权重模型发布时间线数据：[data/open_image_models_timeline.csv](data/open_image_models_timeline.csv)
+- 🚀 Colab 训练笔记本(Anima + LoRA,免费 T4):[colab/anima_lora_t4.ipynb](colab/anima_lora_t4.ipynb)
 
 调研截止：2026-11-02。2026 年条目以 Hugging Face 官方仓库元数据为准，商用前请核对各模型 LICENSE。
