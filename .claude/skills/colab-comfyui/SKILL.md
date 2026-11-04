@@ -68,7 +68,7 @@ Stages chain (hands then feet); `kind` is `hands`, `feet` (script's derived prom
   `negative_suffix`: `cluster of round balls, bubbly palm pad, multiple blobs, lumpy pad, many bumps, orange paw pads, brown paw pads, gray paw pads, dark pads`
 - denoise 0.4 barely changes structure; 0.5-0.55 is the useful range; 0.7 melts hands into glowing blobs.
 - Pad **shape** is what the user's reference image gets right (it is the target): one connected, slightly elongated palm pad plus one small separate oval pad per fingertip, hands paler than the arms, small pale claws. Colour is only roughly pale yellow - the user does not want a numeric/pixel standard, so do not chase brightness values and do not recolour pixels by hand; repaint with the model (more seeds / pad prompt weight) if a batch looks off.
-- Judge candidates at crop level (2x crops of the box, before/after). Thumbnails hide finger/toe counts - one "3 toes" flag turned out to be 4 toes.
+- Judge candidates **in context**: look at the whole figure (box marked) plus a 2x crop. Tone/brightness of pads is a relationship to the whole image's lighting (dark background vs white, hand vs arm vs pad) - never judge a pad cut out of the picture or against a number. Thumbnails hide finger/toe counts - one "3 toes" flag turned out to be 4 toes.
 - Odd dataset ids are mirrors of the even id before them: repair the even one, then mirror.
 
 ## 8. Status
