@@ -61,6 +61,16 @@ The LoRA draws paw pads stiff/ugly, so hands/feet are repainted with a *differen
 Reference anatomy: **hands = 5 fingers with yellow paw pads and claws; feet = 4 toes with claws, yellow pads/claws.**
 Stages chain (hands then feet); `kind` is `hands`, `feet` (script's derived prompt) or `feet_strong` (refined prompt from the two-stage PNG workflows). Optional `restore_original` resets the boxed area to the pre-repaint image first. Boxes are `[x, y, w, h]` in source-image pixels - look at the image first to choose them.
 
+### Repair lessons (hands/feet)
+- **Check palm vs back first** (zoom in; brighten dark images). Forcing pads on the back of a hand grows brown blobs on the knuckles, and `hands_back` on a palm redraws the hand reversed. Wrong guesses cost a whole batch.
+- **Pad structure = feline/cheetah**: one large trilobed palm pad + one small separate oval pad per finger. Not a pile of balls. Suffix that works as a starting point:
+  `positive_suffix`: `feline paw pads, cheetah paw pads, one large trilobed palm pad, four small separate oval toe beans, one pad per finger, light yellow paw pads, pale yellow, flat soft shading`
+  `negative_suffix`: `cluster of round balls, bubbly palm pad, multiple blobs, lumpy pad, many bumps, orange paw pads, brown paw pads, gray paw pads, dark pads`
+- denoise 0.4 barely changes structure; 0.5-0.55 is the useful range; 0.7 melts hands into glowing blobs.
+- Colour (orange/brown instead of pale yellow) is not fixed by prompts; if structure is fine, recolour only the brown pixels inside the box instead of repainting.
+- Judge candidates at crop level (2x crops of the box, before/after). Thumbnails hide finger/toe counts - one "3 toes" flag turned out to be 4 toes.
+- Odd dataset ids are mirrors of the even id before them: repair the even one, then mirror.
+
 ## 8. Status
 Verified on a real T4: login, session creation, Drive mount, ComfyUI install/start, custom nodes registered, SDXL box-repaint workflow end to end (217 s cold, converted PNG workflow).
 Not yet confirmed at the time of writing: Anima+cheesev1 generation output quality, `vm_repair.py` end to end (incl. `restore_original`).
