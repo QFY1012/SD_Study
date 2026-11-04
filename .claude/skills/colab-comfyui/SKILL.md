@@ -9,8 +9,9 @@ Runs everything on a Colab runtime that **you create and name yourself** (e.g. `
 
 ## 0. Ground rules
 - Only touch sessions you created. `colab sessions` may list the user's own runtimes (marked `[?]`) - never exec/stop those.
-- Stop your session when done: `colab stop -s <name>` (it burns compute units while alive, ~1.15/h on T4).
+- Stop your session when done: `colab stop -s <name>` (ask first if the user may still need it; the user said it must stay up while generating) (it burns compute units while alive, ~1.15/h on T4).
 - The OAuth token (`~/.config/colab-cli/token.json`) carries `cloud-platform` + `colaboratory` + `drive.file`. Tell the user to revoke at https://myaccount.google.com/permissions when finished.
+- **Get the user's approval before submitting ANY repaint** (including gacha/candidate batches): say which images, which regions, which parameters, and wait. Never queue repaint jobs on your own.
 - Do not write into the user's dataset folders. New outputs go to a new folder (e.g. `MyDrive/ComfyUI/output/<project>/`) and only after the user okayed the results.
 
 ## 1. Connect (once per container)
@@ -59,19 +60,23 @@ Dataset captions look like: `@cheese, anime coloring, fluffy, full body, standin
 ## 7. Repair hands/feet (`scripts/vm_repair.py`)
 The LoRA draws paw pads stiff/ugly, so hands/feet are repainted with a *different* model: SDXL `xaviernocturne_v3.safetensors` through `RemoteSEGSDetailer` (guide 512, max 1024, 15 steps, cfg 3, euler/simple, denoise 0.4, feather 30) - same settings and prompts as the user's `repair_regions.py`.
 Reference anatomy: **hands = 5 fingers with yellow paw pads and claws; feet = 4 toes with claws, yellow pads/claws.**
-Stages chain (hands then feet); `kind` is `hands`, `feet` (script's derived prompt) or `feet_strong` (refined prompt from the two-stage PNG workflows). Optional `restore_original` resets the boxed area to the pre-repaint image first. Boxes are `[x, y, w, h]` in source-image pixels - look at the image first to choose them.
+Stages chain (hands then feet); `kind` also has `hands_back` (back of hand / fist, no pads). Per-stage `params` override any detailer setting, notably `batch` (N candidates in ONE sampling pass, each with different noise; saved as `<name>_0000k_.png`, k=1..N; needs a single input image) - use it instead of queueing many seeds; `grid` = {seeds, denoises} expands into several jobs. `kind` is `hands`, `feet` (script's derived prompt) or `feet_strong` (refined prompt from the two-stage PNG workflows). Optional `restore_original` resets the boxed area to the pre-repaint image first. Boxes are `[x, y, w, h]` in source-image pixels - look at the image first to choose them.
 
 ### Repair lessons (hands/feet)
 - **NEVER review images with scripts** (no crops, montages, grids, auto-detection, colour sampling). Open each original file directly with Read and look. Scripts are only for generating/moving/merging images. (User's explicit, repeated instruction.)
-- **Check palm vs back first** (zoom in; brighten dark images). Forcing pads on the back of a hand grows brown blobs on the knuckles, and `hands_back` on a palm redraws the hand reversed. Wrong guesses cost a whole batch.
+- **Check palm vs back first** by looking at the original file directly (no scripted zoom/brighten). Forcing pads on the back of a hand grows brown blobs on the knuckles, and `hands_back` on a palm redraws the hand reversed. Wrong guesses cost a whole batch.
 - **Pad structure = feline/cheetah**: one large trilobed palm pad + one small separate oval pad per finger. Not a pile of balls. Suffix that works as a starting point:
   `positive_suffix`: `feline paw pads, cheetah paw pads, one large trilobed palm pad, four small separate oval toe beans, one pad per finger, light yellow paw pads, pale yellow, flat soft shading`
   `negative_suffix`: `cluster of round balls, bubbly palm pad, multiple blobs, lumpy pad, many bumps, orange paw pads, brown paw pads, gray paw pads, dark pads`
 - denoise 0.4 barely changes structure; 0.5-0.55 is the useful range; 0.7 melts hands into glowing blobs.
 - Reference look (user's own words): **hands and feet are blue-grey, the same colour family as the arms - do NOT whiten them**; the edge of a pad may be white. Pad **shape** is what the reference image gets right: one connected, slightly elongated palm pad plus one small separate oval pad per fingertip, small pale claws. Colour is only roughly pale yellow - the user does not want a numeric/pixel standard, so do not chase brightness values and do not recolour pixels by hand; repaint with the model (more seeds / pad prompt weight) if a batch looks off. Only repair **obvious** errors (the user's rule: no obvious error = do not touch); wrong claw count/placement on feet (one claw per toe, at the toe tip) is one of them.
-- Judge candidates **in context**: look at the whole figure (box marked) plus a 2x crop. Tone/brightness of pads is a relationship to the whole image's lighting (dark background vs white, hand vs arm vs pad) - never judge a pad cut out of the picture or against a number. Thumbnails hide finger/toe counts - one "3 toes" flag turned out to be 4 toes.
+- Judge candidates **in context**: open each candidate image file directly and look at the whole figure (never crops/montages made by scripts). Tone/brightness of pads is a relationship to the whole image's lighting (dark background vs white, hand vs arm vs pad) - never judge a pad cut out of the picture or against a number. Thumbnails hide finger/toe counts - one "3 toes" flag turned out to be 4 toes.
 - Odd dataset ids are mirrors of the even id before them: repair the even one, then mirror.
 
 ## 8. Status
-Verified on a real T4: login, session creation, Drive mount, ComfyUI install/start, custom nodes registered, SDXL box-repaint workflow end to end (217 s cold, converted PNG workflow).
-Not yet confirmed at the time of writing: Anima+cheesev1 generation output quality, `vm_repair.py` end to end (incl. `restore_original`).
+Verified on a real T4: login, session creation, Drive mount, ComfyUI install/start, custom nodes registered, SDXL box-repaint workflow end to end, Anima+cheesev1 txt2img (768x1344, 30 steps ~70 s warm), `vm_repair.py` with stages/grid/params/batch (batch=4 ~40 s per job).
+Only unit-tested (stub ComfyUI, no real run): `restore_original` / `SegsToCombinedMask`.
+Known weak spots: SDXL repaint often paints olive/brown pads on dark-blue hands; wrong claw count on feet is the most common obvious error in the repaired dataset; hand/foot crops at thumbnail scale hide claw counts (look at full-size original files).
+
+## 9. Cleanup checklist
+`colab stop -s <your session>`; delete `~/.config/colab-cli/token.json`; tell the user to revoke the Google Cloud SDK / Colab grants at https://myaccount.google.com/permissions; new Drive folders created by the work should be listed to the user.
