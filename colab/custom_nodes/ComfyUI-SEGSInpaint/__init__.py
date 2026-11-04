@@ -135,6 +135,8 @@ class RemoteSEGSDetailer:
             "positive": ("CONDITIONING",),
             "negative": ("CONDITIONING",),
         }, "optional": {
+            # candidates per sampling pass: the crop is batched N times (different noise each), output is an N-image batch
+            "batch": ("INT", {"default": 1, "min": 1, "max": 16}),
             # accepted for workflow compatibility, ignored (everything runs locally)
             "url": ("STRING", {"default": ""}),
             "token": ("STRING", {"default": ""}),
@@ -168,32 +170,35 @@ class RemoteSEGSDetailer:
 
     def detail(self, guide_size, guide_size_for, max_size, seed, steps, cfg, sampler_name, scheduler,
                denoise, feather, noise_mask, force_inpaint, cycle, noise_mask_feather, tiled_encode,
-               tiled_decode, model_name, loras, image, segs, vae, positive, negative, url="", token=""):
+               tiled_decode, model_name, loras, image, segs, vae, positive, negative, batch=1, url="", token=""):
         seg_list = segs["segs"]
         if not seg_list:
             return (image,)
         model = apply_loras(load_base_model(model_name), loras)
-        result = image.clone()
-        for b in range(result.shape[0]):
-            for i, seg in enumerate(seg_list):
-                rx1, ry1, rx2, ry2 = seg["crop_region"]
-                bx1, by1, bx2, by2 = seg["bbox"]
-                crop = result[b:b + 1, ry1:ry2, rx1:rx2, :]
-                ch, cw = crop.shape[1], crop.shape[2]
-                ref_w, ref_h = (bx2 - bx1, by2 - by1) if guide_size_for else (cw, ch)
-                new_w, new_h, upscale = target_size(ref_w, ref_h, cw, ch, guide_size, max_size)
-                if upscale <= 1.0 and not force_inpaint:
-                    print(f"[SEGSInpaint] seg {i}: already >= guide_size, skipped")
-                    continue
-                mask = seg["mask"].to(crop.device)
-                new_pix = self._inpaint_crop(crop, mask, new_w, new_h, model, vae, positive, negative,
-                                             seed, steps, cfg, sampler_name, scheduler, denoise,
-                                             noise_mask, noise_mask_feather, tiled_encode, tiled_decode,
-                                             cycle, upscale)
-                new_pix = F.interpolate(new_pix.permute(0, 3, 1, 2), size=(ch, cw), mode="bicubic",
-                                        align_corners=False).clamp(0, 1).permute(0, 2, 3, 1)
-                blend = gaussian_blur_mask(mask[None, None], feather)[0, 0][None, :, :, None]
-                result[b:b + 1, ry1:ry2, rx1:rx2, :] = crop * (1 - blend) + new_pix.to(crop.dtype) * blend
+        if batch > 1:
+            assert image.shape[0] == 1, "batch > 1 needs a single input image"
+            result = image.repeat(batch, 1, 1, 1).clone()
+        else:
+            result = image.clone()
+        for i, seg in enumerate(seg_list):
+            rx1, ry1, rx2, ry2 = seg["crop_region"]
+            bx1, by1, bx2, by2 = seg["bbox"]
+            crop = result[:, ry1:ry2, rx1:rx2, :]
+            ch, cw = crop.shape[1], crop.shape[2]
+            ref_w, ref_h = (bx2 - bx1, by2 - by1) if guide_size_for else (cw, ch)
+            new_w, new_h, upscale = target_size(ref_w, ref_h, cw, ch, guide_size, max_size)
+            if upscale <= 1.0 and not force_inpaint:
+                print(f"[SEGSInpaint] seg {i}: already >= guide_size, skipped")
+                continue
+            mask = seg["mask"].to(crop.device)
+            new_pix = self._inpaint_crop(crop, mask, new_w, new_h, model, vae, positive, negative,
+                                         seed, steps, cfg, sampler_name, scheduler, denoise,
+                                         noise_mask, noise_mask_feather, tiled_encode, tiled_decode,
+                                         cycle, upscale)
+            new_pix = F.interpolate(new_pix.permute(0, 3, 1, 2), size=(ch, cw), mode="bicubic",
+                                    align_corners=False).clamp(0, 1).permute(0, 2, 3, 1)
+            blend = gaussian_blur_mask(mask[None, None], feather)[0, 0][None, :, :, None]
+            result[:, ry1:ry2, rx1:rx2, :] = crop * (1 - blend) + new_pix.to(crop.dtype) * blend
         return (result,)
 
 

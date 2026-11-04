@@ -45,7 +45,7 @@ PRESETS = {
 DETAILER = dict(guide_size=512.0, guide_size_for=True, max_size=1024.0, steps=15, cfg=3.0,
                 sampler_name='euler', scheduler='simple', denoise=0.4, feather=30, noise_mask=True,
                 force_inpaint=True, cycle=1, noise_mask_feather=30, tiled_encode=False, tiled_decode=False,
-                loras='[]', url='', token='')
+                loras='[]', url='', token='', batch=1)
 
 
 def build(job, ckpt):
