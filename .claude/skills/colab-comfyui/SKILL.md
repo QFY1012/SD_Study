@@ -67,7 +67,7 @@ Stages chain (hands then feet); `kind` is `hands`, `feet` (script's derived prom
   `positive_suffix`: `feline paw pads, cheetah paw pads, one large trilobed palm pad, four small separate oval toe beans, one pad per finger, light yellow paw pads, pale yellow, flat soft shading`
   `negative_suffix`: `cluster of round balls, bubbly palm pad, multiple blobs, lumpy pad, many bumps, orange paw pads, brown paw pads, gray paw pads, dark pads`
 - denoise 0.4 barely changes structure; 0.5-0.55 is the useful range; 0.7 melts hands into glowing blobs.
-- Colour (orange/brown instead of pale yellow) is not fixed by prompts; if structure is fine, recolour only the brown pixels inside the box instead of repainting.
+- Pad colour/shape are fixed by the model repaint itself (user's decision: no hand-written pixel recolouring). Reference look: pale lavender/white hands (lighter than the arms), bright pale-yellow flat pads, one elongated lobed palm pad + one small oval pad per fingertip. Dark/brown pads measured value 0.5-0.8 vs 0.97 on good images, so if a batch still comes out dark, raise the pad prompt weight or retry with more seeds rather than recolouring.
 - Judge candidates at crop level (2x crops of the box, before/after). Thumbnails hide finger/toe counts - one "3 toes" flag turned out to be 4 toes.
 - Odd dataset ids are mirrors of the even id before them: repair the even one, then mirror.
 
