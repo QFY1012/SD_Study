@@ -1,6 +1,6 @@
 ---
 name: colab
-description: Start and use a Google Colab GPU runtime from the terminal with the `colab` CLI (google-colab-cli) - install, log in, create a session, mount Drive, run code, upload/download files, stop. Use when the user wants something run on their Colab from here, or a Colab runtime started/stopped.
+description: Start and use a Google Colab GPU runtime from the terminal with the `colab` CLI (google-colab-cli) - install, log in, create a session, mount Drive, run code, upload/download files, stop - and generate images on it (ComfyUI + Anima + LoRA, models read from the user's Drive). Use when the user wants something run or images generated on their Colab from here, or a Colab runtime started/stopped.
 ---
 
 # colab - start and use Colab from the terminal
@@ -53,5 +53,22 @@ colab log -s work -o history.ipynb        # replayable log
 - `colab upload` of a ~75 MB file takes under a minute; much larger files are better put on Drive.
 - Never type or pipe the user's codes/tokens anywhere except the login prompt they were issued for.
 
-## 7. Cleanup checklist
+## 7. Generate images on the runtime (Anima + LoRA via ComfyUI)
+Scripts are in `scripts/generate/`. Needs a GPU session with Drive mounted. Models are read from the user's Drive (`MyDrive/ComfyUI/models/`): `diffusion_models/waiANIMA_v10Base10.safetensors`, `text_encoders/waiANIMA_v10Base10_txt.safetensors`, `vae/qwenImage_qwenImageVAE.safetensors`, `loras/cheesev1.safetensors`. Other models/LoRA: edit `DEFAULTS` at the top of `vm_generate.py` or override per job.
+```bash
+G=.claude/skills/colab/scripts/generate
+colab exec -s work -f $G/vm_install.py      # clone ComfyUI, pip install in the background
+colab exec -s work -f $G/vm_status.py       # repeat until it prints "install: done"
+colab exec -s work -f $G/vm_start.py        # start ComfyUI (~30 s the first time)
+colab upload -s work my_jobs.json /content/gen_jobs.json     # start from gen_jobs.example.json
+colab exec -s work -f $G/vm_generate.py     # queue the jobs
+colab exec -s work -f $G/vm_status.py       # progress / result (first job loads models: several minutes; then ~70 s per 768x1344 image)
+colab ls -s work /content/test_out/<prefix>
+colab download -s work /content/test_out/<prefix>/<name>_00001_.png ./out.png
+```
+Job file: `{"defaults": {...}, "jobs": [{"name": "t01", "positive": "...", "seed": 101}]}`. Overridable keys: `negative`, `seed`, `width`/`height` (768x1344), `steps` (30), `cfg` (4.5), `sampler` (er_sde), `scheduler` (simple), `unet`, `clip`, `vae`, `lora` (empty string = none), `lora_strength`, `prefix` (output sub-folder).
+Prompt notes: lowercase tags with spaces, quality prefix `masterpiece, best quality, score_9, score_8, score_7`, artist names prefixed with `@`. The cheesev1 LoRA's baseline is the nude tag, so for clothed images put `nude, nsfw` in the negative prompt.
+Save results to a NEW Drive folder (never into the user's dataset folders) and only when asked.
+
+## 8. Cleanup checklist
 `colab stop -s <your session>` -> `colab sessions` shows none of yours -> delete `~/.config/colab-cli/token.json` -> remind the user to revoke the Google grant.
