@@ -5,6 +5,7 @@ supervised-inpaint workflows:
 
   * SAM3BoxesToSEGS     - drawn boxes -> SEGS (the box itself is the mask, no SAM needed)
   * RemoteSEGSDetailer  - per-SEGS crop -> upscale to guide_size -> masked img2img -> paste back
+  * SegsToCombinedMask  - all SEGS masks merged into one full-image MASK (same name as Impact Pack's)
 
 Class names and input names are kept identical to the original workflows so the API-format
 workflow embedded in the generated PNGs can be loaded and run unchanged. `url` and `token`
@@ -196,8 +197,28 @@ class RemoteSEGSDetailer:
         return (result,)
 
 
-NODE_CLASS_MAPPINGS = {"SAM3BoxesToSEGS": SAM3BoxesToSEGS, "RemoteSEGSDetailer": RemoteSEGSDetailer}
+class SegsToCombinedMask:
+    @classmethod
+    def INPUT_TYPES(cls):
+        return {"required": {"segs": ("SEGS",)}}
+
+    RETURN_TYPES = ("MASK",)
+    FUNCTION = "combine"
+    CATEGORY = "image/detailer"
+
+    def combine(self, segs):
+        h, w = segs["shape"]
+        out = torch.zeros((1, h, w), dtype=torch.float32)
+        for seg in segs["segs"]:
+            x1, y1, x2, y2 = seg["crop_region"]
+            out[0, y1:y2, x1:x2] = torch.maximum(out[0, y1:y2, x1:x2], seg["mask"].to(out.dtype))
+        return (out,)
+
+
+NODE_CLASS_MAPPINGS = {"SAM3BoxesToSEGS": SAM3BoxesToSEGS, "RemoteSEGSDetailer": RemoteSEGSDetailer,
+                       "SegsToCombinedMask": SegsToCombinedMask}
 NODE_DISPLAY_NAME_MAPPINGS = {
     "SAM3BoxesToSEGS": "Boxes → SEGS (no SAM)",
     "RemoteSEGSDetailer": "SEGS Detailer (local, drop-in)",
+    "SegsToCombinedMask": "SEGS to Combined Mask",
 }
