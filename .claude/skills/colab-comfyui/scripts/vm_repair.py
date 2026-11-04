@@ -10,7 +10,7 @@ Reads /content/repair_jobs.json:
     "source": "/content/test_out/cheese_sports/t01_soccer_00001_.png",   # path on the VM
     "restore_original": "/content/....png",           # optional: reset boxed areas to this image first
     "stages": [                                       # chained: each stage repaints the previous result
-       {"kind": "hands" | "feet" | "feet_strong", "boxes": [[x, y, w, h], ...]},
+       {"kind": "hands" | "hands_back" | "feet" | "feet_strong", "boxes": [[x, y, w, h], ...]},
        {"kind": "feet",  "boxes": [[x, y, w, h], ...], "positive_suffix": "...", "negative_suffix": "...",
         "positive_text": "...", "denoise": 0.4, "seed": 123}
  ]}]}
@@ -30,6 +30,10 @@ HANDS_POS = 'masterpiece, best quality, absurdres, very aesthetic, crotch tuft, 
 BASE_NEG = 'blurry, malformed anatomy, extra digits, missing fingers, extra limbs, distorted face, deformed eyes, nsfw'
 PRESETS = {
     'hands': dict(positive=HANDS_POS, negative=BASE_NEG),
+    # Back of the hand / clenched fist: no pads should be visible (forcing pads there gives brown blobs on the knuckles).
+    'hands_back': dict(
+        positive=HANDS_POS.replace(', light yellow paw pads', '').replace(', paw', ', back of hand, clawed fingers'),
+        negative=BASE_NEG + ', paw pads, orange paw pads, brown paw pads'),
     'feet': dict(
         positive=HANDS_POS.replace('(five fingers:1.1)', '(four toes:1.1)').replace(', light yellow paw pads', '').replace(
             ', paw', ', digitigrade feet, clawed toes, original foot orientation'),
