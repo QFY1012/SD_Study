@@ -80,17 +80,43 @@ def build(job, ckpt):
                  image=det_in, segs=[f'segs{i}', 0], vae=['ckpt', 2], positive=[f'pos{i}', 0], negative=[f'neg{i}', 0])
         if st.get('denoise') is not None:
             d['denoise'] = st['denoise']
+        # any other detailer setting can be overridden per stage, e.g. guide_size, max_size, steps, cfg,
+        # sampler_name, scheduler, feather, noise_mask_feather, cycle, force_inpaint
+        for k, v in st.get('params', {}).items():
+            assert k in DETAILER, 'unknown detailer param: ' + k
+            d[k] = v
         g[f'det{i}'] = {'class_type': 'RemoteSEGSDetailer', 'inputs': d}
         prev = [f'det{i}', 0]
     g['save'] = {'class_type': 'SaveImage', 'inputs': {'images': prev, 'filename_prefix': f'repair/{name}'}}
     return g
 
 
+def expand(job):
+    """job['grid'] = {"seeds": [..], "denoises": [..]} -> one job per combination (the "gacha" draw).
+    Every stage gets seed+stage_index and the grid denoise unless the stage sets its own."""
+    grid = job.get('grid')
+    if not grid:
+        return [job]
+    out = []
+    for seed in grid.get('seeds', [None]):
+        for dn in grid.get('denoises', [None]):
+            j = json.loads(json.dumps(job)); j.pop('grid')
+            tag = ''
+            if seed is not None: tag += f'_s{seed}'
+            if dn is not None: tag += f'_d{int(round(dn * 100)):02d}'
+            j['name'] = job['name'] + tag
+            for i, st in enumerate(j['stages']):
+                if seed is not None and 'seed' not in st: st['seed'] = seed + i
+                if dn is not None and 'denoise' not in st: st['denoise'] = dn
+            out.append(j)
+    return out
+
+
 spec = json.load(open('/content/repair_jobs.json'))
 ckpt = spec.get('ckpt', CKPT_DEFAULT)
 os.makedirs(INPUT_DIR, exist_ok=True)
 ids = []
-for job in spec['jobs']:
+for job in [j for base in spec['jobs'] for j in expand(base)]:
     graph = build(job, ckpt)
     req = urllib.request.Request('http://127.0.0.1:8188/prompt', data=json.dumps({'prompt': graph}).encode(),
                                  headers={'Content-Type': 'application/json'})
