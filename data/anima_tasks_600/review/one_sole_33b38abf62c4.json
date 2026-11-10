@@ -1,0 +1,198 @@
+{
+  "approved_ids": [
+    0,
+    1,
+    2,
+    3,
+    5,
+    6,
+    8,
+    10,
+    12,
+    13,
+    15,
+    16,
+    17,
+    18,
+    19,
+    22,
+    23,
+    24,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    46,
+    47,
+    48,
+    49,
+    50,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    101,
+    103,
+    105,
+    106,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    116,
+    117,
+    118
+  ],
+  "rejected": [
+    {
+      "index": 4,
+      "reason": "Foot pressed against counter edge hides the sole from the viewer, contradicting the visibility requirement."
+    },
+    {
+      "index": 7,
+      "reason": "Task requires hand_count with two hands visible while one hand holds the foot, and the raised sole on thigh is plausible but hand_count target conflicts with gripping pose."
+    },
+    {
+      "index": 9,
+      "reason": "Grabbing ankle with one hand and pulling foot up while requiring two visible hands is inconsistent with the pose."
+    },
+    {
+      "index": 11,
+      "reason": "Pressing sole flat against sand mound hides the sole and pads from the camera, contradicting visibility."
+    },
+    {
+      "index": 14,
+      "reason": "Gripping raised ankle behind with both hands while requiring sole visible behind is contradictory; hands would occlude the sole."
+    },
+    {
+      "index": 20,
+      "reason": "Cupping the foot with both hands would occlude the sole, contradicting full sole visibility."
+    },
+    {
+      "index": 21,
+      "reason": "Pressing sole against spinning clay hides the sole and pads, contradicting visibility requirement."
+    },
+    {
+      "index": 25,
+      "reason": "Hugging knee with both hands while requiring tilted sole fully visible is inconsistent; arms occlude the foot."
+    },
+    {
+      "index": 35,
+      "reason": "Foot pressed flat against wall shows sole toward wall, not toward camera; visibility requirement contradicts pose."
+    },
+    {
+      "index": 45,
+      "reason": "Low lunge with both palms on floor and back sole turned up behind leg is not clearly visible; back foot sole faces away from a rear camera."
+    },
+    {
+      "index": 51,
+      "reason": "Pressing both feet against chair leg with right sole angled out while tying ribbon with both hands is inconsistent; hands occlude and sole faces leg."
+    },
+    {
+      "index": 59,
+      "reason": "Pressing right sole flat toward viewer while sitting against wall with feet lifted is physically implausible without support."
+    },
+    {
+      "index": 93,
+      "reason": "Foot pressed flat against wall shows sole toward wall, not camera; visibility requirement contradicts pose."
+    },
+    {
+      "index": 100,
+      "reason": "Requires both hands with five fingers handling lace while holding foot; hand_count and finger_shape with sole unobstructed is inconsistent."
+    },
+    {
+      "index": 102,
+      "reason": "Tai chi with both palms visible and raised heel sole angled to viewer is plausible but sole visibility while grounded stance is marginal; rejected for sole not clearly presented."
+    },
+    {
+      "index": 104,
+      "reason": "Handstand with both palms planted on ground and one sole pressed on wall toward camera is physically inconsistent; wall-pressed sole faces wall."
+    },
+    {
+      "index": 107,
+      "reason": "Figure-four stretch with both hands pulling thigh and lifted crossed sole fully visible is inconsistent; hands occlude and pose hides sole."
+    },
+    {
+      "index": 115,
+      "reason": "Extended sole toward camera while both hands grip armrests with five fingers visible is plausible but hand_count with finger_shape and sole alignment is inconsistent."
+    },
+    {
+      "index": 119,
+      "reason": "Pressing sole against glass toward exterior camera shows sole through glass but pads face glass, not camera; visibility contradicts pose."
+    },
+    {
+      "index": 120,
+      "reason": "Propped foot on higher rung with sole angled to camera while both hands hold brush and can is inconsistent; sole on rung faces rung."
+    }
+  ],
+  "model": "deepseek-flash",
+  "usage": {
+    "prompt_tokens": 15797,
+    "completion_tokens": 834,
+    "total_tokens": 16631,
+    "prompt_tokens_details": {
+      "cached_tokens": 11648
+    },
+    "prompt_cache_hit_tokens": 11648,
+    "prompt_cache_miss_tokens": 4149
+  }
+}

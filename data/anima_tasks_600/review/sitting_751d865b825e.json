@@ -1,0 +1,138 @@
+{
+  "approved_ids": [
+    0,
+    2,
+    3,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    15,
+    16,
+    17,
+    19,
+    20,
+    21,
+    23,
+    24,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    89,
+    90
+  ],
+  "rejected": [
+    {
+      "index": 1,
+      "reason": "Planted soles on pavement cannot face camera while feet rest on ground; both soles visible is impossible."
+    },
+    {
+      "index": 4,
+      "reason": "Palm pressed flat on knee cannot show its pads; visibility requirement contradicts pose."
+    },
+    {
+      "index": 14,
+      "reason": "Palms pressing against soles occlude the pads; both palms and both soles cannot be clearly visible."
+    },
+    {
+      "index": 18,
+      "reason": "Standing with both soles facing camera is impossible without support/transparent surface."
+    },
+    {
+      "index": 22,
+      "reason": "Feet flat on floor with soles toward box cannot show both soles to camera."
+    },
+    {
+      "index": 25,
+      "reason": "Palm wrapped around shin cannot show pads; requirement contradicts pose."
+    },
+    {
+      "index": 37,
+      "reason": "Palm pressed flat on glass cannot show its pads; requirement contradicts pose."
+    },
+    {
+      "index": 48,
+      "reason": "Dangling soles facing outward from a tree branch cannot both face camera clearly."
+    },
+    {
+      "index": 55,
+      "reason": "Feet dangling in water cannot show yellow pads under the water surface."
+    },
+    {
+      "index": 88,
+      "reason": "Booted foot covers foot pads; sole with yellow pads cannot be visible."
+    }
+  ],
+  "model": "deepseek-flash",
+  "usage": {
+    "prompt_tokens": 11958,
+    "completion_tokens": 402,
+    "total_tokens": 12360,
+    "prompt_tokens_details": {
+      "cached_tokens": 128
+    },
+    "prompt_cache_hit_tokens": 128,
+    "prompt_cache_miss_tokens": 11830
+  }
+}

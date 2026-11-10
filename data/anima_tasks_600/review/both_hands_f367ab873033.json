@@ -1,0 +1,423 @@
+{
+  "approved_ids": [
+    0,
+    2,
+    3,
+    5,
+    10,
+    13,
+    17,
+    22,
+    30,
+    34,
+    39,
+    44,
+    46,
+    51,
+    58,
+    64,
+    76,
+    91,
+    93,
+    101,
+    102,
+    103,
+    106,
+    112,
+    113,
+    117
+  ],
+  "rejected": [
+    {
+      "index": 1,
+      "reason": "Palms pressed flat on a book face downward, contradicting the requirement that palms face upward toward camera."
+    },
+    {
+      "index": 4,
+      "reason": "Palms pressed together edge-on cannot show all fingers of both hands countable above and below the contact line."
+    },
+    {
+      "index": 6,
+      "reason": "Palms pressed flat on sand face down; pads cannot be visible from above as required."
+    },
+    {
+      "index": 7,
+      "reason": "Wiping palm faces the board and hip palm is against the body; both palms cannot be fully visible with all fingers distinct."
+    },
+    {
+      "index": 8,
+      "reason": "Fingers on fretboard and palm cupping neck are occluded by the guitar; both hands cannot be fully countable."
+    },
+    {
+      "index": 9,
+      "reason": "Palms pressed together in prayer hide the inner fingers along the seam; all fingers cannot be separately visible."
+    },
+    {
+      "index": 11,
+      "reason": "Palms flat on sill with fingers pointing toward camera are foreshortened and pads hidden; full separation not visible."
+    },
+    {
+      "index": 12,
+      "reason": "Palms under a book stack face down and are occluded by the books; pads cannot face camera as required."
+    },
+    {
+      "index": 14,
+      "reason": "Palms pressed into dough face down; pads and finger separation cannot be visible from above."
+    },
+    {
+      "index": 15,
+      "reason": "Hands behind the head are largely occluded by fur; palms cannot be turned outward enough to show all fingers clearly."
+    },
+    {
+      "index": 16,
+      "reason": "Palms flat on clay face down, contradicting the requirement that palms face up toward the overhead camera."
+    },
+    {
+      "index": 18,
+      "reason": "Hands wrapped around chains cannot simultaneously show palms and all fingers facing camera."
+    },
+    {
+      "index": 19,
+      "reason": "Palms flat over a map face down; pads cannot face up toward camera as required."
+    },
+    {
+      "index": 20,
+      "reason": "Palms flat on tub rim face down; pads cannot face camera, and steam may obscure."
+    },
+    {
+      "index": 21,
+      "reason": "Palms cupping a bag are partly occluded by the paper; all fingers cannot be clear of the fold."
+    },
+    {
+      "index": 23,
+      "reason": "Palms flat on keys face down; pads cannot face camera as required."
+    },
+    {
+      "index": 24,
+      "reason": "Chin-resting palm is against the face and phone cradled; palm cannot be turned outward with fingers spread as required."
+    },
+    {
+      "index": 25,
+      "reason": "Palms draped over fruit curve downward; pads cannot face the overhead camera with fingers fully separated."
+    },
+    {
+      "index": 26,
+      "reason": "Palms flat on knees face down; pads cannot face outward to camera as required."
+    },
+    {
+      "index": 27,
+      "reason": "Palms sunk in snow face down; pads pressed against surface cannot be visible from above."
+    },
+    {
+      "index": 28,
+      "reason": "Palms wrap opposite sides of a spinning vessel; pads and all fingers cannot be visible against the clay."
+    },
+    {
+      "index": 29,
+      "reason": "Palms pressed on a pillow face down; pads cannot face camera as required."
+    },
+    {
+      "index": 31,
+      "reason": "Palms planted flat on a wall face down; pads are not visible, contradicting the visibility requirement."
+    },
+    {
+      "index": 32,
+      "reason": "Cupped hands underwater with a crab; all ten fingers cannot be guaranteed unobstructed by the crab and water."
+    },
+    {
+      "index": 33,
+      "reason": "Hands gripping a branch wrap around it; palms and all five fingers cannot be visible from below."
+    },
+    {
+      "index": 35,
+      "reason": "Palm pressed against cheek is against the face; all fingers cannot be fully distinct and visible."
+    },
+    {
+      "index": 36,
+      "reason": "Crawling palms are flat on the ground ahead, facing down; pads not visible as required."
+    },
+    {
+      "index": 37,
+      "reason": "Palms curved around a spinning bowl with wet clay; all ten fingers cannot be clearly visible."
+    },
+    {
+      "index": 38,
+      "reason": "Palms flat on grass face down; pads not visible despite foreground prominence."
+    },
+    {
+      "index": 40,
+      "reason": "Palms pressed against glass from the far side face away from the viewer; pads not visible."
+    },
+    {
+      "index": 41,
+      "reason": "Hands gripping chains wrap around links; palms and all fingers cannot be visible."
+    },
+    {
+      "index": 42,
+      "reason": "Palms resting on a railing face down; pads not visible against the lights."
+    },
+    {
+      "index": 43,
+      "reason": "Palms pressed into soil face down; pads not visible around the stem."
+    },
+    {
+      "index": 45,
+      "reason": "Palms pressed flat against climbing holds face the wall; pads not visible to camera."
+    },
+    {
+      "index": 47,
+      "reason": "Interlaced fingers turned palm-out hide the inner digits; all ten fingers cannot be visible."
+    },
+    {
+      "index": 48,
+      "reason": "Hands cupping a stone have fingers on its sides; palms and all fingers cannot be clearly visible."
+    },
+    {
+      "index": 49,
+      "reason": "Hands hooked over a bar face away; palms not visible as required."
+    },
+    {
+      "index": 50,
+      "reason": "Palms flat on a map face down, contradicting the requirement that palms face up toward camera."
+    },
+    {
+      "index": 52,
+      "reason": "Palms facing each other mid-clap hide inner surfaces; all fingers of both hands cannot be visible."
+    },
+    {
+      "index": 53,
+      "reason": "Palms pushing branches apart are partly occluded by leaves; all fingers cannot be clearly visible."
+    },
+    {
+      "index": 54,
+      "reason": "Propping palm under the chin is against the face; all fingers cannot be fully visible."
+    },
+    {
+      "index": 55,
+      "reason": "Raised palms face the drum, away from camera; pads not visible as required."
+    },
+    {
+      "index": 56,
+      "reason": "Palms pressed flat on facing rock walls face sideways; pads not visible to a frontal camera."
+    },
+    {
+      "index": 57,
+      "reason": "Palm cupping a shell and palm over an ear are occluded; all fingers cannot be fully visible."
+    },
+    {
+      "index": 59,
+      "reason": "Hands gripping a paddle shaft wrap around it; palms and all five fingers cannot be visible."
+    },
+    {
+      "index": 60,
+      "reason": "Palms flat on bark face the tree; pads not visible to camera."
+    },
+    {
+      "index": 61,
+      "reason": "Hands gripping shell edges have fingers behind the shell; not all fingers visible."
+    },
+    {
+      "index": 62,
+      "reason": "Palms curved around clay with thumbs inward; all ten fingers cannot be clearly visible around the lump."
+    },
+    {
+      "index": 63,
+      "reason": "Fingers curling over a rung hide the palms; not all fingers clearly visible."
+    },
+    {
+      "index": 65,
+      "reason": "Spinning hoop on a palm may cover supporting fingers; both open palms not guaranteed fully visible."
+    },
+    {
+      "index": 66,
+      "reason": "Hands wrapped over a branch hide palms; fingers on top edge only, not all visible."
+    },
+    {
+      "index": 67,
+      "reason": "Palms pressed against glass from the far side face away; pads not visible to the viewer."
+    },
+    {
+      "index": 68,
+      "reason": "Cupped hands around a bird hide inner fingers; no fingers hidden is impossible."
+    },
+    {
+      "index": 69,
+      "reason": "Hands steadying lantern and hooking wire are partly occluded by the lantern; both hands not fully visible."
+    },
+    {
+      "index": 70,
+      "reason": "Hands gripping map corners have fingers behind the parchment; not fully visible."
+    },
+    {
+      "index": 71,
+      "reason": "Fingers gripping spokes wrap around them; all fingers cannot be visible."
+    },
+    {
+      "index": 72,
+      "reason": "Palms flat on a wall behind face the wall; pads not visible to camera."
+    },
+    {
+      "index": 73,
+      "reason": "Mirror-holding palm and pointing hand are partly occluded by the mirror; not all fingers visible."
+    },
+    {
+      "index": 74,
+      "reason": "Hands cradling a rod handle wrap around it; all fingers cannot be visible."
+    },
+    {
+      "index": 75,
+      "reason": "Hands around a lantern base are occluded by the lantern; fingers not clearly visible."
+    },
+    {
+      "index": 77,
+      "reason": "Palms flat on a drum face down; pads not visible as required."
+    },
+    {
+      "index": 78,
+      "reason": "Hands holding book edges have fingers behind pages; not fully visible."
+    },
+    {
+      "index": 79,
+      "reason": "Hands in a basket around apples are occluded by fruit; fingers not all visible."
+    },
+    {
+      "index": 80,
+      "reason": "Needle-holding palm and thread-pinching fingers are small and partly occluded; both hands not clearly visible."
+    },
+    {
+      "index": 81,
+      "reason": "Hands gripping ropes wrap around them; palms and all fingers cannot be visible."
+    },
+    {
+      "index": 82,
+      "reason": "Hands pushing grass aside are partly occluded by blades; palms and fingers not fully visible."
+    },
+    {
+      "index": 83,
+      "reason": "Bowl-holding palm and spoon-holding fingers are partly occluded by bowl and steam; not clearly visible."
+    },
+    {
+      "index": 84,
+      "reason": "Palms flat on mirror glass face away from the real viewer; pads not visible."
+    },
+    {
+      "index": 85,
+      "reason": "Chin-supporting palm is against the face; not fully visible."
+    },
+    {
+      "index": 86,
+      "reason": "Hands gripping a rope wrap around it; fingers over top only, palms not visible."
+    },
+    {
+      "index": 87,
+      "reason": "Hands cradling a rabbit are occluded by the animal; all fingers not visible."
+    },
+    {
+      "index": 88,
+      "reason": "Dangling hands over a rail with loosely curled fingers; palms not fully open and visible as required."
+    },
+    {
+      "index": 89,
+      "reason": "Supporting palm under a stone stack and steadying fingertips are occluded by stones; not clearly visible."
+    },
+    {
+      "index": 90,
+      "reason": "Palms flat on a bench face down; pads not visible, and bowls may occlude."
+    },
+    {
+      "index": 92,
+      "reason": "Ceiling palm faces up and away; pads not visible to camera as required."
+    },
+    {
+      "index": 94,
+      "reason": "Palms on water face down; pads not visible from above, and glare may obscure."
+    },
+    {
+      "index": 95,
+      "reason": "Hands gripping a roller handle wrap around it; all fingers not visible from the side."
+    },
+    {
+      "index": 96,
+      "reason": "Hands under a chassis holding a wrench are occluded by the tool and shadow; fingers not distinct."
+    },
+    {
+      "index": 97,
+      "reason": "Cupped hands around a crab hide inner fingers; all fingers not distinct."
+    },
+    {
+      "index": 98,
+      "reason": "Palms face away from camera while gripping a bar; pads not visible."
+    },
+    {
+      "index": 99,
+      "reason": "Palms flat in clay face down; pads not visible from above."
+    },
+    {
+      "index": 100,
+      "reason": "Support palm flat on board faces the board; pads not visible to camera."
+    },
+    {
+      "index": 104,
+      "reason": "Palms flat on tiles behind face down; pads not visible from above."
+    },
+    {
+      "index": 105,
+      "reason": "Hands curled over a snow wall hide palms; only fingers partly visible, not full palms."
+    },
+    {
+      "index": 107,
+      "reason": "Hands on a can overhead are occluded by the can; all fingers not distinct."
+    },
+    {
+      "index": 108,
+      "reason": "Hands framing a tiny needle are partly occluded; remaining fingers not all clearly spread and visible."
+    },
+    {
+      "index": 109,
+      "reason": "Palms under a book face down and are occluded by the book; not visible from front."
+    },
+    {
+      "index": 110,
+      "reason": "Palms pressed into rushing water face down; pads not visible and spray may obscure."
+    },
+    {
+      "index": 111,
+      "reason": "Palms flat on pavement face down; pads not visible from behind."
+    },
+    {
+      "index": 114,
+      "reason": "Palms pressing a ceiling face up and away; pads not visible from below."
+    },
+    {
+      "index": 115,
+      "reason": "Hands peeling an orange are occluded by the fruit; all fingers not clearly visible."
+    },
+    {
+      "index": 116,
+      "reason": "Hands gripping a railing wrap around it; palms not visible from the side."
+    },
+    {
+      "index": 118,
+      "reason": "Hands curved around spinning clay are partly occluded; all fingers not distinct."
+    },
+    {
+      "index": 119,
+      "reason": "Palms flat under a pole face down; pads not visible to a frontal camera."
+    },
+    {
+      "index": 120,
+      "reason": "Palms patting sandcastle walls face the castle; pads not visible to camera."
+    }
+  ],
+  "model": "deepseek-flash",
+  "usage": {
+    "prompt_tokens": 15153,
+    "completion_tokens": 2483,
+    "total_tokens": 17636,
+    "prompt_tokens_details": {
+      "cached_tokens": 11264
+    },
+    "prompt_cache_hit_tokens": 11264,
+    "prompt_cache_miss_tokens": 3889
+  }
+}

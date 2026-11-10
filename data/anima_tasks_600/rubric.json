@@ -1,0 +1,25 @@
+{
+  "version": "0.1-uncalibrated",
+  "status": "Proposed rubric; requires comparison against human labels before RL use.",
+  "input": ["generated image", "task", "character reference image"],
+  "evidence_required": true,
+  "items": {
+    "identity": {"weight": 0.25, "criteria": "Blue tiger character; blond hair; yellow eyes; blue stripes; pink abdominal star where visible. Compare reference, do not punish naturally occluded markings."},
+    "cel_style": {"weight": 0.1, "criteria": "Clean lineart, flat color regions, sharp cel shadows; avoid penalizing a pose solely for its viewpoint."},
+    "hand_count": {"weight": 0.2, "criteria": "Count all five fingers on each hand required visible by the task. Count thumb explicitly. Report left/right or image coordinates and count independently. Overlap/occlusion must be unassessable, never presumed correct."},
+    "finger_shape": {"weight": 0.1, "criteria": "Long slender fingers with separate coherent contours; natural bending is allowed. Fused digits or disconnected digits fail."},
+    "foot_count": {"weight": 0.2, "criteria": "Count four toes on each sole required visible by the task. State each count and distinguish claws from toe boundaries. Occluded toes are unassessable."},
+    "yellow_pads": {"weight": 0.1, "criteria": "Visible palm and/or sole pads are yellow/gold, including digital pads; shading may change brightness. Do not invent pads on dorsal surfaces."},
+    "human_pose": {"weight": 0.05, "criteria": "Natural human-like leg structure and plantigrade stance when grounded. Sitting, kneeling and reclining may bend knees naturally; do not require every task to stand upright."}
+  },
+  "visibility_gate": "Assess each required appendage separately. Missing/obscured required appendages reduce task-compliance/visibility score; hidden anatomy is not assigned a correct count. Non-required hidden appendages do not reduce anatomy score.",
+  "scoring": "For active task.scoring_targets, score assessable items 0..1 with evidence; normalize their fixed weights across assessable active items. If a required anatomy target has no assessable appendage, its effective score is 0 for the task reward while the count judgment remains unassessable. Multiply by required-visibility compliance 0..1. Never reward identity_control tasks for unrequested pad/count targets.",
+  "output_schema_example": {
+    "task_id": "cheese_rl_0001",
+    "appendages": [{"type": "hand", "location": "image-left", "visible": true, "count": 5, "confidence": 0.9, "evidence": "five separated digit contours including thumb"}],
+    "scores": {"identity": 0.9, "cel_style": 0.9, "hand_count": 1.0, "finger_shape": 0.8, "yellow_pads": 1.0},
+    "required_visibility_compliance": 1.0,
+    "reward": 0.91
+  },
+  "calibration": "Have the user label at least 50 baseline images including occlusion, fused digits, wrong colors and correct anatomy. Measure count accuracy, false-positive correctness and human preference agreement. Do not treat VLM confidence as calibrated probability. Hold out eval prompts from all reward/adapter tuning."
+}

@@ -1,0 +1,579 @@
+{
+  "tasks": [
+    {
+      "instruction": "An anthropomorphic blue tiger sits sideways on a wooden stool, leaning back against a wall while pulling a thick knitted sock over one raised foot, sole turned toward the viewer as toes flex.",
+      "action_family": "dressing",
+      "camera": "Medium three-quarter view, slightly low angle",
+      "targets": [
+        "identity",
+        "cel_style",
+        "foot_count",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 1,
+      "visibility_requirement": "The raised foot and its yellow-padded sole must be fully unobstructed; both hands grip the sock clearly.",
+      "intent_zh": "蓝色虎人坐凳侧身穿袜，抬起脚掌朝向镜头。",
+      "category": "sitting",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "The tiger sits cross-legged on a low cushion, cradling a wide ceramic bowl in its lap and picking out a round fruit with one hand, palm cupped and fingers spread.",
+      "action_family": "sorting",
+      "camera": "High-angle close shot over the lap",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "The cupped palm with yellow pad and all five slender fingers must be clear of the fruit and bowl rim.",
+      "intent_zh": "盘腿坐着挑水果，摊开手掌露出掌垫。",
+      "category": "sitting",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "Seated on a tall bar stool, the tiger balances a book on one knee and reaches up to change a hanging light bulb, one hand stretched high, the other steadying the stool edge.",
+      "action_family": "reaching",
+      "camera": "Wide low-angle shot from behind the stool",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both hands must be clearly separated from the bulb and stool; no overlapping silhouette.",
+      "intent_zh": "坐高脚凳上换灯泡，一手高举。",
+      "category": "sitting",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "The tiger sits on a stone step with legs stretched forward, pressing both bare soles against a large rubber exercise ball, toes splayed flat on its surface.",
+      "action_family": "pressing",
+      "camera": "Frontal low shot centered on the feet and ball",
+      "targets": [
+        "identity",
+        "cel_style",
+        "foot_count",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 0,
+      "visible_soles": 2,
+      "visibility_requirement": "Both soles with yellow pads and all four toes per foot must face the camera unobstructed.",
+      "intent_zh": "坐台阶上双脚踩健身球，脚掌清晰朝前。",
+      "category": "sitting",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "Crouched-sitting on the floor, the tiger feeds a strip of paper into a small shredder beside it, one paw flat on the machine top and the other pinching the paper.",
+      "action_family": "feeding_machine",
+      "camera": "Side close-up at floor level",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "yellow_pads"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "The pinching hand's palm and five fingers must be visible above the shredder slot.",
+      "intent_zh": "蹲坐地板往碎纸机送纸，手掌可见。",
+      "category": "sitting",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "Sitting backward on a wooden chair, the tiger drapes its arms over the chair back and rests its chin on folded forearms, one foot lifted and sole facing outward.",
+      "action_family": "leaning",
+      "camera": "Rear three-quarter view, eye level",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "foot_count",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 1,
+      "visibility_requirement": "The lifted foot sole and both relaxed hands over the chair back must be clearly visible.",
+      "intent_zh": "反坐木椅，抬脚掌外翻，双臂搭椅背。",
+      "category": "sitting",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "The tiger sits on a woven mat repairing a bicycle tire, holding a small pump with both hands while one bare foot pins the inner tube to the floor.",
+      "action_family": "repairing",
+      "camera": "Overhead three-quarter view",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "foot_count",
+        "yellow_pads"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 1,
+      "visibility_requirement": "Both hands on the pump and the pinning sole with yellow pad and four toes must be unobstructed.",
+      "intent_zh": "坐垫上修车胎，双手打气，脚踩内胎。",
+      "category": "sitting",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "Perched on a windowsill, the tiger sits with knees drawn up and holds a small hand mirror, tilting it while its other palm presses flat against the glass.",
+      "action_family": "inspecting",
+      "camera": "Profile medium shot, window light",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "yellow_pads"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "The palm pressed on the glass must show its yellow pad and five fingers clearly.",
+      "intent_zh": "坐窗台拿小镜子，另一手掌贴玻璃。",
+      "category": "sitting",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "Sitting on a low crate, the tiger laces a tall boot by pulling the lace with one hand while the other holds the boot's tongue, one bare sole planted on the crate edge.",
+      "action_family": "lacing",
+      "camera": "Low front-side angle",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "foot_count",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 1,
+      "visibility_requirement": "The bare foot's yellow-padded sole on the crate edge and both lacing hands must be visible.",
+      "intent_zh": "坐木箱系长靴鞋带，赤脚踩箱沿。",
+      "category": "sitting",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "The tiger sits on a kitchen counter with legs dangling, using a rolling pin with both hands to flatten dough on a board beside its hip.",
+      "action_family": "rolling_dough",
+      "camera": "Side medium shot at counter height",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both hands gripping the rolling pin handles must be fully visible with distinct fingers.",
+      "intent_zh": "坐厨房台面擀面团，双手握擀面杖。",
+      "category": "sitting",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "Sitting on the floor with back to a sofa, the tiger balances a tablet on its raised knees and taps the screen with one finger, other hand open on the floor palm-up.",
+      "action_family": "tapping",
+      "camera": "High-angle front view",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "The open palm-up hand on the floor must show yellow pad and all five fingers.",
+      "intent_zh": "背靠沙发坐地，膝上放平板，一手摊在地上。",
+      "category": "sitting",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "The tiger sits on a swing seat, gripping both chains and leaning back, one leg extended forward with the bare sole pushed against the opposite chain.",
+      "action_family": "swinging",
+      "camera": "Frontal wide shot",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "foot_count",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 1,
+      "visibility_requirement": "The sole pressed on the chain and both hands gripping chains must be clearly visible.",
+      "intent_zh": "坐秋千双手握链，一脚掌顶住链条。",
+      "category": "sitting",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "Sitting on a paint-stained tarp, the tiger dips a broad brush into a bucket and paints a floorboard, one knee up and the other leg folded beneath it.",
+      "action_family": "painting",
+      "camera": "Low three-quarter view",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "The brush-holding hand and its five fingers must be clear of the bucket and brush bristles.",
+      "intent_zh": "坐防布上刷地板，单膝立起。",
+      "category": "sitting",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "The tiger sits on a padded bench tying a ribbon around a gift box, holding the ribbon taut with one hand and looping it with the other, box balanced on its thigh.",
+      "action_family": "tying",
+      "camera": "Close overhead shot",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "yellow_pads"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both hands' fingers and at least one yellow palm pad must be visible around the ribbon.",
+      "intent_zh": "坐长凳给礼盒系丝带，双手打结。",
+      "category": "sitting",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "Seated on a rocky ledge, the tiger leans forward to tie a climbing rope around its waist, one bare foot braced on a rock with sole facing the viewer.",
+      "action_family": "knotting",
+      "camera": "Low side angle",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "foot_count",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 1,
+      "visibility_requirement": "The braced sole and both hands working the rope must be clearly visible.",
+      "intent_zh": "坐岩台系攀岩绳，一脚掌抵住岩石。",
+      "category": "sitting",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "The tiger sits on a cushion in front of a low table, folding a paper crane, fingertips pressing creases while its bare sole rests on the table corner.",
+      "action_family": "folding",
+      "camera": "Close three-quarter overhead view",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "foot_count",
+        "yellow_pads"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 1,
+      "visibility_requirement": "Both pressing hands and the sole with four toes on the table corner must be visible.",
+      "intent_zh": "坐垫上折纸鹤，脚掌搭桌角。",
+      "category": "sitting",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "Sitting in a wheelbarrow, the tiger leans back and holds the handles overhead, legs stretched with one yellow-padded sole propped against the wheelbarrow rim.",
+      "action_family": "leaning_back",
+      "camera": "Side full-body shot",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "foot_count",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 1,
+      "visibility_requirement": "Both gripping hands and the sole against the rim must be unobstructed.",
+      "intent_zh": "坐独轮车中双手举车把，脚掌顶车沿。",
+      "category": "sitting",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "The tiger sits on a low wall polishing a brass trumpet, one hand wrapped around its valves and the other wiping the bell with a cloth.",
+      "action_family": "polishing",
+      "camera": "Frontal medium shot",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both hands must be distinct from the trumpet, showing five fingers on the valve hand.",
+      "intent_zh": "坐矮墙上擦小号，一手按阀一手擦。",
+      "category": "sitting",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "Sitting on a tree branch, the tiger braids a long cord, holding three strands apart with both hands, bare feet hanging with soles facing outward.",
+      "action_family": "braiding",
+      "camera": "Low-angle shot through branches",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "foot_count",
+        "yellow_pads"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 2,
+      "visibility_requirement": "Both spread hands and both dangling soles with yellow pads must be clearly visible.",
+      "intent_zh": "坐树枝上编绳，双手分股，双脚垂下。",
+      "category": "sitting",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "The tiger sits on a stack of cushions operating a sewing machine, one hand guiding fabric and the other turning the wheel, one bare foot on the treadle.",
+      "action_family": "sewing",
+      "camera": "Side close-up",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "foot_count",
+        "yellow_pads"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 1,
+      "visibility_requirement": "The hand turning the wheel and the treadle foot's yellow-padded sole must be visible.",
+      "intent_zh": "坐垫堆上踩缝纫机，一手转轮一手导布。",
+      "category": "sitting",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "Seated on a picnic blanket, the tiger uses both paws to pry open a stubborn jar, knees up and feet planted, one sole lifted toward the viewer.",
+      "action_family": "prying",
+      "camera": "Eye-level front view",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "foot_count",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 1,
+      "visibility_requirement": "Both hands on the jar lid and the lifted yellow-padded sole must be clear.",
+      "intent_zh": "坐野餐毯上双手拧罐盖，一脚掌抬起。",
+      "category": "sitting",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "The tiger sits on a climbing-frame bar, feet hooked over the bar, leaning far back to hang upside-down-ish while one hand waves a small flag.",
+      "action_family": "hanging",
+      "camera": "Low wide angle from below",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "foot_count",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 2,
+      "visibility_requirement": "Both hands and both hooked feet with soles toward camera must be visible.",
+      "intent_zh": "倒挂攀爬架，手挥小旗，双脚勾杠。",
+      "category": "sitting",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "Sitting on a rolling office chair, the tiger spins to face a large map pinned to the wall and pins a marker with one hand, the other palm flat on the chair arm.",
+      "action_family": "marking",
+      "camera": "Three-quarter rear view",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "The pinning hand's five fingers and the palm on the armrest must be clearly visible.",
+      "intent_zh": "坐转椅转身向地图钉标记，一手扶扶手。",
+      "category": "sitting",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "The tiger sits on a suitcase in an empty station hall, pulling one sock off with both hands while a bare foot with yellow pad points at the ceiling.",
+      "action_family": "undressing",
+      "camera": "Low front angle",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "foot_count",
+        "yellow_pads"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 1,
+      "visibility_requirement": "Both hands gripping the sock and the raised sole with four toes must be unobstructed.",
+      "intent_zh": "坐行李箱脱袜，双手拉袜，赤脚朝上。",
+      "category": "sitting",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "Seated on a garden bench, the tiger balances a long bamboo pole across its lap and threads a string through a hole at its tip with both hands.",
+      "action_family": "threading",
+      "camera": "Close side view",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both hands threading the string must show five slender fingers each and one palm pad.",
+      "intent_zh": "坐长椅上穿线，双手持竹竿。",
+      "category": "sitting",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "Sitting on the edge of a shallow fountain, the tiger dangles both feet in the water and squeezes a sponge over them, one hand flat and dripping.",
+      "action_family": "squeezing",
+      "camera": "Top-down three-quarter view",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "foot_count",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 2,
+      "visibility_requirement": "The squeezing hand and both feet with yellow pads under the water surface must be visible.",
+      "intent_zh": "坐喷泉边把脚泡水，手握海绵挤水。",
+      "category": "sitting",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "The tiger sits on a wooden ladder's lower rung, holding a sketchbook against its knees and sharpening a pencil with a small knife, one bare sole on the next rung.",
+      "action_family": "sharpening",
+      "camera": "Side close medium shot",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "foot_count",
+        "yellow_pads"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 1,
+      "visibility_requirement": "Both knife-holding hands and the sole with yellow pad on the rung must be visible.",
+      "intent_zh": "坐下层梯档上削铅笔，脚掌踩上一档。",
+      "category": "sitting",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "Seated cross-legged on a gym mat, the tiger stretches one arm across its chest and pulls it with the other, palm open and fingers long.",
+      "action_family": "stretching",
+      "camera": "Frontal medium shot",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "The stretched open palm with yellow pad and all five fingers must be clear of the arm.",
+      "intent_zh": "坐垫上做手臂拉伸，手掌摊开。",
+      "category": "sitting",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "The tiger sits on a barber-style chair draped in a cape, tilting its head as a clipper is guided by its own hand along the side of its neck.",
+      "action_family": "grooming",
+      "camera": "Close front view",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "human_pose"
+      ],
+      "visible_hands": 1,
+      "visible_soles": 0,
+      "visibility_requirement": "The clipper-holding hand and its five fingers must be fully visible with the yellow palm pad.",
+      "intent_zh": "坐理发椅上手持推剪修颈侧。",
+      "category": "sitting",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "Sitting on a low boulder, the tiger uses a mallet and chisel on a block of wood clamped between its feet, one bare sole gripping the block's side.",
+      "action_family": "carving",
+      "camera": "Low front three-quarter view",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "foot_count",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 1,
+      "visibility_requirement": "Both tool-holding hands and the gripping sole with yellow pad must be unobstructed.",
+      "intent_zh": "坐石上凿木块，双脚夹稳，手掌脚跟清晰。",
+      "category": "sitting",
+      "generation_batch": 1
+    }
+  ],
+  "model": "deepseek-flash",
+  "usage": {
+    "prompt_tokens": 388,
+    "completion_tokens": 3960,
+    "total_tokens": 4348,
+    "prompt_tokens_details": {
+      "cached_tokens": 254
+    },
+    "prompt_cache_hit_tokens": 254,
+    "prompt_cache_miss_tokens": 134
+  },
+  "settings": {
+    "temperature": 1,
+    "thinking": "disabled"
+  }
+}

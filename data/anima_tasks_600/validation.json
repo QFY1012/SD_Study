@@ -1,0 +1,11 @@
+{
+  "validated": true,
+  "total": 600,
+  "train": 480,
+  "eval": 120,
+  "maximum_cosine": 0.8390641212463379,
+  "threshold": 0.84,
+  "exact_instruction_duplicates": 0,
+  "cross_split_prompt_duplicates": 0,
+  "scope": "Machine-checkable schema and embedding properties only; does not prove semantic or visual correctness."
+}

@@ -1,0 +1,379 @@
+{
+  "tasks": [
+    {
+      "instruction": "Seated cross-legged on a low wooden stool, lean forward slightly and extend both arms straight toward the viewer, palms open and facing forward as if presenting an invisible object. Fingers naturally spread. Background: blurred workshop shelves.",
+      "action_family": "presenting",
+      "camera": "front view, slightly high angle, medium shot",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both palms and all fingers of both hands clearly visible, no occlusion from body or props.",
+      "intent_zh": "坐着向前展示双手手掌",
+      "category": "both_hands",
+      "generation_batch": 4
+    },
+    {
+      "instruction": "Standing with feet apart, lean back and raise both arms overhead with elbows bent, palms facing forward and fingers curled inward as if holding an invisible large ball above the head. Torso twisted slightly to the left.",
+      "action_family": "holding_invisible",
+      "camera": "low angle, three-quarter view from left, medium full shot",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both palms and fingers visible above head, not blocked by head or arms.",
+      "intent_zh": "双手举过头顶假装抱球",
+      "category": "both_hands",
+      "generation_batch": 4
+    },
+    {
+      "instruction": "Balancing on one leg with the other leg lifted behind, arms extended sideways at shoulder height, palms facing forward, fingers splayed. Body leaning slightly forward, head turned to look at the viewer.",
+      "action_family": "balancing",
+      "camera": "side view from right, full body shot",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both palms and fingers visible against the background, not overlapping the body.",
+      "intent_zh": "单腿平衡，双臂侧平举展示手掌",
+      "category": "both_hands",
+      "generation_batch": 4
+    },
+    {
+      "instruction": "Crouching low with knees bent, arms extended forward at chest height, palms facing up as if offering something. Fingers slightly cupped. Head tilted down toward the hands. Background: plain gray wall.",
+      "action_family": "offering",
+      "camera": "front view, low angle, close-up on upper body and hands",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both palms facing up and all fingers clearly visible from the front.",
+      "intent_zh": "蹲下双手掌心向上向前伸出",
+      "category": "both_hands",
+      "generation_batch": 4
+    },
+    {
+      "instruction": "Leaning against a wall with one shoulder, arms crossed in front of chest but with palms turned outward to face the viewer, fingers loosely interlaced. One leg bent with foot flat on wall.",
+      "action_family": "leaning",
+      "camera": "three-quarter view from left, medium shot",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both palms visible despite crossed arms, fingers not hidden.",
+      "intent_zh": "靠墙交叉手臂但掌心向外",
+      "category": "both_hands",
+      "generation_batch": 4
+    },
+    {
+      "instruction": "Kneeling on one knee, torso upright, both arms bent at elbows with palms facing forward at shoulder height, fingers spread wide. Head facing forward, expression neutral.",
+      "action_family": "kneeling",
+      "camera": "front view, eye level, medium shot",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both palms fully visible, not obscured by legs or torso.",
+      "intent_zh": "单膝跪地双手掌心向前",
+      "category": "both_hands",
+      "generation_batch": 4
+    },
+    {
+      "instruction": "Sitting on the floor with legs stretched forward, lean back on one hand (but palm not visible), while the other arm reaches forward with palm up. However, for this task, both hands must be free and palms visible: instead, sit with legs stretched and both arms raised forward, palms up.",
+      "action_family": "sitting_reach",
+      "camera": "side view from left, low angle, full body",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both palms facing up and fully visible, fingers extended.",
+      "intent_zh": "坐地双腿前伸双手掌心向上",
+      "category": "both_hands",
+      "generation_batch": 4
+    },
+    {
+      "instruction": "Standing with back arched backward, arms extended behind the body with palms facing forward (toward the viewer) as if pushing against an invisible wall behind. Head tilted back. Legs straight.",
+      "action_family": "pushing_back",
+      "camera": "front view, slightly low angle, full body",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both palms visible from the front despite arms behind, fingers clear.",
+      "intent_zh": "后仰双手在身后推墙",
+      "category": "both_hands",
+      "generation_batch": 4
+    },
+    {
+      "instruction": "Twisting torso to the right while keeping hips forward, arms bent with palms facing the camera at waist height, fingers curled as if holding small objects. Head looking over right shoulder.",
+      "action_family": "twisting",
+      "camera": "three-quarter view from front-right, medium shot",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both palms and fingers visible despite torso twist, not hidden by body.",
+      "intent_zh": "扭身双手在腰际掌心向前",
+      "category": "both_hands",
+      "generation_batch": 4
+    },
+    {
+      "instruction": "Lying on back with knees bent and feet flat, arms extended upward toward the ceiling, palms facing forward, fingers spread. Head resting on floor, looking up at hands.",
+      "action_family": "lying_reach",
+      "camera": "top-down view, full body",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both palms facing up and fully visible from above, fingers not overlapping.",
+      "intent_zh": "仰卧双手向上伸掌",
+      "category": "both_hands",
+      "generation_batch": 4
+    },
+    {
+      "instruction": "Standing on tiptoes, arms raised diagonally upward and outward, palms facing forward, fingers splayed. Body stretched tall, head tilted up. Background: gradient sky.",
+      "action_family": "stretching",
+      "camera": "low angle, front view, full body",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both palms and fingers clearly visible against sky, not overlapping head.",
+      "intent_zh": "踮脚双手斜向上伸展",
+      "category": "both_hands",
+      "generation_batch": 4
+    },
+    {
+      "instruction": "Sitting on a high stool with legs dangling, lean forward with elbows on knees, but hands raised with palms facing forward at chest level, fingers loosely curled. Head tilted slightly to one side.",
+      "action_family": "sitting_lean",
+      "camera": "front view, slightly high angle, medium shot",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both palms visible from front, fingers not hidden by legs.",
+      "intent_zh": "坐高凳前倾双手掌心向前",
+      "category": "both_hands",
+      "generation_batch": 4
+    },
+    {
+      "instruction": "Standing with legs crossed at ankles, arms folded but with palms turned outward and fingers interlaced, facing the camera. Torso slightly twisted. Background: brick wall.",
+      "action_family": "standing_crossed",
+      "camera": "front view, eye level, medium shot",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both palms visible despite folded arms, fingers clearly interlaced.",
+      "intent_zh": "双腿交叉站立，双臂交叉掌心向外",
+      "category": "both_hands",
+      "generation_batch": 4
+    },
+    {
+      "instruction": "Kneeling with both knees on the ground, sitting back on heels, arms extended forward with palms down as if pressing the floor, but hands are raised off the ground. Fingers spread.",
+      "action_family": "kneeling_press",
+      "camera": "side view from right, low angle, full body",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both palms facing down but visible from side? No, palms must face camera. For this task, instead palms face forward, fingers spread.",
+      "intent_zh": "跪坐双手前伸掌心向前",
+      "category": "both_hands",
+      "generation_batch": 4
+    },
+    {
+      "instruction": "Leaning forward with hands on thighs (but palms not visible) is not allowed. Instead, stand with feet wide, bend forward at waist, and extend both arms behind you with palms facing forward, like a ski jumper. Head down.",
+      "action_family": "bending_forward",
+      "camera": "rear view, low angle, full body",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both palms visible from behind? No, palms must face camera. For rear view, palms facing back means facing away. Adjust: palms face backward, so from rear view they are visible. So palms face the camera in rear view? Actually if camera is behind, palms facing backward means palms face camera. So okay.",
+      "intent_zh": "弯腰双手后伸掌心向后",
+      "category": "both_hands",
+      "generation_batch": 4
+    },
+    {
+      "instruction": "Sitting on the ground with legs spread wide, lean forward and reach both arms forward with palms up, fingers spread, as if offering something. Head looking down at hands.",
+      "action_family": "sitting_spread",
+      "camera": "front view, high angle, full body",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both palms up and fully visible from above, fingers clear.",
+      "intent_zh": "坐地分腿前倾双手掌心向上",
+      "category": "both_hands",
+      "generation_batch": 4
+    },
+    {
+      "instruction": "Standing on one leg with the other leg lifted and bent, arms bent at elbows with palms facing forward at shoulder height, fingers curled like claws. Body leaning slightly.",
+      "action_family": "balancing_claws",
+      "camera": "three-quarter view from left, full body",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both palms and curled fingers visible, not hidden by body.",
+      "intent_zh": "单腿站立双手爪状掌心向前",
+      "category": "both_hands",
+      "generation_batch": 4
+    },
+    {
+      "instruction": "Crouching with knees bent and back straight, arms extended sideways with palms facing forward, fingers splayed. Head turned to look at the camera. Background: forest.",
+      "action_family": "crouching_side",
+      "camera": "front view, low angle, medium shot",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both palms visible from front, fingers not overlapping legs.",
+      "intent_zh": "蹲下双臂侧伸掌心向前",
+      "category": "both_hands",
+      "generation_batch": 4
+    },
+    {
+      "instruction": "Standing with back to a wall, arms raised above head with palms flat against the wall (but palms not visible to camera). Instead, for this task, stand facing the wall with arms raised and palms flat on wall, but then camera is behind. Not good. Instead, stand with back to wall, arms raised forward with palms facing forward, as if pushing an invisible wall in front.",
+      "action_family": "pushing_front",
+      "camera": "front view, eye level, medium shot",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both palms facing forward and fully visible, fingers spread.",
+      "intent_zh": "站立双手前推掌心向前",
+      "category": "both_hands",
+      "generation_batch": 4
+    },
+    {
+      "instruction": "Sitting on a swing (but hands free), legs dangling, arms raised forward with palms up, fingers spread. Body swinging slightly. Background: playground.",
+      "action_family": "swinging",
+      "camera": "front view, slightly low angle, medium full shot",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both palms up and visible, not holding swing chains.",
+      "intent_zh": "荡秋千双手前伸掌心向上",
+      "category": "both_hands",
+      "generation_batch": 4
+    }
+  ],
+  "model": "deepseek-flash",
+  "usage": {
+    "prompt_tokens": 439,
+    "completion_tokens": 3240,
+    "total_tokens": 3679,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "prompt_cache_hit_tokens": 256,
+    "prompt_cache_miss_tokens": 183
+  },
+  "settings": {
+    "temperature": 1,
+    "thinking": "disabled"
+  }
+}

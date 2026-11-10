@@ -1,0 +1,576 @@
+{
+  "tasks": [
+    {
+      "instruction": "The blue tiger sits cross-legged on a low wooden stool, leaning forward to tie a shoelace, one hand gripping the lace near the shoe while the other holds the other lace end, tail curled beside the stool.",
+      "action_family": "sitting",
+      "camera": "medium full-body shot, slightly low angle",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both hands clearly visible near the shoe with fingers distinct",
+      "intent_zh": "蓝虎坐矮凳弯腰系鞋带",
+      "category": "sitting",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "The blue tiger sits on a park bench with legs stretched forward, feet resting on the pavement showing yellow soles, leaning back with hands braced on the bench edge behind the hips.",
+      "action_family": "sitting",
+      "camera": "wide full-body shot from the front-side",
+      "targets": [
+        "identity",
+        "cel_style",
+        "foot_count",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 0,
+      "visible_soles": 2,
+      "visibility_requirement": "Both feet fully visible with all four toes and yellow soles facing camera",
+      "intent_zh": "蓝虎坐长椅伸腿露脚掌",
+      "category": "sitting",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "The blue tiger sits on the floor with knees bent up, holding an open book against the knees with one hand while the other turns a page, head tilted down reading in warm indoor light.",
+      "action_family": "reading",
+      "camera": "medium shot, eye level",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both hands visible on the book with distinct fingers",
+      "intent_zh": "蓝虎坐地屈膝看书翻页",
+      "category": "sitting",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "The blue tiger sits sideways on a tall bar stool, one leg crossed over the other at the ankle, holding a mug with both hands near the chest and blowing gently on the steam.",
+      "action_family": "drinking",
+      "camera": "medium close-up, three-quarter angle",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both hands wrapped around mug, fingers distinct",
+      "intent_zh": "蓝虎坐高脚凳捧杯吹热气",
+      "category": "sitting",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "The blue tiger sits on a cushion on the floor, one leg folded under and the other knee raised, palm pressed flat on the raised knee while the other hand rests on the floor beside the cushion.",
+      "action_family": "resting",
+      "camera": "medium full-body, slightly above",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both hands visible, one palm flat showing fingers clearly",
+      "intent_zh": "蓝虎坐垫上一手按膝一手撑地",
+      "category": "sitting",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "The blue tiger sits on a low garden wall with both feet dangling, one sole turned toward the viewer showing yellow pads, hands gripping the wall edge beside the hips.",
+      "action_family": "sitting",
+      "camera": "medium shot from below and front",
+      "targets": [
+        "identity",
+        "cel_style",
+        "foot_count",
+        "yellow_pads",
+        "hand_count",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 1,
+      "visibility_requirement": "One foot fully visible with toes and sole, both hands visible on wall edge",
+      "intent_zh": "蓝虎坐矮墙垂脚露脚掌",
+      "category": "sitting",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "The blue tiger sits at a small desk writing in a notebook, left hand steadying the page and right hand holding a pen, shoulders hunched slightly in concentration.",
+      "action_family": "writing",
+      "camera": "over-the-shoulder medium shot",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both hands visible on desk with distinct fingers",
+      "intent_zh": "蓝虎坐桌前握笔写字",
+      "category": "sitting",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "The blue tiger sits on a swing seat holding both ropes, legs kicking forward so one foot with yellow sole faces the camera, cheerful expression as the swing moves.",
+      "action_family": "swinging",
+      "camera": "full-body shot from the front",
+      "targets": [
+        "identity",
+        "cel_style",
+        "foot_count",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 0,
+      "visible_soles": 1,
+      "visibility_requirement": "One foot fully visible with all four toes and yellow sole toward camera",
+      "intent_zh": "蓝虎荡秋千踢腿露脚掌",
+      "category": "sitting",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "The blue tiger sits on a kitchen chair peeling an orange, both hands working the fruit over a bowl on the table, peels dropping, tail draped over the chair back.",
+      "action_family": "peeling",
+      "camera": "medium close-up, slightly high angle",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both hands clearly visible around the orange with distinct fingers",
+      "intent_zh": "蓝虎坐椅上剥橘子",
+      "category": "sitting",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "The blue tiger sits on the floor leaning back against a sofa, one leg bent with the foot planted showing yellow sole edges, both hands clasped behind the head stretching.",
+      "action_family": "stretching",
+      "camera": "medium full-body from the side-front",
+      "targets": [
+        "identity",
+        "cel_style",
+        "foot_count",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 0,
+      "visible_soles": 1,
+      "visibility_requirement": "One foot and sole partly visible with toes distinguishable",
+      "intent_zh": "蓝虎靠沙发坐地伸懒腰露脚掌",
+      "category": "sitting",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "The blue tiger sits on a chair playing a small hand drum, palms striking the drumhead at different heights, leaning in with focused eyes.",
+      "action_family": "drumming",
+      "camera": "medium shot, front three-quarter",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both palms visible above the drum with fingers distinct",
+      "intent_zh": "蓝虎坐椅双手拍手鼓",
+      "category": "sitting",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "The blue tiger sits on a picnic blanket with legs folded to one side, holding a sandwich in one hand and a paper cup in the other, looking off to the side.",
+      "action_family": "eating",
+      "camera": "medium wide shot, eye level",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both hands visible, holding items with fingers distinct",
+      "intent_zh": "蓝虎坐野餐垫手拿三明治和杯子",
+      "category": "sitting",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "The blue tiger sits on a wooden crate mending a fishing net, fingers threading rope through mesh, one foot propped on the crate edge showing yellow pads.",
+      "action_family": "mending",
+      "camera": "medium shot from a low side angle",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "foot_count",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 1,
+      "visibility_requirement": "Both hands on the net with fingers distinct, one foot with toes and sole visible",
+      "intent_zh": "蓝虎坐木箱补渔网脚掌可见",
+      "category": "sitting",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "The blue tiger sits on a step ladder platform painting a small canvas on an easel, right hand holding a brush and left hand steadying the canvas edge.",
+      "action_family": "painting",
+      "camera": "medium shot, side three-quarter",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both hands visible at the canvas with distinct fingers",
+      "intent_zh": "蓝虎坐梯台画架前作画",
+      "category": "sitting",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "The blue tiger sits on the floor with legs straight out, leaning forward to reach the toes, palms pressing against the yellow soles of the feet.",
+      "action_family": "stretching",
+      "camera": "medium full-body from the side",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "foot_count",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 2,
+      "visibility_requirement": "Both palms reaching both soles, hands and soles clearly visible with digits",
+      "intent_zh": "蓝虎坐地前屈手摸脚掌",
+      "category": "sitting",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "The blue tiger sits on a low rock by a stream, one hand scooping water while the other balances on the rock, feet resting on pebbles with soles partly exposed.",
+      "action_family": "scooping",
+      "camera": "medium shot, slightly low angle",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "foot_count",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 1,
+      "visibility_requirement": "Scooping hand fingers distinct, one foot sole and toes visible",
+      "intent_zh": "蓝虎坐溪边石上手舀水脚露掌",
+      "category": "sitting",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "The blue tiger sits on a chair tying a scarf around the neck, both hands lifting the fabric ends, elbows raised, looking into a small mirror.",
+      "action_family": "dressing",
+      "camera": "medium close-up, front",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both hands clearly visible holding scarf ends with distinct fingers",
+      "intent_zh": "蓝虎坐椅系围巾照镜",
+      "category": "sitting",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "The blue tiger sits on a cushion playing a handheld game, thumbs on buttons and fingers wrapped around the device, tongue slightly out in concentration.",
+      "action_family": "gaming",
+      "camera": "medium close-up, slightly high angle",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both hands gripping the device with fingers and thumbs distinct",
+      "intent_zh": "蓝虎坐垫上打掌机游戏",
+      "category": "sitting",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "The blue tiger sits on a large exercise ball, feet planted wide for balance showing yellow soles, arms outstretched to the sides with palms open.",
+      "action_family": "balancing",
+      "camera": "full-body shot from the front",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "foot_count",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 2,
+      "visibility_requirement": "Both open palms and both soles clearly visible with digits",
+      "intent_zh": "蓝虎坐健身球平衡展掌露脚掌",
+      "category": "sitting",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "The blue tiger sits on a tree branch, one leg hanging down and the other tucked, one hand gripping the branch above and the other holding a piece of fruit.",
+      "action_family": "perching",
+      "camera": "medium shot from below",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both hands visible, gripping and holding with distinct fingers",
+      "intent_zh": "蓝虎坐树枝上一手抓枝一手拿果",
+      "category": "sitting",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "The blue tiger sits at a piano bench playing simple chords, fingers spread over the keys, body angled toward the keyboard with relaxed posture.",
+      "action_family": "playing",
+      "camera": "medium shot from the side-rear",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both hands on keys with fingers distinct",
+      "intent_zh": "蓝虎坐琴凳弹琴手指按键",
+      "category": "sitting",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "The blue tiger sits on a folding camp chair beside a tent, holding a map open with both hands and studying it, feet crossed at the ankles.",
+      "action_family": "reading",
+      "camera": "medium wide shot, eye level",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both hands holding the map with fingers distinct",
+      "intent_zh": "蓝虎坐露营椅摊地图查看",
+      "category": "sitting",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "The blue tiger sits on the floor opening a cardboard box, one hand lifting a flap and the other reaching inside, knees apart with feet flat showing yellow soles toward the box.",
+      "action_family": "unpacking",
+      "camera": "medium high angle looking down",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "foot_count",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 2,
+      "visibility_requirement": "Both hands on box flaps with fingers distinct, both soles visible with toes",
+      "intent_zh": "蓝虎坐地开纸箱露脚掌",
+      "category": "sitting",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "The blue tiger sits on a chair getting hair combed by invisible hands, one paw raised holding a mirror while the other rests on the knee.",
+      "action_family": "grooming",
+      "camera": "medium close-up, front three-quarter",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "human_pose"
+      ],
+      "visible_hands": 1,
+      "visible_soles": 0,
+      "visibility_requirement": "Raised hand holding mirror with fingers distinct",
+      "intent_zh": "蓝虎坐椅举镜梳头",
+      "category": "sitting",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "The blue tiger sits on a low ledge with one knee up, resting a sketchbook on the knee and drawing with a pencil, the other hand supporting the book's spine.",
+      "action_family": "drawing",
+      "camera": "medium shot, side three-quarter",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both hands visible on sketchbook with distinct fingers",
+      "intent_zh": "蓝虎坐矮台膝上画速写",
+      "category": "sitting",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "The blue tiger sits on the floor with back to a wall, hugging knees to the chest, one palm visible wrapped around the shin and the other foot's sole toward camera.",
+      "action_family": "hugging",
+      "camera": "medium full-body from the front-side",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "foot_count",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 1,
+      "visible_soles": 1,
+      "visibility_requirement": "Wrapped palm fingers distinct, one foot sole with toes visible",
+      "intent_zh": "蓝虎抱膝坐地一掌握小腿一露脚掌",
+      "category": "sitting",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "The blue tiger sits on a stool shelling peas into a colander, both hands working the pods, a few peas scattered on the counter and floor.",
+      "action_family": "shelling",
+      "camera": "medium close-up, slightly high angle",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both hands on pea pods with fingers distinct",
+      "intent_zh": "蓝虎坐凳剥豌豆",
+      "category": "sitting",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "The blue tiger sits on a bench lacing up a hiking boot, one foot raised on the opposite knee, both hands pulling the laces tight near the shoe.",
+      "action_family": "lacing",
+      "camera": "medium full-body, side-front",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both hands on laces with fingers distinct",
+      "intent_zh": "蓝虎坐凳绑登山鞋带",
+      "category": "sitting",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "The blue tiger sits on a chair holding a phone to one ear, the other hand gesturing mid-conversation, leaning back with legs stretched and one sole tilted toward the viewer.",
+      "action_family": "talking",
+      "camera": "medium wide shot, front",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "foot_count",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 1,
+      "visibility_requirement": "Both hands visible, gesturing hand fingers distinct, one sole with toes visible",
+      "intent_zh": "蓝虎坐椅打电话手势露脚掌",
+      "category": "sitting",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "The blue tiger sits on a rug weaving a small basket, fingers guiding reeds through the weave, the finished rim resting against one raised knee with the other foot's sole showing.",
+      "action_family": "weaving",
+      "camera": "medium shot, high three-quarter angle",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "foot_count",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 1,
+      "visibility_requirement": "Both hands on reeds with fingers distinct, one sole and toes visible",
+      "intent_zh": "蓝虎坐毯编篮子露脚掌",
+      "category": "sitting",
+      "generation_batch": 0
+    }
+  ],
+  "model": "deepseek-flash",
+  "usage": {
+    "prompt_tokens": 377,
+    "completion_tokens": 3666,
+    "total_tokens": 4043,
+    "prompt_tokens_details": {
+      "cached_tokens": 128
+    },
+    "prompt_cache_hit_tokens": 128,
+    "prompt_cache_miss_tokens": 249
+  },
+  "settings": {
+    "temperature": 1,
+    "thinking": "disabled"
+  }
+}

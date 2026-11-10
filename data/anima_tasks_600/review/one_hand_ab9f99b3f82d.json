@@ -1,0 +1,231 @@
+{
+  "approved_ids": [
+    0,
+    1,
+    2,
+    4,
+    5,
+    6,
+    8,
+    9,
+    10,
+    12,
+    13,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    29,
+    30,
+    32,
+    33,
+    35,
+    37,
+    39,
+    41,
+    43,
+    47,
+    48,
+    49,
+    51,
+    52,
+    54,
+    56,
+    58,
+    61,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    82,
+    84,
+    85,
+    86,
+    87,
+    88,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    103,
+    104,
+    105,
+    106,
+    108,
+    109,
+    110,
+    111,
+    113,
+    114,
+    115,
+    117,
+    118,
+    119,
+    120
+  ],
+  "rejected": [
+    {
+      "index": 3,
+      "reason": "Palm shading brow from below cannot show full palm underside and all five fingers unobstructed"
+    },
+    {
+      "index": 7,
+      "reason": "Palm-down hand on drawer shows back of hand, not yellow palm pads as targeted"
+    },
+    {
+      "index": 11,
+      "reason": "Palm pressed flat against chalkboard cannot face camera; pads hidden"
+    },
+    {
+      "index": 14,
+      "reason": "Palm pressed flat on door from behind-side cannot show full palm and pads"
+    },
+    {
+      "index": 21,
+      "reason": "Palm-down hand above candle shows back of hand, not palm pads"
+    },
+    {
+      "index": 28,
+      "reason": "Palm flat on map faces down, pads not visible to overhead camera"
+    },
+    {
+      "index": 31,
+      "reason": "Palm pressed to skylight glass cannot show palm pads facing camera"
+    },
+    {
+      "index": 34,
+      "reason": "Wet palm pressing clay is occluded by clay; pads not countable"
+    },
+    {
+      "index": 36,
+      "reason": "Supporting palm flat on felt faces down, pads hidden"
+    },
+    {
+      "index": 38,
+      "reason": "Palm inside hive gap with bees crawling occludes fingers and pads"
+    },
+    {
+      "index": 40,
+      "reason": "Palm pressing tunnel ceiling faces up, pads not visible from below"
+    },
+    {
+      "index": 42,
+      "reason": "Palm pressed on glass shows back of hand, pads hidden"
+    },
+    {
+      "index": 44,
+      "reason": "Bracing palm flat on post faces wood, pads hidden"
+    },
+    {
+      "index": 45,
+      "reason": "Palm planted on boulder faces down, pads hidden"
+    },
+    {
+      "index": 46,
+      "reason": "Palm smeared on rock face shows back, pads hidden"
+    },
+    {
+      "index": 50,
+      "reason": "Typo target 'visible_handson' and palm under umbrella fabric occluded"
+    },
+    {
+      "index": 53,
+      "reason": "Palm slid under parchment is occluded; pads not visible"
+    },
+    {
+      "index": 55,
+      "reason": "Bark-pressing palm faces trunk, pads hidden"
+    },
+    {
+      "index": 57,
+      "reason": "Palm resting flat on moss faces down, pads hidden"
+    },
+    {
+      "index": 59,
+      "reason": "Palm flat on brass pole faces surface, pads hidden"
+    },
+    {
+      "index": 60,
+      "reason": "Forearm/palm pressed flat on glass case shows back of hand, pads hidden"
+    },
+    {
+      "index": 62,
+      "reason": "Side view of palm pressed on trunk cannot show full palm and pads"
+    },
+    {
+      "index": 72,
+      "reason": "Palm-down supporting hand shows back of hand, not pads"
+    },
+    {
+      "index": 73,
+      "reason": "Palm wiping mirror shows back of hand, pads hidden"
+    },
+    {
+      "index": 81,
+      "reason": "Palm pressing melon curves against rind, pads occluded"
+    },
+    {
+      "index": 83,
+      "reason": "Palm pressed on speaker cone faces surface, pads hidden"
+    },
+    {
+      "index": 89,
+      "reason": "Palm pressing clay tablet faces down, pads hidden"
+    },
+    {
+      "index": 102,
+      "reason": "Palm flat on chalkboard faces board, pads hidden"
+    },
+    {
+      "index": 107,
+      "reason": "Gripping branch occludes palm pads; full palm not visible"
+    },
+    {
+      "index": 112,
+      "reason": "Palm coated in wet paint obscures pad shape"
+    },
+    {
+      "index": 116,
+      "reason": "Palm pressed into mud occludes pads; impression not pad visibility"
+    }
+  ],
+  "model": "deepseek-flash",
+  "usage": {
+    "prompt_tokens": 15884,
+    "completion_tokens": 832,
+    "total_tokens": 16716,
+    "prompt_tokens_details": {
+      "cached_tokens": 11648
+    },
+    "prompt_cache_hit_tokens": 11648,
+    "prompt_cache_miss_tokens": 4236
+  }
+}

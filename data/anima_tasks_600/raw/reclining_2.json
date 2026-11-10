@@ -1,0 +1,591 @@
+{
+  "tasks": [
+    {
+      "instruction": "A blue tiger lies on its back on a low wooden dock, knees bent and feet planted, one leg lifted high while a long-fingered hand reaches to scratch the lifted foot's sole, head tilted to watch its own foot.",
+      "action_family": "stretching",
+      "camera": "Low three-quarter view from the feet side, wide enough to show both planted legs and the lifted sole",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "foot_count",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 1,
+      "visible_soles": 1,
+      "visibility_requirement": "The lifted sole faces the camera fully unobstructed, and the scratching hand's fingers are spread clearly beside the foot",
+      "intent_zh": "躺在木码头上抬腿挠脚底的舒展姿势",
+      "category": "reclining",
+      "generation_batch": 2
+    },
+    {
+      "instruction": "Reclining on a woven mat, the blue tiger rolls onto its side and props its head on one palm, the other arm draping over its hip; one foot rests atop the other, exposing the upper foot's sole to the viewer.",
+      "action_family": "lounging",
+      "camera": "Eye-level side view, slight downward tilt to read the stacked feet",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "foot_count",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 1,
+      "visibility_requirement": "The top foot's sole is fully visible from heel to toes, and both hands are clear of the mat edge",
+      "intent_zh": "侧卧撑头、双脚交叠露出脚底的慵懒姿态",
+      "category": "reclining",
+      "generation_batch": 2
+    },
+    {
+      "instruction": "The blue tiger lies face-down on a rug, propped on its elbows, flipping through a large open book with one hand while the opposite bare foot is raised behind it, sole turned toward the ceiling.",
+      "action_family": "reading",
+      "camera": "High angle looking down over the tiger's back toward the raised foot",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "foot_count",
+        "yellow_pads"
+      ],
+      "visible_hands": 1,
+      "visible_soles": 1,
+      "visibility_requirement": "The raised sole is fully presented to the overhead camera, and the page-turning hand shows all fingers",
+      "intent_zh": "趴着看书同时翘起一只脚露脚底",
+      "category": "reclining",
+      "generation_batch": 2
+    },
+    {
+      "instruction": "On a hammock strung between two trees, the blue tiger lies diagonal with one leg hanging out and one arm drooping below, palm open toward the ground, while its other hand grips the hammock edge.",
+      "action_family": "balancing",
+      "camera": "Side view from below the hammock, framing the dangling arm and leg",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "The drooping palm faces the camera with all fingers separated, and the gripping hand is fully visible on the hammock rim",
+      "intent_zh": "吊床上斜躺垂手张开手掌",
+      "category": "reclining",
+      "generation_batch": 2
+    },
+    {
+      "instruction": "The blue tiger reclines on a chaise with knees drawn up, using both hands to balance a round clay bowl on its raised knees; one foot is braced flat against the seat cushion, the other lifted showing its sole.",
+      "action_family": "balancing",
+      "camera": "Front three-quarter view at seat height, bowl and lifted sole both in frame",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "foot_count",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 1,
+      "visibility_requirement": "Both hands wrap the bowl with fingers visible, and the lifted sole is unobstructed above the cushion",
+      "intent_zh": "躺椅上用膝盖顶碗并抬起一只脚",
+      "category": "reclining",
+      "generation_batch": 2
+    },
+    {
+      "instruction": "Lying on its stomach across a wide cushion, the blue tiger reaches one arm forward to poke a sleeping cat toy with a finger, while its feet kick up behind, one sole angled toward the viewer.",
+      "action_family": "playing",
+      "camera": "Low rear three-quarter view emphasizing the extended arm and the angled sole",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "foot_count",
+        "yellow_pads"
+      ],
+      "visible_hands": 1,
+      "visible_soles": 1,
+      "visibility_requirement": "The poking hand's index finger and all fingers are clear, and the angled sole is fully visible without overlap",
+      "intent_zh": "趴着伸手逗玩具、脚翘起露脚底",
+      "category": "reclining",
+      "generation_batch": 2
+    },
+    {
+      "instruction": "The blue tiger lies on its back with a small drum resting on its belly, one hand tapping the drumhead and the other hand raised with palm open as if counting rhythm; both feet are planted sole-forward toward the viewer.",
+      "action_family": "drumming",
+      "camera": "Directly above the tiger, looking down along its body toward the planted soles",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "foot_count",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 2,
+      "visibility_requirement": "Both soles face the overhead camera fully, and the open counting palm is unobstructed",
+      "intent_zh": "仰躺敲小鼓、双手张开双脚朝向镜头",
+      "category": "reclining",
+      "generation_batch": 2
+    },
+    {
+      "instruction": "Reclining along a tree branch, the blue tiger hangs one leg down and lets its tail curl around the branch; one hand holds a half-peeled orange, the other palm rests open on its chest.",
+      "action_family": "snacking",
+      "camera": "Side view from mid-height, framing the branch, dangling leg and open chest palm",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "The open palm on the chest shows separated fingers, and the orange-holding hand's fingers are visible",
+      "intent_zh": "躺在树枝上剥橘子、一手摊在胸前",
+      "category": "reclining",
+      "generation_batch": 2
+    },
+    {
+      "instruction": "The blue tiger lies on its side on a sandy beach, one arm extended overhead with the palm flat in the sand, the other hand drawing a spiral with one finger while both feet rest side by side, upper sole exposed.",
+      "action_family": "drawing",
+      "camera": "High three-quarter view looking down the length of the body toward the overhead palm",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "foot_count",
+        "yellow_pads"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 1,
+      "visibility_requirement": "The overhead palm is flat and fully visible, and the upper foot's sole is exposed above the lower foot",
+      "intent_zh": "侧躺沙滩用手掌撑地、手指画圈露脚底",
+      "category": "reclining",
+      "generation_batch": 2
+    },
+    {
+      "instruction": "On a bed of cushions, the blue tiger lies curled with knees near its chest, holding one bare foot in both hands and inspecting its toes; the held sole faces outward.",
+      "action_family": "inspecting",
+      "camera": "Close three-quarter view from the foot side, focusing on the held foot and both hands",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "foot_count",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 1,
+      "visibility_requirement": "The held sole is turned fully outward, and both hands' fingers are visible wrapping the foot without hiding the pad",
+      "intent_zh": "蜷在垫子上双手捧脚检查脚趾",
+      "category": "reclining",
+      "generation_batch": 2
+    },
+    {
+      "instruction": "The blue tiger reclines against a large plush pillow, one leg stretched long and the other folded under, its near hand resting on the floor with palm up holding a small marble.",
+      "action_family": "holding",
+      "camera": "Low front view at floor level, marble and palm in the foreground, leg line receding",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "human_pose"
+      ],
+      "visible_hands": 1,
+      "visible_soles": 0,
+      "visibility_requirement": "The upturned palm with the marble is fully visible and all fingers are distinguishable",
+      "intent_zh": "靠着大枕头坐躺、手掌托弹珠",
+      "category": "reclining",
+      "generation_batch": 2
+    },
+    {
+      "instruction": "Lying on a picnic blanket, the blue tiger balances a paper plate on one raised foot's sole while its hands rest behind its head; the plate sits flat on the yellow pads.",
+      "action_family": "balancing",
+      "camera": "Side low view at blanket height, framing the raised foot and the relaxed hands behind the head",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "foot_count",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 1,
+      "visibility_requirement": "The raised sole is fully flat toward the sky with the plate balanced on it, and both hands behind the head are visible",
+      "intent_zh": "仰躺用脚底顶着纸盘、双手枕在脑后",
+      "category": "reclining",
+      "generation_batch": 2
+    },
+    {
+      "instruction": "The blue tiger lies on its back with a book open on its chest, one hand turning a page while the other hand reaches across to scratch its opposite forearm lazily.",
+      "action_family": "reading",
+      "camera": "Over-the-shoulder high view looking down at the chest book and both hands",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both hands are fully visible above the book, with the page-turning fingers and scratching fingers separated",
+      "intent_zh": "仰躺看书翻页、另一手挠手臂",
+      "category": "reclining",
+      "generation_batch": 2
+    },
+    {
+      "instruction": "Reclining on a low wall, the blue tiger swings one leg over the edge and leans back on both palms, head tipped back to look at the sky; one foot dangles with its sole turned toward the viewer.",
+      "action_family": "lounging",
+      "camera": "Low view from the wall's outer side, wall edge horizontal, dangling sole centered",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "foot_count",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 1,
+      "visibility_requirement": "The dangling sole faces the viewer unobstructed, and both supporting palms are visible on the wall top",
+      "intent_zh": "矮墙上坐着后仰、双手撑墙露脚底",
+      "category": "reclining",
+      "generation_batch": 2
+    },
+    {
+      "instruction": "Lying face-up on a floating pool raft, the blue tiger holds a small watering can with one hand, tipping it toward a potted plant on the pool edge, while its other hand trails in the water.",
+      "action_family": "watering",
+      "camera": "Side view from water level, framing the raft, can and trailing hand",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "The watering-can hand's fingers grip visibly and the trailing hand's palm is open underwater",
+      "intent_zh": "躺在浮床上浇水、一手划水",
+      "category": "reclining",
+      "generation_batch": 2
+    },
+    {
+      "instruction": "The blue tiger lies on its side under a blanket, only one leg and one arm outside; the exposed foot pushes the blanket down with its sole toward the camera, and the hand grips the blanket's edge.",
+      "action_family": "pushing",
+      "camera": "Low side view at blanket level, focusing on the foot and hand emerging from the folds",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "foot_count",
+        "yellow_pads"
+      ],
+      "visible_hands": 1,
+      "visible_soles": 1,
+      "visibility_requirement": "The pushing sole and gripping fingers both emerge clearly from the blanket without fabric hiding the pads",
+      "intent_zh": "侧躺盖毯、伸出脚底蹬毯子、手抓毯边",
+      "category": "reclining",
+      "generation_batch": 2
+    },
+    {
+      "instruction": "Reclining on a beanbag chair, the blue tiger leans far back with legs up in the air, one hand holding a small flashlight pointed at its own raised sole, the other hand steadying the beam.",
+      "action_family": "inspecting",
+      "camera": "Front low angle, flashlight beam crossing toward the raised sole",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "foot_count",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 1,
+      "visibility_requirement": "The illuminated sole faces the camera fully, and both hands around the flashlight are clearly visible",
+      "intent_zh": "靠在豆袋椅上抬脚用手电照脚底",
+      "category": "reclining",
+      "generation_batch": 2
+    },
+    {
+      "instruction": "The blue tiger lies on its stomach on a large cushion, elbows planted and chin on one palm, using the other hand to spin a small top on the floor; one heel lifts behind with sole up.",
+      "action_family": "playing",
+      "camera": "Low front view across the floor, top and spinning hand centered, raised sole behind",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "foot_count",
+        "yellow_pads"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 1,
+      "visibility_requirement": "The spinning hand's fingers are fully visible beside the top, and the raised sole is clear of the cushion",
+      "intent_zh": "趴着转陀螺、托腮、脚跟翘起露脚底",
+      "category": "reclining",
+      "generation_batch": 2
+    },
+    {
+      "instruction": "Lying across a wide armchair on its back, the blue tiger folds one leg over the armrest and rests the other foot flat on the seat; one hand dangles to the floor palm-down, the other rests on its stomach.",
+      "action_family": "draping",
+      "camera": "Side view of the armchair, framing the armrest leg, dangling palm and stomach hand",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "The dangling palm faces away from the body and is fully visible, and the hand on the stomach shows its fingers",
+      "intent_zh": "横躺扶手椅、一手垂地、一手放肚子",
+      "category": "reclining",
+      "generation_batch": 2
+    },
+    {
+      "instruction": "Reclining on a flat rock, the blue tiger crosses one ankle over the opposite knee and reaches down with both hands to stretch toward its raised sole, fingers pressing the yellow pads.",
+      "action_family": "stretching",
+      "camera": "Side three-quarter view from the feet, framing the crossed ankle and both reaching hands",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "foot_count",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 1,
+      "visibility_requirement": "The raised sole is fully displayed with all pads visible, and both hands' fingers press it clearly",
+      "intent_zh": "石头上跷脚、双手够脚底拉伸",
+      "category": "reclining",
+      "generation_batch": 2
+    },
+    {
+      "instruction": "The blue tiger lies on its back on a gym mat, one hand holding a small hand mirror above its face, the other hand tilting the mirror; one knee is bent with the foot planted, and the other leg lies flat.",
+      "action_family": "grooming",
+      "camera": "High three-quarter view from the head end, mirror and both hands in focus",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both hands on the mirror are visible with fingers distinct against the frame",
+      "intent_zh": "仰躺垫子上双手举镜子端详",
+      "category": "reclining",
+      "generation_batch": 2
+    },
+    {
+      "instruction": "Sprawled on a picnic blanket, the blue tiger lies on its back with one arm thrown across its eyes and the other hand resting palm-up beside its head; both feet are planted with soles toward the viewer.",
+      "action_family": "resting",
+      "camera": "Directly overhead view of the blanket, both planted soles and the palm-up hand framed",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "foot_count",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 2,
+      "visibility_requirement": "Both soles face the overhead camera fully, and the palm-up hand is unobstructed beside the head",
+      "intent_zh": "仰躺毯子、双臂张开、双脚朝向镜头",
+      "category": "reclining",
+      "generation_batch": 2
+    },
+    {
+      "instruction": "The blue tiger reclines on its side along a couch, one arm bent under its head, the other hand drumming fingers on the cushion; one foot pushes against the far armrest, the near foot resting on the seat.",
+      "action_family": "drumming",
+      "camera": "Side view down the couch length, drumming fingers and head-resting hand both visible",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "The drumming hand's fingers are separated and visible on the cushion, and the head-resting hand is clear",
+      "intent_zh": "侧躺沙发、手指敲垫子、一手垫头",
+      "category": "reclining",
+      "generation_batch": 2
+    },
+    {
+      "instruction": "Lying on its stomach on a broad tree branch, the blue tiger reaches one hand down to touch a hanging leaf, the other hand gripping the branch; one foot hooks the branch with sole turned up toward the viewer.",
+      "action_family": "reaching",
+      "camera": "Low upward view from below the branch, framing the reaching hand and upturned sole",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "foot_count",
+        "yellow_pads"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 1,
+      "visibility_requirement": "The reaching hand's fingers touch the leaf clearly, and the hooked foot's sole faces the camera without branch occlusion",
+      "intent_zh": "趴在树枝上伸手够叶子、脚勾树枝露脚底",
+      "category": "reclining",
+      "generation_batch": 2
+    },
+    {
+      "instruction": "The blue tiger lies back in a shallow inflatable pool, one hand resting on the pool rim with fingers spread, the other hand cupping water; one leg rests on the rim showing its sole, the other submerged.",
+      "action_family": "lounging",
+      "camera": "Low view across the water toward the pool rim and resting sole",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "foot_count",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 1,
+      "visibility_requirement": "The rim-resting sole is fully above water, and the rim hand's spread fingers are unobstructed",
+      "intent_zh": "躺在充气池里、一手扶池边、脚搭池沿露脚底",
+      "category": "reclining",
+      "generation_batch": 2
+    },
+    {
+      "instruction": "Curled on a round floor pouf, the blue tiger lies face-down with its chin propped on folded arms, its feet tucked so one sole faces up behind it, toes curled against the fabric.",
+      "action_family": "resting",
+      "camera": "Rear three-quarter high angle, framing the folded arms and upturned sole",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "foot_count",
+        "yellow_pads"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 1,
+      "visibility_requirement": "The upturned sole is fully visible above the pouf, and both folded hands' fingers are distinct",
+      "intent_zh": "趴圆凳上托腮、双脚后翘露脚底",
+      "category": "reclining",
+      "generation_batch": 2
+    },
+    {
+      "instruction": "Reclining on a blanket in tall grass, the blue tiger lies on its back and lifts both legs into the air, one hand supporting its lower back, the other hand reaching up to touch a lifted foot's sole.",
+      "action_family": "stretching",
+      "camera": "Side low view through grass blades, framing both lifted legs and the reaching hand",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "foot_count",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 1,
+      "visibility_requirement": "The touched sole faces the camera fully, and the supporting hand is visible under the back",
+      "intent_zh": "躺在草丛里举腿、一手撑腰一手摸脚底",
+      "category": "reclining",
+      "generation_batch": 2
+    },
+    {
+      "instruction": "The blue tiger lies on its side on a kitchen floor, one hand propping its head and the other reaching into a low cabinet, fingers visible on the handle; one foot braces the cabinet door.",
+      "action_family": "reaching",
+      "camera": "Low front view at cabinet height, framing the reaching hand and bracing foot",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "The cabinet-reaching hand's fingers are fully visible on the handle, and the head-propping hand is unobstructed",
+      "intent_zh": "侧躺厨房地板、伸手开柜门、脚顶柜门",
+      "category": "reclining",
+      "generation_batch": 2
+    },
+    {
+      "instruction": "Lying on a large outdoor cushion, the blue tiger rolls halfway onto its stomach, one arm extended forward with palm open catching a falling leaf, both feet lifted behind with soles upward.",
+      "action_family": "catching",
+      "camera": "High side view, falling leaf, open palm and both upturned soles in frame",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "foot_count",
+        "yellow_pads"
+      ],
+      "visible_hands": 1,
+      "visible_soles": 2,
+      "visibility_requirement": "The open catching palm faces upward with all fingers separated, and both upturned soles are fully visible",
+      "intent_zh": "趴垫子上伸手接落叶、双脚后翘露脚底",
+      "category": "reclining",
+      "generation_batch": 2
+    },
+    {
+      "instruction": "The blue tiger reclines on a wide windowsill, back against the frame, one knee up and the other leg stretched along the sill; one hand taps the glass with a finger, the other hand rests flat on the sill palm-down.",
+      "action_family": "tapping",
+      "camera": "Interior side view along the windowsill, tapping finger and flat palm framed",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "The tapping finger and all fingers of the flat palm are clearly visible against the glass and sill",
+      "intent_zh": "坐在窗台上、手指敲玻璃、一手平放窗台",
+      "category": "reclining",
+      "generation_batch": 2
+    }
+  ],
+  "model": "deepseek-flash",
+  "usage": {
+    "prompt_tokens": 385,
+    "completion_tokens": 4613,
+    "total_tokens": 4998,
+    "prompt_tokens_details": {
+      "cached_tokens": 251
+    },
+    "prompt_cache_hit_tokens": 251,
+    "prompt_cache_miss_tokens": 134
+  },
+  "settings": {
+    "temperature": 1,
+    "thinking": "disabled"
+  }
+}

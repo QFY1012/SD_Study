@@ -1,0 +1,529 @@
+{
+  "tasks": [
+    {
+      "instruction": "The blue tiger crouches on a sandy beach and presses one foot into the wet sand, leaving a clear print as foam washes near the toes.",
+      "action_family": "imprinting",
+      "camera": "low-angle close-up of the sole and toes from the side",
+      "targets": [
+        "identity",
+        "cel_style",
+        "foot_count",
+        "yellow_pads"
+      ],
+      "visible_hands": 0,
+      "visible_soles": 1,
+      "visibility_requirement": "The planted foot's sole and all four toes must be clearly visible with yellow pads showing.",
+      "intent_zh": "沙滩上踩出脚印的足部特写",
+      "category": "foot_detail",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "Sitting on a grassy hill, the blue tiger stretches both legs forward and flexes the toes upward while sunlight catches the yellow pads on the soles.",
+      "action_family": "stretching",
+      "camera": "front low-angle close-up on both raised soles",
+      "targets": [
+        "identity",
+        "cel_style",
+        "foot_count",
+        "yellow_pads"
+      ],
+      "visible_hands": 0,
+      "visible_soles": 2,
+      "visibility_requirement": "Both soles and all four toes on each foot must be fully visible and unobstructed.",
+      "intent_zh": "草地上伸展双脚露出脚垫",
+      "category": "foot_detail",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "The blue tiger lounges on a picnic blanket and lifts one leg, inspecting a small leaf stuck between two toes with a curious tilt of the head.",
+      "action_family": "inspecting",
+      "camera": "side close-up of the raised foot with toes spread",
+      "targets": [
+        "identity",
+        "cel_style",
+        "foot_count",
+        "yellow_pads"
+      ],
+      "visible_hands": 0,
+      "visible_soles": 1,
+      "visibility_requirement": "The lifted foot's sole, yellow pads, and all four toes must be clearly visible.",
+      "intent_zh": "野餐垫上抬起脚查看脚趾间的叶子",
+      "category": "foot_detail",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "Balancing on a fallen log over a stream, the blue tiger grips the bark with bare feet, toes curling around the edge as water rushes below.",
+      "action_family": "balancing",
+      "camera": "low side view focused on the gripping foot and curled toes",
+      "targets": [
+        "identity",
+        "cel_style",
+        "foot_count",
+        "yellow_pads"
+      ],
+      "visible_hands": 0,
+      "visible_soles": 1,
+      "visibility_requirement": "The gripping foot's underside, yellow pads, and all four toes must be visible against the bark.",
+      "intent_zh": "横木上赤脚抓握树皮的足部特写",
+      "category": "foot_detail",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "Reclining on a couch, the blue tiger rests one foot on a cushion and slowly rotates the ankle, showing the yellow heel pad and four relaxed toes.",
+      "action_family": "resting",
+      "camera": "angled close-up from below the cushion",
+      "targets": [
+        "identity",
+        "cel_style",
+        "foot_count",
+        "yellow_pads"
+      ],
+      "visible_hands": 0,
+      "visible_soles": 1,
+      "visibility_requirement": "The resting foot's sole, heel pad, and all four toes must be clearly visible.",
+      "intent_zh": "沙发上脚踝转动的足底特写",
+      "category": "foot_detail",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "The blue tiger walks barefoot across cool paving stones after rain, pausing mid-step so the raised foot shows wet yellow pads and four toes.",
+      "action_family": "walking",
+      "camera": "low side tracking shot on the lifted foot",
+      "targets": [
+        "identity",
+        "cel_style",
+        "foot_count",
+        "yellow_pads"
+      ],
+      "visible_hands": 0,
+      "visible_soles": 1,
+      "visibility_requirement": "The lifted foot's sole, all four toes, and yellow pads must be visible with water droplets.",
+      "intent_zh": "雨后石板上迈步抬脚的足部特写",
+      "category": "foot_detail",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "Kneeling in a garden, the blue tiger tucks both feet behind and wiggles the toes, with the yellow soles angled toward the viewer among potted plants.",
+      "action_family": "kneeling",
+      "camera": "rear low close-up on both tucked soles",
+      "targets": [
+        "identity",
+        "cel_style",
+        "foot_count",
+        "yellow_pads"
+      ],
+      "visible_hands": 0,
+      "visible_soles": 2,
+      "visibility_requirement": "Both soles and all four toes per foot must be clearly visible and unobstructed.",
+      "intent_zh": "花园中跪姿双脚脚底特写",
+      "category": "foot_detail",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "The blue tiger sits on a dock above clear water, dangling both feet and pointing the toes, soles reflected below with yellow pads glowing softly.",
+      "action_family": "dangling",
+      "camera": "top-down close-up on both feet over water",
+      "targets": [
+        "identity",
+        "cel_style",
+        "foot_count",
+        "yellow_pads"
+      ],
+      "visible_hands": 0,
+      "visible_soles": 2,
+      "visibility_requirement": "Both soles and all four toes on each foot must be visible above the water surface.",
+      "intent_zh": "码头边悬垂双脚的水面倒影特写",
+      "category": "foot_detail",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "Lying on a yoga mat, the blue tiger raises one leg straight up and spreads the toes wide, showing the yellow palm-like sole pad clearly.",
+      "action_family": "exercising",
+      "camera": "side low-angle close-up of the raised leg and spread toes",
+      "targets": [
+        "identity",
+        "cel_style",
+        "foot_count",
+        "yellow_pads"
+      ],
+      "visible_hands": 0,
+      "visible_soles": 1,
+      "visibility_requirement": "The raised foot's sole, yellow pads, and all four toes must be fully visible.",
+      "intent_zh": "瑜伽垫上抬腿张开脚趾的足底特写",
+      "category": "foot_detail",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "The blue tiger steps out of a shallow tide pool, leaving one foot planted while the other lifts, revealing yellow pads and four toes rimmed with water.",
+      "action_family": "stepping",
+      "camera": "low front close-up on the lifting foot",
+      "targets": [
+        "identity",
+        "cel_style",
+        "foot_count",
+        "yellow_pads"
+      ],
+      "visible_hands": 0,
+      "visible_soles": 1,
+      "visibility_requirement": "The lifting foot's sole and all four toes must be visible with yellow pads showing.",
+      "intent_zh": "潮池中抬脚踏水的足部特写",
+      "category": "foot_detail",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "Crouched on a tree branch, the blue tiger hooks both feet around the limb, toes gripping as the yellow soles face outward below the leaves.",
+      "action_family": "climbing",
+      "camera": "low angle from beneath the branch on both gripping feet",
+      "targets": [
+        "identity",
+        "cel_style",
+        "foot_count",
+        "yellow_pads"
+      ],
+      "visible_hands": 0,
+      "visible_soles": 2,
+      "visibility_requirement": "Both soles, yellow pads, and all four toes per foot must be visible around the branch.",
+      "intent_zh": "树枝上双脚勾握的足底特写",
+      "category": "foot_detail",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "The blue tiger sits cross-legged on a woven rug, one foot turned upward so the sole and four yellow-padded toes rest against the opposite knee.",
+      "action_family": "sitting",
+      "camera": "front close-up on the upturned sole",
+      "targets": [
+        "identity",
+        "cel_style",
+        "foot_count",
+        "yellow_pads"
+      ],
+      "visible_hands": 0,
+      "visible_soles": 1,
+      "visibility_requirement": "The turned sole, heel pad, and all four toes must be clearly visible.",
+      "intent_zh": "地毯上盘腿翻脚的足底特写",
+      "category": "foot_detail",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "Standing on tiptoe at a kitchen counter, the blue tiger reaches for a high shelf while one heel lifts, exposing the yellow sole and four toes.",
+      "action_family": "reaching",
+      "camera": "low rear close-up on the lifting heel and toes",
+      "targets": [
+        "identity",
+        "cel_style",
+        "foot_count",
+        "yellow_pads"
+      ],
+      "visible_hands": 0,
+      "visible_soles": 1,
+      "visibility_requirement": "The lifting foot's sole, yellow pads, and all four toes must be visible from behind.",
+      "intent_zh": "厨房踮脚取物的足跟脚底特写",
+      "category": "foot_detail",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "The blue tiger naps on a hammock with both feet hanging over the edge, toes relaxed and yellow soles catching dappled afternoon light.",
+      "action_family": "napping",
+      "camera": "side close-up on both hanging feet with dappled light",
+      "targets": [
+        "identity",
+        "cel_style",
+        "foot_count",
+        "yellow_pads"
+      ],
+      "visible_hands": 0,
+      "visible_soles": 2,
+      "visibility_requirement": "Both soles and all four toes on each foot must be visible and unobstructed.",
+      "intent_zh": "吊床上垂脚午睡的脚底光斑特写",
+      "category": "foot_detail",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "Crouching beside a campfire, the blue tiger warms both soles toward the flames, toes splayed and yellow pads lit by orange glow.",
+      "action_family": "warming",
+      "camera": "front low close-up on both soles facing the firelight",
+      "targets": [
+        "identity",
+        "cel_style",
+        "foot_count",
+        "yellow_pads"
+      ],
+      "visible_hands": 0,
+      "visible_soles": 2,
+      "visibility_requirement": "Both soles, yellow pads, and all four toes per foot must be clearly visible in the firelight.",
+      "intent_zh": "篝火旁烘烤脚底的暖光特写",
+      "category": "foot_detail",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "The blue tiger wades through tall grass, one foot lifting high so the sole shows yellow pads and four toes dusted with pollen.",
+      "action_family": "wading",
+      "camera": "low side close-up on the raised foot amid grass",
+      "targets": [
+        "identity",
+        "cel_style",
+        "foot_count",
+        "yellow_pads"
+      ],
+      "visible_hands": 0,
+      "visible_soles": 1,
+      "visibility_requirement": "The raised foot's sole, all four toes, and yellow pads must be visible above the grass.",
+      "intent_zh": "高草丛中抬脚沾满花粉的足底特写",
+      "category": "foot_detail",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "Reclining on a rooftop at dusk, the blue tiger crosses one ankle over the other and flexes both feet, soles and yellow pads tilted skyward.",
+      "action_family": "relaxing",
+      "camera": "top-down close-up on both crossed feet and soles",
+      "targets": [
+        "identity",
+        "cel_style",
+        "foot_count",
+        "yellow_pads"
+      ],
+      "visible_hands": 0,
+      "visible_soles": 2,
+      "visibility_requirement": "Both soles and all four toes on each foot must be visible despite the crossed ankles.",
+      "intent_zh": "屋顶黄昏交叠双脚的脚底特写",
+      "category": "foot_detail",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "The blue tiger sits on a wooden stool and rolls a small ball under one foot, the yellow sole pressing down while four toes spread over it.",
+      "action_family": "playing",
+      "camera": "side low close-up on the foot on the ball",
+      "targets": [
+        "identity",
+        "cel_style",
+        "foot_count",
+        "yellow_pads"
+      ],
+      "visible_hands": 0,
+      "visible_soles": 1,
+      "visibility_requirement": "The foot on the ball, its sole, yellow pads, and all four toes must be clearly visible.",
+      "intent_zh": "木凳上用脚滚球的足底特写",
+      "category": "foot_detail",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "Crawling through a play tunnel, the blue tiger's bare feet trail behind with soles up, toes wiggling and yellow pads bright against the fabric.",
+      "action_family": "crawling",
+      "camera": "rear low close-up on both upturned soles in the tunnel",
+      "targets": [
+        "identity",
+        "cel_style",
+        "foot_count",
+        "yellow_pads"
+      ],
+      "visible_hands": 0,
+      "visible_soles": 2,
+      "visibility_requirement": "Both upturned soles and all four toes per foot must be visible inside the tunnel.",
+      "intent_zh": "游戏隧道中爬行翘脚底的特写",
+      "category": "foot_detail",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "The blue tiger leans back on a park bench, lifting both feet off the ground and pointing the toes, soles facing forward with yellow pads.",
+      "action_family": "leaning",
+      "camera": "front low close-up on both lifted soles",
+      "targets": [
+        "identity",
+        "cel_style",
+        "foot_count",
+        "yellow_pads"
+      ],
+      "visible_hands": 0,
+      "visible_soles": 2,
+      "visibility_requirement": "Both soles, yellow pads, and all four toes per foot must be clearly visible.",
+      "intent_zh": "公园长椅上抬脚前伸的脚底特写",
+      "category": "foot_detail",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "Squatting on a smooth stone by a pond, the blue tiger rests both feet flat, toes gripping the edge as yellow soles peek around the rim.",
+      "action_family": "squatting",
+      "camera": "front low-angle close-up on both feet at the rim",
+      "targets": [
+        "identity",
+        "cel_style",
+        "foot_count",
+        "yellow_pads"
+      ],
+      "visible_hands": 0,
+      "visible_soles": 2,
+      "visibility_requirement": "Both soles, yellow pads, and all four toes per foot must be visible around the stone edge.",
+      "intent_zh": "池塘石上蹲姿脚趾抓边的脚底特写",
+      "category": "foot_detail",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "The blue tiger lies on its back on a bed, lifting both legs and bicycling the feet in the air, yellow soles flashing with each pass.",
+      "action_family": "exercising",
+      "camera": "side close-up on both feet mid-pedal",
+      "targets": [
+        "identity",
+        "cel_style",
+        "foot_count",
+        "yellow_pads"
+      ],
+      "visible_hands": 0,
+      "visible_soles": 2,
+      "visibility_requirement": "Both soles and all four toes on each foot must be visible during the pedaling motion.",
+      "intent_zh": "床上仰卧蹬腿的脚底动态特写",
+      "category": "foot_detail",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "Standing in a doorway, the blue tiger lifts one foot to scratch an ankle with its toes, sole turned outward and yellow pads showing.",
+      "action_family": "scratching",
+      "camera": "side close-up on the raised foot against the doorframe",
+      "targets": [
+        "identity",
+        "cel_style",
+        "foot_count",
+        "yellow_pads"
+      ],
+      "visible_hands": 0,
+      "visible_soles": 1,
+      "visibility_requirement": "The raised foot's sole, yellow pads, and all four toes must be clearly visible.",
+      "intent_zh": "门口抬脚挠脚踝的足底特写",
+      "category": "foot_detail",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "The blue tiger sits on a swing and kicks both bare feet forward, soles facing the camera as toes curl and yellow pads catch the sun.",
+      "action_family": "swinging",
+      "camera": "front low close-up on both kicked-forward soles",
+      "targets": [
+        "identity",
+        "cel_style",
+        "foot_count",
+        "yellow_pads"
+      ],
+      "visible_hands": 0,
+      "visible_soles": 2,
+      "visibility_requirement": "Both soles, yellow pads, and all four toes per foot must be visible at the peak of the kick.",
+      "intent_zh": "秋千上踢出双脚的脚底特写",
+      "category": "foot_detail",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "Kneeling on a beach towel, the blue tiger presses its toes into the fabric while heel pads lift, showing the yellow sole and four curled toes.",
+      "action_family": "kneeling",
+      "camera": "side close-up on the lifted heel and curled toes",
+      "targets": [
+        "identity",
+        "cel_style",
+        "foot_count",
+        "yellow_pads"
+      ],
+      "visible_hands": 0,
+      "visible_soles": 1,
+      "visibility_requirement": "The lifted heel pad, sole, and all four toes must be clearly visible.",
+      "intent_zh": "毛巾上跪压脚趾抬脚跟的脚底特写",
+      "category": "foot_detail",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "The blue tiger hops over a puddle, one foot forward with the sole exposed, toes spread and yellow pads glistening above the water.",
+      "action_family": "hopping",
+      "camera": "low side close-up on the forward foot mid-air",
+      "targets": [
+        "identity",
+        "cel_style",
+        "foot_count",
+        "yellow_pads"
+      ],
+      "visible_hands": 0,
+      "visible_soles": 1,
+      "visibility_requirement": "The airborne foot's sole, yellow pads, and all four toes must be visible above the puddle.",
+      "intent_zh": "水坑上跳跃抬脚的足底特写",
+      "category": "foot_detail",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "Sitting on a low wall, the blue tiger swings both legs and taps the heels against the bricks, soles turning to show yellow pads and four toes.",
+      "action_family": "sitting",
+      "camera": "low front close-up on both swinging feet",
+      "targets": [
+        "identity",
+        "cel_style",
+        "foot_count",
+        "yellow_pads"
+      ],
+      "visible_hands": 0,
+      "visible_soles": 2,
+      "visibility_requirement": "Both soles and all four toes on each foot must be visible during the swing.",
+      "intent_zh": "矮墙上摆腿敲脚跟的脚底特写",
+      "category": "foot_detail",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "The blue tiger stretches after waking, standing on tiptoe with one heel raised high, the yellow sole and four toes clearly presented sideways.",
+      "action_family": "stretching",
+      "camera": "side low close-up on the raised heel and toes",
+      "targets": [
+        "identity",
+        "cel_style",
+        "foot_count",
+        "yellow_pads"
+      ],
+      "visible_hands": 0,
+      "visible_soles": 1,
+      "visibility_requirement": "The raised foot's sole, heel pad, and all four toes must be fully visible.",
+      "intent_zh": "睡醒踮脚伸展的足底侧面特写",
+      "category": "foot_detail",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "Crouched on a skateboard, the blue tiger balances with bare feet, toes curled over the deck edge and yellow soles visible beneath.",
+      "action_family": "balancing",
+      "camera": "low side close-up under the deck on both feet and soles",
+      "targets": [
+        "identity",
+        "cel_style",
+        "foot_count",
+        "yellow_pads"
+      ],
+      "visible_hands": 0,
+      "visible_soles": 2,
+      "visibility_requirement": "Both soles, yellow pads, and all four toes per foot must be visible beneath the board.",
+      "intent_zh": "滑板上赤脚平衡的板下脚底特写",
+      "category": "foot_detail",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "The blue tiger lies on a warm sandy dune, feet raised behind with soles toward the sky, toes relaxed and yellow pads dusted with sand.",
+      "action_family": "resting",
+      "camera": "rear low close-up on both raised sandy soles",
+      "targets": [
+        "identity",
+        "cel_style",
+        "foot_count",
+        "yellow_pads"
+      ],
+      "visible_hands": 0,
+      "visible_soles": 2,
+      "visibility_requirement": "Both soles, yellow pads, and all four toes per foot must be visible with sand grains.",
+      "intent_zh": "沙丘上翘脚晒太阳的脚底特写",
+      "category": "foot_detail",
+      "generation_batch": 0
+    }
+  ],
+  "model": "deepseek-flash",
+  "usage": {
+    "prompt_tokens": 376,
+    "completion_tokens": 3795,
+    "total_tokens": 4171,
+    "prompt_tokens_details": {
+      "cached_tokens": 128
+    },
+    "prompt_cache_hit_tokens": 128,
+    "prompt_cache_miss_tokens": 248
+  },
+  "settings": {
+    "temperature": 1,
+    "thinking": "disabled"
+  }
+}

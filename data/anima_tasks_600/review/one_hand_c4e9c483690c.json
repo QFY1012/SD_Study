@@ -1,0 +1,213 @@
+{
+  "approved_ids": [
+    0,
+    1,
+    2,
+    4,
+    5,
+    6,
+    8,
+    9,
+    10,
+    12,
+    13,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    29,
+    30,
+    32,
+    33,
+    35,
+    37,
+    39,
+    41,
+    43,
+    47,
+    48,
+    49,
+    51,
+    52,
+    54,
+    56,
+    58,
+    61,
+    63,
+    64,
+    69,
+    70,
+    71,
+    74,
+    75,
+    78,
+    79,
+    80,
+    82,
+    85,
+    86,
+    87,
+    90
+  ],
+  "rejected": [
+    {
+      "index": 3,
+      "reason": "Palm shading brow with fingers pressed together cannot show full palm and pads from below."
+    },
+    {
+      "index": 7,
+      "reason": "Palm-down hand on drawer shows back of hand, not palm pads; requirement contradicts target."
+    },
+    {
+      "index": 11,
+      "reason": "Palm pressed flat against chalkboard faces away from camera; pads not visible."
+    },
+    {
+      "index": 14,
+      "reason": "Palm pressed flat against door faces away; full palm not visible from behind-side."
+    },
+    {
+      "index": 21,
+      "reason": "Palm-down hand above candle shows back of hand, not palm pads."
+    },
+    {
+      "index": 28,
+      "reason": "Palm flat on map faces downward; pads not visible from overhead."
+    },
+    {
+      "index": 31,
+      "reason": "Palm pressed flat against skylight glass faces away; pads not visible."
+    },
+    {
+      "index": 34,
+      "reason": "Palm pressing wet clay faces downward; pads not visible."
+    },
+    {
+      "index": 36,
+      "reason": "Supporting palm flat on felt faces down; pads not visible."
+    },
+    {
+      "index": 38,
+      "reason": "Palm inside hive gap with bees crawling likely occludes fingers; full visibility inconsistent."
+    },
+    {
+      "index": 40,
+      "reason": "Palm pressed flat against ceiling faces upward away from camera; pads not visible."
+    },
+    {
+      "index": 42,
+      "reason": "Palm pressed flat on glass faces away; pads not visible."
+    },
+    {
+      "index": 44,
+      "reason": "Bracing palm flat on post faces away; pads not visible."
+    },
+    {
+      "index": 45,
+      "reason": "Palm flat on boulder faces down; pads not visible."
+    },
+    {
+      "index": 46,
+      "reason": "Palm smeared on rock face faces away; pads not visible."
+    },
+    {
+      "index": 50,
+      "reason": "Typo 'visible_handson' in targets; palm under umbrella fabric occluded."
+    },
+    {
+      "index": 53,
+      "reason": "Palm slid under parchment is largely occluded; full five fingers not visible."
+    },
+    {
+      "index": 55,
+      "reason": "Palm pressing flat to tree trunk faces away; pads not visible."
+    },
+    {
+      "index": 57,
+      "reason": "Palm resting flat on moss faces down; pads not visible."
+    },
+    {
+      "index": 59,
+      "reason": "Palm flat against fire pole faces away; pads not visible."
+    },
+    {
+      "index": 60,
+      "reason": "Forearm pressed flat on glass with palm open; palm orientation ambiguous and likely not fully visible."
+    },
+    {
+      "index": 62,
+      "reason": "Side view of palm pressed against trunk cannot show full palm and all fingers."
+    },
+    {
+      "index": 65,
+      "reason": "Palm resting on cub's back faces down; pads not visible."
+    },
+    {
+      "index": 66,
+      "reason": "Palm pressing flat on jar lid faces down; pads not visible."
+    },
+    {
+      "index": 67,
+      "reason": "Palm pushing upward against branch faces away; pads not visible."
+    },
+    {
+      "index": 68,
+      "reason": "Balancing palm extended outward; orientation not guaranteed to show palm and pads."
+    },
+    {
+      "index": 72,
+      "reason": "Palm-down supporting hand on floor shows back of hand, not pads."
+    },
+    {
+      "index": 73,
+      "reason": "Palm pressed against mirror faces away; pads not visible."
+    },
+    {
+      "index": 76,
+      "reason": "Reaching palm toward book spine likely occluded by books; full palm not visible."
+    },
+    {
+      "index": 77,
+      "reason": "Palm extended outward from cave; orientation not guaranteed to show palm and pads."
+    },
+    {
+      "index": 81,
+      "reason": "Palm pressed flat on melon faces down; pads not visible."
+    },
+    {
+      "index": 83,
+      "reason": "Palm pressed against speaker cone faces away; pads not visible."
+    },
+    {
+      "index": 84,
+      "reason": "Palm extended toward bird; orientation not guaranteed to show palm and pads."
+    },
+    {
+      "index": 88,
+      "reason": "Palm flat under bowl faces up but bowl occludes central palm; full palm not visible."
+    },
+    {
+      "index": 89,
+      "reason": "Palm pressed onto clay tablet faces down; pads not visible."
+    }
+  ],
+  "model": "deepseek-flash",
+  "usage": {
+    "prompt_tokens": 11723,
+    "completion_tokens": 1126,
+    "total_tokens": 12849,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 11723
+  }
+}

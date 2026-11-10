@@ -1,0 +1,1 @@
+This experimental adapter is adapted from DanceGRPO (Apache-2.0), https://github.com/XueZeyue/DanceGRPO at commit 15cc71d. The stochastic transition and clipped GRPO objective follow its FLUX LoRA implementation. This version adds native Anima loading, single-device execution, CPU trajectory storage, external reward I/O, and smoke validation. See LICENSE in this directory.

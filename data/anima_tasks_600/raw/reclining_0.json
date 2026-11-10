@@ -1,0 +1,565 @@
+{
+  "tasks": [
+    {
+      "instruction": "Recline on a picnic blanket propped on one elbow, holding a paperback book open with the other hand while reading, legs relaxed and crossed at the ankle",
+      "action_family": "reading",
+      "camera": "medium wide shot from a low three-quarter angle",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both hands and all fingers clearly visible above the blanket; feet partly hidden",
+      "intent_zh": "躺在野餐垫上撑肘看书",
+      "category": "reclining",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "Lie on back on a sofa with knees bent, tossing a small ball straight up and reaching to catch it, palm open upward and fingers spread",
+      "action_family": "playing",
+      "camera": "full body shot from the side at sofa level",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Catching hand palm and all five fingers facing camera; other hand at rest visible",
+      "intent_zh": "躺沙发上向上抛接球",
+      "category": "reclining",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "Sit reclined against a large cushion, one leg extended showing the sole toward the viewer with yellow pads, using a pencil to sketch in a notebook on the raised knee",
+      "action_family": "drawing",
+      "camera": "low frontal shot framing the extended foot and hands",
+      "targets": [
+        "identity",
+        "cel_style",
+        "foot_count",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 1,
+      "visibility_requirement": "Extended sole fully facing camera with all four toes and pads clear; sketch hand visible",
+      "intent_zh": "靠着垫子伸腿露脚掌画画",
+      "category": "reclining",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "Lie stomach-down on a rug, chin propped on one hand, scrolling a phone with the other thumb, tail curling upward behind",
+      "action_family": "browsing",
+      "camera": "high angle shot looking down along the body",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both hands near face clearly visible, fingers distinct around the phone",
+      "intent_zh": "趴地毯上撑脸玩手机",
+      "category": "reclining",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "Recline sideways on a chaise longue, fanning himself with a folded paper fan held high, other arm draped over the backrest",
+      "action_family": "cooling",
+      "camera": "medium side shot from slightly below",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Fan-holding hand and draped hand both fully visible with fingers",
+      "intent_zh": "躺椅上侧卧扇扇子",
+      "category": "reclining",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "Lie on back on grass with arms folded behind head, one knee raised, gazing at clouds, tail stretched out to the side",
+      "action_family": "gazing",
+      "camera": "wide overhead shot looking straight down",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both hands tucked behind head but fingers visible against the grass",
+      "intent_zh": "躺草地上望云",
+      "category": "reclining",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "Sit reclined on floor leaning back on both palms planted behind him, legs stretched forward with one sole tilted up showing pads",
+      "action_family": "leaning",
+      "camera": "frontal low shot emphasizing planted palms and tilted sole",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "foot_count",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 1,
+      "visibility_requirement": "Both planted palms open with fingers spread and one sole with all toes and pads clear",
+      "intent_zh": "坐地撑手掌并翘起一只脚掌",
+      "category": "reclining",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "Lie on side on a bed reading a magazine spread on the mattress, one hand flipping a page, the other resting flat showing the palm up",
+      "action_family": "reading",
+      "camera": "close medium shot from the foot of the bed",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both hands fully visible on the magazine, palm-up hand showing fingers",
+      "intent_zh": "侧躺床上翻杂志露手掌",
+      "category": "reclining",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "Recline in a hammock with feet hanging out one end, one foot sole facing forward toward the camera, hands clasped behind head",
+      "action_family": "relaxing",
+      "camera": "low three-quarter shot from below the hammock",
+      "targets": [
+        "identity",
+        "cel_style",
+        "foot_count",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 1,
+      "visibility_requirement": "Hanging sole fully clear with four toes and pads; clasped hands visible",
+      "intent_zh": "吊床里垂脚露出脚掌",
+      "category": "reclining",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "Lie on stomach at a low table propped on elbows, writing a letter with a pen, the other hand flattening the paper, feet crossed behind",
+      "action_family": "writing",
+      "camera": "over-the-shoulder medium shot",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Writing hand and flattening hand both clear with distinct fingers",
+      "intent_zh": "趴矮桌前写信",
+      "category": "reclining",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "Recline on a beanbag with a guitar across his lap, one hand fretting the neck, the other strumming, one foot planted showing its sole",
+      "action_family": "playing_music",
+      "camera": "medium wide frontal shot",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "foot_count",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 1,
+      "visibility_requirement": "Both hands on guitar with fingers visible; planted sole with pads and toes clear",
+      "intent_zh": "豆袋椅上弹吉他露脚掌",
+      "category": "reclining",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "Lie on back with a small dog resting on his chest, one hand stroking it with fingers visible, the other arm relaxed beside him",
+      "action_family": "petting",
+      "camera": "overhead medium shot",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Stroking hand fingers clearly visible on the dog; relaxed hand visible",
+      "intent_zh": "躺着抚摸胸前小狗",
+      "category": "reclining",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "Sit reclined against a tree trunk with a bowl of snacks, picking one up with thumb and forefinger, the other palm resting open on his knee",
+      "action_family": "snacking",
+      "camera": "medium three-quarter shot at seated eye level",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Pinching fingers and open palm both clearly visible",
+      "intent_zh": "靠树吃零食露手掌",
+      "category": "reclining",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "Lie on side on a yoga mat, head on a small pillow, one hand pressing a phone to his ear, the opposite sole propped against the mat edge showing pads",
+      "action_family": "phoning",
+      "camera": "low side shot",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "foot_count",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 1,
+      "visibility_requirement": "Phone hand fingers clear; propped sole with four toes and pads fully visible",
+      "intent_zh": "侧躺打电话脚掌贴地",
+      "category": "reclining",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "Recline on a couch with a remote in one hand, clicking it, other hand behind his head, ankles crossed with one sole turned to camera",
+      "action_family": "watching",
+      "camera": "medium frontal shot framing feet and hands",
+      "targets": [
+        "identity",
+        "cel_style",
+        "foot_count",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 1,
+      "visibility_requirement": "Remote hand fingers visible; turned sole fully clear with toes and pads",
+      "intent_zh": "沙发上看电视露脚掌",
+      "category": "reclining",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "Lie on back on a beach towel, applying sunscreen to one forearm with an open palm, the other arm stretched out",
+      "action_family": "applying",
+      "camera": "high angle shot looking down the body",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Open rubbing palm and stretched hand both visible with fingers",
+      "intent_zh": "躺沙滩巾上涂防晒露手掌",
+      "category": "reclining",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "Recline on a deck chair with a telescope, adjusting the focus knob with one hand while the other steadies the tube, one bootless foot resting on the chair bar showing sole",
+      "action_family": "stargazing",
+      "camera": "wide low shot at nighttime angle",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "foot_count",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 1,
+      "visibility_requirement": "Both adjusting hands visible; foot sole on the bar with toes and pads clear",
+      "intent_zh": "躺椅上调望远镜露脚掌",
+      "category": "reclining",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "Lie curled on a large cushion, knees drawn up, one hand holding a mug of cocoa with fingers wrapped around it, other hand flat on the cushion palm down",
+      "action_family": "sipping",
+      "camera": "medium close three-quarter shot",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Mug-wrapping fingers and flat palm both clearly visible",
+      "intent_zh": "蜷缩垫子上捧杯喝可可",
+      "category": "reclining",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "Sit half-reclined on stone steps leaning back on elbows, legs stretched down the steps, one sole facing the camera showing pads",
+      "action_family": "leaning",
+      "camera": "low frontal shot up the steps",
+      "targets": [
+        "identity",
+        "cel_style",
+        "foot_count",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 1,
+      "visibility_requirement": "Sole fully facing camera with four toes and pads clear; elbows and hands visible",
+      "intent_zh": "半躺台阶上翘脚掌",
+      "category": "reclining",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "Lie on his back on a picnic blanket folding a paper airplane, fingers creasing the wings precisely, one knee raised and the raised foot sole turned outward",
+      "action_family": "crafting",
+      "camera": "overhead three-quarter shot",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "foot_count",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 1,
+      "visibility_requirement": "Both folding hands with fingers clear; raised sole with toes and pads visible",
+      "intent_zh": "躺垫子上折纸飞机露脚掌",
+      "category": "reclining",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "Recline on a sofa armrest draped backward, holding a comic book upside down and laughing, the other hand slapping the cushion with spread fingers",
+      "action_family": "laughing",
+      "camera": "medium side shot from slightly above",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Comic hand and slapping spread hand both clearly visible",
+      "intent_zh": "倒挂沙发扶手看漫画大笑",
+      "category": "reclining",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "Lie on stomach on a dock over water, one arm reaching down to trail fingers in the water, the other hand cushioning his chin",
+      "action_family": "reaching",
+      "camera": "side shot at dock level",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Reaching fingers touching water and chin hand both visible",
+      "intent_zh": "趴码头伸手拨水",
+      "category": "reclining",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "Recline in a folding camp chair with a map unfolded on his lap, one finger tracing a route, the other hand pinning a corner with thumb visible",
+      "action_family": "navigating",
+      "camera": "medium high shot looking at the map",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Tracing finger and corner-pinning hand both clear, all fingers distinct",
+      "intent_zh": "露营椅上摊地图指路",
+      "category": "reclining",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "Lie on side in bed pulling a blanket up to his chin with one hand, the other hand open flat on the pillow showing the palm",
+      "action_family": "settling",
+      "camera": "close medium shot from bed level",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Blanket-pulling fingers and open palm on pillow both clearly visible",
+      "intent_zh": "侧躺床上拉被子露手掌",
+      "category": "reclining",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "Recline on a rooftop lounger with a small watering can, tipping it to water a potted plant with one hand, the other steadying the pot with fingers visible",
+      "action_family": "watering",
+      "camera": "medium wide shot at lounger height",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Tipping hand fingers and pot-steadying hand both clearly visible",
+      "intent_zh": "躺椅上手提壶浇花",
+      "category": "reclining",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "Lie on back on a blanket doing a gentle stretch, one arm reaching overhead with palm open toward the camera, the other arm across his chest",
+      "action_family": "stretching",
+      "camera": "high overhead shot",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Overhead open palm facing camera with all fingers; chest hand visible",
+      "intent_zh": "躺垫子上伸展露手掌",
+      "category": "reclining",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "Sit reclined in an armchair with a jigsaw puzzle on a board across his knees, snapping a piece in with one hand, the other hand holding a spare piece",
+      "action_family": "puzzling",
+      "camera": "medium frontal shot",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Snapping fingers and spare-piece hand both clearly visible",
+      "intent_zh": "扶手椅上拼拼图",
+      "category": "reclining",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "Lie on stomach on a towel by a pool, one hand propping his cheek, the other hand flicking water droplets with fingers extended",
+      "action_family": "flicking",
+      "camera": "low side shot near the water",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Flicking hand with extended fingers and propping hand both visible",
+      "intent_zh": "池边趴着弹水花",
+      "category": "reclining",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "Recline on a bench with a notebook, one hand holding a small brush pen upright, the other hand cupped to catch a loose cap, both palms visible",
+      "action_family": "drawing",
+      "camera": "medium close frontal shot",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Pen hand and cupped palm both fully visible with distinct fingers",
+      "intent_zh": "长椅上握笔接笔帽露手掌",
+      "category": "reclining",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "Lie on his side on a rug with a flashlight, shining it on a wall map with one hand, the other hand flat on the floor bracing him with fingers splayed",
+      "action_family": "exploring",
+      "camera": "low side shot near floor level",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Flashlight hand and splayed bracing hand both clearly visible",
+      "intent_zh": "侧躺地上打手电照地图",
+      "category": "reclining",
+      "generation_batch": 0
+    }
+  ],
+  "model": "deepseek-flash",
+  "usage": {
+    "prompt_tokens": 374,
+    "completion_tokens": 3509,
+    "total_tokens": 3883,
+    "prompt_tokens_details": {
+      "cached_tokens": 128
+    },
+    "prompt_cache_hit_tokens": 128,
+    "prompt_cache_miss_tokens": 246
+  },
+  "settings": {
+    "temperature": 1,
+    "thinking": "disabled"
+  }
+}

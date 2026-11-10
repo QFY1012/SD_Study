@@ -1,0 +1,194 @@
+{
+  "approved_ids": [
+    1,
+    2,
+    4,
+    6,
+    8,
+    10,
+    11,
+    13,
+    14,
+    16,
+    18,
+    19,
+    20,
+    21,
+    22,
+    24,
+    26,
+    27,
+    28,
+    29,
+    31,
+    33,
+    35,
+    36,
+    37,
+    41,
+    42,
+    43,
+    44,
+    45,
+    47,
+    48,
+    49,
+    51,
+    54,
+    55,
+    56,
+    58,
+    61,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    76,
+    77,
+    78,
+    79,
+    81,
+    82,
+    83,
+    86,
+    88,
+    89
+  ],
+  "rejected": [
+    {
+      "index": 0,
+      "reason": "Palms pressed face-down on clay cannot show palm pads to camera"
+    },
+    {
+      "index": 3,
+      "reason": "Flat palm on floor hides pads; lifted sole with four toes not clearly supported"
+    },
+    {
+      "index": 5,
+      "reason": "Both soles facing camera while lying on back is implausible without support"
+    },
+    {
+      "index": 7,
+      "reason": "Submerged palm pads not discernible through water"
+    },
+    {
+      "index": 9,
+      "reason": "Palm pad pressed into dough is occluded, not clear"
+    },
+    {
+      "index": 12,
+      "reason": "Thumb pressing sole pad occludes the pad being shown"
+    },
+    {
+      "index": 15,
+      "reason": "Sole pressed flat on box lid hides pads from camera"
+    },
+    {
+      "index": 17,
+      "reason": "Palm-down tapping hand hides palm pads"
+    },
+    {
+      "index": 23,
+      "reason": "Both soles flat on scale hide pads; standing soles cannot face camera"
+    },
+    {
+      "index": 25,
+      "reason": "Hands curved around clay occlude palm pads"
+    },
+    {
+      "index": 30,
+      "reason": "Cupped hands with fingers pressed close hide palm pads"
+    },
+    {
+      "index": 32,
+      "reason": "Palm pressed against glass shows back of hand, pads hidden"
+    },
+    {
+      "index": 34,
+      "reason": "Silhouetted interlocked hands cannot show lit palm pads"
+    },
+    {
+      "index": 38,
+      "reason": "Clapped palms pressed together hide inner pads"
+    },
+    {
+      "index": 39,
+      "reason": "Tail gripped in hand occludes digits and pads"
+    },
+    {
+      "index": 40,
+      "reason": "Palms pressed against rock hide pads from camera"
+    },
+    {
+      "index": 46,
+      "reason": "Hand in narrow crack occludes fingers and pads"
+    },
+    {
+      "index": 50,
+      "reason": "Knocking with backs of fingers hides palm pads; reflection unreliable"
+    },
+    {
+      "index": 52,
+      "reason": "Palms pressed together around nut hide pads"
+    },
+    {
+      "index": 53,
+      "reason": "Scooping hands in sand occlude palm pads"
+    },
+    {
+      "index": 57,
+      "reason": "Clamped flat palms hide pads above coin edge"
+    },
+    {
+      "index": 59,
+      "reason": "Palm pressed on rock hides pads"
+    },
+    {
+      "index": 60,
+      "reason": "Palms pressed down on clay hide pads from above"
+    },
+    {
+      "index": 62,
+      "reason": "Hand gripping ankle occludes its own digits/pads"
+    },
+    {
+      "index": 75,
+      "reason": "Palm pressed against wall hides pads"
+    },
+    {
+      "index": 80,
+      "reason": "Clapped palms facing each other hide pads from camera"
+    },
+    {
+      "index": 84,
+      "reason": "Palms up under tray occlude pads against surface"
+    },
+    {
+      "index": 85,
+      "reason": "Interlocked fingers gripping handle hide palm pads"
+    },
+    {
+      "index": 87,
+      "reason": "Laces pulled with fingers spread may show pads but boot lacing occludes digits"
+    }
+  ],
+  "model": "deepseek-flash",
+  "usage": {
+    "prompt_tokens": 11558,
+    "completion_tokens": 663,
+    "total_tokens": 12221,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 11558
+  }
+}

@@ -1,0 +1,577 @@
+{
+  "tasks": [
+    {
+      "instruction": "The blue tiger lounges on a sofa, one arm draped over the backrest with the palm facing the viewer, fingers loosely curled, while the other hand rests on its knee; the head is tilted slightly toward the camera with a calm expression.",
+      "action_family": "lounging",
+      "camera": "medium shot, eye level, slightly angled",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both hands fully in frame; one palm clearly facing camera with all five fingers visible.",
+      "intent_zh": "蓝色老虎慵懒靠在沙发上，一只手掌心朝前搭在椅背，另一只手放在膝盖上，神情放松。",
+      "category": "moving",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "The blue tiger sits cross-legged on a wooden floor unlacing a boot, leaning forward with one hand gripping the lace and the other palm pressed flat on the floor for balance, all fingertips splayed on the boards.",
+      "action_family": "tying",
+      "camera": "high-angle medium shot looking down at the seated figure",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both hands visible; the splayed palm must show all five fingers on the floor plane.",
+      "intent_zh": "蓝色老虎盘腿坐地解鞋带，一手抓鞋带，另一手掌平贴地面支撑，手指张开。",
+      "category": "moving",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "The blue tiger reaches up to a high kitchen shelf, standing on tiptoe with one arm fully extended and palm open toward a jar, the other hand bracing against the counter edge, tail curling for balance.",
+      "action_family": "reaching",
+      "camera": "full-body side view at waist height",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "The reaching hand must be fully visible with palm and five digits clear; the bracing hand also unobstructed.",
+      "intent_zh": "蓝色老虎踮脚伸手取高处架子上的罐子，另一手扶住台面，尾巴保持平衡。",
+      "category": "moving",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "The blue tiger crouches beside a low garden bed, gently transplanting a seedling with both hands cupped around the soil, fingers spread under the roots, knees bent in a relaxed plantigrade squat.",
+      "action_family": "gardening",
+      "camera": "close medium shot, slightly above, focused on hands and soil",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both cupped hands visible above the soil; all fingers of the upper hand must be countable.",
+      "intent_zh": "蓝色老虎蹲在花坛边双手捧土移栽幼苗，手指在根部展开。",
+      "category": "moving",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "The blue tiger balances on a fallen log, arms stretched wide with both palms open and facing forward, one foot lifted mid-step, the other foot planted flat in a natural plantigrade stance.",
+      "action_family": "balancing",
+      "camera": "full-body wide shot, side-on",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both open palms must face the camera with five fingers each; neither hand may be cropped.",
+      "intent_zh": "蓝色老虎在倒木上张开双臂保持平衡，双掌朝前，一只脚抬起迈步。",
+      "category": "moving",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "The blue tiger sits on a park bench reading a paperback, holding the book open in both hands so the palms support the spine and the page, fingers visible along the cover edges, head angled down toward the text.",
+      "action_family": "reading",
+      "camera": "medium close shot from the front-left",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both hands gripping the book must be visible with all fingers of one hand clear along the page.",
+      "intent_zh": "蓝色老虎坐在公园长椅上读平装书，双手托住书脊翻页，低头看书。",
+      "category": "moving",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "The blue tiger kneels to pet a housecat, one palm open and lowered toward the cat's head, the other hand flat on its own thigh, back gently curved, feet tucked behind in a plantigrade kneel.",
+      "action_family": "petting",
+      "camera": "medium shot, low angle near floor level",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "The lowered palm must be fully visible above the cat with all five fingers clear.",
+      "intent_zh": "蓝色老虎跪在地上伸手抚摸猫的头，另一手放在大腿上，微微弓背。",
+      "category": "moving",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "The blue tiger stretches after waking, arms raised overhead with palms crossed and fingers interlaced, torso arched, one heel lifting off the floor while toes stay planted in a natural human stretch.",
+      "action_family": "stretching",
+      "camera": "front full-body shot, slightly low angle",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both interlaced hands fully visible overhead with all fingers distinguishable.",
+      "intent_zh": "蓝色老虎睡醒后双手交叉举过头顶伸展，身体后弓，脚跟微抬。",
+      "category": "moving",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "The blue tiger carries a cardboard box up a short staircase, both hands gripping the underside corners with fingers wrapped around the edges, one foot on a higher step, leaning slightly forward.",
+      "action_family": "carrying",
+      "camera": "three-quarter rear-to-side view, full body",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both hands gripping the box corners must be visible with fingers wrapped and countable.",
+      "intent_zh": "蓝色老虎双手托住纸箱底部上楼梯，手指扣住箱角，身体前倾。",
+      "category": "moving",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "The blue tiger sits on the floor playing a hand drum, one palm raised mid-strike with fingers spread, the other palm flat on the drum skin, legs folded loosely in front.",
+      "action_family": "drumming",
+      "camera": "medium shot from slightly above, facing the drum",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both palms visible over the drum; the raised hand must show all five spread fingers.",
+      "intent_zh": "蓝色老虎坐地拍手鼓，一只手掌抬起张开，另一手掌按在鼓面上。",
+      "category": "moving",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "The blue tiger lies on its side on a picnic blanket, propped on one elbow with that palm flat on the blanket, the other hand tossing a grape upward, legs bent comfortably.",
+      "action_family": "picnicking",
+      "camera": "low eye-level medium wide shot",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "The propping palm and the tossing hand must both be visible with all fingers clear.",
+      "intent_zh": "蓝色老虎侧躺在野餐毯上，一手撑地，另一手向上抛葡萄。",
+      "category": "moving",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "The blue tiger leans over a balcony railing to water potted plants, one hand tipping a watering can with fingers wrapped around the handle, the other palm resting on the rail, body angled outward.",
+      "action_family": "watering",
+      "camera": "medium shot from inside the balcony, slightly behind",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both hands visible on the can and rail; fingers on the handle must be countable.",
+      "intent_zh": "蓝色老虎在阳台探身给盆栽浇水，一手握水壶把手，一手扶栏杆。",
+      "category": "moving",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "The blue tiger sits in a rocking chair knitting, holding two needles with yarn looped over the fingers, both palms angled toward the camera as the shawl grows in its lap.",
+      "action_family": "knitting",
+      "camera": "medium close shot from the front",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both hands holding needles must be visible with fingers looped through yarn and countable.",
+      "intent_zh": "蓝色老虎坐在摇椅上织毛线，双手持针，毛线绕在手指上。",
+      "category": "moving",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "The blue tiger climbs a short ladder to a loft, one hand gripping a rung above with fingers curled over it, the other palm pushing against the side rail, one foot on a lower rung.",
+      "action_family": "climbing",
+      "camera": "low-angle full-body shot looking up the ladder",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "The upper gripping hand must be fully visible with all fingers curled over the rung.",
+      "intent_zh": "蓝色老虎爬短梯上阁楼，一手抓横档，另一手推侧栏。",
+      "category": "moving",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "The blue tiger sits at a cafe table stirring tea, one hand curled around the cup handle with the palm visible, the other hand holding a spoon mid-stir, head turned slightly toward a window.",
+      "action_family": "stirring",
+      "camera": "medium close shot across the table",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both hands visible around cup and spoon; the cup-holding palm must show all five fingers.",
+      "intent_zh": "蓝色老虎坐咖啡馆桌边搅茶，一手握杯柄露出掌心，一手拿勺。",
+      "category": "moving",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "The blue tiger does a gentle forward fold yoga pose, palms pressed flat on a mat in front of the feet, fingers spread wide, heels lifted slightly as the torso hangs relaxed.",
+      "action_family": "yoga",
+      "camera": "side view, low angle near the mat",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both flat palms on the mat must be fully visible with all five spread fingers each.",
+      "intent_zh": "蓝色老虎做前屈瑜伽，双掌平贴垫子手指张开，脚跟微抬。",
+      "category": "moving",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "The blue tiger pushes a shopping cart through a grocery aisle, both hands wrapped around the handlebar with palms facing down, one foot stepping forward mid-stride in a natural walk.",
+      "action_family": "pushing",
+      "camera": "three-quarter front view, full body",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both hands on the handlebar must be visible with fingers wrapped and countable.",
+      "intent_zh": "蓝色老虎推购物车在超市过道走，双手握把手，一脚迈步。",
+      "category": "moving",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "The blue tiger crouches to tie a child's shoelace, one hand pulling the loop with fingers pinched, the other palm flat on the floor, both feet planted flat behind in a deep squat.",
+      "action_family": "tying",
+      "camera": "low side view near floor level",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "The pinching hand and the flat supporting palm must both be visible with fingers clear.",
+      "intent_zh": "蓝色老虎蹲下帮孩子系鞋带，一手捏鞋带圈，一掌平放地面。",
+      "category": "moving",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "The blue tiger sits on a low wall swinging its legs, one hand shading its eyes with the palm flat above the brow, the other hand resting beside a hip with fingers relaxed over the edge.",
+      "action_family": "resting",
+      "camera": "medium wide shot from the front at seated eye level",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "The shading palm must be fully visible above the brow with five fingers; the resting hand also clear.",
+      "intent_zh": "蓝色老虎坐在矮墙上晃腿，一手遮阳搭在额前，一手放在身侧。",
+      "category": "moving",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "The blue tiger holds a camera to its eye photographing a bird, one palm cupping the lens barrel with fingers wrapped, the other hand gripping the body, elbows tucked, leaning slightly forward.",
+      "action_family": "photographing",
+      "camera": "medium close shot from the side",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both hands on the camera must be visible with fingers countable around lens and body.",
+      "intent_zh": "蓝色老虎举相机拍鸟，一手托镜头，一手握机身，身体前倾。",
+      "category": "moving",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "The blue tiger kneels to scrub a floor with a brush, one palm flat on the boards pressing down, the other hand gripping the brush handle, shoulders lowered and feet tucked plantigrade behind.",
+      "action_family": "scrubbing",
+      "camera": "high-angle medium shot looking down",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "The flat pressing palm must show all five fingers on the floor; the brush hand also visible.",
+      "intent_zh": "蓝色老虎跪地刷地板，一掌平压地面，一手握刷柄。",
+      "category": "moving",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "The blue tiger leans against a doorframe stretching one calf, one palm braced flat on the wall at shoulder height, the other hand on its hip, rear leg extended back with the foot flat.",
+      "action_family": "stretching",
+      "camera": "full-body side view from the wall side",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "The wall-braced palm must be fully visible with spread fingers; the hip hand also clear.",
+      "intent_zh": "蓝色老虎靠门框拉伸小腿，一掌撑墙，一手叉腰，后脚掌贴地。",
+      "category": "moving",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "The blue tiger sits on a stool restringing a guitar, one hand threading a string through the peg with fingertips pinched, the other palm steadying the neck from below, head bent close.",
+      "action_family": "repairing",
+      "camera": "medium close shot from the front-right",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "The pinching hand must show all fingertips clearly; the supporting palm under the neck visible.",
+      "intent_zh": "蓝色老虎坐凳子上给吉他换弦，一手捏弦穿弦钮，一手托琴颈。",
+      "category": "moving",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "The blue tiger lies on its stomach on a rug doing a crossword, one palm flat on the paper holding it down, the other hand holding a pencil poised above a square, feet raised and crossed behind.",
+      "action_family": "writing",
+      "camera": "high-angle shot over the shoulder",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "The flat holding palm must show five fingers on the paper; the pencil hand also visible.",
+      "intent_zh": "蓝色老虎趴在地毯上填字谜，一掌按纸，一手握铅笔，双脚交叉抬起。",
+      "category": "moving",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "The blue tiger steps out of a shallow stream onto a bank, one hand gripping a tree root with fingers curled, the other palm open for balance, one foot lifted and dripping mid-step.",
+      "action_family": "climbing",
+      "camera": "full-body low angle from the bank",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "The root-gripping hand and the open balancing palm must both be visible with fingers clear.",
+      "intent_zh": "蓝色老虎从浅溪跨上岸，一手抓树根，一手张开保持平衡。",
+      "category": "moving",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "The blue tiger sits at a piano playing a soft chord, both palms curved over the keys with fingers gently spread on the white notes, head tilted toward the music stand.",
+      "action_family": "playing",
+      "camera": "medium shot from the side above the keyboard",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both hands on the keys must be fully visible with all fingers resting on separate keys.",
+      "intent_zh": "蓝色老虎坐在钢琴前弹和弦，双手掌弓起手指分布在琴键上。",
+      "category": "moving",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "The blue tiger crouches on a beach building a sandcastle, both hands patting the wet sand into a tower, palms cupped and fingers spread, knees bent in a low plantigrade squat.",
+      "action_family": "building",
+      "camera": "medium close, low angle at sand level",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both cupped hands must be visible on the sand tower with all fingers countable.",
+      "intent_zh": "蓝色老虎蹲在沙滩堆沙堡，双手拍实湿沙，手指展开。",
+      "category": "moving",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "The blue tiger sits on a bed folding laundry, one palm smoothing a shirt flat on the mattress, the other hand tucking a sleeve corner with fingers pinched, legs folded to one side.",
+      "action_family": "folding",
+      "camera": "medium shot from slightly above the bed",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "The smoothing palm must be flat and fully visible with five fingers; the tucking hand also clear.",
+      "intent_zh": "蓝色老虎坐在床上叠衣服，一掌抚平衬衫，一手捏袖角。",
+      "category": "moving",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "The blue tiger hangs a picture on a wall, one hand holding the frame level with fingers gripping the edge, the other hand pressing a nail with the palm braced flat beside it.",
+      "action_family": "hanging",
+      "camera": "medium shot from behind and to the side",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "The frame-gripping hand must show all fingers on the edge; the bracing palm must be flat and visible.",
+      "intent_zh": "蓝色老虎往墙上挂画，一手扶画框边，一掌撑墙按钉子。",
+      "category": "moving",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "The blue tiger sits on the floor with a laptop, typing with one hand while the other palm rests flat on the trackpad, fingers spread, legs crossed loosely.",
+      "action_family": "typing",
+      "camera": "medium close over the shoulder, slightly high",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "The typing hand's fingers and the flat trackpad palm must both be visible and countable.",
+      "intent_zh": "蓝色老虎坐地用小电脑，一手打字，一掌平放触控板手指展开。",
+      "category": "moving",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "The blue tiger kneels to lace a hiking boot, one hand pulling the lace taut with fingers hooked, the other palm flat on its raised knee, one foot resting on a rock in front.",
+      "action_family": "tying",
+      "camera": "three-quarter medium shot at knee height",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "The lace-pulling hand and the palm on the knee must both be visible with fingers clear.",
+      "intent_zh": "蓝色老虎跪着系登山靴鞋带，一手拉紧鞋带，一掌平放膝盖。",
+      "category": "moving",
+      "generation_batch": 0
+    }
+  ],
+  "model": "deepseek-flash",
+  "usage": {
+    "prompt_tokens": 380,
+    "completion_tokens": 4481,
+    "total_tokens": 4861,
+    "prompt_tokens_details": {
+      "cached_tokens": 128
+    },
+    "prompt_cache_hit_tokens": 128,
+    "prompt_cache_miss_tokens": 252
+  },
+  "settings": {
+    "temperature": 1,
+    "thinking": "disabled"
+  }
+}

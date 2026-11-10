@@ -1,0 +1,28 @@
+{
+  "sd_scripts": "/content/sd-scripts",
+  "dit": "/content/drive/MyDrive/ComfyUI/models/diffusion_models/waiANIMA_v10Base10.safetensors",
+  "text_encoder": "/content/drive/MyDrive/ComfyUI/models/text_encoders/waiANIMA_v10Base10_txt.safetensors",
+  "vae": "/content/drive/MyDrive/ComfyUI/models/vae/qwenImage_qwenImageVAE.safetensors",
+  "lora": "/content/drive/MyDrive/lora_training/output/cheese_v24_train/cheese_v24_seed20261109_extend_lr1e5_20261108_173653.safetensors",
+  "output": "/content/anima_grpo_run_001",
+  "prompts": [
+    "@cheese, 1boy, solo, full body, standing, open palms toward viewer, five fingers on each hand, long slender fingers, four toes on each foot, yellow paw pads, cel shading, clean lineart, white background"
+  ],
+  "negative_prompt": "worst quality, low quality, score_1, score_2, score_3, blurry, bad anatomy, extra digits, fused digits",
+  "reward_command": [
+    "python",
+    "/content/SD_Study/examples/anima/smoke_reward.py"
+  ],
+  "group_size": 4,
+  "iterations": 1,
+  "width": 512,
+  "height": 512,
+  "sampling_steps": 20,
+  "cfg": 4.0,
+  "eta": 0.3,
+  "flow_shift": 5.0,
+  "learning_rate": 1e-06,
+  "timestep_fraction": 0.25,
+  "clip_range": 0.0001,
+  "seed": 42
+}

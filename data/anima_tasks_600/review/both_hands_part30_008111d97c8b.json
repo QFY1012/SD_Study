@@ -1,0 +1,80 @@
+{
+  "approved_ids": [
+    0,
+    2,
+    4,
+    5,
+    8,
+    9,
+    10,
+    14,
+    16,
+    17,
+    18,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    27,
+    28
+  ],
+  "rejected": [
+    {
+      "index": 1,
+      "reason": "Palms pressed flat on wall hide pads from side high-angle view."
+    },
+    {
+      "index": 3,
+      "reason": "Gripping branch wraps palms around bark, hiding palm pads."
+    },
+    {
+      "index": 6,
+      "reason": "Planted palms flat on floor do not show pads to rear camera."
+    },
+    {
+      "index": 7,
+      "reason": "Palms curved around clay bowl occlude pads and fingers."
+    },
+    {
+      "index": 11,
+      "reason": "Gripping chains wraps palms, pads not visible."
+    },
+    {
+      "index": 12,
+      "reason": "Palms resting on railing top hide pads from side view."
+    },
+    {
+      "index": 13,
+      "reason": "Palms pressed into soil hide pads and fingers."
+    },
+    {
+      "index": 15,
+      "reason": "Palms pressed flat on holds hide pads from side view."
+    },
+    {
+      "index": 19,
+      "reason": "Hooked grip over bar hides palm pads."
+    },
+    {
+      "index": 26,
+      "reason": "Palms braced flat on rock walls hide pads."
+    },
+    {
+      "index": 29,
+      "reason": "Gripping paddle shaft wraps palms, pads not visible."
+    }
+  ],
+  "model": "deepseek-flash",
+  "usage": {
+    "prompt_tokens": 4155,
+    "completion_tokens": 255,
+    "total_tokens": 4410,
+    "prompt_tokens_details": {
+      "cached_tokens": 128
+    },
+    "prompt_cache_hit_tokens": 128,
+    "prompt_cache_miss_tokens": 4027
+  }
+}

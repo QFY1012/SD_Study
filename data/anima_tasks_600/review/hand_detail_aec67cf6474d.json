@@ -1,0 +1,192 @@
+{
+  "approved_ids": [
+    0,
+    2,
+    4,
+    5,
+    6,
+    8,
+    10,
+    11,
+    12,
+    13,
+    14,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    31,
+    33,
+    35,
+    36,
+    37,
+    38,
+    39,
+    41,
+    42,
+    43,
+    44,
+    45,
+    47,
+    48,
+    49,
+    51,
+    52,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    76,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    86,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    116,
+    117,
+    118,
+    119,
+    120
+  ],
+  "rejected": [
+    {
+      "index": 1,
+      "reason": "Both hands grip a cup, so palm pads are occluded; finger visibility around cup is inconsistent with all fingers distinct."
+    },
+    {
+      "index": 3,
+      "reason": "Palm pressed flat on floor hides its pads, yet yellow pads are required visible."
+    },
+    {
+      "index": 7,
+      "reason": "Submerged palm pads cannot be discernibly visible through water while hand is in basin."
+    },
+    {
+      "index": 9,
+      "reason": "Palm heel pressing dough hides the palm pad, contradicting required clear yellow palm pad."
+    },
+    {
+      "index": 15,
+      "reason": "Sole pressed flat on box lid hides pads, yet four toes and yellow pad required visible."
+    },
+    {
+      "index": 23,
+      "reason": "Both soles planted flat on scale hide pads, contradicting required visible pads and toes."
+    },
+    {
+      "index": 30,
+      "reason": "Cupped hands with fingers pressed close occlude palm pads, contradicting all pads visible."
+    },
+    {
+      "index": 32,
+      "reason": "Palm pressed against glass hides pads from viewer, contradicting required visible pads."
+    },
+    {
+      "index": 34,
+      "reason": "Silhouetted interlocked hands cannot show yellow pads lit; pads not visible in silhouette."
+    },
+    {
+      "index": 40,
+      "reason": "Both palms pressed against rock hide pads, contradicting required visible pads."
+    },
+    {
+      "index": 46,
+      "reason": "Hand inserted into narrow crack occludes fingers and pads, contradicting full visibility."
+    },
+    {
+      "index": 50,
+      "reason": "Knocking with backs of bent fingers and flat palm on frame hides palm pads, contradicting required pads."
+    },
+    {
+      "index": 53,
+      "reason": "Hands scooping in sand bury digits/pads, contradicting no digit buried requirement."
+    },
+    {
+      "index": 75,
+      "reason": "Palm pressed flat against wall hides its pads, contradicting required visible palm pad."
+    },
+    {
+      "index": 77,
+      "reason": "Fingers wrapping a handle occlude palm pads, contradicting required palm pads visible."
+    },
+    {
+      "index": 85,
+      "reason": "Interlocked fingers gripping handle occlude palm pads, contradicting pads facing forward visible."
+    },
+    {
+      "index": 87,
+      "reason": "Hands pulling laces with fingers spread around boot occlude palm pads, contradicting pads visible."
+    },
+    {
+      "index": 115,
+      "reason": "Cupped hand holding water occludes palm pad, and gripping hand on stone hides pads; visibility inconsistent."
+    }
+  ],
+  "model": "deepseek-flash",
+  "usage": {
+    "prompt_tokens": 15901,
+    "completion_tokens": 666,
+    "total_tokens": 16567,
+    "prompt_tokens_details": {
+      "cached_tokens": 11520
+    },
+    "prompt_cache_hit_tokens": 11520,
+    "prompt_cache_miss_tokens": 4381
+  }
+}

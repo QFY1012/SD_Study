@@ -1,0 +1,552 @@
+{
+  "tasks": [
+    {
+      "instruction": "The blue tiger crouches on a rocky ledge, one leg extended forward so the sole faces the camera, toes spread wide across the stone. Digits curl slightly for grip, and the yellow pads press against the rock face. The other leg folds beneath the body.",
+      "action_family": "crouching",
+      "camera": "low close-up angled up at the extended foot",
+      "targets": [
+        "identity",
+        "cel_style",
+        "foot_count",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 0,
+      "visible_soles": 1,
+      "visibility_requirement": "One full sole and all four toes clearly visible, no occlusion by leg or rock",
+      "intent_zh": "岩石边缘蹲伏并展示脚掌",
+      "category": "foot_detail",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "Balanced on a narrow beam, the tiger lifts one foot high behind and angles the sole toward the viewer, four toes curled like a dancer's. The supporting leg stays straight and the arms stretch out sideways for balance against a pale sky.",
+      "action_family": "balancing",
+      "camera": "medium side view catching the raised sole",
+      "targets": [
+        "identity",
+        "cel_style",
+        "foot_count",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 1,
+      "visibility_requirement": "Raised sole and four toes fully exposed to camera",
+      "intent_zh": "窄梁上平衡并抬起脚掌",
+      "category": "foot_detail",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "Seated on a wooden dock, the tiger pulls one foot up across the opposite knee and inspects the sole, toes fanning out. The yellow pads catch warm light while the other foot rests flat on the planks below.",
+      "action_family": "inspecting",
+      "camera": "close over-shoulder angle onto the lifted sole",
+      "targets": [
+        "identity",
+        "cel_style",
+        "foot_count",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 1,
+      "visibility_requirement": "Lifted sole with all four toes unobstructed",
+      "intent_zh": "码头坐姿检查脚掌",
+      "category": "foot_detail",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "Standing in shallow surf, the tiger tilts a foot sideways so the sole faces the lens above the waterline. Toes splay as foam washes past, and the yellow pads gleam wet against a hazy ocean horizon.",
+      "action_family": "standing",
+      "camera": "low water-level close-up of the tilted sole",
+      "targets": [
+        "identity",
+        "cel_style",
+        "foot_count",
+        "yellow_pads"
+      ],
+      "visible_hands": 0,
+      "visible_soles": 1,
+      "visibility_requirement": "Sole raised above water, all four toes and pads visible",
+      "intent_zh": "浅水中侧抬脚掌展示",
+      "category": "foot_detail",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "Mid-leap over a shallow ditch, the tiger tucks one knee up so the sole flashes toward the camera, toes spread in the air. The trailing leg extends behind and both arms swing forward with the motion.",
+      "action_family": "leaping",
+      "camera": "dynamic low angle freezing the airborne sole",
+      "targets": [
+        "identity",
+        "cel_style",
+        "foot_count",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 1,
+      "visibility_requirement": "Airborne sole and four toes clearly framed, unblurred",
+      "intent_zh": "跃起时空中展示脚掌",
+      "category": "foot_detail",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "Propped against a brick wall, the tiger raises one foot and plants the sole flat on the bricks, toes spread for grip. The other leg bears weight while one hand rests on the knee and the head tilts down toward the foot.",
+      "action_family": "planting",
+      "camera": "side angle close-up on the sole against brick",
+      "targets": [
+        "identity",
+        "cel_style",
+        "foot_count",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 1,
+      "visible_soles": 1,
+      "visibility_requirement": "Full sole and all four toes visible flush against the wall",
+      "intent_zh": "脚掌踩墙展示脚趾",
+      "category": "foot_detail",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "Lying on their back with legs raised, the tiger holds both soles toward the sky, toes wiggling apart. The camera looks up from below the feet so the yellow pads dominate the frame against a cloudy backdrop.",
+      "action_family": "lying",
+      "camera": "extreme low angle beneath the raised soles",
+      "targets": [
+        "identity",
+        "cel_style",
+        "foot_count",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 0,
+      "visible_soles": 2,
+      "visibility_requirement": "Both soles and all toes fully visible from below",
+      "intent_zh": "仰卧抬脚展示双掌",
+      "category": "foot_detail",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "The tiger sits on a tree stump and crosses one ankle over the other knee, angling the lifted sole toward a camera positioned at knee height. Four toes point up in a relaxed fan, pads lit by dappled forest light.",
+      "action_family": "sitting",
+      "camera": "knee-height close side view of lifted sole",
+      "targets": [
+        "identity",
+        "cel_style",
+        "foot_count",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 0,
+      "visible_soles": 1,
+      "visibility_requirement": "Sole and four toes unobstructed by the other leg",
+      "intent_zh": "树桩坐姿交叉抬脚展示脚掌",
+      "category": "foot_detail",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "Walking up stone stairs, the tiger pauses on a step and pivots the rear foot outward so the sole faces the camera from behind. Toes curl over the step edge and the yellow pads press against the riser.",
+      "action_family": "walking",
+      "camera": "rear low angle onto the pivoted sole",
+      "targets": [
+        "identity",
+        "cel_style",
+        "foot_count",
+        "yellow_pads"
+      ],
+      "visible_hands": 0,
+      "visible_soles": 1,
+      "visibility_requirement": "Rear sole and four toes clearly visible over the stair edge",
+      "intent_zh": "楼梯转身展示脚掌",
+      "category": "foot_detail",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "Squatting low beside a campfire, the tiger rests on the balls of the feet with both soles tilted up toward the rear camera. Toes grip the earth and the yellow pads glow in firelight against dark surroundings.",
+      "action_family": "squatting",
+      "camera": "rear low angle catching both tilted soles",
+      "targets": [
+        "identity",
+        "cel_style",
+        "foot_count",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 0,
+      "visible_soles": 2,
+      "visibility_requirement": "Both soles and all four toes visible from behind",
+      "intent_zh": "营火旁蹲姿后视展示双掌",
+      "category": "foot_detail",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "Hanging from a horizontal bar, the tiger swings one leg forward so the sole points straight at the camera mid-swing, toes splayed. The other leg hangs relaxed while both hands grip the bar overhead.",
+      "action_family": "hanging",
+      "camera": "front medium shot level with the swinging sole",
+      "targets": [
+        "identity",
+        "cel_style",
+        "foot_count",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 1,
+      "visibility_requirement": "Swinging sole and four toes fully facing camera",
+      "intent_zh": "单杠悬垂前摆展示脚掌",
+      "category": "foot_detail",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "The tiger kneels on one knee and extends the other leg straight out to the side, rolling the extended foot so the sole faces the lens. Toes fan wide and the yellow pads stand out against a plain studio floor.",
+      "action_family": "kneeling",
+      "camera": "ground-level close-up of the extended sole",
+      "targets": [
+        "identity",
+        "cel_style",
+        "foot_count",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 0,
+      "visible_soles": 1,
+      "visibility_requirement": "Extended sole with all four toes and pads visible",
+      "intent_zh": "跪姿侧伸腿展示脚掌",
+      "category": "foot_detail",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "Climbing a steep slope, the tiger pushes off with one foot turned so the sole shows toward the camera below. Toes dig into the loose soil and the yellow pads are visible between clumps of grass.",
+      "action_family": "climbing",
+      "camera": "low trail angle behind the pushing sole",
+      "targets": [
+        "identity",
+        "cel_style",
+        "foot_count",
+        "yellow_pads"
+      ],
+      "visible_hands": 0,
+      "visible_soles": 1,
+      "visibility_requirement": "Pushing sole and four toes visible despite grass, pads unobscured",
+      "intent_zh": "斜坡攀爬展示蹬地脚掌",
+      "category": "foot_detail",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "Sitting on a swing, the tiger kicks both legs forward and up so both soles face the camera, toes spread. The swing chains frame the sides and the yellow pads catch bright afternoon sun against a blue sky.",
+      "action_family": "swinging",
+      "camera": "front low angle beneath the kicked soles",
+      "targets": [
+        "identity",
+        "cel_style",
+        "foot_count",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 2,
+      "visibility_requirement": "Both soles and all toes clearly visible mid-kick",
+      "intent_zh": "秋千踢腿展示双脚掌",
+      "category": "foot_detail",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "The tiger stands in a shallow puddle and lifts one heel so the toes stay grounded while the sole tilts up toward the camera. Four toes bend at the joints and the yellow pads reflect in the rippling water.",
+      "action_family": "tilting",
+      "camera": "ground-level close-up on the tilted sole",
+      "targets": [
+        "identity",
+        "cel_style",
+        "foot_count",
+        "yellow_pads"
+      ],
+      "visible_hands": 0,
+      "visible_soles": 1,
+      "visibility_requirement": "Tilted sole with all four toes and pads visible above water",
+      "intent_zh": "水洼抬脚跟展示脚掌",
+      "category": "foot_detail",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "Rolling forward in a somersault, the tiger ends seated with both feet lifted and soles presented to the camera, toes curled. Dust settles around them and the yellow pads face forward against a plain mat.",
+      "action_family": "rolling",
+      "camera": "front floor-level shot of presented soles",
+      "targets": [
+        "identity",
+        "cel_style",
+        "foot_count",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 0,
+      "visible_soles": 2,
+      "visibility_requirement": "Both soles and all toes visible after the roll",
+      "intent_zh": "翻滚后展示双脚掌",
+      "category": "foot_detail",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "Perched on a fence rail, the tiger dangles one leg and angles that foot inward so the sole faces the camera from the side. Toes relax downward and the yellow pads show clearly against the wooden rail and open field.",
+      "action_family": "perching",
+      "camera": "side medium close-up under the dangling sole",
+      "targets": [
+        "identity",
+        "cel_style",
+        "foot_count",
+        "yellow_pads"
+      ],
+      "visible_hands": 1,
+      "visible_soles": 1,
+      "visibility_requirement": "Dangling sole and four toes unobstructed from the side",
+      "intent_zh": "栅栏上垂腿展示脚掌",
+      "category": "foot_detail",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "The tiger lies prone on a beach towel, legs bent at the knees with both soles raised toward the camera. Toes spread against the sky and sand grains cling near the yellow pads as waves blur in the background.",
+      "action_family": "resting",
+      "camera": "rear low angle onto the raised soles",
+      "targets": [
+        "identity",
+        "cel_style",
+        "foot_count",
+        "yellow_pads"
+      ],
+      "visible_hands": 0,
+      "visible_soles": 2,
+      "visibility_requirement": "Both soles and all toes clearly visible above the towel",
+      "intent_zh": "沙滩俯卧抬脚展示双掌",
+      "category": "foot_detail",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "Stepping off a curb, the tiger's leading foot stays suspended in the air with the sole turned to the camera, toes spread. The trailing foot is still on the curb and the body leans forward into the descent.",
+      "action_family": "stepping",
+      "camera": "low frontal shot focused on the airborne sole",
+      "targets": [
+        "identity",
+        "cel_style",
+        "foot_count",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 0,
+      "visible_soles": 1,
+      "visibility_requirement": "Airborne sole and all four toes fully visible",
+      "intent_zh": "下台阶悬空展示脚掌",
+      "category": "foot_detail",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "In a wide lunge, the tiger plants the front foot flat and drags the rear foot so its sole faces upward toward the camera. Rear toes curl and the yellow pads show against a gym floor while the torso twists low.",
+      "action_family": "lunging",
+      "camera": "rear low angle on the upturned sole",
+      "targets": [
+        "identity",
+        "cel_style",
+        "foot_count",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 1,
+      "visible_soles": 1,
+      "visibility_requirement": "Rear sole and all four toes visible from behind",
+      "intent_zh": "弓步后脚翻掌展示",
+      "category": "foot_detail",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "The tiger sits on a low wall and presses both soles together sole-to-sole, knees splayed wide, with the feet angled so the camera sees the paired yellow pads and eight toes. Hands grip the wall edge.",
+      "action_family": "sitting",
+      "camera": "front close-up on the paired soles",
+      "targets": [
+        "identity",
+        "cel_style",
+        "foot_count",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 2,
+      "visibility_requirement": "Both soles pressed together yet fully visible to the camera",
+      "intent_zh": "脚掌相对坐姿展示双掌",
+      "category": "foot_detail",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "Bracing against a doorway frame, the tiger pushes one foot against the wall with the sole flat, toes gripping the paint. The body leans back and the yellow pads press visibly into the surface beside the frame.",
+      "action_family": "bracing",
+      "camera": "side close-up on the wall-pressed sole",
+      "targets": [
+        "identity",
+        "cel_style",
+        "foot_count",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 1,
+      "visibility_requirement": "Wall-pressed sole and four toes fully visible",
+      "intent_zh": "门框抵脚展示脚掌",
+      "category": "foot_detail",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "The tiger balances on one leg atop a boulder and raises the other knee high, tilting that sole outward toward the camera. Four toes point sideways and the yellow pads face the lens against a hazy valley.",
+      "action_family": "balancing",
+      "camera": "side medium shot level with the tilted sole",
+      "targets": [
+        "identity",
+        "cel_style",
+        "foot_count",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 1,
+      "visible_soles": 1,
+      "visibility_requirement": "Tilted sole and all toes facing camera, unobstructed",
+      "intent_zh": "巨石上单腿平衡展示脚掌",
+      "category": "foot_detail",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "Kneeling to tie a shoelace, the tiger props the shoe-free foot on the opposite thigh so the sole faces the camera. Four toes wiggle and the yellow pads catch light against a simple wooden floor.",
+      "action_family": "kneeling",
+      "camera": "over-shoulder close-up on the propped sole",
+      "targets": [
+        "identity",
+        "cel_style",
+        "foot_count",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 1,
+      "visibility_requirement": "Propped sole and all four toes clearly visible",
+      "intent_zh": "跪姿托脚展示脚掌",
+      "category": "foot_detail",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "The tiger slides down a grassy hill feet-first, both legs extended forward so both soles face the camera. Toes splay against the sky and the yellow pads show above the rushing green slope.",
+      "action_family": "sliding",
+      "camera": "front tracking shot level with the soles",
+      "targets": [
+        "identity",
+        "cel_style",
+        "foot_count",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 2,
+      "visibility_requirement": "Both forward soles and all toes clearly visible",
+      "intent_zh": "草坡滑下展示双脚掌",
+      "category": "foot_detail",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "Leaning back on one hand, the tiger lifts both feet off the ground and crosses the ankles, then rolls the top foot so its sole faces the camera. Toes point away and the yellow pads catch the lens.",
+      "action_family": "leaning",
+      "camera": "low side angle on the rolled sole",
+      "targets": [
+        "identity",
+        "cel_style",
+        "foot_count",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 1,
+      "visible_soles": 1,
+      "visibility_requirement": "Rolled sole and four toes visible despite the crossed ankle",
+      "intent_zh": "后仰抬脚交叉展示脚掌",
+      "category": "foot_detail",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "The tiger steps onto a skateboard and kicks the board forward with one foot, lifting that foot's sole toward the camera mid-kick. Four toes curl and the yellow pads show against the concrete and rolling board.",
+      "action_family": "kicking",
+      "camera": "low front-side angle on the kicking sole",
+      "targets": [
+        "identity",
+        "cel_style",
+        "foot_count",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 1,
+      "visible_soles": 1,
+      "visibility_requirement": "Kicking sole and all four toes visible above the board",
+      "intent_zh": "滑板踢板展示脚掌",
+      "category": "foot_detail",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "Crouched at the starting blocks, the tiger extends the rear foot so its sole faces the camera behind the body. Toes press against the block and the yellow pads brace hard against the metal surface.",
+      "action_family": "crouching",
+      "camera": "rear low angle on the braced sole",
+      "targets": [
+        "identity",
+        "cel_style",
+        "foot_count",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 0,
+      "visible_soles": 1,
+      "visibility_requirement": "Rear sole and all four toes visible against the block",
+      "intent_zh": "起跑器蹲姿展示后脚掌",
+      "category": "foot_detail",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "The tiger sits in a hammock strung between palms, one leg dangling so the sole turns toward the camera and toes flex. The other leg tucks inside and the yellow pads show against a bright tropical background.",
+      "action_family": "sitting",
+      "camera": "side close-up beneath the dangling sole",
+      "targets": [
+        "identity",
+        "cel_style",
+        "foot_count",
+        "yellow_pads"
+      ],
+      "visible_hands": 1,
+      "visible_soles": 1,
+      "visibility_requirement": "Dangling sole and all four toes fully visible",
+      "intent_zh": "吊床垂腿展示脚掌",
+      "category": "foot_detail",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "Hopping on one foot, the tiger lifts the other knee to hip height so the sole faces the camera, toes flexed wide. The raised foot's yellow pads show clearly against an empty trail while arms swing for rhythm.",
+      "action_family": "hopping",
+      "camera": "front medium shot level with the raised sole",
+      "targets": [
+        "identity",
+        "cel_style",
+        "foot_count",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 1,
+      "visibility_requirement": "Raised sole and all four toes facing camera, unoccluded",
+      "intent_zh": "单脚跳展示抬起脚掌",
+      "category": "foot_detail",
+      "generation_batch": 1
+    }
+  ],
+  "model": "deepseek-flash",
+  "usage": {
+    "prompt_tokens": 387,
+    "completion_tokens": 3922,
+    "total_tokens": 4309,
+    "prompt_tokens_details": {
+      "cached_tokens": 253
+    },
+    "prompt_cache_hit_tokens": 253,
+    "prompt_cache_miss_tokens": 134
+  },
+  "settings": {
+    "temperature": 1,
+    "thinking": "disabled"
+  }
+}

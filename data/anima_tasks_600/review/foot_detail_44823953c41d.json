@@ -1,0 +1,190 @@
+{
+  "approved_ids": [
+    0,
+    1,
+    2,
+    4,
+    5,
+    8,
+    9,
+    11,
+    12,
+    15,
+    17,
+    22,
+    24,
+    25,
+    27,
+    30,
+    31,
+    32,
+    33,
+    34,
+    36,
+    37,
+    41,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    52,
+    53,
+    54,
+    56,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    87
+  ],
+  "rejected": [
+    {
+      "index": 3,
+      "reason": "Gripping foot's underside/pads cannot be visible while toes curl around bark"
+    },
+    {
+      "index": 6,
+      "reason": "Feet tucked behind while kneeling cannot show both soles to a rear camera"
+    },
+    {
+      "index": 7,
+      "reason": "Top-down view of dangling feet cannot show both soles"
+    },
+    {
+      "index": 10,
+      "reason": "Feet hooked around branch with soles facing outward cannot show pads against limb"
+    },
+    {
+      "index": 13,
+      "reason": "Hanging feet from hammock side view cannot show both soles"
+    },
+    {
+      "index": 14,
+      "reason": "Crouching with both soles toward fire is not a plausible supported pose"
+    },
+    {
+      "index": 16,
+      "reason": "Crossed ankles with both soles skyward cannot show all toes unobstructed"
+    },
+    {
+      "index": 18,
+      "reason": "Crawling with soles up in tunnel cannot show both soles and all toes"
+    },
+    {
+      "index": 19,
+      "reason": "Leaning back on bench with both soles forward is implausible without support"
+    },
+    {
+      "index": 20,
+      "reason": "Feet flat on stone cannot show soles peeking around rim"
+    },
+    {
+      "index": 21,
+      "reason": "Bicycling feet side view cannot show both soles simultaneously"
+    },
+    {
+      "index": 23,
+      "reason": "Kicking both soles at camera on swing is implausible mid-kick"
+    },
+    {
+      "index": 26,
+      "reason": "Swinging feet tapping heels cannot show both soles to front camera"
+    },
+    {
+      "index": 28,
+      "reason": "Feet on skateboard deck cannot show soles beneath the board"
+    },
+    {
+      "index": 29,
+      "reason": "Prone with soles skyward cannot show both soles to rear camera"
+    },
+    {
+      "index": 35,
+      "reason": "Sole pressed flat against wall cannot show pads to camera"
+    },
+    {
+      "index": 38,
+      "reason": "Sole pressed against stair riser cannot show pads to camera"
+    },
+    {
+      "index": 39,
+      "reason": "Squatting on balls of feet cannot show both soles to rear camera"
+    },
+    {
+      "index": 40,
+      "reason": "Hanging from bar with both hands gripping cannot show swinging sole pads clearly"
+    },
+    {
+      "index": 42,
+      "reason": "Pushing sole into soil cannot show pads unobscured"
+    },
+    {
+      "index": 50,
+      "reason": "Soles pressed together cannot both be fully visible to camera"
+    },
+    {
+      "index": 51,
+      "reason": "Sole pressed flat against wall cannot show pads to camera"
+    },
+    {
+      "index": 55,
+      "reason": "Crossed ankle rolling top sole cannot show all toes and pads unobstructed"
+    },
+    {
+      "index": 57,
+      "reason": "Sole braced against starting block cannot show pads to camera"
+    },
+    {
+      "index": 78,
+      "reason": "Sole pressed flat against glass cannot show pads facing camera"
+    },
+    {
+      "index": 85,
+      "reason": "Crossed raised soles cannot both show all toes without occlusion"
+    },
+    {
+      "index": 86,
+      "reason": "Side-facing sole with hand tracing toe cannot show all four toes and pads clearly"
+    },
+    {
+      "index": 88,
+      "reason": "Foot held in both paws cannot show sole fully with both hands' fingers shaped"
+    }
+  ],
+  "model": "deepseek-flash",
+  "usage": {
+    "prompt_tokens": 11372,
+    "completion_tokens": 721,
+    "total_tokens": 12093,
+    "prompt_tokens_details": {
+      "cached_tokens": 128
+    },
+    "prompt_cache_hit_tokens": 128,
+    "prompt_cache_miss_tokens": 11244
+  }
+}

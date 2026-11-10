@@ -1,0 +1,454 @@
+{
+  "tasks": [
+    {
+      "instruction": "The blue tiger crouches low to peer into a narrow cave opening, one hand braced on the rock wall, head tilted as it scans the dark interior.",
+      "action_family": "peering",
+      "camera": "low three-quarter angle from behind, cave mouth framing the subject",
+      "targets": [
+        "identity",
+        "cel_style"
+      ],
+      "visible_hands": 1,
+      "visible_soles": 0,
+      "visibility_requirement": "One supporting hand visible against the rock; the other arm hidden by the body.",
+      "intent_zh": "蓝虎蹲低探看狭窄洞口，一手撑岩壁。",
+      "category": "identity_control",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "The blue tiger balances on a fallen log spanning a stream, arms out for stability, one foot lifted mid-step, gazing down at the water swirling beneath.",
+      "action_family": "balancing",
+      "camera": "side view at water level, log diagonal across frame",
+      "targets": [
+        "identity",
+        "cel_style"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both outstretched hands visible; feet on the log, soles not shown.",
+      "intent_zh": "蓝虎在横倒树干上保持平衡。",
+      "category": "identity_control",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "The blue tiger kneels beside a campfire blowing gently on the embers, cheeks puffed, one hand cupped near the flames, the other steadying a small cooking pot.",
+      "action_family": "blowing",
+      "camera": "medium close-up from front-left, firelight warm on the face",
+      "targets": [
+        "identity",
+        "cel_style"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both hands visible near the fire; lower body out of frame.",
+      "intent_zh": "蓝虎跪在篝火旁吹旺余烬。",
+      "category": "identity_control",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "The blue tiger stretches upward on tiptoe to pluck a high hanging fruit, tail curled for balance, face turned up with concentration, the branch bending under the reach.",
+      "action_family": "reaching",
+      "camera": "low angle looking up, fruit branch overhead",
+      "targets": [
+        "identity",
+        "cel_style"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both raised hands visible; feet on tiptoe, soles not shown.",
+      "intent_zh": "蓝虎踮脚伸手摘高处果实。",
+      "category": "identity_control",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "The blue tiger crouches over a patch of soft sand, one finger tracing a spiral pattern while the other hand rests flat on the ground for support, head lowered in focus.",
+      "action_family": "drawing",
+      "camera": "high angle looking down, pattern and hands in view",
+      "targets": [
+        "identity",
+        "cel_style"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both hands clearly visible on the sand; feet outside frame.",
+      "intent_zh": "蓝虎在沙地上画螺旋图案。",
+      "category": "identity_control",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "The blue tiger leans out over a wooden railing to feed a bird perched on a post below, one hand extended with crumbs, body angled forward, gaze following the bird.",
+      "action_family": "feeding",
+      "camera": "medium shot from the side, railing and post in frame",
+      "targets": [
+        "identity",
+        "cel_style"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both hands visible, one over the railing and one on it.",
+      "intent_zh": "蓝虎靠在木栏杆上喂鸟。",
+      "category": "identity_control",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "The blue tiger wedges a shoulder against a heavy wooden crate, pushing it across a plank floor, both hands flat on the side, legs braced in a wide stance with effort.",
+      "action_family": "pushing",
+      "camera": "low wide shot from front-right, crate and floor visible",
+      "targets": [
+        "identity",
+        "cel_style"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both hands visible pressing the crate; feet not shown.",
+      "intent_zh": "蓝虎用肩膀和双手推木箱。",
+      "category": "identity_control",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "The blue tiger hides behind a large potted fern, peeking out with one eye visible between leaves, one hand parting the fronds, body mostly concealed in the dim room.",
+      "action_family": "hiding",
+      "camera": "eye-level medium shot through the leaves",
+      "targets": [
+        "identity",
+        "cel_style"
+      ],
+      "visible_hands": 1,
+      "visible_soles": 0,
+      "visibility_requirement": "One parting hand visible; the other arm occluded by foliage.",
+      "intent_zh": "蓝虎躲在蕨类植物后探头偷看。",
+      "category": "identity_control",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "The blue tiger threads a needle by a window, holding the needle close to one eye and the thread pinched in the other hand, mouth slightly open in concentration.",
+      "action_family": "threading",
+      "camera": "extreme close-up of face and hands, window light from behind",
+      "targets": [
+        "identity",
+        "cel_style"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both hands visible at chest height; lower body out of frame.",
+      "intent_zh": "蓝虎对着窗光穿针引线。",
+      "category": "identity_control",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "The blue tiger sits on a stack of crates with legs dangling over the edge, leaning back on one hand and holding a lantern up with the other, lighting the rafters above.",
+      "action_family": "dangling",
+      "camera": "low angle from below, crates and rafters framing the shot",
+      "targets": [
+        "identity",
+        "cel_style"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both hands visible, one bracing on the crate top.",
+      "intent_zh": "蓝虎坐在木箱堆上举着灯笼照亮房梁。",
+      "category": "identity_control",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "The blue tiger clambers over a low garden wall, belly and knees on the stone cap, one hand swinging over while the other grips the edge, tail flicking up.",
+      "action_family": "climbing",
+      "camera": "side view slightly behind, wall cutting the frame",
+      "targets": [
+        "identity",
+        "cel_style"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both hands visible on the wall edge; legs partly hidden by the wall.",
+      "intent_zh": "蓝虎翻越低矮花园石墙。",
+      "category": "identity_control",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "The blue tiger scrubs a stubborn stain from a large pot, both hands gripping a brush, shoulders hunched, water splashing onto the floor around the base of the pot.",
+      "action_family": "scrubbing",
+      "camera": "medium shot from front-high angle, pot and brush in focus",
+      "targets": [
+        "identity",
+        "cel_style"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both hands visible on the brush; feet outside frame.",
+      "intent_zh": "蓝虎用力刷洗大锅上的污渍。",
+      "category": "identity_control",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "The blue tiger winds a long rope around one forearm and elbow, pulling it taut with the other hand, leaning back with weight on the heels, face turned to the side.",
+      "action_family": "coiling",
+      "camera": "side-angle medium shot, rope looping through the frame",
+      "targets": [
+        "identity",
+        "cel_style"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both hands clear of the rope confusion and visible.",
+      "intent_zh": "蓝虎把长绳缠在小臂上拉紧。",
+      "category": "identity_control",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "The blue tiger drops through a trapdoor in the floor, only head, shoulders and one gripping hand visible at the opening, eyes wide with surprise as the room recedes.",
+      "action_family": "dropping",
+      "camera": "high angle looking down into the room from above",
+      "targets": [
+        "identity",
+        "cel_style"
+      ],
+      "visible_hands": 1,
+      "visible_soles": 0,
+      "visibility_requirement": "One hand gripping the trapdoor edge visible; other arm below the floor.",
+      "intent_zh": "蓝虎从地板暗门跌落，仅露头肩和一只手。",
+      "category": "identity_control",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "The blue tiger crawls through a low tunnel of roots and earth, face forward near the camera, one hand reaching ahead into the darker passage.",
+      "action_family": "crawling",
+      "camera": "front-on low view inside the tunnel, shallow depth",
+      "targets": [
+        "identity",
+        "cel_style"
+      ],
+      "visible_hands": 1,
+      "visible_soles": 0,
+      "visibility_requirement": "One advancing hand visible ahead; the trailing arm hidden by the body.",
+      "intent_zh": "蓝虎在树根土洞中匍匐前进。",
+      "category": "identity_control",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "The blue tiger leans over a bridge rail to watch its reflection in still water, one hand trailing just above the surface, the other holding the rail, ears perked.",
+      "action_family": "reflecting",
+      "camera": "high angle over the rail, face and reflection framed together",
+      "targets": [
+        "identity",
+        "cel_style"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both hands visible, one on the rail and one above water.",
+      "intent_zh": "蓝虎靠桥栏看水中倒影。",
+      "category": "identity_control",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "The blue tiger pries open a wooden chest with both hands, leaning its weight into the lid, face lit from the glow spilling out, shoulders squared with effort.",
+      "action_family": "prying",
+      "camera": "front-low angle, chest and glowing light dominating",
+      "targets": [
+        "identity",
+        "cel_style"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both hands visible gripping the lid edge.",
+      "intent_zh": "蓝虎双手撬开发光木箱。",
+      "category": "identity_control",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "The blue tiger trips over a coiled garden hose and pitches forward, arms flailing, one knee bent to catch itself, mouth open in a startled shout.",
+      "action_family": "tripping",
+      "camera": "wide side shot, hose and path in frame",
+      "targets": [
+        "identity",
+        "cel_style"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both flailing hands visible; feet not shown.",
+      "intent_zh": "蓝虎被水管绊倒向前扑。",
+      "category": "identity_control",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "The blue tiger squeezes through a partially open window, shoulders twisted, one hand on the frame and the other reaching toward the room inside, tail caught behind.",
+      "action_family": "squeezing",
+      "camera": "from inside the room, window framing the body",
+      "targets": [
+        "identity",
+        "cel_style"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both hands visible on the frame and sill; lower body outside.",
+      "intent_zh": "蓝虎扭身从半开窗户挤进房间。",
+      "category": "identity_control",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "The blue tiger hangs upside down from a sturdy branch by both hands, knees hooked over the limb, examining a bird's nest below with an upside-down curious expression.",
+      "action_family": "hanging",
+      "camera": "inverted low angle looking up past the branch",
+      "targets": [
+        "identity",
+        "cel_style"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both gripping hands visible on the branch; legs behind the limb.",
+      "intent_zh": "蓝虎倒挂在树枝上看鸟巢。",
+      "category": "identity_control",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "The blue tiger crouches behind a curtain, only the head and one hand poking out as it watches someone cross the room, eyes narrowed and alert.",
+      "action_family": "spying",
+      "camera": "medium shot from the room, curtain edge in foreground",
+      "targets": [
+        "identity",
+        "cel_style"
+      ],
+      "visible_hands": 1,
+      "visible_soles": 0,
+      "visibility_requirement": "One peeking hand visible outside the curtain; other arm hidden.",
+      "intent_zh": "蓝虎躲在帘后偷看房间动静。",
+      "category": "identity_control",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "The blue tiger swings a long-handled axe down upon a piece of firewood on a chopping block, torso twisted, both hands gripping the haft, chips flying from the block.",
+      "action_family": "chopping",
+      "camera": "low angle from the side, axe arc and block visible",
+      "targets": [
+        "identity",
+        "cel_style"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both hands clearly visible on the axe handle.",
+      "intent_zh": "蓝虎挥斧劈柴，木屑飞溅。",
+      "category": "identity_control",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "The blue tiger lies on its back beneath a low wooden cart, arms extended up, working on an axle with a small wrench in one hand and a bolt in the other.",
+      "action_family": "repairing",
+      "camera": "low side view under the cart, wheels framing the scene",
+      "targets": [
+        "identity",
+        "cel_style"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both hands visible against the underside of the cart.",
+      "intent_zh": "蓝虎躺在车底修理车轴。",
+      "category": "identity_control",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "The blue tiger reaches into a deep barrel of grain, one arm sunk to the elbow, face turned away with a grimace, the other hand steadying the barrel rim.",
+      "action_family": "reaching",
+      "camera": "medium front angle, barrel dominating the lower frame",
+      "targets": [
+        "identity",
+        "cel_style"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both hands visible, one at the barrel rim and one entering it.",
+      "intent_zh": "蓝虎伸手探入谷桶深处。",
+      "category": "identity_control",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "The blue tiger steps carefully along a narrow stone ledge on a steep wall, back pressed to the rock, one hand flat against the wall and the other pointing ahead for balance.",
+      "action_family": "sidling",
+      "camera": "wide side view showing the drop beyond the ledge",
+      "targets": [
+        "identity",
+        "cel_style"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both hands visible against the wall and ahead; feet on the ledge.",
+      "intent_zh": "蓝虎背贴岩壁在窄石沿侧移。",
+      "category": "identity_control",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "The blue tiger ducks under a low doorway carrying a stack of books, chin pressing the top book down, both hands wrapped around the wobbling tower.",
+      "action_family": "carrying",
+      "camera": "front-three-quarter medium shot, doorway framing",
+      "targets": [
+        "identity",
+        "cel_style"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both hands visible supporting the stack; feet out of frame.",
+      "intent_zh": "蓝虎低头抱着一摞书过矮门。",
+      "category": "identity_control",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "The blue tiger slumps back against a boulder after a long climb, chest heaving, one forearm across a raised knee, the other hand resting on the ground beside it, eyes half-closed.",
+      "action_family": "recovering",
+      "camera": "low side angle, boulder and distant ridge behind",
+      "targets": [
+        "identity",
+        "cel_style"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both hands visible, one on the knee arm and one on the ground.",
+      "intent_zh": "蓝虎登山后在巨石旁瘫坐喘息。",
+      "category": "identity_control",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "The blue tiger peers into a telescope aimed out a round attic window, one hand adjusting the focus knob, the other bracing the tube, one eye squinting into the eyepiece.",
+      "action_family": "observing",
+      "camera": "profile medium shot, telescope pointing to window",
+      "targets": [
+        "identity",
+        "cel_style"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both hands visible on the telescope body and knob.",
+      "intent_zh": "蓝虎在阁楼用望远镜观测窗外。",
+      "category": "identity_control",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "The blue tiger drags a heavy sack across a wooden dock toward a waiting boat, leaning back into the pull, both hands gripping the sack's tied neck, rope trailing behind.",
+      "action_family": "dragging",
+      "camera": "wide low shot along the dock planks",
+      "targets": [
+        "identity",
+        "cel_style"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both hands visible on the sack neck; feet on the planks.",
+      "intent_zh": "蓝虎在码头上拖着沉重麻袋走向小船。",
+      "category": "identity_control",
+      "generation_batch": 1
+    }
+  ],
+  "model": "deepseek-flash",
+  "usage": {
+    "prompt_tokens": 391,
+    "completion_tokens": 3405,
+    "total_tokens": 3796,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "prompt_cache_hit_tokens": 256,
+    "prompt_cache_miss_tokens": 135
+  },
+  "settings": {
+    "temperature": 1,
+    "thinking": "disabled"
+  }
+}

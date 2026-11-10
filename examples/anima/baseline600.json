@@ -1,0 +1,14 @@
+{
+  "dit": "/content/drive/MyDrive/ComfyUI/models/diffusion_models/waiANIMA_v10Base10.safetensors",
+  "text_encoder": "/content/drive/MyDrive/ComfyUI/models/text_encoders/waiANIMA_v10Base10_txt.safetensors",
+  "vae": "/content/drive/MyDrive/ComfyUI/models/vae/qwenImage_qwenImageVAE.safetensors",
+  "lora": "/content/drive/MyDrive/lora_training/output/cheese_v24_train/cheese_v24_seed20261109_extend_lr1e5_20261108_173653.safetensors",
+  "sd_scripts": "/content/sd-scripts",
+  "tasks": "/content/SD_Study/data/anima_tasks_600/tasks_all.jsonl",
+  "width": 768,
+  "height": 1024,
+  "steps": 28,
+  "cfg": 4.0,
+  "flow_shift": 5.0,
+  "output": "/content/drive/MyDrive/lora_training/baselines/cheese_tasks600_example"
+}

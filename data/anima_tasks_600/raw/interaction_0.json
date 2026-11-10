@@ -1,0 +1,585 @@
+{
+  "tasks": [
+    {
+      "instruction": "The blue tiger crouches beside a low wooden crate and pushes its lid open with one flat open palm, keeping the other arm relaxed at its side while looking into the box.",
+      "action_family": "opening",
+      "camera": "medium side view at crate level",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 1,
+      "visible_soles": 0,
+      "visibility_requirement": "The pushing hand is fully open and flat, palm and all five fingers facing the viewer clearly.",
+      "intent_zh": "蹲下用摊开的手掌推开木箱盖子",
+      "category": "interaction",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "Seated cross-legged on a cushion, the blue tiger holds a small open book against its knee with one hand while the other hand rests open and flat on the cushion beside it, palm upward.",
+      "action_family": "reading",
+      "camera": "three-quarter front view at seated eye level",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "The resting hand shows a fully visible upward palm with all five fingers separated; the book-holding hand is relaxed and partly visible.",
+      "intent_zh": "盘腿坐着看书，另一只手摊开放松",
+      "category": "interaction",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "The blue tiger balances a round wooden bowl on its open upturned palm above shoulder height, arm extended, head tilted to watch the bowl wobble, body leaning slightly for balance.",
+      "action_family": "balancing",
+      "camera": "medium full-body shot from slight low angle",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 1,
+      "visible_soles": 1,
+      "visibility_requirement": "The balancing palm is fully open under the bowl with all five fingers visible around its rim.",
+      "intent_zh": "单手托碗保持平衡，抬头看着它晃动",
+      "category": "interaction",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "Kneeling on one knee, the blue tiger reaches into a woven basket of apples, one open palm extended toward the fruit while the other hand steadies the basket rim from outside, gaze downward.",
+      "action_family": "picking",
+      "camera": "medium three-quarter view from the front",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "The reaching hand is shown open with palm and five fingers clearly exposed above the basket contents.",
+      "intent_zh": "单膝跪地伸手进篮子拿苹果",
+      "category": "interaction",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "The blue tiger leans against a doorframe and presses an open flat palm against the door to hold it ajar, peeking through the gap with an alert expression, other arm hanging loosely.",
+      "action_family": "opening",
+      "camera": "medium side view along the doorframe",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 1,
+      "visible_soles": 0,
+      "visibility_requirement": "The palm pressed on the door is fully visible and flat, fingers spread and not curled.",
+      "intent_zh": "靠在门框边用手掌撑开门缝偷看",
+      "category": "interaction",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "Crouched low near the ground, the blue tiger places an open palm flat on the floor to steady itself while reaching a lantern toward a wall shelf with the other arm, tail curled up.",
+      "action_family": "reaching",
+      "camera": "low angle medium shot from the side",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 1,
+      "visibility_requirement": "The floor-planted hand is fully open with palm and five fingers pressed flat and clearly visible.",
+      "intent_zh": "蹲低一手撑地，另一手举灯去够架子",
+      "category": "interaction",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "The blue tiger stands at a potter's wheel, both hands wet, one open palm smoothing the clay wall while the other supports the outside of the vase, sleeves rolled up, head bowed in focus.",
+      "action_family": "crafting",
+      "camera": "medium close-up from above the wheel",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "The smoothing palm faces outward with all five fingers visible against the clay; the support hand is also visible.",
+      "intent_zh": "在陶轮旁双手塑形，一手掌抹平陶壁",
+      "category": "interaction",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "Reclining on a park bench, the blue tiger tosses a small ball up with one open palm and watches it rise, the other arm draped over the bench back, legs stretched out.",
+      "action_family": "tossing",
+      "camera": "medium full-body side view at bench height",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 1,
+      "visible_soles": 1,
+      "visibility_requirement": "The tossing palm faces upward, fully open with all five fingers visible as the ball leaves it.",
+      "intent_zh": "躺在长椅上用手掌抛接小球",
+      "category": "interaction",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "The blue tiger bends over a large paper map spread on a table, one open palm pressed flat on a corner to hold it down, the other hand pointing at a route, ears tilted forward.",
+      "action_family": "gesturing",
+      "camera": "medium high-angle view over the table",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "The flat holding palm is fully visible with five spread fingers; the pointing hand is also clear.",
+      "intent_zh": "俯身看地图，一手压住纸角一手比划路线",
+      "category": "interaction",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "Sitting on a low stool, the blue tiger ladles water from a bucket with one hand and cups the other open palm under the ladle to catch drips, leaning forward over the pail.",
+      "action_family": "pouring",
+      "camera": "medium front view slightly above",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "The catching palm is open and upward with all five fingers visible and unobstructed by the ladle.",
+      "intent_zh": "坐凳上用勺子舀水，另一手摊开接水滴",
+      "category": "interaction",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "The blue tiger nimbly steps along a garden path carrying a stack of folded towels, one open palm supporting the bottom of the stack while the other hand rests on top, head turned toward a bird.",
+      "action_family": "carrying",
+      "camera": "medium tracking side view",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "The supporting hand under the stack shows an open palm with all five fingers visible beneath the towels.",
+      "intent_zh": "抱着一叠毛巾走路，一手掌托着底部",
+      "category": "interaction",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "Kneeling beside a soaking rag, the blue tiger wipes a spilled puddle on the floor with one open flat palm, the other hand braced on its knee, looking down at the wet mark.",
+      "action_family": "cleaning",
+      "camera": "medium high angle from behind and above",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "The wiping palm is flat and fully visible against the floor with five spread fingers.",
+      "intent_zh": "跪地用摊开的手掌擦地上的水渍",
+      "category": "interaction",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "The blue tiger stands at a fishing pond edge, holding a rod with one hand while the other open palm shields its eyes from the sun as it scans the water, feet planted apart.",
+      "action_family": "shielding",
+      "camera": "medium wide side view with pond in front",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 1,
+      "visibility_requirement": "The shading palm is flat and open above the eyes with all five fingers visible and separated.",
+      "intent_zh": "站在池塘边一手握竿一手遮阳眺望",
+      "category": "interaction",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "The blue tiger kneels by a cardboard box and gently lifts a small kitten out with one cradling hand while the other open palm stays flat beneath as support, looking down tenderly.",
+      "action_family": "lifting",
+      "camera": "medium close-up from the side",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "The support palm is open and flat under the kitten with all five fingers visible around it.",
+      "intent_zh": "跪着轻轻托起小猫，另一手掌在下方护着",
+      "category": "interaction",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "Seated on the floor with legs stretched forward, the blue tiger rolls a wooden toy car along the ground with one open flat palm, the other hand resting open on its thigh.",
+      "action_family": "playing",
+      "camera": "low three-quarter view from the front",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 2,
+      "visibility_requirement": "The pushing palm is fully visible and flat on the car; the thigh-resting open hand is also clear.",
+      "intent_zh": "坐地上用手掌推玩具车，另一手放腿上",
+      "category": "interaction",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "The blue tiger climbs a short wooden ladder, one open palm gripping the side rail with fingers spread, the other hand reaching to the next rung, body angled upward.",
+      "action_family": "climbing",
+      "camera": "medium low-angle view from the side",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 1,
+      "visibility_requirement": "The rail-holding hand is shown as an open palm with all five long fingers visible against the wood.",
+      "intent_zh": "爬木梯，一手张开抓栏杆一手够横档",
+      "category": "interaction",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "Bending at the waist, the blue tiger pours seeds from a paper bag into a bird feeder, holding the bag with one hand and catching stray seeds in the other open cupped palm below.",
+      "action_family": "pouring",
+      "camera": "medium front view at waist height",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "The cupped catching palm is fully visible with all five fingers and palm surface shown openly.",
+      "intent_zh": "弯腰倒种子喂鸟，另一手摊开接住漏下的",
+      "category": "interaction",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "The blue tiger sits on a swing, one open palm flat on the chain beside it, the other hand resting in its lap, legs dangling and swinging gently, head tilted up.",
+      "action_family": "resting",
+      "camera": "medium front view at swing height",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 2,
+      "visibility_requirement": "The chain-holding palm is open and flat with five fingers visible, not curled around the chain.",
+      "intent_zh": "坐在秋千上，一手掌搭在链子上轻轻荡",
+      "category": "interaction",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "The blue tiger leans over a wooden fence to pet a sheep, one open palm extended flat toward the animal's head while the other hand grips the top rail, tail swaying.",
+      "action_family": "petting",
+      "camera": "medium side view at fence height",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "The extended petting palm is fully open and flat with all five fingers visible toward the sheep.",
+      "intent_zh": "趴在木栅栏上摊开手掌摸羊",
+      "category": "interaction",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "Crouched on a rocky shore, the blue tiger dips one open palm into a tide pool and lifts it dripping, watching the water run off its fingers, the other hand steadying itself on a stone.",
+      "action_family": "dipping",
+      "camera": "medium close high angle from the side",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 1,
+      "visibility_requirement": "The lifted palm is fully open toward the viewer with all five slender fingers and palm clearly visible.",
+      "intent_zh": "蹲在潮池边用手掌舀水看它流下来",
+      "category": "interaction",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "The blue tiger stands in a kitchen cracking an egg against a bowl rim with one hand, the other open palm held beneath to catch any shell, leaning over the counter.",
+      "action_family": "cracking",
+      "camera": "medium close-up over the counter",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "The catching palm below is open and fully visible with five separated fingers, unobstructed by the bowl.",
+      "intent_zh": "在厨房单手打蛋，另一手掌在下面接蛋壳",
+      "category": "interaction",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "Sitting on a low wall, the blue tiger brushes dust from its knee with one open flat palm, the other hand holding a soft brush loosely, face turned toward the sunset.",
+      "action_family": "brushing",
+      "camera": "medium side view at wall height",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "The brushing palm is flat and fully visible against the knee with all five fingers spread.",
+      "intent_zh": "坐在矮墙上用手掌拍掉膝盖的灰尘",
+      "category": "interaction",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "The blue tiger kneels to tie a ribbon around a gift box, one open palm pressing the bow flat while the other hand pulls the ribbon end, tongue slightly out in concentration.",
+      "action_family": "tying",
+      "camera": "medium close high angle from the front",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "The pressing palm is open and flat on the bow with all five fingers visible around the ribbon.",
+      "intent_zh": "跪着系礼盒丝带，一手掌按住蝴蝶结",
+      "category": "interaction",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "The blue tiger sits under a tree reading a letter, holding the paper with one hand while the other open palm rests on the grass beside it, palm up, enjoying the shade.",
+      "action_family": "resting",
+      "camera": "medium wide front view at ground level",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "The grass-resting palm is open upward with all five fingers and yellow pad clearly visible.",
+      "intent_zh": "在树下读信，另一只手掌摊在草地上",
+      "category": "interaction",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "The blue tiger crouches beside a bicycle and presses an open flat palm against the tire to check the pressure, the other hand on the handlebar, brow furrowed in thought.",
+      "action_family": "checking",
+      "camera": "low medium side view at wheel height",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 1,
+      "visibility_requirement": "The tire-pressing palm is fully visible and flat with five fingers spread against the rubber.",
+      "intent_zh": "蹲在自行车旁用手掌按轮胎试气压",
+      "category": "interaction",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "The blue tiger reaches up to a high shelf with one open palm outstretched to grab a jar, standing on tiptoe with the other arm out for balance, tail lifted.",
+      "action_family": "reaching",
+      "camera": "medium low-angle full-body view from the side",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 1,
+      "visibility_requirement": "The outstretched reaching palm is open toward the shelf with all five fingers visible and separated.",
+      "intent_zh": "踮脚伸手够高架上的罐子",
+      "category": "interaction",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "Seated at a piano, the blue tiger presses keys with one hand while the other rests open and flat on the wood beside the keys, head tilted as it listens to the note.",
+      "action_family": "playing",
+      "camera": "medium three-quarter view over the shoulder onto keys",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "The resting open palm on the piano wood is fully visible with all five fingers relaxed and spread.",
+      "intent_zh": "坐在钢琴前弹奏，另一手掌摊在琴木上",
+      "category": "interaction",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "The blue tiger bends over a sink washing a mug, one open palm scrubbing inside the rim while the other hand holds the mug steady under running water, sleeves pushed up.",
+      "action_family": "cleaning",
+      "camera": "medium close-up over the sink at chest height",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "The scrubbing palm is open toward the viewer inside the mug rim with five fingers visible above the edge.",
+      "intent_zh": "在水池边用手掌洗杯子",
+      "category": "interaction",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "The blue tiger leans out of a window to water plants, one open palm tipping the watering can while the other hand braces on the sill, sunlight on its fur.",
+      "action_family": "watering",
+      "camera": "medium side view from outside the window",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "The bracing palm on the sill is flat and fully visible with all five fingers spread on the wood.",
+      "intent_zh": "探出窗户浇植物，另一手掌撑在窗台上",
+      "category": "interaction",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "The blue tiger sits on a cushion and holds a large seashell to its ear with one hand, the other open palm resting on the floor beside it, eyes closed peacefully.",
+      "action_family": "listening",
+      "camera": "medium front view at seated eye level",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "The floor-resting palm is open and upward with all five fingers and yellow palm pad clearly visible.",
+      "intent_zh": "坐着把贝壳贴在耳边听，另一手掌摊在地板上",
+      "category": "interaction",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "The blue tiger crouches in a garden and presses an open flat palm into the soil to firm a newly planted seedling, the other hand holding a trowel beside it.",
+      "action_family": "planting",
+      "camera": "low medium view from ground level at the side",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 1,
+      "visibility_requirement": "The soil-pressing palm is flat and fully visible with five fingers spread against the dirt.",
+      "intent_zh": "蹲在花园里用手掌压实新栽苗的土",
+      "category": "interaction",
+      "generation_batch": 0
+    }
+  ],
+  "model": "deepseek-flash",
+  "usage": {
+    "prompt_tokens": 377,
+    "completion_tokens": 4245,
+    "total_tokens": 4622,
+    "prompt_tokens_details": {
+      "cached_tokens": 128
+    },
+    "prompt_cache_hit_tokens": 128,
+    "prompt_cache_miss_tokens": 249
+  },
+  "settings": {
+    "temperature": 1,
+    "thinking": "disabled"
+  }
+}

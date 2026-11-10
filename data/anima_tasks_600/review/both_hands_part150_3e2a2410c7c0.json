@@ -1,0 +1,44 @@
+{
+  "approved_ids": [
+    0,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "rejected": [
+    {
+      "index": 1,
+      "reason": "Hands emerging first from behind a doorway with palms toward viewer is physically implausible; palms would face the doorframe, not the viewer."
+    },
+    {
+      "index": 2,
+      "reason": "Palms-down hands tilted toward a side three-quarter low camera cannot show full palm surfaces with fingers separated toward the lens."
+    }
+  ],
+  "model": "deepseek-flash",
+  "usage": {
+    "prompt_tokens": 2997,
+    "completion_tokens": 114,
+    "total_tokens": 3111,
+    "prompt_tokens_details": {
+      "cached_tokens": 128
+    },
+    "prompt_cache_hit_tokens": 128,
+    "prompt_cache_miss_tokens": 2869
+  }
+}

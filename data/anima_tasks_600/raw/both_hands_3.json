@@ -1,0 +1,546 @@
+{
+  "tasks": [
+    {
+      "instruction": "The blue tiger kneels beside a low wooden bench, pressing both flat palms onto its surface to steady a wobbling stack of ceramic bowls while leaning forward with focused concentration.",
+      "action_family": "steadying",
+      "camera": "low three-quarter angle from bench height, hands and bowls centered",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both hands fully visible with all five fingers clearly separated, no occlusion by bowls or bench edge.",
+      "intent_zh": "跪在木凳旁，双掌按稳摇晃的瓷碗，展示双手与专注姿态。",
+      "category": "both_hands",
+      "generation_batch": 3
+    },
+    {
+      "instruction": "Seated cross-legged on a woven mat, the blue tiger holds a large ball of blue yarn with both hands spread apart, thumbs hooking the strand as it stretches between its wide-open palms.",
+      "action_family": "holding",
+      "camera": "straight-on medium close-up with mat texture visible below",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both palms facing camera, yarn strand between them, all ten fingers unobstructed.",
+      "intent_zh": "盘腿坐垫上双手撑开毛线，掌心朝前展示手指。",
+      "category": "both_hands",
+      "generation_batch": 3
+    },
+    {
+      "instruction": "Balancing on a single stool, the blue tiger presses one palm flat against the ceiling for support while the other hand gestures downward explaining height, body stretched tall with tail curled.",
+      "action_family": "balancing",
+      "camera": "wide low-angle upward shot capturing ceiling contact and downward palm",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "The ceiling palm and the explaining palm both face the camera, fingers distinct and unblocked.",
+      "intent_zh": "踩凳顶撑天花板，另一手掌下压示意高度，双掌清晰。",
+      "category": "both_hands",
+      "generation_batch": 3
+    },
+    {
+      "instruction": "The blue tiger crouches inside a cardboard box cut with star-shaped holes, pushing one palm out through each hole with fingers splayed like star points while peering through the flaps.",
+      "action_family": "peering",
+      "camera": "front view at box level, star holes and protruding palms framed symmetrically",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both palms protrude clearly from their holes, all five fingers visible beyond the cardboard edges.",
+      "intent_zh": "躲在纸箱中，双掌从星形孔伸出张开，展示手指。",
+      "category": "both_hands",
+      "generation_batch": 3
+    },
+    {
+      "instruction": "Leaning over a wide glass fish tank, the blue tiger presses both palms flat onto the water surface creating ripples, watching fish scatter below while keeping arms straight.",
+      "action_family": "pressing",
+      "camera": "overhead high angle looking down at palms on water and fish below",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both palms on the water visible from above, all fingers spread and unoccluded by reflection glare.",
+      "intent_zh": "俯身双掌按水面激起涟漪，俯拍双手与鱼群。",
+      "category": "both_hands",
+      "generation_batch": 3
+    },
+    {
+      "instruction": "Sitting on a tall ladder rung, the blue tiger reaches both hands upward to clasp a paint roller handle together, guiding it along a wall strip above its head.",
+      "action_family": "guiding",
+      "camera": "side three-quarter low angle, arms raised and hands gripping handle overhead",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both hands gripping the roller handle, all fingers wrapped and visible from the side, no wall occlusion.",
+      "intent_zh": "坐梯上双手共握滚筒刷墙，侧角度展示握持手指。",
+      "category": "both_hands",
+      "generation_batch": 3
+    },
+    {
+      "instruction": "The blue tiger lies on its back beneath a car chassis, both hands raised holding a wrench, one palm steadying a bolt while the other turns, legs bent outside the frame.",
+      "action_family": "repairing",
+      "camera": "low ground-level side view looking under the car at raised hands",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both hands under the chassis clearly visible in the light, fingers on wrench distinct.",
+      "intent_zh": "车底仰躺双手握扳手维修，低角度展示双手。",
+      "category": "both_hands",
+      "generation_batch": 3
+    },
+    {
+      "instruction": "Kneeling at a shallow tide pool, the blue tiger cups both palms together to scoop water and a tiny crab, holding the hands close to its face to inspect the catch.",
+      "action_family": "scooping",
+      "camera": "close-up over-the-shoulder angle focusing on cupped hands and crab",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both cupped palms visible from above, fingers interlocked and distinct around the crab.",
+      "intent_zh": "跪在潮池边双手捧水与小蟹，俯视展示手指。",
+      "category": "both_hands",
+      "generation_batch": 3
+    },
+    {
+      "instruction": "Hanging from a horizontal ceiling bar by both hands, the blue tiger tucks its knees up and swings slightly, fingers hooked over the bar with palms facing away from camera.",
+      "action_family": "hanging",
+      "camera": "front medium shot slightly below, bar and hooked hands at top of frame",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both hands gripping the bar visible, knuckles and wrapped fingers clear against the sky background.",
+      "intent_zh": "双手悬挂天花板横杆收膝摆动，正面展示抓握手指。",
+      "category": "both_hands",
+      "generation_batch": 3
+    },
+    {
+      "instruction": "The blue tiger crouches over a patch of wet clay and presses both palms flat into it, leaving deep handprints while looking up at the camera with muddy forearms.",
+      "action_family": "imprinting",
+      "camera": "high angle looking down at clay and flat palms, face tilted up",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both palms flat in clay seen from above, all fingers and thumb pads visible and pressed.",
+      "intent_zh": "蹲下双掌按压湿泥留下手印，俯拍展示掌面。",
+      "category": "both_hands",
+      "generation_batch": 3
+    },
+    {
+      "instruction": "Standing before a giant chalkboard, the blue tiger presses one palm flat against the board for balance while the other hand draws a large spiral with chalk, body leaning in.",
+      "action_family": "drawing",
+      "camera": "three-quarter side view with chalkboard filling background",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both hands on the board visible, flat support palm and chalk-holding fingers distinct.",
+      "intent_zh": "站黑板前一手撑板一手画螺旋，展示双掌。",
+      "category": "both_hands",
+      "generation_batch": 3
+    },
+    {
+      "instruction": "The blue tiger sits on a floating wooden raft, both palms pressed together in a tight prayer-like clap while wind blows its fur, eyes squeezed shut against spray.",
+      "action_family": "clapping",
+      "camera": "close frontal shot on the raft, sea spray and palms centered",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both palms pressed together facing camera, all fingers aligned and clearly separable.",
+      "intent_zh": "坐木筏双掌合十闭眼迎风，正面展示合掌手指。",
+      "category": "both_hands",
+      "generation_batch": 3
+    },
+    {
+      "instruction": "Leaning out a second-story window, the blue tiger stretches both hands down to catch a falling bouquet, fingers spread wide like a basket below the sill.",
+      "action_family": "catching",
+      "camera": "low angle from street looking up at the window and spread hands",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both hands extend beyond the sill, palms open downward, all fingers against the sky.",
+      "intent_zh": "探窗向下双手张成篮状接花束，仰拍双掌。",
+      "category": "both_hands",
+      "generation_batch": 3
+    },
+    {
+      "instruction": "Sitting on a swing, the blue tiger holds both palms up to catch a tossed apple, eyes tracking it, fingers spread and slightly curved in anticipation.",
+      "action_family": "catching",
+      "camera": "medium frontal shot with swing ropes framing the raised hands",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both raised palms face camera, apple above them, all fingers distinct and unblocked.",
+      "intent_zh": "荡秋千时双手上举准备接苹果，正面展示张开手指。",
+      "category": "both_hands",
+      "generation_batch": 3
+    },
+    {
+      "instruction": "The blue tiger straddles a narrow rooftop ridge, both palms flat on the tiles behind it for support while looking down the slope with tense posture.",
+      "action_family": "supporting",
+      "camera": "high oblique angle from above and behind, palms on tiles visible",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both palms flat on the tiles behind the body, fingers spread and clearly visible from above.",
+      "intent_zh": "跨坐屋顶双手后撑瓦片，俯后角度展示双掌。",
+      "category": "both_hands",
+      "generation_batch": 3
+    },
+    {
+      "instruction": "Crouched low behind a snow wall, the blue tiger pokes both palms over the top edge with fingers curled, mimicking a stealthy peek while snow dusts its ears.",
+      "action_family": "peeking",
+      "camera": "front low angle with snow wall edge cutting across hands",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both hands curl over the snow wall, all fingers visible above the edge, palms partly turned toward camera.",
+      "intent_zh": "蹲雪墙后双手扒边探头，低角度展示手指。",
+      "category": "both_hands",
+      "generation_batch": 3
+    },
+    {
+      "instruction": "The blue tiger kneels beside a large drum, striking it with alternating flat palms, both hands caught mid-motion above the taut skin with fingers spread.",
+      "action_family": "drumming",
+      "camera": "side view at drum level, both raised palms visible against the drumhead",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both palms raised above the drum, fingers splayed and distinct, no motion blur hiding digits.",
+      "intent_zh": "跪在鼓旁双掌交替击鼓，侧面展示张开手掌。",
+      "category": "both_hands",
+      "generation_batch": 3
+    },
+    {
+      "instruction": "Holding a heavy watering can overhead, the blue tiger uses both palms to tip it, water pouring onto tall plants, arms raised and elbows locked.",
+      "action_family": "watering",
+      "camera": "low upward angle from plant level at the raised hands and can",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both hands on the can above the head visible, all fingers around the handle and base distinct.",
+      "intent_zh": "双手举高浇水壶倒水，仰拍展示握持手指。",
+      "category": "both_hands",
+      "generation_batch": 3
+    },
+    {
+      "instruction": "The blue tiger sits cross-legged threading a needle, both palms close together holding a tiny needle and bright thread, squinting with tongue out in concentration.",
+      "action_family": "threading",
+      "camera": "tight close-up on hands and face, needle between palms centered",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both hands framing the needle visible, thumb and index fingers pinching, remaining fingers spread and clear.",
+      "intent_zh": "盘腿穿针，双掌夹针捏线，特写展示手指动作。",
+      "category": "both_hands",
+      "generation_batch": 3
+    },
+    {
+      "instruction": "Leaning against a tall bookshelf, the blue tiger holds a heavy atlas with both palms flat underneath, arms trembling slightly, looking over the top edge.",
+      "action_family": "lifting",
+      "camera": "front medium shot with shelf lines behind and palms under the book",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both palms support the book underside, fingers spread beneath it and visible from front.",
+      "intent_zh": "靠书架双手平托厚重地图册，正面展示掌下手指。",
+      "category": "both_hands",
+      "generation_batch": 3
+    },
+    {
+      "instruction": "Perched on a boulder above a stream, the blue tiger leans down and presses both palms into the rushing water, fingers parting the current as spray hits its chest.",
+      "action_family": "parting",
+      "camera": "low side angle from water level looking up at boulder and pressing palms",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both palms pressed into the stream visible, fingers spread against the current, no spray obscuring digits.",
+      "intent_zh": "蹲巨石双掌压入溪流分开水流，低角度展示手指。",
+      "category": "both_hands",
+      "generation_batch": 3
+    },
+    {
+      "instruction": "Lying prone on a skateboard, the blue tiger pushes both palms against the ground to roll forward, arms extended and fingers splayed on the pavement.",
+      "action_family": "pushing",
+      "camera": "low trailing angle from behind, palms on pavement and board nose in frame",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both palms flat on pavement visible from behind and low, fingers spread and unblocked by the board.",
+      "intent_zh": "趴在滑板上双掌撑地推行，低后角度展示双掌。",
+      "category": "both_hands",
+      "generation_batch": 3
+    },
+    {
+      "instruction": "The blue tiger stands inside a large bubble wand hoop, pressing both palms outward against an emerging soap film, rainbow swirls around its spread fingers.",
+      "action_family": "pressing",
+      "camera": "frontal close shot with bubble film filling frame around hands",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both palms press the soap film facing camera, all fingers visible through the transparent film edge.",
+      "intent_zh": "站在泡泡圈内双掌推肥皂膜，正面展示掌指与彩虹。",
+      "category": "both_hands",
+      "generation_batch": 3
+    },
+    {
+      "instruction": "With one knee on a floating log, the blue tiger uses both palms to paddle the water like oars on either side, leaning forward with ears back.",
+      "action_family": "paddling",
+      "camera": "high front angle looking down at palms entering water on both sides",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both paddling palms visible above and in water, fingers spread and distinct on each side of the log.",
+      "intent_zh": "单膝跪浮木双掌划水，俯前角度展示两侧手掌。",
+      "category": "both_hands",
+      "generation_batch": 3
+    },
+    {
+      "instruction": "The blue tiger crouches beneath a low cave ceiling, pushing both palms flat upward against the rock to test its stability, dust falling around its arms.",
+      "action_family": "testing",
+      "camera": "low upward angle from the floor, palms flat on ceiling rock overhead",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both palms press the cave ceiling, fingers spread and visible from below, no rock shadow hiding digits.",
+      "intent_zh": "蹲洞中双掌上推岩顶试探稳固，仰拍展示双掌。",
+      "category": "both_hands",
+      "generation_batch": 3
+    },
+    {
+      "instruction": "Sitting on a porch step, the blue tiger holds a large orange between both palms and peels it, fingers digging into the rind with concentrated expression.",
+      "action_family": "peeling",
+      "camera": "close front view at hand level with orange centered and step below",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both hands on the orange visible, all fingers wrapped and peeling, thumbs distinct.",
+      "intent_zh": "坐台阶双手剥橙子，正面特写展示手指抓握。",
+      "category": "both_hands",
+      "generation_batch": 3
+    },
+    {
+      "instruction": "The blue tiger leans backward over a balcony railing, both palms gripping the top rail behind it, body arched as it looks at the sky upside down.",
+      "action_family": "gripping",
+      "camera": "side low angle showing arched body and both hands on railing",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both hands gripping the railing visible from the side, fingers wrapped and distinct on the rail.",
+      "intent_zh": "后仰靠阳台栏杆双手反握，侧低角度展示抓握手指。",
+      "category": "both_hands",
+      "generation_batch": 3
+    },
+    {
+      "instruction": "Kneeling in tall grass, the blue tiger cups both palms around a glowing firefly, peering into the small cage of fingers with wonder in its eyes.",
+      "action_family": "cupping",
+      "camera": "close intimate front shot with dark background and glowing hands",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both cupped palms visible from front, fingers loosely interlaced with gaps showing the glow and each digit.",
+      "intent_zh": "跪草丛双手捧萤火虫，正面特写展示掌间手指与光。",
+      "category": "both_hands",
+      "generation_batch": 3
+    },
+    {
+      "instruction": "Standing at a potter's wheel, the blue tiger presses both palms around a spinning clay bowl, fingers shaping the rim as wet clay splatters its apron.",
+      "action_family": "shaping",
+      "camera": "overhead three-quarter angle looking down at hands and spinning bowl",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both hands on the spinning clay visible from above, fingers curved and distinct around the rim.",
+      "intent_zh": "站陶轮旁双掌塑形旋转陶碗，俯拍展示手指。",
+      "category": "both_hands",
+      "generation_batch": 3
+    },
+    {
+      "instruction": "The blue tiger balances on a slackline, holding a long balancing pole with both palms flat underneath it, arms extended sideways like wings.",
+      "action_family": "balancing",
+      "camera": "frontal wide shot with slackline and horizontal pole spanning the frame",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both palms flat under the pole visible, fingers spread and distinct on each side of the body.",
+      "intent_zh": "走扁带双手平托平衡杆，正面展示展开双掌。",
+      "category": "both_hands",
+      "generation_batch": 3
+    },
+    {
+      "instruction": "Crouched in a sandbox, the blue tiger pats a tall sandcastle with both flat palms, packing the walls while looking proudly at the tilted towers.",
+      "action_family": "patting",
+      "camera": "low angle from sand level with castle rising and flat palms on its sides",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both flat palms on the sandcastle walls visible, all fingers pressed and distinct.",
+      "intent_zh": "蹲沙坑双掌拍实沙堡，低角度展示按压手掌。",
+      "category": "both_hands",
+      "generation_batch": 3
+    }
+  ],
+  "model": "deepseek-flash",
+  "usage": {
+    "prompt_tokens": 385,
+    "completion_tokens": 4180,
+    "total_tokens": 4565,
+    "prompt_tokens_details": {
+      "cached_tokens": 128
+    },
+    "prompt_cache_hit_tokens": 128,
+    "prompt_cache_miss_tokens": 257
+  },
+  "settings": {
+    "temperature": 1,
+    "thinking": "disabled"
+  }
+}

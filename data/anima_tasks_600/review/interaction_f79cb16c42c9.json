@@ -1,0 +1,146 @@
+{
+  "approved_ids": [
+    0,
+    1,
+    2,
+    3,
+    7,
+    8,
+    9,
+    10,
+    12,
+    13,
+    16,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    25,
+    26,
+    28,
+    29,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    81,
+    82,
+    83,
+    84,
+    86,
+    87,
+    88,
+    89
+  ],
+  "rejected": [
+    {
+      "index": 4,
+      "reason": "Palm pressed flat on door cannot show its pads to viewer; visibility requirement contradicts pose."
+    },
+    {
+      "index": 5,
+      "reason": "Floor-planted palm pressed flat cannot show palm pads; requirement contradicts pose."
+    },
+    {
+      "index": 6,
+      "reason": "Smoothing palm faces clay/outward away from viewer, pads not visible as required."
+    },
+    {
+      "index": 11,
+      "reason": "Wiping palm flat against floor cannot show palm pads to camera."
+    },
+    {
+      "index": 14,
+      "reason": "Both soles facing camera while seated with legs stretched forward is physically implausible without support."
+    },
+    {
+      "index": 15,
+      "reason": "Open palm gripping rail with fingers spread is contradictory; gripping occludes palm."
+    },
+    {
+      "index": 17,
+      "reason": "Both soles facing camera while sitting on swing is impossible without support surface."
+    },
+    {
+      "index": 24,
+      "reason": "Palm pressed flat against tire cannot show palm pads to viewer."
+    },
+    {
+      "index": 27,
+      "reason": "Scrubbing palm inside mug rim cannot show five fingers and palm above edge."
+    },
+    {
+      "index": 30,
+      "reason": "Palm pressed into soil cannot show palm pads; requirement contradicts pose."
+    },
+    {
+      "index": 49,
+      "reason": "Gripping hand wrapped around branch cannot show all digits clearly as required."
+    },
+    {
+      "index": 80,
+      "reason": "Both palms flat on wall cannot show palm pads; requirement contradicts pose."
+    },
+    {
+      "index": 85,
+      "reason": "Palms flat on wheelbarrow handles cannot show yellow palm pads; grips occlude pads."
+    }
+  ],
+  "model": "deepseek-flash",
+  "usage": {
+    "prompt_tokens": 11614,
+    "completion_tokens": 458,
+    "total_tokens": 12072,
+    "prompt_tokens_details": {
+      "cached_tokens": 128
+    },
+    "prompt_cache_hit_tokens": 128,
+    "prompt_cache_miss_tokens": 11486
+  }
+}

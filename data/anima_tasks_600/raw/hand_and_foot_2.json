@@ -1,0 +1,599 @@
+{
+  "tasks": [
+    {
+      "instruction": "The blue tiger lies on its back on a gym mat, legs lifted overhead in a happy-baby pose, gripping its own ankles with both hands as the yellow paw pads of the palms and the soles face the camera.",
+      "action_family": "stretching",
+      "camera": "high-angle full-body shot looking down at the mat",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "foot_count",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 2,
+      "visibility_requirement": "Both open palms and both soles fully face the viewer, all five fingers and four toes unobstructed",
+      "intent_zh": "仰卧举腿抓脚踝，掌心与脚底黄色肉垫同时朝上展示",
+      "category": "hand_and_foot",
+      "generation_batch": 2
+    },
+    {
+      "instruction": "Balancing on one leg atop a wooden stool, the blue tiger lifts its other knee to chest height and presses both palms flat against an invisible wall in front, soles tilted upward toward the lens.",
+      "action_family": "balancing",
+      "camera": "low-angle three-quarter shot from floor level",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "foot_count",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 1,
+      "visibility_requirement": "Both palms flat and clearly seen; the raised foot's sole turned toward camera with four toes distinct",
+      "intent_zh": "单脚踩凳，双手推墙，抬起的脚底肉垫朝镜头",
+      "category": "hand_and_foot",
+      "generation_batch": 2
+    },
+    {
+      "instruction": "Seated cross-legged on a low stone ledge, the blue tiger leans back on its palms with fingers splayed behind it, while one bare foot is presented sole-out toward the viewer above the crossed leg.",
+      "action_family": "presenting",
+      "camera": "eye-level medium shot with slight downward tilt",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "foot_count",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 1,
+      "visibility_requirement": "Both hands planted and splayed visible; the lifted sole faces camera with toes spread",
+      "intent_zh": "盘中盘腿伸手撑后，抬起一只脚展示脚底肉垫",
+      "category": "hand_and_foot",
+      "generation_batch": 2
+    },
+    {
+      "instruction": "Crouched low like a sprinter at the starting line, the blue tiger plants both palms on the track ahead, toes of both bare plantigrade feet dug in with soles angled back toward a rear camera.",
+      "action_family": "crouching",
+      "camera": "rear low-angle shot just behind the heels",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "foot_count",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 2,
+      "visibility_requirement": "Both rear-facing soles and heel pads clearly visible with four toes each; palms seen from back edge",
+      "intent_zh": "起跑蹲姿，后方低角拍摄双脚脚底与肉垫",
+      "category": "hand_and_foot",
+      "generation_batch": 2
+    },
+    {
+      "instruction": "Hanging upside down from a jungle vine by its knees, the blue tiger spreads both arms wide and flexes both feet so the yellow palm pads and sole pads face the viewer in a symmetrical aerial composition.",
+      "action_family": "hanging",
+      "camera": "straight-on full-body vertical frame",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "foot_count",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 2,
+      "visibility_requirement": "Both open hands and both upturned soles face camera, fingers and toes individually countable",
+      "intent_zh": "倒挂藤蔓，张臂屈脚，掌垫与脚垫正向镜头",
+      "category": "hand_and_foot",
+      "generation_batch": 2
+    },
+    {
+      "instruction": "Leaning back in an office chair with feet propped on the desk edge, the blue tiger holds a book in one hand while the other hand rests palm-up on its knee, one sole lifted toward the viewer.",
+      "action_family": "reading",
+      "camera": "side three-quarter medium shot at desk height",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "foot_count",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 1,
+      "visibility_requirement": "Book-holding hand shows four fingers plus thumb; resting palm open; lifted sole with four toes clear",
+      "intent_zh": "椅子后仰读书，一手翻书一手摊掌，单脚底朝镜头",
+      "category": "hand_and_foot",
+      "generation_batch": 2
+    },
+    {
+      "instruction": "Kneeling on a sandy beach, the blue tiger leans forward on both fists planted in the sand, then flips one leg up behind so that sole faces the sky and the dangling hand's palm opens toward the lens.",
+      "action_family": "kneeling",
+      "camera": "low side-angle from the sand",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "foot_count",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 1,
+      "visibility_requirement": "One open palm and one upturned sole clearly framed; all digits separated and visible",
+      "intent_zh": "沙滩跪撑，翻起一脚露出脚底，一手摊掌向镜头",
+      "category": "hand_and_foot",
+      "generation_batch": 2
+    },
+    {
+      "instruction": "Doing a cartwheel mid-motion in a park, the blue tiger is frozen with both hands reaching toward the grass and both bare feet kicked high, soles and palms splayed toward a ground-level camera.",
+      "action_family": "cartwheeling",
+      "camera": "ground-level shot looking up through the grass",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "foot_count",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 2,
+      "visibility_requirement": "Inverted pose showing both splayed palms and both soles with pad detail, digits countable",
+      "intent_zh": "侧手翻瞬间，双掌与双脚底朝地面镜头展开",
+      "category": "hand_and_foot",
+      "generation_batch": 2
+    },
+    {
+      "instruction": "Sitting on a swing, the blue tiger pushes off with both bare feet forward so the soles press toward the viewer, while one hand grips the rope and the other waves its open palm beside its cheek.",
+      "action_family": "swinging",
+      "camera": "front low-angle tracking shot",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "foot_count",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 2,
+      "visibility_requirement": "Both soles forward-facing and unobstructed; rope hand grip visible with thumb, free palm fully open",
+      "intent_zh": "荡秋千，双脚底前蹬朝镜头，一手握绳一手摊掌",
+      "category": "hand_and_foot",
+      "generation_batch": 2
+    },
+    {
+      "instruction": "Climbing a rock wall, the blue tiger grips a hold overhead with one hand while the other palm presses flat against the wall; one foot smears sole-first on the wall face directly at camera.",
+      "action_family": "climbing",
+      "camera": "close three-quarter from the wall side",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "foot_count",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 1,
+      "visibility_requirement": "Flat pressing palm and the sole smeared on the wall both face camera with digits distinct",
+      "intent_zh": "攀岩贴墙，一掌平贴墙面，一脚底踩墙朝向镜头",
+      "category": "hand_and_foot",
+      "generation_batch": 2
+    },
+    {
+      "instruction": "Lying on a picnic blanket propped on one elbow, the blue tiger holds a sandwich in one hand and dangles the other palm above its face; one bare foot is raised with the sole toward the sky.",
+      "action_family": "picnicking",
+      "camera": "overhead top-down shot of the blanket",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "foot_count",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 1,
+      "visibility_requirement": "Dangling open palm faces the overhead lens; raised sole points up with four toes spread",
+      "intent_zh": "野餐毯上侧卧，悬空摊掌朝上，单脚举向天空",
+      "category": "hand_and_foot",
+      "generation_batch": 2
+    },
+    {
+      "instruction": "Stepping out of a shallow stream, the blue tiger lifts one dripping foot toward the viewer so the wet sole gleams, while both hands brace on a walking staff, fingers wrapped and one palm turned outward.",
+      "action_family": "stepping",
+      "camera": "low front shot at water level",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "foot_count",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 1,
+      "visibility_requirement": "Lifted wet sole fully toward camera; both hands on staff visible with outward palm and individual fingers",
+      "intent_zh": "溪边抬脚，湿脚底朝镜头，双手持杖露出掌心",
+      "category": "hand_and_foot",
+      "generation_batch": 2
+    },
+    {
+      "instruction": "Sitting on the floor doing a forward stretch, the blue tiger reaches both palms past its splayed bare feet, soles facing the camera while fingers stretch forward alongside the toes.",
+      "action_family": "stretching",
+      "camera": "front eye-level tight on hands and feet",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "foot_count",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 2,
+      "visibility_requirement": "Both palms forward with stretched fingers and both soles face lens with four toes each, uncropped",
+      "intent_zh": "坐姿体前屈，双掌前伸、双脚底朝前并排展示",
+      "category": "hand_and_foot",
+      "generation_batch": 2
+    },
+    {
+      "instruction": "Hopping over a puddle on one foot, the blue tiger trails the other leg behind with sole lifted toward the camera, one arm out for balance with palm open and the other hand clutching its cap.",
+      "action_family": "hopping",
+      "camera": "side-on action shot at ankle height",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "foot_count",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 1,
+      "visibility_requirement": "Open balance palm and the trailing lifted sole clearly visible, four toes and five fingers distinct",
+      "intent_zh": "单脚跳过水坑，后抬脚底朝镜头，一手张开保持平衡",
+      "category": "hand_and_foot",
+      "generation_batch": 2
+    },
+    {
+      "instruction": "Resting on all fours like a stretching cat, the blue tiger arches its back and lifts one rear foot off the ground, presenting the sole behind while one front palm is turned outward beside its head.",
+      "action_family": "crawling",
+      "camera": "rear three-quarter low shot",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "foot_count",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 1,
+      "visibility_requirement": "Turned-out front palm visible and lifted rear sole angled to camera with four toes readable",
+      "intent_zh": "猫式伸展，抬起后脚露脚底，前掌外翻朝镜头",
+      "category": "hand_and_foot",
+      "generation_batch": 2
+    },
+    {
+      "instruction": "Standing on tiptoe on a balance beam, the blue tiger stretches one arm high with palm open to the ceiling and the other arm out, while the elevated heel of the nearer foot shows its yellow sole pad to a side camera.",
+      "action_family": "balancing",
+      "camera": "low side profile with sole angled toward lens",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "foot_count",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 1,
+      "visibility_requirement": "Raised open palm fully visible; nearer foot lifted heel reveals sole pad with toe count",
+      "intent_zh": "平衡木踮脚，一臂举起摊掌，近脚后跟抬起露脚底",
+      "category": "hand_and_foot",
+      "generation_batch": 2
+    },
+    {
+      "instruction": "Sitting in a kayak, the blue tiger paddles with both hands gripping the shaft, and lifts one foot so the sole presses against the kayak rim facing the camera above the water.",
+      "action_family": "paddling",
+      "camera": "bow-on low shot across the water",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "foot_count",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 1,
+      "visibility_requirement": "Both grip hands with five fingers each; the sole pressed on the rim fully faces camera with four toes",
+      "intent_zh": "皮划艇上划桨，双手握桨，单脚底踩船舷朝镜头",
+      "category": "hand_and_foot",
+      "generation_batch": 2
+    },
+    {
+      "instruction": "Emerging from a tent on hands and knees at dawn, the blue tiger pushes the flap aside with one flat palm while the trailing foot lifts its sole toward the camera behind, the other hand planted in grass.",
+      "action_family": "crawling",
+      "camera": "rear low angle outside the tent",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "foot_count",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 1,
+      "visibility_requirement": "Flat pushing palm and planted fingers visible; trailing lifted sole toward camera with toes distinct",
+      "intent_zh": "钻出帐篷，一手推门帘，后脚抬起脚底朝后镜头",
+      "category": "hand_and_foot",
+      "generation_batch": 2
+    },
+    {
+      "instruction": "Performing a shoulder stand on a yoga mat, the blue tiger supports its back with both palms, fingers spread on its spine, while both bare feet point skyward with soles turned to the overhead camera.",
+      "action_family": "yoga",
+      "camera": "directly overhead top-down shot",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "foot_count",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 2,
+      "visibility_requirement": "Both supporting palms with splayed fingers visible; both upturned soles fully face the overhead lens",
+      "intent_zh": "肩倒立瑜伽，双手撑背，双脚底正对头顶镜头",
+      "category": "hand_and_foot",
+      "generation_batch": 2
+    },
+    {
+      "instruction": "Reaching up to a high shelf in a kitchen, the blue tiger stands on a step stool, one flat palm braced on the shelf edge and the other hand lifting a jar, its nearer foot raised heel-out showing the sole.",
+      "action_family": "reaching",
+      "camera": "side medium shot at counter height",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "foot_count",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 1,
+      "visibility_requirement": "Braced flat palm and jar-gripping hand visible; raised heel-out sole angled to camera",
+      "intent_zh": "厨房踩凳够高架，一手扶架一手拿罐，抬脚露脚底",
+      "category": "hand_and_foot",
+      "generation_batch": 2
+    },
+    {
+      "instruction": "Leaping between two boulders, the blue tiger is captured mid-air with both hands spread wide palms-forward and both legs tucked so the soles flash toward the ground-level camera below.",
+      "action_family": "leaping",
+      "camera": "ground-level looking straight up",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "foot_count",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 2,
+      "visibility_requirement": "Both palms forward and both tucked soles toward camera, all digits visible and uncropped",
+      "intent_zh": "岩间腾空跳跃，双掌前伸、双脚下收脚底朝下镜头",
+      "category": "hand_and_foot",
+      "generation_batch": 2
+    },
+    {
+      "instruction": "Sitting on a skateboard rolling downhill, the blue tiger leans back with one palm planted on the board for balance and the other arm out, one foot forward with sole tilted up to the following camera.",
+      "action_family": "skating",
+      "camera": "chase-cam low behind the board",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "foot_count",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 1,
+      "visibility_requirement": "Board-planted palm and outstretched hand visible; tilted sole faces chase camera with four toes",
+      "intent_zh": "坐滑板下坡，一手撑板一手伸展，脚底斜对镜头",
+      "category": "hand_and_foot",
+      "generation_batch": 2
+    },
+    {
+      "instruction": "Crouched behind a telescope on a rooftop, the blue tiger adjusts the eyepiece with one hand while the other palm rests flat on the tripod; one heel lifted behind exposes the sole to a side camera.",
+      "action_family": "observing",
+      "camera": "side three-quarter at rooftop edge",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "foot_count",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 1,
+      "visibility_requirement": "Adjusting fingers and flat resting palm clear; lifted heel sole shown to camera with toe count",
+      "intent_zh": "屋顶调望远镜，一手扶三脚架，抬后跟露脚底",
+      "category": "hand_and_foot",
+      "generation_batch": 2
+    },
+    {
+      "instruction": "Doing a handstand against a wall, the blue tiger presses both palms to the floor fingers splayed and one foot flat on the wall while the other foot peels off with the sole toward the side camera.",
+      "action_family": "handstanding",
+      "camera": "side low angle at floor level",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "foot_count",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 1,
+      "visibility_requirement": "Both floor palms splayed and visible; peeled wall foot sole toward camera with four toes",
+      "intent_zh": "靠墙倒立，双掌撑地，离墙一脚底朝侧镜头",
+      "category": "hand_and_foot",
+      "generation_batch": 2
+    },
+    {
+      "instruction": "Sitting on a garden wall dangling both legs, the blue tiger crosses its ankles so one sole faces the viewer, and props its chin on one open palm while the other hand dangles relaxed with fingers loose.",
+      "action_family": "sitting",
+      "camera": "front medium shot from below the wall",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "foot_count",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 1,
+      "visibility_requirement": "Chin-propping open palm and relaxed dangling hand show fingers; crossed sole faces camera",
+      "intent_zh": "坐矮墙晃腿，一手托腮摊掌，交叉脚底朝镜头",
+      "category": "hand_and_foot",
+      "generation_batch": 2
+    },
+    {
+      "instruction": "Kicking a soccer ball, the blue tiger is caught mid-swing with one foot contacting the ball and the planted foot's sole showing to a rear camera, both arms flung out with open palms for balance.",
+      "action_family": "kicking",
+      "camera": "rear low angle behind the kicker",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "foot_count",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 1,
+      "visibility_requirement": "Both flung open palms and the planted heel-lifted sole visible, digits distinct",
+      "intent_zh": "踢球瞬间，双臂张开摊掌，支撑脚后跟抬起露脚底",
+      "category": "hand_and_foot",
+      "generation_batch": 2
+    },
+    {
+      "instruction": "Lying face-down on a raft floating in a pool, the blue tiger paddles with both forearms reaching forward palms down, and its feet raised behind show both soles to a camera hovering above the water.",
+      "action_family": "swimming",
+      "camera": "overhead top-down above the pool",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "foot_count",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 2,
+      "visibility_requirement": "Both paddling palms and both raised soles face the overhead camera, fingers and toes countable",
+      "intent_zh": "趴浮筏划水，双掌前伸，双脚下抬脚底朝上镜头",
+      "category": "hand_and_foot",
+      "generation_batch": 2
+    },
+    {
+      "instruction": "Sitting at a pottery wheel, the blue tiger shapes clay with both hands cupped around the spinning mound, and one bare foot presses the pedal with the sole turned up toward a low camera.",
+      "action_family": "crafting",
+      "camera": "low three-quarter beside the wheel",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "foot_count",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 1,
+      "visibility_requirement": "Both clay-shaping hands with distinct fingers; the pedal foot sole angled to camera with four toes",
+      "intent_zh": "制陶轮旁双手塑泥，一脚踩踏板脚底朝低镜头",
+      "category": "hand_and_foot",
+      "generation_batch": 2
+    },
+    {
+      "instruction": "Waiting at a bus stop, the blue tiger sits on the bench and crosses one leg over the knee, gripping the ankle with laced fingers while the lifted foot presents its sole straight at the street camera.",
+      "action_family": "sitting",
+      "camera": "street-level front three-quarter",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "foot_count",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 1,
+      "visibility_requirement": "Both laced hands visible around the ankle; the crossed foot sole fully faces camera with four toes",
+      "intent_zh": "公交站长椅翘腿，双手抱脚踝，脚底正对街边镜头",
+      "category": "hand_and_foot",
+      "generation_batch": 2
+    }
+  ],
+  "model": "deepseek-flash",
+  "usage": {
+    "prompt_tokens": 390,
+    "completion_tokens": 4376,
+    "total_tokens": 4766,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "prompt_cache_hit_tokens": 256,
+    "prompt_cache_miss_tokens": 134
+  },
+  "settings": {
+    "temperature": 1,
+    "thinking": "disabled"
+  }
+}

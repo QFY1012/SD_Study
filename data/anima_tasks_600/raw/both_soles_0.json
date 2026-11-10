@@ -1,0 +1,543 @@
+{
+  "tasks": [
+    {
+      "instruction": "The blue tiger sits on a low wooden bench and lifts both legs forward, pressing the soles of his bare plantigrade feet toward the viewer while leaning back on his hands.",
+      "action_family": "presenting",
+      "camera": "front view, slightly low angle, full body",
+      "targets": [
+        "identity",
+        "cel_style",
+        "foot_count",
+        "yellow_pads"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 2,
+      "visibility_requirement": "Both soles fully face camera, all four toes per foot clear, hands resting behind on bench visible.",
+      "intent_zh": "坐长椅上抬脚展示双脚脚底",
+      "category": "both_soles",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "Reclining on a picnic blanket, the blue tiger props himself on elbows and raises both knees, showing the yellow-padded soles of his feet as he smiles at a book propped on his chest.",
+      "action_family": "reading",
+      "camera": "three-quarter overhead view, full body",
+      "targets": [
+        "identity",
+        "cel_style",
+        "foot_count",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 2,
+      "visibility_requirement": "Both upturned soles and four toes visible; both hands and elbows supporting torso visible.",
+      "intent_zh": "躺毯子上屈膝读书露出脚底",
+      "category": "both_soles",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "The blue tiger lies on his back on a yoga mat doing a happy-baby stretch, reaching to hold his ankles so both bare soles point upward, toes spread comfortably apart.",
+      "action_family": "stretching",
+      "camera": "top-down view, full body",
+      "targets": [
+        "identity",
+        "cel_style",
+        "foot_count",
+        "yellow_pads",
+        "hand_count"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 2,
+      "visibility_requirement": "Both soles and all toes face camera; both hands gripping ankles visible.",
+      "intent_zh": "仰卧做快乐婴儿式伸展举脚",
+      "category": "both_soles",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "Sitting cross-legged on a cushion, the blue tiger leans back and lifts both feet off the floor, turning his soles outward to the camera while balancing a teacup on one knee.",
+      "action_family": "balancing",
+      "camera": "front three-quarter view, seated full body",
+      "targets": [
+        "identity",
+        "cel_style",
+        "foot_count",
+        "yellow_pads"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 2,
+      "visibility_requirement": "Both soles angled to camera with toes clear; hands and teacup visible.",
+      "intent_zh": "盘坐垫子上抬脚露底并平衡茶杯",
+      "category": "both_soles",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "The blue tiger sits on the edge of a bathtub with legs raised and feet pressed flat against the tiled wall, showing both padded soles as he wrings out a small towel.",
+      "action_family": "bathing",
+      "camera": "side-front angle, seated full body",
+      "targets": [
+        "identity",
+        "cel_style",
+        "foot_count",
+        "yellow_pads"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 2,
+      "visibility_requirement": "Both soles flat to wall and camera-facing, toes visible; both hands on towel visible.",
+      "intent_zh": "坐浴缸边双脚抵墙露脚底拧毛巾",
+      "category": "both_soles",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "Lying on a hammock, the blue tiger swings his legs up over the edge so both bare soles face the viewer, one paw holding the hammock rope and the other resting on his belly.",
+      "action_family": "resting",
+      "camera": "low front view, full body in hammock",
+      "targets": [
+        "identity",
+        "cel_style",
+        "foot_count",
+        "yellow_pads"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 2,
+      "visibility_requirement": "Both soles clearly lifted toward camera, four toes each visible; hands visible on rope and belly.",
+      "intent_zh": "躺在吊床上抬腿露脚底",
+      "category": "both_soles",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "The blue tiger reclines on a beanbag chair with knees bent up and both soles displayed, holding a game controller in both hands close to his chest as he laughs.",
+      "action_family": "gaming",
+      "camera": "front view, slightly high angle, full body",
+      "targets": [
+        "identity",
+        "cel_style",
+        "foot_count",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 2,
+      "visibility_requirement": "Both upturned soles and toes visible; both hands and controller visible at chest.",
+      "intent_zh": "靠豆袋椅屈膝露脚底打游戏",
+      "category": "both_soles",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "Sitting on a kitchen counter, the blue tiger pulls his knees to his chest and rests both bare feet on the countertop edge, soles facing out, while holding a mug in one paw.",
+      "action_family": "sitting",
+      "camera": "front view, waist-level",
+      "targets": [
+        "identity",
+        "cel_style",
+        "foot_count",
+        "yellow_pads"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 2,
+      "visibility_requirement": "Both soles facing camera with toes clear; mug-holding hand and free hand visible.",
+      "intent_zh": "坐厨房台面抱膝露脚底拿杯子",
+      "category": "both_soles",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "The blue tiger lies on his stomach on a rug, bends both knees up and crosses ankles loosely, then twists to show both yellow-padded soles toward the camera while drawing on paper.",
+      "action_family": "drawing",
+      "camera": "rear three-quarter overhead view",
+      "targets": [
+        "identity",
+        "cel_style",
+        "foot_count",
+        "yellow_pads",
+        "hand_count"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 2,
+      "visibility_requirement": "Both bent soles and all toes visible; both hands on paper and pencil visible.",
+      "intent_zh": "趴地毯上屈膝扭身展示脚底画画",
+      "category": "both_soles",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "Reclining in a lounge chair, the blue tiger crosses his legs at the ankles and tilts both feet so the soles face forward, hands folded behind his head as he relaxes poolside.",
+      "action_family": "relaxing",
+      "camera": "front view, low angle, full body",
+      "targets": [
+        "identity",
+        "cel_style",
+        "foot_count",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 2,
+      "visibility_requirement": "Both tilted soles visible with toes; both hands behind head visible.",
+      "intent_zh": "躺椅上交踝抬脚露底双手枕后",
+      "category": "both_soles",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "The blue tiger sits on a tree stump in a park, lifts both bare feet up toward the camera in a playful stretch, and leans back with one hand planted on the stump for balance.",
+      "action_family": "stretching",
+      "camera": "front view, eye-level, full body",
+      "targets": [
+        "identity",
+        "cel_style",
+        "foot_count",
+        "yellow_pads"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 2,
+      "visibility_requirement": "Both soles facing camera, four toes per foot clear; both hands visible, one on stump.",
+      "intent_zh": "坐树桩抬脚伸展露脚底",
+      "category": "both_soles",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "Lying sideways on a couch, the blue tiger bends his top knee and lifts the lower foot so both soles angle toward the camera, one arm draped over the backrest and one holding a TV remote.",
+      "action_family": "watching",
+      "camera": "side-front view, full body on couch",
+      "targets": [
+        "identity",
+        "cel_style",
+        "foot_count",
+        "yellow_pads"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 2,
+      "visibility_requirement": "Both soles angled to camera, toes visible; hands on backrest and remote visible.",
+      "intent_zh": "侧躺沙发举脚露底拿遥控器",
+      "category": "both_soles",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "The blue tiger sits on a swing with legs kicked out straight, both bare soles facing the camera, gripping the ropes with both hands as a breeze ruffles his fur.",
+      "action_family": "swinging",
+      "camera": "front view, full body, slight upward angle",
+      "targets": [
+        "identity",
+        "cel_style",
+        "foot_count",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 2,
+      "visibility_requirement": "Both extended soles and four toes visible; both hands on swing ropes visible.",
+      "intent_zh": "坐秋千伸直腿双脚朝镜头",
+      "category": "both_soles",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "Sitting on the floor with legs extended, the blue tiger leans back on one elbow and flexes both feet so their padded soles face the viewer, other paw pointing at a map.",
+      "action_family": "pointing",
+      "camera": "front three-quarter view, floor-level",
+      "targets": [
+        "identity",
+        "cel_style",
+        "foot_count",
+        "yellow_pads"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 2,
+      "visibility_requirement": "Both flexed soles and toes visible; elbow-supporting hand and pointing hand visible.",
+      "intent_zh": "坐地上后仰绷脚露底并用手指地图",
+      "category": "both_soles",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "The blue tiger reclines against a large floor pillow, pulls both knees up and outward like a butterfly stretch, exposing both yellow-padded soles to the camera while holding a phone.",
+      "action_family": "stretching",
+      "camera": "front overhead view, full body",
+      "targets": [
+        "identity",
+        "cel_style",
+        "foot_count",
+        "yellow_pads",
+        "hand_count"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 2,
+      "visibility_requirement": "Both soles turned outward and visible with toes; both hands holding phone visible.",
+      "intent_zh": "靠大枕做蝴蝶拉伸露脚底看手机",
+      "category": "both_soles",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "Sitting in an outdoor folding chair, the blue tiger lifts both legs and rests his heels on a cooler, soles turned to the viewer, hands clasped over his stomach as he naps with head tilted.",
+      "action_family": "napping",
+      "camera": "front view, slightly low angle",
+      "targets": [
+        "identity",
+        "cel_style",
+        "foot_count",
+        "yellow_pads"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 2,
+      "visibility_requirement": "Both soles facing camera, toes clear; both clasped hands visible on stomach.",
+      "intent_zh": "坐折叠椅脚跟搭冷箱露脚底打盹",
+      "category": "both_soles",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "The blue tiger lies on a bed with legs raised and feet splayed apart, both soles toward the viewer, one hand under his head and the other tossing a small ball up.",
+      "action_family": "playing",
+      "camera": "top-down view, full body on bed",
+      "targets": [
+        "identity",
+        "cel_style",
+        "foot_count",
+        "yellow_pads"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 2,
+      "visibility_requirement": "Both raised soles with four toes each visible; head-supporting hand and ball-tossing hand visible.",
+      "intent_zh": "躺床上举脚露底抛球玩",
+      "category": "both_soles",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "Sitting on a low wall, the blue tiger swings both feet up and leans back, presenting his padded soles, while a small bird perches on one raised finger of his outstretched paw.",
+      "action_family": "greeting",
+      "camera": "side-front view, full body",
+      "targets": [
+        "identity",
+        "cel_style",
+        "foot_count",
+        "yellow_pads",
+        "finger_shape"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 2,
+      "visibility_requirement": "Both soles facing camera with toes visible; bird-perched hand fingers and other hand visible.",
+      "intent_zh": "坐矮墙抬脚露底伸手让小鸟停",
+      "category": "both_soles",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "Reclining on a pile of cushions, the blue tiger holds a large storybook open on his lap and lifts both feet so his soles face outward, toes curling with excitement.",
+      "action_family": "reading",
+      "camera": "front view, slightly high, full body",
+      "targets": [
+        "identity",
+        "cel_style",
+        "foot_count",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 2,
+      "visibility_requirement": "Both soles and toes visible; both hands supporting book visible.",
+      "intent_zh": "靠枕堆读书抬脚露底脚趾蜷起",
+      "category": "both_soles",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "The blue tiger sits on a wooden dock with legs dangling, then pulls them up and plants both soles flat toward the camera, holding a fishing rod in one paw and a bucket handle in the other.",
+      "action_family": "fishing",
+      "camera": "front view, low angle over water",
+      "targets": [
+        "identity",
+        "cel_style",
+        "foot_count",
+        "yellow_pads"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 2,
+      "visibility_requirement": "Both soles facing camera, toes clear; hands on rod and bucket visible.",
+      "intent_zh": "坐码头抬脚露底持鱼竿与桶",
+      "category": "both_soles",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "Lying on a massage table, the blue tiger bends both knees and lifts his feet, showing yellow soles to the camera, while folding his arms across his chest contentedly.",
+      "action_family": "resting",
+      "camera": "front three-quarter view, full body on table",
+      "targets": [
+        "identity",
+        "cel_style",
+        "foot_count",
+        "yellow_pads"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 2,
+      "visibility_requirement": "Both upturned soles and toes visible; both folded arms and hands visible.",
+      "intent_zh": "躺按摩床屈膝露脚底抱臂",
+      "category": "both_soles",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "The blue tiger sits on a classroom chair with one ankle on the opposite knee, then tilts both feet upward so both soles show, pencil in one hand and notebook balanced on the raised knee.",
+      "action_family": "studying",
+      "camera": "front view, seated full body",
+      "targets": [
+        "identity",
+        "cel_style",
+        "foot_count",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 2,
+      "visibility_requirement": "Both soles visible despite crossed legs, toes clear; pencil hand and notebook hand visible.",
+      "intent_zh": "坐教室椅交腿抬脚露底写字",
+      "category": "both_soles",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "Reclining on a grassy hill, the blue tiger props his upper body on his elbows and kicks both feet up, soles toward the sky and camera, watching clouds.",
+      "action_family": "relaxing",
+      "camera": "low front view, full body against sky",
+      "targets": [
+        "identity",
+        "cel_style",
+        "foot_count",
+        "yellow_pads",
+        "hand_count"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 2,
+      "visibility_requirement": "Both soles facing camera/sky with toes clear; both elbow hands visible on grass.",
+      "intent_zh": "躺草坡撑肘踢脚朝天露脚底",
+      "category": "both_soles",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "The blue tiger sits on a piano bench, leans back and lifts both bare feet onto the keys, soles facing the camera, while reaching one hand toward the sheet music stand.",
+      "action_family": "playing",
+      "camera": "front view, slightly low angle",
+      "targets": [
+        "identity",
+        "cel_style",
+        "foot_count",
+        "yellow_pads"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 2,
+      "visibility_requirement": "Both soles facing camera over keys, toes visible; hand reaching and other hand on bench visible.",
+      "intent_zh": "坐琴凳双脚搭琴键露脚底",
+      "category": "both_soles",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "Lying on a picnic blanket under a tree, the blue tiger rolls slightly to one side but keeps both feet lifted, soles angled toward the camera, holding a sandwich in one paw.",
+      "action_family": "eating",
+      "camera": "front three-quarter overhead view",
+      "targets": [
+        "identity",
+        "cel_style",
+        "foot_count",
+        "yellow_pads"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 2,
+      "visibility_requirement": "Both angled soles and toes visible; sandwich hand and supporting hand visible.",
+      "intent_zh": "躺野餐垫侧身举脚吃三明治",
+      "category": "both_soles",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "The blue tiger sits on the floor with back against a sofa, slides down until reclining, and raises both legs so his padded soles face the camera, remote in one hand.",
+      "action_family": "watching",
+      "camera": "front view, floor-level, full body",
+      "targets": [
+        "identity",
+        "cel_style",
+        "foot_count",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 2,
+      "visibility_requirement": "Both soles facing camera, four toes each visible; remote hand and free hand visible.",
+      "intent_zh": "靠沙发滑躺抬腿露脚底拿遥控",
+      "category": "both_soles",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "Reclining on a rooftop lounge chair, the blue tiger stretches both arms overhead and points both bare feet toward the camera, yellow soles bright in evening light.",
+      "action_family": "stretching",
+      "camera": "front view, low angle, full body",
+      "targets": [
+        "identity",
+        "cel_style",
+        "foot_count",
+        "yellow_pads"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 2,
+      "visibility_requirement": "Both soles and toes clear toward camera; both overhead hands visible.",
+      "intent_zh": "屋顶躺椅伸展举脚露底",
+      "category": "both_soles",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "Sitting on a low stool, the blue tiger lifts both legs straight out, soles facing the viewer, and balances a stack of books on his shins while steadying it with one hand.",
+      "action_family": "balancing",
+      "camera": "front view, eye-level, full body",
+      "targets": [
+        "identity",
+        "cel_style",
+        "foot_count",
+        "yellow_pads",
+        "hand_count"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 2,
+      "visibility_requirement": "Both soles behind book stack clearly visible with toes; balancing hand and resting hand visible.",
+      "intent_zh": "坐凳直抬腿露脚底平衡书堆",
+      "category": "both_soles",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "The blue tiger lies on a towel at the beach, bends both knees up and outward, and shows both yellow-padded soles to the camera while adjusting sunglasses with one hand.",
+      "action_family": "sunbathing",
+      "camera": "front overhead view, full body",
+      "targets": [
+        "identity",
+        "cel_style",
+        "foot_count",
+        "yellow_pads"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 2,
+      "visibility_requirement": "Both outward soles and toes visible; sunglasses hand and resting hand visible.",
+      "intent_zh": "沙滩毛巾上屈膝外展露脚底扶墨镜",
+      "category": "both_soles",
+      "generation_batch": 0
+    },
+    {
+      "instruction": "Curled in a large armchair, the blue tiger tucks his knees to his chest but extends both feet forward so his soles face the camera, hugging a pillow with both arms.",
+      "action_family": "resting",
+      "camera": "front three-quarter view, full body",
+      "targets": [
+        "identity",
+        "cel_style",
+        "foot_count",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 2,
+      "visibility_requirement": "Both extended soles and toes visible; both hugging arms and hands on pillow visible.",
+      "intent_zh": "蜷坐扶手椅抱枕伸脚露底",
+      "category": "both_soles",
+      "generation_batch": 0
+    }
+  ],
+  "model": "deepseek-flash",
+  "usage": {
+    "prompt_tokens": 372,
+    "completion_tokens": 3900,
+    "total_tokens": 4272,
+    "prompt_tokens_details": {
+      "cached_tokens": 128
+    },
+    "prompt_cache_hit_tokens": 128,
+    "prompt_cache_miss_tokens": 244
+  },
+  "settings": {
+    "temperature": 1,
+    "thinking": "disabled"
+  }
+}

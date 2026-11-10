@@ -1,0 +1,58 @@
+{
+  "tasks": 600,
+  "train": 480,
+  "eval": 120,
+  "candidates": 988,
+  "category_counts": {
+    "one_hand": 52,
+    "both_hands": 48,
+    "hand_detail": 52,
+    "one_sole": 52,
+    "both_soles": 50,
+    "foot_detail": 38,
+    "hand_and_foot": 50,
+    "sitting": 52,
+    "reclining": 52,
+    "moving": 50,
+    "interaction": 52,
+    "identity_control": 52
+  },
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "embedding_dimensions": 384,
+  "embedding_input": "instruction + camera; invariant character/style prefix excluded",
+  "dedup_threshold": 0.84,
+  "maximum_pair_cosine": 0.8390641212463379,
+  "nearest_neighbor_median": 0.8059074878692627,
+  "train_eval_max_cosine": 0.8390079140663147,
+  "pairs_at_or_above_threshold": 0,
+  "tsne": {
+    "perplexity": 30,
+    "seed": 42,
+    "iterations": 1500,
+    "metric": "euclidean on L2-normalized embeddings"
+  },
+  "limitations": [
+    "Cosine threshold reduces near duplicates but does not guarantee all tasks are semantically distinct.",
+    "t-SNE is a visualization, not a de-duplication guarantee.",
+    "Split holds out prompts, not necessarily action families.",
+    "No image baseline or human/VLM rubric calibration has been performed."
+  ],
+  "generation_api_usage_successful_batches": {
+    "prompt_tokens": 16235,
+    "completion_tokens": 168555,
+    "total_tokens": 184790
+  },
+  "usage_limitations": "Only cached successful generation responses are included; discarded attempts and reviews are not part of this usage subtotal.",
+  "raw_generated_tasks": 1254,
+  "review": "DeepSeek textual feasibility review; not human-certified and not a check of generated images.",
+  "packages": {
+    "numpy": "2.5.4",
+    "scikit-learn": "1.9.1",
+    "sentence-transformers": "6.2.0",
+    "torch": "2.15.0+cpu"
+  },
+  "embedding_model_revision": [
+    "1110a243fdf4706b3f48f1d95db1a4f5529b4d41"
+  ],
+  "content_sha256": "929debd9e78182dbba1020970ad3d29118eb16e9cba41d867a02d2a072d083b3"
+}

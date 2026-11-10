@@ -1,0 +1,523 @@
+{
+  "tasks": [
+    {
+      "instruction": "The blue tiger crouches low on a rocky ledge, one knee near the ground, peering over the edge with narrowed eyes while its tail curls upward behind it.",
+      "action_family": "crouching",
+      "camera": "three-quarter low-angle medium shot from the side",
+      "targets": [
+        "identity",
+        "cel_style"
+      ],
+      "visible_hands": 0,
+      "visible_soles": 0,
+      "visibility_requirement": "Both hands tucked near the chest and feet flat on the ledge, not clearly visible; identity and style only.",
+      "intent_zh": "蓝色老虎蹲在岩壁上警觉地向边缘张望，保持角色身份与赛璐璐风格。",
+      "category": "identity_control",
+      "generation_batch": 2
+    },
+    {
+      "instruction": "The blue tiger leans far back in a wooden chair, balancing it on two rear legs, one arm flung out for balance and the other gripping the seat edge.",
+      "action_family": "balancing",
+      "camera": "full-body side view at chair height",
+      "targets": [
+        "identity",
+        "cel_style"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both hands clearly visible gripping and reaching; feet obscured behind the chair.",
+      "intent_zh": "老虎把木椅向后倾斜保持平衡，双手清晰可见。",
+      "category": "identity_control",
+      "generation_batch": 2
+    },
+    {
+      "instruction": "The blue tiger hangs upside down from a horizontal tree branch by its knees, arms dangling toward the ground and ears flipped forward as it grins.",
+      "action_family": "hanging",
+      "camera": "low-angle full-body shot looking up",
+      "targets": [
+        "identity",
+        "cel_style"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both dangling hands fully visible; knees grip branch, feet not shown.",
+      "intent_zh": "老虎用膝弯倒挂在树枝上，双臂下垂，双手可见。",
+      "category": "identity_control",
+      "generation_batch": 2
+    },
+    {
+      "instruction": "The blue tiger crawls on all fours through a low tunnel, shoulders hunched, head turned back toward the viewer with an amused expression.",
+      "action_family": "crawling",
+      "camera": "rear three-quarter low shot",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "foot_count",
+        "yellow_pads"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 2,
+      "visibility_requirement": "Both front paws and both hind soles turned toward camera, all digits and yellow pads clearly visible.",
+      "intent_zh": "老虎在低矮隧道中爬行并回头，四肢与掌垫清晰可见。",
+      "category": "identity_control",
+      "generation_batch": 2
+    },
+    {
+      "instruction": "The blue tiger sits cross-legged on a woven mat, holding a small clay cup in both paws and blowing gently across its rim, tail wrapped around one leg.",
+      "action_family": "holding",
+      "camera": "eye-level medium shot",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both hands wrapped around the cup with all fingers visible; feet crossed and hidden.",
+      "intent_zh": "老虎盘腿坐着双手捧杯轻吹，双手手指清晰。",
+      "category": "identity_control",
+      "generation_batch": 2
+    },
+    {
+      "instruction": "The blue tiger presses both palms flat against a tall glass window and peers through it, nose nearly touching the pane, tail lifted straight behind.",
+      "action_family": "pressing",
+      "camera": "front view medium close-up",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "yellow_pads"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both palms flat on glass, five fingers and yellow palm pads clearly visible.",
+      "intent_zh": "老虎双掌按在玻璃窗上向里张望，手掌与掌垫清晰。",
+      "category": "identity_control",
+      "generation_batch": 2
+    },
+    {
+      "instruction": "The blue tiger balances on a narrow log over a stream, arms outstretched, one foot lifted mid-step and toes spread for grip.",
+      "action_family": "balancing",
+      "camera": "side full-body view at log level",
+      "targets": [
+        "identity",
+        "cel_style",
+        "foot_count",
+        "yellow_pads"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 1,
+      "visibility_requirement": "Lifted sole turned toward camera showing four toes and yellow pad; arms out and hands visible.",
+      "intent_zh": "老虎在独木桥上抬脚保持平衡，抬起的脚掌与掌垫清晰。",
+      "category": "identity_control",
+      "generation_batch": 2
+    },
+    {
+      "instruction": "The blue tiger kneels to sketch on paper spread over the floor, one hand steadying the sheet and the other holding a stick of charcoal above it.",
+      "action_family": "drawing",
+      "camera": "high-angle over-the-shoulder shot",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both hands visible from above, fingers distinct around paper and charcoal; feet folded beneath, hidden.",
+      "intent_zh": "老虎跪地画画，双手与手指从上方清晰可见。",
+      "category": "identity_control",
+      "generation_batch": 2
+    },
+    {
+      "instruction": "The blue tiger reclines on a hammock strung between two trees, one leg draped over the edge, reading a small book held above its face.",
+      "action_family": "reading",
+      "camera": "side medium shot at hammock height",
+      "targets": [
+        "identity",
+        "cel_style",
+        "visible_hands"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both hands gripping the book visibly; draped foot turned away and not assessable.",
+      "intent_zh": "老虎躺在吊床上看书，双手握书清晰可见。",
+      "category": "identity_control",
+      "generation_batch": 2
+    },
+    {
+      "instruction": "The blue tiger scrambles up a steep sandy bank, claws digging in, body angled diagonally and tail trailing downward.",
+      "action_family": "climbing",
+      "camera": "low-angle three-quarter view from below",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both hands digging into sand clearly visible with fingers spread; feet behind body, hidden.",
+      "intent_zh": "老虎攀爬陡峭沙坡，双爪抓沙清晰，手指可见。",
+      "category": "identity_control",
+      "generation_batch": 2
+    },
+    {
+      "instruction": "The blue tiger lies on its side on a smooth floor, one arm tucked under its head and the other hand tapping a small drum beside it.",
+      "action_family": "drumming",
+      "camera": "high-angle top-down shot",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Tapping hand and tucked hand both visible from above; feet out of frame.",
+      "intent_zh": "老虎侧躺敲小鼓，双手从俯视角度清晰。",
+      "category": "identity_control",
+      "generation_batch": 2
+    },
+    {
+      "instruction": "The blue tiger steps high through tall grass, one knee lifted sharply, both hands parting the stalks ahead like curtains.",
+      "action_family": "parting",
+      "camera": "front three-quarter medium shot",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 1,
+      "visibility_requirement": "Both hands parting grass visible; lifted foot sole turned toward camera showing four toes and yellow pad.",
+      "intent_zh": "老虎在草丛中高抬腿分草前行，双手与抬脚掌垫清晰。",
+      "category": "identity_control",
+      "generation_batch": 2
+    },
+    {
+      "instruction": "The blue tiger sits on a swivel stool at a workbench, leaning close to inspect a tiny gear held in one paw while the other steadies a magnifier.",
+      "action_family": "inspecting",
+      "camera": "close-up over-the-shoulder view",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both hands near the face clearly visible, fingers distinct around gear and magnifier; feet hidden.",
+      "intent_zh": "老虎坐在工作台前仔细检查齿轮，双手与手指清晰。",
+      "category": "identity_control",
+      "generation_batch": 2
+    },
+    {
+      "instruction": "The blue tiger leans out from a rooftop edge, one hand shading its eyes and the other gripping the ledge, city rooftops stretching behind.",
+      "action_family": "surveying",
+      "camera": "wide rear three-quarter shot",
+      "targets": [
+        "identity",
+        "cel_style",
+        "visible_hands"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Shading hand and gripping hand visible over the ledge; lower body below parapet, feet hidden.",
+      "intent_zh": "老虎从屋顶边缘探身远望，双手可见。",
+      "category": "identity_control",
+      "generation_batch": 2
+    },
+    {
+      "instruction": "The blue tiger tucks into a tight forward roll across a gym mat, body curled and tail wrapped close, mid-tumble motion.",
+      "action_family": "rolling",
+      "camera": "side low-angle action shot",
+      "targets": [
+        "identity",
+        "cel_style"
+      ],
+      "visible_hands": 0,
+      "visible_soles": 0,
+      "visibility_requirement": "Limbs tucked into the roll and not individually assessable; identity and style only.",
+      "intent_zh": "老虎在垫子上前滚翻，身体蜷缩，保持身份与风格。",
+      "category": "identity_control",
+      "generation_batch": 2
+    },
+    {
+      "instruction": "The blue tiger lowers itself into a shallow river, hands trailing in the current and head tilted to watch ripples spread.",
+      "action_family": "wading",
+      "camera": "front medium shot near water level",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "yellow_pads"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both hands submerged to wrists but palms turned up toward camera, fingers and yellow pads visible through clear water.",
+      "intent_zh": "老虎在浅河中涉水，手掌上翻透过清水可见掌垫。",
+      "category": "identity_control",
+      "generation_batch": 2
+    },
+    {
+      "instruction": "The blue tiger perches atop a tall ladder, one leg hooked over a rung, both hands folding a large paper map.",
+      "action_family": "folding",
+      "camera": "side full-body shot at ladder height",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both hands folding the map clearly visible; hooked foot turned away, not assessable.",
+      "intent_zh": "老虎坐在梯子上折地图，双手与手指清晰。",
+      "category": "identity_control",
+      "generation_batch": 2
+    },
+    {
+      "instruction": "The blue tiger pushes a heavy crate across a wooden floor, shoulders lowered, back leg braced far behind and head down.",
+      "action_family": "pushing",
+      "camera": "rear three-quarter low shot",
+      "targets": [
+        "identity",
+        "cel_style",
+        "foot_count",
+        "yellow_pads"
+      ],
+      "visible_hands": 0,
+      "visible_soles": 2,
+      "visibility_requirement": "Both braced hind soles facing camera with four toes and yellow pads clearly visible; hands hidden against crate.",
+      "intent_zh": "老虎用力推木箱，后脚掌与掌垫清晰可见。",
+      "category": "identity_control",
+      "generation_batch": 2
+    },
+    {
+      "instruction": "The blue tiger lies prone on a beach towel, propped on both elbows, flipping through a magazine spread on the sand.",
+      "action_family": "reading",
+      "camera": "high-angle side shot",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 2,
+      "visibility_requirement": "Flipping hands visible at the magazine; both bare soles raised behind toward camera with four toes and yellow pads.",
+      "intent_zh": "老虎趴在海滩毛巾上翻杂志，双手与抬起脚掌清晰。",
+      "category": "identity_control",
+      "generation_batch": 2
+    },
+    {
+      "instruction": "The blue tiger stands at an easel outdoors, one hand steadying a palette and the other raising a brush toward the canvas.",
+      "action_family": "painting",
+      "camera": "front three-quarter medium shot",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Palette hand and brush hand both fully visible with fingers distinct; feet behind easel, hidden.",
+      "intent_zh": "老虎在户外画架前作画，双手与手指清晰。",
+      "category": "identity_control",
+      "generation_batch": 2
+    },
+    {
+      "instruction": "The blue tiger crouches behind a low wall in a snowfield, one hand pressed to the snow for support and the other raised to shield its face from falling flakes.",
+      "action_family": "shielding",
+      "camera": "side medium shot at wall height",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Supporting hand and shielding hand both visible with fingers distinct; feet behind wall, hidden.",
+      "intent_zh": "老虎躲在雪地矮墙后抬手挡雪，双手可见。",
+      "category": "identity_control",
+      "generation_batch": 2
+    },
+    {
+      "instruction": "The blue tiger swings hand-over-hand along a rope bridge, body stretched between rungs, tail swinging with the motion.",
+      "action_family": "swinging",
+      "camera": "low-angle full-body shot from below the bridge",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both gripping hands clearly visible above on the rope; feet dangling but not turned to camera.",
+      "intent_zh": "老虎沿绳桥交替攀荡，双手抓绳清晰。",
+      "category": "identity_control",
+      "generation_batch": 2
+    },
+    {
+      "instruction": "The blue tiger sits on the floor assembling a model ship, one hand holding the hull and the other pinching a tiny mast into place.",
+      "action_family": "assembling",
+      "camera": "close high-angle shot over the shoulder",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both hands and fingers clearly visible around the model; feet crossed under body, hidden.",
+      "intent_zh": "老虎坐地拼装模型船，双手与手指清晰。",
+      "category": "identity_control",
+      "generation_batch": 2
+    },
+    {
+      "instruction": "The blue tiger vaults over a park bench sideways, one hand planted on the backrest and legs swept horizontally.",
+      "action_family": "vaulting",
+      "camera": "side action shot at bench height",
+      "targets": [
+        "identity",
+        "cel_style",
+        "visible_hands"
+      ],
+      "visible_hands": 1,
+      "visible_soles": 0,
+      "visibility_requirement": "Planted hand visible on the backrest; other hand and feet blurred in motion, not assessable.",
+      "intent_zh": "老虎侧身跃过公园长椅，支撑手可见。",
+      "category": "identity_control",
+      "generation_batch": 2
+    },
+    {
+      "instruction": "The blue tiger stands on a drifting raft, one hand holding a long pole and the other cupped around its mouth as it calls across the water.",
+      "action_family": "calling",
+      "camera": "wide three-quarter shot from the shore",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Pole hand and cupped hand both clearly visible with fingers; feet planted on raft, not assessable.",
+      "intent_zh": "老虎站在木筏上撑杆呼喊，双手清晰可见。",
+      "category": "identity_control",
+      "generation_batch": 2
+    },
+    {
+      "instruction": "The blue tiger bends deeply at the waist to inspect a flower, one hand on its knee and the other gently lifting a petal.",
+      "action_family": "inspecting",
+      "camera": "side medium shot at waist height",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Knee hand and petal-lifting hand clearly visible with fingers; feet planted and out of frame.",
+      "intent_zh": "老虎弯腰细看花朵，双手可见。",
+      "category": "identity_control",
+      "generation_batch": 2
+    },
+    {
+      "instruction": "The blue tiger is half-submerged in a bubble bath, one foot raised above the foam while both hands scrub a washcloth over its shoulder.",
+      "action_family": "bathing",
+      "camera": "front three-quarter medium shot",
+      "targets": [
+        "identity",
+        "cel_style",
+        "foot_count",
+        "yellow_pads"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 1,
+      "visibility_requirement": "Raised sole turned toward camera above foam showing four toes and yellow pad; both hands visible scrubbing.",
+      "intent_zh": "老虎泡澡抬起一只脚，脚掌与掌垫清晰。",
+      "category": "identity_control",
+      "generation_batch": 2
+    },
+    {
+      "instruction": "The blue tiger kneels on a rug and reaches deep under a bed with one arm, cheek pressed to the floor and tail flicking.",
+      "action_family": "reaching",
+      "camera": "ground-level front shot",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape"
+      ],
+      "visible_hands": 1,
+      "visible_soles": 2,
+      "visibility_requirement": "Reaching hand extended toward camera with five fingers visible; both bare soles turned up behind with four toes and yellow pads.",
+      "intent_zh": "老虎趴地伸手探入床底，伸出的手与脚掌清晰。",
+      "category": "identity_control",
+      "generation_batch": 2
+    },
+    {
+      "instruction": "The blue tiger sits back-to-back with a large stone statue, mimicking its pose with arms folded and chin lifted proudly.",
+      "action_family": "mimicking",
+      "camera": "wide side shot at statue height",
+      "targets": [
+        "identity",
+        "cel_style",
+        "visible_hands"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Folded arms and hands visible against the statue backdrop; legs folded under, feet hidden.",
+      "intent_zh": "老虎背靠石像模仿其姿态，双手交叠可见。",
+      "category": "identity_control",
+      "generation_batch": 2
+    },
+    {
+      "instruction": "The blue tiger stands on a rocky outcrop holding a large kite string, body braced against the wind as the kite pulls upward behind it.",
+      "action_family": "holding",
+      "camera": "low-angle rear three-quarter shot",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "foot_count",
+        "yellow_pads"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 2,
+      "visibility_requirement": "Both hands gripping string visible; both hind soles planted toward camera with four toes and yellow pads.",
+      "intent_zh": "老虎在岩石上迎风放风筝，双手与后脚掌清晰可见。",
+      "category": "identity_control",
+      "generation_batch": 2
+    }
+  ],
+  "model": "deepseek-flash",
+  "usage": {
+    "prompt_tokens": 391,
+    "completion_tokens": 3680,
+    "total_tokens": 4071,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "prompt_cache_hit_tokens": 256,
+    "prompt_cache_miss_tokens": 135
+  },
+  "settings": {
+    "temperature": 1,
+    "thinking": "disabled"
+  }
+}

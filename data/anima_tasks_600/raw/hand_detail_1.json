@@ -1,0 +1,565 @@
+{
+  "tasks": [
+    {
+      "instruction": "The blue tiger kneels beside a shallow stream and cups both hands together to scoop water, fingers pressed close with only the yellow palm pads peeking between them as droplets fall.",
+      "action_family": "scooping",
+      "camera": "close-up from slightly above, hands centered",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both hands fully in frame, all fingers and palm pads visible, no occlusion by water stream",
+      "intent_zh": "跪在溪边双手捧水，掌垫清晰可见。",
+      "category": "hand_detail",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "The blue tiger holds a single round pebble between thumb and forefinger and squints at it against the light, other fingers fanned open and clearly separated, palm turned toward the camera.",
+      "action_family": "inspecting",
+      "camera": "medium close-up, front-facing hand detail",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "yellow_pads"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Holding hand fully visible with all five fingers separated; supporting hand at frame edge not obscuring",
+      "intent_zh": "用拇指食指捏石对光端详，手掌展开。",
+      "category": "hand_detail",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "The blue tiger presses one palm flat against a foggy glass pane, fingers splayed wide, while the other hand wipes a clear streak through the condensation with fingertips.",
+      "action_family": "wiping",
+      "camera": "close-up through glass, palm toward viewer",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "yellow_pads"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Palm print hand fully visible with pads, wiping hand's fingers visible and unblocked",
+      "intent_zh": "一掌贴雾玻璃留下掌印，另一手擦出痕迹。",
+      "category": "hand_detail",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "The blue tiger carefully threads a needle, both hands raised near the face, fingers delicately pinched with the yellow pads catching light and every digit distinctly readable.",
+      "action_family": "threading",
+      "camera": "tight close-up, hands and needle only",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "yellow_pads"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both hands in tight frame, all fingertips and pads unobstructed by each other",
+      "intent_zh": "双手举高穿针，指尖垫清晰可辨。",
+      "category": "hand_detail",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "The blue tiger forms a shadow puppet of a bird with both hands interlocked, fingers spread into wings, positioned before a warm lamp so the gesture reads clearly.",
+      "action_family": "shadow-casting",
+      "camera": "side close-up with lamp glow, hands silhouetted",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "yellow_pads"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both hands and all forming fingers visible in silhouette with pads lit",
+      "intent_zh": "双手交叠做手影鸟，指形分明。",
+      "category": "hand_detail",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "The blue tiger balances a small stack of flat stones on one upturned palm, fingers spread and steady, gazing down with concentration as the other hand hovers ready to catch.",
+      "action_family": "balancing",
+      "camera": "medium close-up from above, palm centered",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Supporting palm fully visible beneath stones, both hands entirely in frame",
+      "intent_zh": "单手托叠石保持平衡，掌指全露。",
+      "category": "hand_detail",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "The blue tiger laces thick climbing rope between fingers, one hand pulling taut while the other grips the loose end, knuckles flexed and pads pressed against the weave.",
+      "action_family": "knotting",
+      "camera": "close-up angled down on both hands",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "yellow_pads"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both hands and interwoven fingers visible, no rope hiding full digits",
+      "intent_zh": "双手在指间穿绕绳索，指节紧绷。",
+      "category": "hand_detail",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "The blue tiger reaches up to pluck a high berry, arm extended so the palm faces outward and all five fingers stretch upward, yellow pads fully presented to the camera.",
+      "action_family": "plucking",
+      "camera": "low-angle close-up on the reaching hand",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 1,
+      "visible_soles": 0,
+      "visibility_requirement": "Reaching hand fully visible with open palm, all fingers and pads unobstructed",
+      "intent_zh": "向上摘果，掌心外展五指伸展。",
+      "category": "hand_detail",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "The blue tiger claps chalky palms together once, dust puffing outward, both hands meeting flat with fingers aligned and pads pressed, framed mid-motion.",
+      "action_family": "clapping",
+      "camera": "front close-up, hands at center",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "yellow_pads"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both hands visible with fingers and outer pads readable despite the clap",
+      "intent_zh": "双掌相击扬尘，指掌对齐可见。",
+      "category": "hand_detail",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "The blue tiger holds its own tail curled in one hand, other hand smoothing fur along it, fingers spread from thumb to pinky as pads press into the tuft.",
+      "action_family": "grooming",
+      "camera": "medium close-up, tail and hands",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "yellow_pads"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both hands visible gripping and smoothing, all digits and pads unoccluded by tail",
+      "intent_zh": "一手握尾一手顺毛，五指与掌垫清楚。",
+      "category": "hand_detail",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "The blue tiger presses both palms against a warm sunlit rock face, leaning weight forward, fingers spread and claws retracted, yellow pads flattened against stone.",
+      "action_family": "pressing",
+      "camera": "side close-up on hands and rock",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both palms and all fingers visible against rock, no overlap hiding pads",
+      "intent_zh": "双掌撑在暖岩上，掌垫压平清晰。",
+      "category": "hand_detail",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "The blue tiger catches a falling ripe fruit with one cupped hand, fingers curving upward and pads exposed, while the other arm is thrown back for balance.",
+      "action_family": "catching",
+      "camera": "medium close-up, catching hand in focus",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Catching hand fully visible with cupped fingers and pads; other hand in frame edge",
+      "intent_zh": "单手屈指接住落果，掌垫朝上。",
+      "category": "hand_detail",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "The blue tiger holds a wide magnifying glass over one open palm, studying a tiny leaf, fingers spread beneath the lens and yellow pads magnified into view.",
+      "action_family": "magnifying",
+      "camera": "close-up above through lens",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "yellow_pads"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Palm and all fingers visible under the glass, holding hand's digits distinct",
+      "intent_zh": "放大镜照掌心细看叶片，指垫一览无余。",
+      "category": "hand_detail",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "The blue tiger ties a ribbon around a bundle, one hand holding the knot while the other pulls the loop, fingertips flexed with pads visible between strands.",
+      "action_family": "tying",
+      "camera": "medium close-up on hands and bundle",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "yellow_pads"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both hands and all fingers visible, ribbon not fully covering any digit",
+      "intent_zh": "双手系结捆绑丝带，指垫在缝隙中露出。",
+      "category": "hand_detail",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "The blue tiger taps a small drum with alternating fingertips, both hands raised, palms facing down and fingers spread in clear rhythmic arcs captured mid-beat.",
+      "action_family": "drumming",
+      "camera": "front medium close-up, hands top-lit",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "yellow_pads"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both hands in frame with all fingers and downward palm pads visible",
+      "intent_zh": "双手中指交替敲鼓，指掌向下清晰。",
+      "category": "hand_detail",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "The blue tiger pours seeds from one cupped palm into another, both hands forming bowls at chest height, fingers held loosely apart so the yellow pads glow inside.",
+      "action_family": "pouring",
+      "camera": "close-up from slightly above",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "yellow_pads"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both cupped palms visible with all fingers and interior pads unobstructed",
+      "intent_zh": "双掌捧籽对倒，掌心黄垫透亮。",
+      "category": "hand_detail",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "The blue tiger stretches one hand into a narrow crack in a fallen log to retrieve a shiny beetle, fingers squeezing together, palm pads grazing the wood.",
+      "action_family": "reaching",
+      "camera": "very close-up on hand and log crack",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "yellow_pads"
+      ],
+      "visible_hands": 1,
+      "visible_soles": 0,
+      "visibility_requirement": "Reaching hand fully visible including all fingers and palm pads against wood",
+      "intent_zh": "手指探入木缝取甲虫，掌垫贴木可见。",
+      "category": "hand_detail",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "The blue tiger spins a smooth disk on one fingertip, other fingers curled except the steadying pinky, eyes following the wobble, palm pads flashing with each spin.",
+      "action_family": "spinning",
+      "camera": "medium close-up, disk and hand centered",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "yellow_pads"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Spinning hand fully visible with distinct fingers and pads; disk not hiding the palm",
+      "intent_zh": "单指旋转圆盘，其余手指与掌垫清晰。",
+      "category": "hand_detail",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "The blue tiger folds a paper boat with both hands, creases pressed by thumbs along the wings, fingers spread flat and yellow pads flattened on the paper.",
+      "action_family": "folding",
+      "camera": "overhead close-up on hands and paper",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "yellow_pads"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both hands on paper, all ten fingers and pads visible from above",
+      "intent_zh": "双手折纸船，拇指压折痕掌垫外露。",
+      "category": "hand_detail",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "The blue tiger gently holds a tiny bird in both palms, cupping it with fingers laced loosely, thumbs nearly touching so the yellow pads cradle the feathers.",
+      "action_family": "cradling",
+      "camera": "close-up, hands and bird only",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "yellow_pads"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both hands cupped and fully visible, fingers and inner pads unoccluded by bird",
+      "intent_zh": "双手轻捧小鸟，掌垫托着羽毛。",
+      "category": "hand_detail",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "The blue tiger knocks on a wooden door with the backs of bent fingers, other hand flat against the frame, palm pads faintly reflected in the glossy surface.",
+      "action_family": "knocking",
+      "camera": "side close-up on knocking hand",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "yellow_pads"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Knocking hand's fingers and palm fully visible; frame hand's pads shown flat-side",
+      "intent_zh": "屈指叩门，另一掌贴门框露出掌垫。",
+      "category": "hand_detail",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "The blue tiger holds a small round mirror and turns one hand this way and that, examining the yellow pads of each fingertip with visible curiosity.",
+      "action_family": "examining",
+      "camera": "close-up over shoulder, hands and mirror",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "yellow_pads"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Examined hand fully visible with all fingertips and pads; mirror hand at edge",
+      "intent_zh": "对镜翻看指尖掌垫，指形分明。",
+      "category": "hand_detail",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "The blue tiger cracks a nut by squeezing it between both palms, elbows out, fingers spread and straining, yellow pads pressed flat against the hard shell.",
+      "action_family": "squeezing",
+      "camera": "front close-up, hands at chest",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "yellow_pads"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both palms and all fingers visible around the nut, pads unobstructed",
+      "intent_zh": "双掌合压坚果，指展掌垫紧贴。",
+      "category": "hand_detail",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "The blue tiger digs a shallow hollow in soft sand, one hand scooping while fingers spread wide, yellow pads shedding grains, the other hand brushes sand away.",
+      "action_family": "digging",
+      "camera": "low close-up on hands in sand",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "yellow_pads"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both hands above sand with all fingers and pads visible, no digit buried",
+      "intent_zh": "双手在沙中挖坑，五指分开掌垫露沙。",
+      "category": "hand_detail",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "The blue tiger balances a long feather across two outstretched index fingers, both hands level and steady, other fingers curled with pads facing up.",
+      "action_family": "balancing",
+      "camera": "side close-up, hands and feather",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "yellow_pads"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both hands fully in frame, extended index fingers and curled finger pads visible",
+      "intent_zh": "双食指平举羽毛保持平衡，掌垫朝上。",
+      "category": "hand_detail",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "The blue tiger slides a ring onto its own finger, thumb pushing it over the knuckle, other fingers fanned wide apart with yellow pads showing between them.",
+      "action_family": "wearing",
+      "camera": "tight close-up on the ring hand",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "yellow_pads"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Ring hand fully visible with all spread fingers and pads; pushing hand's digits distinct",
+      "intent_zh": "拇指推戒上指节，其余指张开露垫。",
+      "category": "hand_detail",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "The blue tiger paints a stripe on a canvas with its fingertip, other hand steadying the easel, four fingers spread apart with yellow pads glowing wetly.",
+      "action_family": "painting",
+      "camera": "medium close-up, hand and canvas",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "yellow_pads"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Painting hand fully visible with all fingers and pads; easel hand braced at edge",
+      "intent_zh": "指腹在画布上勾线，另手扶架掌垫湿亮。",
+      "category": "hand_detail",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "The blue tiger catches a tossed coin by clamping it between two flat palms, arms extended forward, fingers straight and pads visible above the coin's edge.",
+      "action_family": "catching",
+      "camera": "front close-up, hands and coin",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "yellow_pads"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both flat hands visible with straight fingers and top pads above coin",
+      "intent_zh": "双掌合夹空中硬币，指直掌垫露于币上。",
+      "category": "hand_detail",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "The blue tiger taps each fingertip to its thumb in sequence while looking down, hand raised with palm toward camera and every yellow pad clearly displayed.",
+      "action_family": "finger-tapping",
+      "camera": "front close-up on the raised hand",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "yellow_pads"
+      ],
+      "visible_hands": 1,
+      "visible_soles": 0,
+      "visibility_requirement": "Raised hand fully visible, all five fingertips and pads unobstructed",
+      "intent_zh": "拇指依次轻点各指尖，掌垫正对镜头。",
+      "category": "hand_detail",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "The blue tiger fans itself with a wide leaf held in one hand, wrist loose, while the other hand rests palm-open on a rock, fingers spread and pads pressed to the surface.",
+      "action_family": "fanning",
+      "camera": "medium shot from side, hands visible",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Fanning hand's fingers visible around leaf stem; resting palm fully visible with pads",
+      "intent_zh": "一手执叶扇风，一手掌贴石面展开。",
+      "category": "hand_detail",
+      "generation_batch": 1
+    }
+  ],
+  "model": "deepseek-flash",
+  "usage": {
+    "prompt_tokens": 388,
+    "completion_tokens": 3838,
+    "total_tokens": 4226,
+    "prompt_tokens_details": {
+      "cached_tokens": 128
+    },
+    "prompt_cache_hit_tokens": 128,
+    "prompt_cache_miss_tokens": 260
+  },
+  "settings": {
+    "temperature": 1,
+    "thinking": "disabled"
+  }
+}

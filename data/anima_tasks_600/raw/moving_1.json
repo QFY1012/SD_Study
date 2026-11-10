@@ -1,0 +1,569 @@
+{
+  "tasks": [
+    {
+      "instruction": "The blue tiger crouches low on a rocky trail, one knee near the ground, reaching forward with an open right palm to touch a mossy boulder. Left hand rests on the raised knee. Tail curls behind for balance.",
+      "action_family": "crouching",
+      "camera": "low three-quarter front shot, eye level with the crouched figure",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both hands fully in frame; right palm and all five fingers clear, left hand visible on knee",
+      "intent_zh": "在岩石小径上低蹲，右掌张开触碰苔藓巨石，左掌扶膝。",
+      "category": "moving",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "The blue tiger balances on a narrow fallen log crossing a stream, arms spread wide horizontally, one foot lifted mid-step. Body leans slightly forward, eyes down at the water. Tail extended straight behind.",
+      "action_family": "balancing",
+      "camera": "side profile medium-wide shot, log horizontal across frame",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both spread hands visible at full length; fingers separated and countable",
+      "intent_zh": "在横跨溪流的倒木上张臂平衡，一脚抬起。",
+      "category": "moving",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "The blue tiger sits on a wooden dock edge and leans far forward to pull off a wet sock, gripping the fabric with both hands. Plantigrade feet dangle above the water, soles facing the camera in the foreground.",
+      "action_family": "undressing_foot",
+      "camera": "high angle looking down past the feet toward the dock",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "foot_count",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 2,
+      "visibility_requirement": "Both soles face camera with four toes and yellow pads clear; both hands grip the sock with fingers visible",
+      "intent_zh": "坐在码头边缘前倾脱袜，双脚掌朝向镜头，脚趾与黄色肉垫清晰。",
+      "category": "moving",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "The blue tiger presses both open palms flat against a tall glass wall, leaning close to peer inside, one foot forward and one back in a lunge. Fingers splayed wide on the glass surface.",
+      "action_family": "leaning",
+      "camera": "front medium shot through the glass edge, hands at chest height",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both palms on glass fully visible, fingers splayed and countable",
+      "intent_zh": "双掌平贴玻璃墙前倾张望，弓步站立。",
+      "category": "moving",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "The blue tiger kneels on a garden path and reaches deep into a burrow with the right arm, shoulder lowered to the soil. Left palm braces flat on the ground beside the hole, fingers spread. Tail raised straight up.",
+      "action_family": "reaching_into",
+      "camera": "low side shot near ground level, burrow in foreground",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Left bracing palm and all fingers clearly visible on soil; right arm partly inside burrow with hand hidden and not assessed",
+      "intent_zh": "跪在园径上右手探入洞穴，左掌撑地展开。",
+      "category": "moving",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "The blue tiger climbs a rope ladder on a cliff face, seen from below. Right hand grips a rung overhead, left hand reaches for the next. Both feet plant on lower rungs, showing the yellow pads of the soles toward the camera.",
+      "action_family": "climbing",
+      "camera": "extreme low angle looking up the ladder",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "foot_count",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 2,
+      "visibility_requirement": "Both gripping hands with fingers wrapped around rungs visible; both soles with four toes and yellow pads face camera",
+      "intent_zh": "从下往上攀爬绳梯，双手抓横档，双脚掌黄色肉垫朝镜头。",
+      "category": "moving",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "The blue tiger steps sideways along a stone ledge, back pressed to the wall, arms spread with palms flat against the bricks. One foot crossed in front of the other. Head turned toward the drop.",
+      "action_family": "sidestepping",
+      "camera": "front view slightly off-axis, wall vertical behind",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both palms flat on wall visible with fingers spread",
+      "intent_zh": "背贴石墙侧步横移，双掌平贴砖面。",
+      "category": "moving",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "The blue tiger crawls forward on hands and knees through a low tunnel, camera ahead looking back at the approaching face. Right palm reaches forward flat on the floor, fingers spread, left palm planted behind.",
+      "action_family": "crawling",
+      "camera": "low front shot inside the tunnel, facing the crawler",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both planted palms clearly visible on the tunnel floor, fingers countable",
+      "intent_zh": "在低矮隧道内手膝爬行，双掌平放地面。",
+      "category": "moving",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "The blue tiger stands on tiptoe atop a stack of books, reaching up with the right hand to place a book on a high shelf. Left palm presses the shelf edge for support. Body stretched vertically, looking up.",
+      "action_family": "reaching_up",
+      "camera": "side view medium shot, shelf at top of frame",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both hands visible near shelf, right fingers around book and left palm flat on edge",
+      "intent_zh": "踮脚站在书堆上把书放上高架，左掌扶架沿。",
+      "category": "moving",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "The blue tiger lies on its side on a picnic blanket, propped on the left elbow, and stretches the right arm high overhead with an open palm toward the sky. Legs extended, one knee slightly bent.",
+      "action_family": "stretching",
+      "camera": "top-down angled shot showing the full body on the blanket",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Right stretched palm open toward sky visible; left supporting hand visible under the propped elbow",
+      "intent_zh": "侧躺毯上以左肘撑起，右掌向天空伸展。",
+      "category": "moving",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "The blue tiger walks a slackline between two posts, one foot on the line, the other lifted behind. Arms angled out for balance, palms open downward. Torso twisted slightly toward camera.",
+      "action_family": "balancing",
+      "camera": "front three-quarter view, line diagonal across the frame",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both open palms angled downward and clearly visible with fingers apart",
+      "intent_zh": "在绳索上行走保持平衡，双臂外展掌心朝下。",
+      "category": "moving",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "The blue tiger crouches at the edge of a tide pool, both palms cupped and dipped into the shallow water, eyes focused on a small crab. Knees bent deep, plantigrade feet flat on wet rocks.",
+      "action_family": "crouching",
+      "camera": "high angle over the shoulder, pool and hands in focus",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both cupped palms visible in the water with fingers clearly separated",
+      "intent_zh": "蹲在潮池边双掌掬水，注视小蟹。",
+      "category": "moving",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "The blue tiger sits on the floor and lifts both legs straight up, grabbing the toes with both hands in a forward fold. Soles face camera, toes flexed. Arms reach past the knees.",
+      "action_family": "stretching",
+      "camera": "straight-on low front shot, feet at top of frame",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "foot_count",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 2,
+      "visibility_requirement": "Both soles with four toes and yellow pads face camera; both hands gripping the toes with fingers visible",
+      "intent_zh": "坐地前屈抓住脚趾，双脚掌黄色肉垫朝镜头。",
+      "category": "moving",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "The blue tiger climbs a steep grassy slope on all fours, right front palm reaching high on the slope, left planted lower. Feet push with toes, one heel lifted. Head down, tail low.",
+      "action_family": "climbing",
+      "camera": "low rear-side angle up the slope",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both hands on the slope clearly visible, right palm spread and left fingers gripping grass",
+      "intent_zh": "四肢攀爬陡峭草坡，右掌前伸抓地。",
+      "category": "moving",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "The blue tiger tiptoes across a room carrying a tall stack of plates on both open palms, elbows out, eyes on the top plate. One foot crosses in front of the other mid-step.",
+      "action_family": "carrying",
+      "camera": "front medium shot centered on the plates and face",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both palms under the plate stack visible with fingers spread for support",
+      "intent_zh": "踮脚走过房间，双掌托一摞盘子。",
+      "category": "moving",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "The blue tiger crouches low and springs forward, both feet leaving the ground, arms swinging back with open palms trailing. Body stretched in mid-leap toward a sand pit.",
+      "action_family": "jumping",
+      "camera": "side tracking shot, low to the ground",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both trailing hands visible behind the body, palms open with fingers clear",
+      "intent_zh": "蹲身向前跃起，双臂后摆掌心张开。",
+      "category": "moving",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "The blue tiger sits on a swing and pulls on the ropes with both hands, leaning back and lifting both feet forward so the soles point at the camera. Body arcs backward.",
+      "action_family": "swinging",
+      "camera": "front low shot, swing ropes vertical",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "foot_count",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 2,
+      "visibility_requirement": "Both hands gripping ropes with fingers wrapped; both soles toward camera with four toes and yellow pads",
+      "intent_zh": "坐在秋千上拉绳后仰，双脚掌朝镜头。",
+      "category": "moving",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "The blue tiger kneels on one knee beside a campfire, right palm held up near the flames to test the heat, left hand resting flat on the thigh. Face lit from below.",
+      "action_family": "kneeling",
+      "camera": "side low angle, fire glow from below",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Right raised palm fully visible with fingers spread near flames; left hand flat on thigh visible",
+      "intent_zh": "单膝跪在篝火旁，右掌举向火焰试探热度。",
+      "category": "moving",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "The blue tiger walks downhill on a sandy dune with a steady stride, one hand shielding the eyes from the sun with fingers together, the other hand loose at the side. Toes dig into the sand.",
+      "action_family": "walking",
+      "camera": "side view from downhill, dune crest behind",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Shielding hand with fingers clearly visible at the brow; other hand visible at the hip",
+      "intent_zh": "在沙丘下坡行走，一手遮阳，另一手垂在身侧。",
+      "category": "moving",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "The blue tiger lies flat on its back under a cart and reaches up with both palms to turn a wrench on an axle. Knees bent, feet flat, toes visible at the frame edge.",
+      "action_family": "repairing",
+      "camera": "low side angle at floor level under the cart",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both hands at the axle visible with fingers around the wrench",
+      "intent_zh": "仰躺车下双手举扳手拧轴。",
+      "category": "moving",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "The blue tiger leans out over a balcony railing, both palms gripping the top bar, one foot hooked on the lower rail, the other stretched behind. Looking down at the street.",
+      "action_family": "leaning",
+      "camera": "three-quarter front from the street below looking up",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both hands wrapped over the railing visible, fingers countable",
+      "intent_zh": "探身越过阳台栏杆，双掌抓住横杆向下看。",
+      "category": "moving",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "The blue tiger performs a low lunge on a gym mat, right hand planted forward on the mat with fingers spread, left arm extended back. Back leg straight, toes tucked under. Eyes forward.",
+      "action_family": "stretching",
+      "camera": "side profile at mat level",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Forward planted palm visible with all fingers spread on the mat; trailing hand visible",
+      "intent_zh": "在垫上做低弓步，右掌撑垫，左臂后伸。",
+      "category": "moving",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "The blue tiger steps into a rowboat from a dock, one foot on the gunwale, one hand holding a mooring rope, the other palm open toward the boat for balance. Body leaning far forward.",
+      "action_family": "boarding",
+      "camera": "side wide shot from the dock",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both hands visible: rope-holding fingers wrapped, balancing palm open and spread",
+      "intent_zh": "跨步登船，一手抓缆绳，一掌心张开保持平衡。",
+      "category": "moving",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "The blue tiger squats on a low stool and threads a needle, both hands close together, right thumb and forefinger pinching the thread, left hand holding the fabric. Head tilted to see closely.",
+      "action_family": "crafting",
+      "camera": "close front medium shot at seated eye level",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both hands near the fabric visible; pinching fingers and supporting left fingers clearly countable",
+      "intent_zh": "坐在矮凳上穿针引线，双手靠近注视。",
+      "category": "moving",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "The blue tiger wades knee-deep across a shallow river, lifting one foot high to step over a submerged rock, arms out with open palms for balance, splashing water around the shin.",
+      "action_family": "wading",
+      "camera": "front three-quarter low angle at water level",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both balancing palms open and visible above the water with fingers apart",
+      "intent_zh": "涉水过河，抬脚跨过水下石头，双臂外展。",
+      "category": "moving",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "The blue tiger sits on a tree branch high up, one leg hanging down, the other folded, and reaches out with the right palm to a ripe fruit. Left hand grips the branch above.",
+      "action_family": "reaching",
+      "camera": "side shot from a parallel branch, canopy behind",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Reaching palm near fruit fully visible with fingers spread; gripping hand on the branch visible",
+      "intent_zh": "坐在树枝上伸手摘果，左手抓上方树枝。",
+      "category": "moving",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "The blue tiger pushes a heavy cart up a cobbled hill, both palms flat on the cart back, body angled forward, one foot planted back with toes gripping. Shoulders lowered with effort.",
+      "action_family": "pushing",
+      "camera": "rear three-quarter low angle behind the cart",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both flat palms on the cart visible with fingers spread; back foot toes visible",
+      "intent_zh": "在鹅卵石坡上推车，双掌平贴车后，后脚踏地。",
+      "category": "moving",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "The blue tiger kneels to plant seedlings, both hands cupped around a small plant in the soil, fingers gentle around the stem. One knee on the ground, the other foot flat in a half-kneel.",
+      "action_family": "planting",
+      "camera": "high close angle over the hands and soil",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both cupping hands around the plant visible with fingers clearly separated",
+      "intent_zh": "半跪种苗，双手轻托幼苗，手指清晰。",
+      "category": "moving",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "The blue tiger sits on the ground and turns to look behind, twisting the torso, left palm flat on the floor behind the hips, right hand raised near the face palm outward. One knee up.",
+      "action_family": "turning",
+      "camera": "front three-quarter, torso twist toward the back",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 0,
+      "visibility_requirement": "Both hands visible: rear bracing palm flat and countable, raised palm open",
+      "intent_zh": "坐地转身回望，左掌后撑，右掌举起。",
+      "category": "moving",
+      "generation_batch": 1
+    },
+    {
+      "instruction": "The blue tiger hops on one foot across stepping stones in a pond, arms spread wide, the lifted foot's sole angled toward the camera showing toes and pads. Body mid-hop, focused ahead.",
+      "action_family": "hopping",
+      "camera": "front low angle across the pond, stones receding",
+      "targets": [
+        "identity",
+        "cel_style",
+        "hand_count",
+        "finger_shape",
+        "foot_count",
+        "yellow_pads",
+        "human_pose"
+      ],
+      "visible_hands": 2,
+      "visible_soles": 1,
+      "visibility_requirement": "Lifted sole clearly shows four toes and yellow pads facing camera; both spread hands visible",
+      "intent_zh": "单脚跳过踏石，抬起脚掌肉垫朝镜头，双臂张开。",
+      "category": "moving",
+      "generation_batch": 1
+    }
+  ],
+  "model": "deepseek-flash",
+  "usage": {
+    "prompt_tokens": 391,
+    "completion_tokens": 4261,
+    "total_tokens": 4652,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "prompt_cache_hit_tokens": 256,
+    "prompt_cache_miss_tokens": 135
+  },
+  "settings": {
+    "temperature": 1,
+    "thinking": "disabled"
+  }
+}

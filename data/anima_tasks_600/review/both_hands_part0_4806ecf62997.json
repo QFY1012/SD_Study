@@ -1,0 +1,110 @@
+{
+  "approved_ids": [
+    0,
+    2,
+    3,
+    5,
+    10,
+    13,
+    17,
+    22,
+    25
+  ],
+  "rejected": [
+    {
+      "index": 1,
+      "reason": "Palms pressed flat on a book face downward, cannot face upward toward camera as required"
+    },
+    {
+      "index": 4,
+      "reason": "Palms pressed together edge-on cannot show all fingers of both hands countable"
+    },
+    {
+      "index": 6,
+      "reason": "Palms pressed into sand face down, pads not visible from above"
+    },
+    {
+      "index": 7,
+      "reason": "Wiping palm faces the board, cannot simultaneously face camera with pads visible"
+    },
+    {
+      "index": 8,
+      "reason": "Fingers gripping fretboard and cupping neck occlude pads; both hands countable is inconsistent"
+    },
+    {
+      "index": 9,
+      "reason": "Palms pressed together hide pads along the seam; all fingers separately visible is contradictory"
+    },
+    {
+      "index": 11,
+      "reason": "Palms flat on sill with fingers toward camera hide pads; side angle contradicts full separation"
+    },
+    {
+      "index": 12,
+      "reason": "Palms under book stack face down, pads cannot face camera while supporting weight"
+    },
+    {
+      "index": 14,
+      "reason": "Palms pressed into dough face down, pads not visible from above"
+    },
+    {
+      "index": 15,
+      "reason": "Hands behind head cannot show palms turned outward with all fingers clear of fur"
+    },
+    {
+      "index": 16,
+      "reason": "Palms flat on clay face down, cannot face up toward overhead camera"
+    },
+    {
+      "index": 18,
+      "reason": "Hands wrapped around chains cannot show palms and all fingers facing camera"
+    },
+    {
+      "index": 19,
+      "reason": "Palms flat over map face down, cannot face up toward camera"
+    },
+    {
+      "index": 20,
+      "reason": "Palms flat on tub rim face down, pads not visible facing camera"
+    },
+    {
+      "index": 21,
+      "reason": "Palms cupping bag sides cannot face up and outward with all fingers clear"
+    },
+    {
+      "index": 23,
+      "reason": "Palms flat on keys face down, pads not visible facing camera"
+    },
+    {
+      "index": 24,
+      "reason": "Chin-resting palm turned outward with fingers spread contradicts cradling phone; duplicate hand_count target"
+    },
+    {
+      "index": 26,
+      "reason": "Palms flat on knees face down, cannot face outward to camera with pads visible"
+    },
+    {
+      "index": 27,
+      "reason": "Palms sunk in snow face down, pads pressed against surface not visible from above"
+    },
+    {
+      "index": 28,
+      "reason": "Palms wrapping vessel sides occlude pads; all fingers and pads visible against clay is inconsistent"
+    },
+    {
+      "index": 29,
+      "reason": "Palms pressed on pillow face down, cannot face camera with pads visible"
+    }
+  ],
+  "model": "deepseek-flash",
+  "usage": {
+    "prompt_tokens": 3923,
+    "completion_tokens": 513,
+    "total_tokens": 4436,
+    "prompt_tokens_details": {
+      "cached_tokens": 3712
+    },
+    "prompt_cache_hit_tokens": 3712,
+    "prompt_cache_miss_tokens": 211
+  }
+}
