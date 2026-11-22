@@ -1,0 +1,21 @@
+{
+  "sd_scripts": "/content/sd-scripts",
+  "dit": "/content/drive/MyDrive/ComfyUI/models/diffusion_models/waiANIMA_v10Base10.safetensors",
+  "text_encoder": "/content/drive/MyDrive/ComfyUI/models/text_encoders/waiANIMA_v10Base10_txt.safetensors",
+  "vae": "/content/drive/MyDrive/ComfyUI/models/vae/qwenImage_qwenImageVAE.safetensors",
+  "lora": "/content/drive/MyDrive/lora_training/output/cheese_v26_train_20/cheese_v26.safetensors",
+  "pairs_file": "/content/drive/MyDrive/lora_training/dpo_data/dpo_pairs.json",
+  "output": "/content/drive/MyDrive/lora_training/dpo_runs/cheese_v26_dpo_run1",
+  "width": 768,
+  "height": 1024,
+  "epochs": 2,
+  "grad_accum": 4,
+  "beta_dpo": 2000.0,
+  "learning_rate": 2e-06,
+  "max_grad_norm": 1.0,
+  "flow_shift": 5.0,
+  "sigma_scheme": "logit_normal",
+  "save_every_steps": 25,
+  "negative_prompt": "worst quality, low quality, score_1, score_2, score_3, artist name, blurry, jpeg artifacts, lowres, bad anatomy, extra digits, fused digits, digitigrade",
+  "seed": 42
+}

@@ -8,6 +8,12 @@ import math
 import torch
 
 
+def initial_noise(shape, seed, iteration, sample, same_noise=True, device='cpu'):
+    noise_seed = int(seed) + int(iteration) if same_noise else int(seed) + int(iteration) * 1000003 + int(sample)
+    generator = torch.Generator(device=device).manual_seed(noise_seed)
+    return torch.randn(shape, device=device, generator=generator)
+
+
 def transition(x, velocity, sigma, sigma_next, eta, next_x=None, generator=None):
     sigma, sigma_next = float(sigma), float(sigma_next)
     if not (0 < sigma <= 1 and 0 <= sigma_next < sigma and eta > 0):

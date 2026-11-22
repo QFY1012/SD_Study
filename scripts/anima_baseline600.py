@@ -40,7 +40,7 @@ def main():
  if not pending:return
  # Native parser supplies all upstream defaults; do not pass GRPO stochastic sampling here.
  original_argv=sys.argv
- sys.argv=['anima_minimal_inference.py','--dit',c['dit'],'--text_encoder',c['text_encoder'],'--vae',c['vae'],'--lora_weight',c['lora'],'--lora_multiplier','1','--save_path',str(work),'--image_size',str(c['height']),str(c['width']),'--infer_steps',str(c['steps']),'--guidance_scale',str(c['cfg']),'--flow_shift',str(c.get('flow_shift',5.0)),'--qwen_image_vae_2d','--attn_mode','torch','--device','cuda']
+ sys.argv=['anima_minimal_inference.py','--dit',c['dit'],'--text_encoder',c['text_encoder'],'--vae',c['vae'],'--lora_weight',c['lora'],'--lora_multiplier','1','--save_path',str(work),'--image_size',str(c['height']),str(c['width']),'--infer_steps',str(c['steps']),'--guidance_scale',str(c['cfg']),'--flow_shift',str(c.get('flow_shift',5.0)),'--qwen_image_vae_2d','--attn_mode','torch','--device','cuda','--prompt','placeholder']
  try:args=infer.parse_args()
  finally:sys.argv=original_argv
  device=torch.device('cuda');settings=infer.get_generation_settings(args)

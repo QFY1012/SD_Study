@@ -46,13 +46,11 @@
   "raw_generated_tasks": 1254,
   "review": "DeepSeek textual feasibility review; not human-certified and not a check of generated images.",
   "packages": {
-    "numpy": "2.5.4",
+    "numpy": "2.0.2",
     "scikit-learn": "1.9.1",
     "sentence-transformers": "6.2.0",
-    "torch": "2.15.0+cpu"
+    "torch": "1.12.0+cu113"
   },
-  "embedding_model_revision": [
-    "1110a243fdf4706b3f48f1d95db1a4f5529b4d41"
-  ],
-  "content_sha256": "929debd9e78182dbba1020970ad3d29118eb16e9cba41d867a02d2a072d083b3"
+  "embedding_model_revision": [],
+  "content_sha256": "620e9501874edbb749be527441408ef8452a201bb32e64f5b9af5bd9eec6de96"
 }

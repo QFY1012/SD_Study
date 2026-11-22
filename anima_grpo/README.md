@@ -47,7 +47,7 @@ It can exercise training plumbing but cannot measure fingers, toes or preference
 ## Algorithm and memory
 
 - Rollout uses the Anima velocity interface, shifted sigma schedule and CFG.
-- Nonterminal transitions use DanceGRPO's stochastic flow/SDE correction.
+- Rollout shares initial latent noise across a prompt group by default (`init_same_noise: true`) and uses DanceGRPO's stochastic flow/SDE correction for nonterminal transitions.
 - Store selected transitions and old mean-per-coordinate log densities on CPU.
 - The final step is deterministic and excluded from policy loss.
 - Score a full prompt group; normalize rewards with sample standard deviation.

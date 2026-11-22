@@ -4,11 +4,19 @@ import sys
 import tempfile
 import unittest
 import torch
-from anima_grpo.core import transition, advantages, policy_loss
+from anima_grpo.core import initial_noise, transition, advantages, policy_loss
 from anima_grpo.train import score
 
 
 class CoreTests(unittest.TestCase):
+    def test_initial_noise_sharing(self):
+        a = initial_noise((1, 16, 1, 4, 4), seed=42, iteration=3, sample=0, same_noise=True)
+        b = initial_noise((1, 16, 1, 4, 4), seed=42, iteration=3, sample=1, same_noise=True)
+        torch.testing.assert_close(a, b)
+        c = initial_noise((1, 16, 1, 4, 4), seed=42, iteration=3, sample=0, same_noise=False)
+        d = initial_noise((1, 16, 1, 4, 4), seed=42, iteration=3, sample=1, same_noise=False)
+        self.assertFalse(torch.equal(c, d))
+
     def test_transition_density_and_replay(self):
         x = torch.randn(2, 16, 1, 4, 4)
         v = torch.randn_like(x)

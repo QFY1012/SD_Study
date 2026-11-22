@@ -5,7 +5,8 @@ report=json.loads((ROOT/'report.json').read_text())
 tasks=[json.loads(x) for x in (ROOT/'tasks_all.jsonl').read_text().splitlines()]
 assert len(tasks)>=600 and len({t['id'] for t in tasks})==len(tasks)
 # Keep the user's fixed anatomy tokens in every render prompt, outside embedding input.
-prefix='@cheese, masterpiece, best quality, score_9, score_8, score_7, adult male anthropomorphic blue tiger, solo, blond hair, yellow eyes, blue stripes, pink star marking on abdomen, five fingers on each hand, long slender fingers, four toes on each foot, yellow paw pads, natural human-like legs, plantigrade feet, cel shading, clean lineart, flat colors, sharp shadows'
+base_prefix='@cheese, masterpiece, best quality, score_9, score_8, score_7, safe, 1boy, furry male, solo, nude'; style_suffix='cel shading, clean lineart, flat color, sharp shadows'
+neg_prefix='worst quality, low quality, score_1, score_2, score_3, artist name, blurry, jpeg artifacts, lowres, bad anatomy, extra digits, fused digits, digitigrade'
 for t in tasks:
  allowed={'identity','cel_style','hand_count','finger_shape','foot_count','yellow_pads','human_pose'}
  removed=[v for v in t['targets'] if v not in allowed]
@@ -15,7 +16,7 @@ for t in tasks:
   t['targets']=[v for v in t['targets'] if v in ['identity','cel_style','human_pose']]
   t['scoring_targets']=[v for v in t['scoring_targets'] if v in ['identity','cel_style','human_pose']]
  if removed:t['normalization_notes']={'removed_non_rubric_labels':removed}
- t['prompt']=prefix+', '+t['instruction']+' '+t['camera']+'. '+t['visibility_requirement']
+ task_prefix=', '.join([base_prefix]+(['blue fur'] if t['category'] in ('hand_detail','foot_detail') or 'close' in t['camera'].lower() else [])+(['yellow paw pads'] if 'yellow_pads' in t['scoring_targets'] else [])+[style_suffix]); inst=t['instruction'].strip(); inst=inst if not inst or inst[-1] in '.!?' else inst+'.'; t['prompt']=f"{task_prefix}, {inst} {t['camera'].strip().rstrip('.')}"; t['negative_prompt']=neg_prefix
 for file,rows in [('tasks_all.jsonl',tasks),('train.jsonl',[t for t in tasks if t['split']=='train']),('eval.jsonl',[t for t in tasks if t['split']=='eval'])]:
  (ROOT/file).write_text(''.join(json.dumps(t,ensure_ascii=False)+'\n' for t in rows))
 with (ROOT/'tasks.csv').open('w',newline='') as f:
@@ -44,7 +45,10 @@ report['usage_limitations']='Only cached successful generation responses are inc
 report['raw_generated_tasks']=sum(len(json.loads(p.read_text())['tasks']) for p in (ROOT/'raw').glob('*.json'))
 report['review']='DeepSeek textual feasibility review; not human-certified and not a check of generated images.'
 import importlib.metadata
-report['packages']={name:importlib.metadata.version(name) for name in ['numpy','scikit-learn','sentence-transformers','torch']}
+def _pkg_ver(n,d):
+ try:return importlib.metadata.version(n)
+ except importlib.metadata.PackageNotFoundError:return d.get(n,'missing')
+existing_pkgs=report.get('packages',{}) if isinstance(report.get('packages'),dict) else {}; report['packages']={name:_pkg_ver(name,existing_pkgs) for name in ['numpy','scikit-learn','sentence-transformers','torch']}
 snapshots=list((ROOT/'model_cache/models--sentence-transformers--all-MiniLM-L6-v2/snapshots').glob('*'))
 report['embedding_model_revision']=[p.name for p in snapshots]
 report['content_sha256']=hashlib.sha256((ROOT/'tasks_all.jsonl').read_bytes()).hexdigest()

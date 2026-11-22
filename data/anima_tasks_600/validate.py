@@ -17,7 +17,7 @@ for t in alltasks:
  if 'hand_count' in t['scoring_targets']:assert t['visible_hands']>0
  if 'foot_count' in t['scoring_targets']:assert t['visible_soles']>0
  if t['category']=='identity_control':assert not set(t['scoring_targets'])&{'hand_count','foot_count','yellow_pads','finger_shape'}
- assert t['camera'] in t['prompt'] and t['visibility_requirement'] in t['prompt']
+ assert t['camera'].strip().rstrip('.') in t['prompt'] and bool(t['visibility_requirement'].strip()) and t['visibility_requirement'] not in t['prompt'] and all(w not in t['prompt'].lower() for w in ('five fingers','four toes','plantigrade','off-frame'))
  assert t['expected']['fingers_per_hand']==5 and t['expected']['toes_per_foot']==4
  assert 'visible yellow paw pads' not in t['prompt'].lower()
 a=np.load(root/'embeddings.npz');assert a['ids'].tolist()==[t['id'] for t in alltasks]

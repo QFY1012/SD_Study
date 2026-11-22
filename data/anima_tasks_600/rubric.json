@@ -4,7 +4,7 @@
   "input": ["generated image", "task", "character reference image"],
   "evidence_required": true,
   "items": {
-    "identity": {"weight": 0.25, "criteria": "Blue tiger character; blond hair; yellow eyes; blue stripes; pink abdominal star where visible. Compare reference, do not punish naturally occluded markings."},
+    "identity": {"weight": 0.25, "criteria": "Character @cheese (blue anthropomorphic character); compare reference, do not punish naturally occluded markings."},
     "cel_style": {"weight": 0.1, "criteria": "Clean lineart, flat color regions, sharp cel shadows; avoid penalizing a pose solely for its viewpoint."},
     "hand_count": {"weight": 0.2, "criteria": "Count all five fingers on each hand required visible by the task. Count thumb explicitly. Report left/right or image coordinates and count independently. Overlap/occlusion must be unassessable, never presumed correct."},
     "finger_shape": {"weight": 0.1, "criteria": "Long slender fingers with separate coherent contours; natural bending is allowed. Fused digits or disconnected digits fail."},

@@ -6,6 +6,21 @@ __pycache__/
 *.pt
 *.pth
 *.bin
+*.zip
+*.npz
 model_cache/
 .cache/
 outputs/
+models/
+images/
+dpo_gen_*/
+l4_*/
+s6_quick_tests/
+s6_vs_s7_150_ablation/
+s7_*/
+sam3_hand_crops*/
+v27_eval_20/
+dpo_run2_eval/
+dpo_pairs (9).json
+dpo_pairs_s7_v2_foot50_pure_colab.json
+dpo_pairs_s7_v2_foot50_pure_local.json

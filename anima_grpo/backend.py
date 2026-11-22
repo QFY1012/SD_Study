@@ -67,6 +67,25 @@ class AnimaBackend:
             uncond = self.model(x, t, self.cache[negative][0].to(self.device), padding_mask=mask)
             return (uncond + cfg * (cond - uncond)).float()
 
+    def velocity_batch(self, x, sigmas, prompts):
+        x = x.to(self.device, dtype=torch.bfloat16)
+        t = sigmas.to(device=self.device, dtype=torch.bfloat16).view(-1)
+        mask = torch.zeros(x.shape[0], 1, *x.shape[-2:], device=self.device, dtype=x.dtype)
+        conds = [self.cache[p][0] for p in prompts]
+        max_len = max(c.shape[1] for c in conds)
+        if any(c.shape[1] != max_len for c in conds):
+            padded = []
+            for c in conds:
+                if c.shape[1] < max_len:
+                    pad = torch.zeros(c.shape[0], max_len - c.shape[1], *c.shape[2:], device=c.device, dtype=c.dtype)
+                    c = torch.cat([c, pad], dim=1)
+                padded.append(c)
+            cond = torch.cat(padded, dim=0).to(self.device)
+        else:
+            cond = torch.cat(conds, dim=0).to(self.device)
+        with torch.autocast('cuda', dtype=torch.bfloat16):
+            return self.model(x, t, cond, padding_mask=mask).float()
+
     @torch.no_grad()
     def save_image(self, latent, path):
         from PIL import Image
