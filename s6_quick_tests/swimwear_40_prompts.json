@@ -1,0 +1,242 @@
+[
+  {
+    "id": "cheese_swim40_01",
+    "category": "briefs",
+    "prompt": "@cheese, furry male, flat color, cel shading, anime coloring, 1boy, solo, round face, toned, abs, round nipples, shirtless, blue swim briefs, speedo, standing pose, open hand, fingers spread, looking at viewer, full body portrait, simple background, white background",
+    "negative_prompt": "worst quality, low quality, score_1, score_2, score_3, blurry, lowres, bad anatomy, extra digits, fused digits, digitigrade, realistic, detailed fur, shota, child, chibi, petite, sharp face"
+  },
+  {
+    "id": "cheese_swim40_02",
+    "category": "briefs",
+    "prompt": "@cheese, furry male, flat color, cel shading, anime coloring, 1boy, solo, round face, toned, abs, round nipples, shirtless, black swim briefs, speedo, goggles on head, waving, open palm, looking at viewer, full body portrait, simple background, white background",
+    "negative_prompt": "worst quality, low quality, score_1, score_2, score_3, blurry, lowres, bad anatomy, extra digits, fused digits, digitigrade, realistic, detailed fur, shota, child, chibi, petite, sharp face"
+  },
+  {
+    "id": "cheese_swim40_03",
+    "category": "briefs",
+    "prompt": "@cheese, furry male, flat color, cel shading, anime coloring, 1boy, solo, round face, toned, abs, round nipples, shirtless, red swim briefs, speedo, hand on hip, flexing arm, confident smile, looking at viewer, full body portrait, simple background, white background",
+    "negative_prompt": "worst quality, low quality, score_1, score_2, score_3, blurry, lowres, bad anatomy, extra digits, fused digits, digitigrade, realistic, detailed fur, shota, child, chibi, petite, sharp face"
+  },
+  {
+    "id": "cheese_swim40_04",
+    "category": "briefs",
+    "prompt": "@cheese, furry male, flat color, cel shading, anime coloring, 1boy, solo, round face, toned, abs, round nipples, shirtless, white swim briefs, speedo, towel around neck, stretching arms overhead, looking at viewer, full body portrait, simple background, white background",
+    "negative_prompt": "worst quality, low quality, score_1, score_2, score_3, blurry, lowres, bad anatomy, extra digits, fused digits, digitigrade, realistic, detailed fur, shota, child, chibi, petite, sharp face"
+  },
+  {
+    "id": "cheese_swim40_05",
+    "category": "briefs",
+    "prompt": "@cheese, furry male, flat color, cel shading, anime coloring, 1boy, solo, round face, toned, abs, round nipples, shirtless, navy swim briefs, striped trim, swim cap, adjusting goggles, open fingers, looking at viewer, full body portrait, simple background, white background",
+    "negative_prompt": "worst quality, low quality, score_1, score_2, score_3, blurry, lowres, bad anatomy, extra digits, fused digits, digitigrade, realistic, detailed fur, shota, child, chibi, petite, sharp face"
+  },
+  {
+    "id": "cheese_swim40_06",
+    "category": "briefs",
+    "prompt": "@cheese, furry male, flat color, cel shading, anime coloring, 1boy, solo, round face, toned, abs, round nipples, shirtless, teal swim briefs, speedo, holding water bottle, relaxed standing pose, looking at viewer, full body portrait, simple background, white background",
+    "negative_prompt": "worst quality, low quality, score_1, score_2, score_3, blurry, lowres, bad anatomy, extra digits, fused digits, digitigrade, realistic, detailed fur, shota, child, chibi, petite, sharp face"
+  },
+  {
+    "id": "cheese_swim40_07",
+    "category": "briefs",
+    "prompt": "@cheese, furry male, flat color, cel shading, anime coloring, 1boy, solo, round face, toned, abs, round nipples, shirtless, yellow-trimmed black swim briefs, wet fur, water droplets, fingers spread, looking at viewer, full body portrait, simple background, white background",
+    "negative_prompt": "worst quality, low quality, score_1, score_2, score_3, blurry, lowres, bad anatomy, extra digits, fused digits, digitigrade, realistic, detailed fur, shota, child, chibi, petite, sharp face"
+  },
+  {
+    "id": "cheese_swim40_08",
+    "category": "briefs",
+    "prompt": "@cheese, furry male, flat color, cel shading, anime coloring, 1boy, solo, round face, toned, abs, round nipples, shirtless, orange swim briefs, wrist sweatband, one hand behind head, open palm, looking at viewer, full body portrait, simple background, white background",
+    "negative_prompt": "worst quality, low quality, score_1, score_2, score_3, blurry, lowres, bad anatomy, extra digits, fused digits, digitigrade, realistic, detailed fur, shota, child, chibi, petite, sharp face"
+  },
+  {
+    "id": "cheese_swim40_09",
+    "category": "square_cut",
+    "prompt": "@cheese, furry male, flat color, cel shading, anime coloring, 1boy, solo, round face, toned, abs, round nipples, shirtless, black square-cut swim trunks, blue side stripe, standing pose, fingers spread, looking at viewer, full body portrait, simple background, white background",
+    "negative_prompt": "worst quality, low quality, score_1, score_2, score_3, blurry, lowres, bad anatomy, extra digits, fused digits, digitigrade, realistic, detailed fur, shota, child, chibi, petite, sharp face"
+  },
+  {
+    "id": "cheese_swim40_10",
+    "category": "square_cut",
+    "prompt": "@cheese, furry male, flat color, cel shading, anime coloring, 1boy, solo, round face, toned, abs, round nipples, shirtless, navy competition swim trunks, goggles around neck, waving cheerfully, looking at viewer, full body portrait, simple background, white background",
+    "negative_prompt": "worst quality, low quality, score_1, score_2, score_3, blurry, lowres, bad anatomy, extra digits, fused digits, digitigrade, realistic, detailed fur, shota, child, chibi, petite, sharp face"
+  },
+  {
+    "id": "cheese_swim40_11",
+    "category": "square_cut",
+    "prompt": "@cheese, furry male, flat color, cel shading, anime coloring, 1boy, solo, round face, toned, abs, round nipples, shirtless, dark green square-cut swim trunks, holding kickboard, open hand, looking at viewer, full body portrait, simple background, white background",
+    "negative_prompt": "worst quality, low quality, score_1, score_2, score_3, blurry, lowres, bad anatomy, extra digits, fused digits, digitigrade, realistic, detailed fur, shota, child, chibi, petite, sharp face"
+  },
+  {
+    "id": "cheese_swim40_12",
+    "category": "square_cut",
+    "prompt": "@cheese, furry male, flat color, cel shading, anime coloring, 1boy, solo, round face, toned, abs, round nipples, shirtless, white and blue square-cut swim trunks, towel over shoulder, hand on hip, looking at viewer, full body portrait, simple background, white background",
+    "negative_prompt": "worst quality, low quality, score_1, score_2, score_3, blurry, lowres, bad anatomy, extra digits, fused digits, digitigrade, realistic, detailed fur, shota, child, chibi, petite, sharp face"
+  },
+  {
+    "id": "cheese_swim40_13",
+    "category": "square_cut",
+    "prompt": "@cheese, furry male, flat color, cel shading, anime coloring, 1boy, solo, round face, toned, abs, round nipples, shirtless, crimson square-cut swim trunks, water droplets, stretching shoulders, looking at viewer, full body portrait, simple background, white background",
+    "negative_prompt": "worst quality, low quality, score_1, score_2, score_3, blurry, lowres, bad anatomy, extra digits, fused digits, digitigrade, realistic, detailed fur, shota, child, chibi, petite, sharp face"
+  },
+  {
+    "id": "cheese_swim40_14",
+    "category": "square_cut",
+    "prompt": "@cheese, furry male, flat color, cel shading, anime coloring, 1boy, solo, round face, toned, abs, round nipples, shirtless, charcoal swim trunks, tight fit, leaning forward slightly, both hands visible, looking at viewer, full body portrait, simple background, white background",
+    "negative_prompt": "worst quality, low quality, score_1, score_2, score_3, blurry, lowres, bad anatomy, extra digits, fused digits, digitigrade, realistic, detailed fur, shota, child, chibi, petite, sharp face"
+  },
+  {
+    "id": "cheese_swim40_15",
+    "category": "short_trunks",
+    "prompt": "@cheese, furry male, flat color, cel shading, anime coloring, 1boy, solo, round face, toned, abs, round nipples, shirtless, short blue swim trunks, drawstring, holding beach ball, open palm, looking at viewer, full body portrait, simple background, white background",
+    "negative_prompt": "worst quality, low quality, score_1, score_2, score_3, blurry, lowres, bad anatomy, extra digits, fused digits, digitigrade, realistic, detailed fur, shota, child, chibi, petite, sharp face"
+  },
+  {
+    "id": "cheese_swim40_16",
+    "category": "short_trunks",
+    "prompt": "@cheese, furry male, flat color, cel shading, anime coloring, 1boy, solo, round face, toned, abs, round nipples, shirtless, short red lifeguard swim trunks, whistle around neck, sunglasses on head, looking at viewer, full body portrait, simple background, white background",
+    "negative_prompt": "worst quality, low quality, score_1, score_2, score_3, blurry, lowres, bad anatomy, extra digits, fused digits, digitigrade, realistic, detailed fur, shota, child, chibi, petite, sharp face"
+  },
+  {
+    "id": "cheese_swim40_17",
+    "category": "short_trunks",
+    "prompt": "@cheese, furry male, flat color, cel shading, anime coloring, 1boy, solo, round face, toned, abs, round nipples, shirtless, short yellow swim trunks, paw print pattern, flip flops, peace sign, looking at viewer, full body portrait, simple background, white background",
+    "negative_prompt": "worst quality, low quality, score_1, score_2, score_3, blurry, lowres, bad anatomy, extra digits, fused digits, digitigrade, realistic, detailed fur, shota, child, chibi, petite, sharp face"
+  },
+  {
+    "id": "cheese_swim40_18",
+    "category": "short_trunks",
+    "prompt": "@cheese, furry male, flat color, cel shading, anime coloring, 1boy, solo, round face, toned, abs, round nipples, shirtless, short black swim trunks, white drawstring, holding water gun, playful pose, looking at viewer, full body portrait, simple background, white background",
+    "negative_prompt": "worst quality, low quality, score_1, score_2, score_3, blurry, lowres, bad anatomy, extra digits, fused digits, digitigrade, realistic, detailed fur, shota, child, chibi, petite, sharp face"
+  },
+  {
+    "id": "cheese_swim40_19",
+    "category": "short_trunks",
+    "prompt": "@cheese, furry male, flat color, cel shading, anime coloring, 1boy, solo, round face, toned, abs, round nipples, shirtless, short sky-blue swim trunks, holding popsicle, relaxed standing pose, looking at viewer, full body portrait, simple background, white background",
+    "negative_prompt": "worst quality, low quality, score_1, score_2, score_3, blurry, lowres, bad anatomy, extra digits, fused digits, digitigrade, realistic, detailed fur, shota, child, chibi, petite, sharp face"
+  },
+  {
+    "id": "cheese_swim40_20",
+    "category": "short_trunks",
+    "prompt": "@cheese, furry male, flat color, cel shading, anime coloring, 1boy, solo, round face, toned, abs, round nipples, shirtless, short coral swim trunks, floral print, sunglasses, one hand raised, looking at viewer, full body portrait, simple background, white background",
+    "negative_prompt": "worst quality, low quality, score_1, score_2, score_3, blurry, lowres, bad anatomy, extra digits, fused digits, digitigrade, realistic, detailed fur, shota, child, chibi, petite, sharp face"
+  },
+  {
+    "id": "cheese_swim40_21",
+    "category": "short_trunks",
+    "prompt": "@cheese, furry male, flat color, cel shading, anime coloring, 1boy, solo, round face, toned, abs, round nipples, shirtless, short white swim trunks, blue trim, barefoot, arms crossed loosely, looking at viewer, full body portrait, simple background, white background",
+    "negative_prompt": "worst quality, low quality, score_1, score_2, score_3, blurry, lowres, bad anatomy, extra digits, fused digits, digitigrade, realistic, detailed fur, shota, child, chibi, petite, sharp face"
+  },
+  {
+    "id": "cheese_swim40_22",
+    "category": "short_trunks",
+    "prompt": "@cheese, furry male, flat color, cel shading, anime coloring, 1boy, solo, round face, toned, abs, round nipples, shirtless, short purple swim trunks, holding swim ring, cheerful wave, looking at viewer, full body portrait, simple background, white background",
+    "negative_prompt": "worst quality, low quality, score_1, score_2, score_3, blurry, lowres, bad anatomy, extra digits, fused digits, digitigrade, realistic, detailed fur, shota, child, chibi, petite, sharp face"
+  },
+  {
+    "id": "cheese_swim40_23",
+    "category": "board_shorts",
+    "prompt": "@cheese, furry male, flat color, cel shading, anime coloring, 1boy, solo, round face, toned, abs, round nipples, shirtless, blue patterned board shorts, drawstring, holding surfboard, open hand, looking at viewer, full body portrait, simple background, white background",
+    "negative_prompt": "worst quality, low quality, score_1, score_2, score_3, blurry, lowres, bad anatomy, extra digits, fused digits, digitigrade, realistic, detailed fur, shota, child, chibi, petite, sharp face"
+  },
+  {
+    "id": "cheese_swim40_24",
+    "category": "board_shorts",
+    "prompt": "@cheese, furry male, flat color, cel shading, anime coloring, 1boy, solo, round face, toned, abs, round nipples, shirtless, black and cyan board shorts, flip flops, towel around neck, hand on hip, looking at viewer, full body portrait, simple background, white background",
+    "negative_prompt": "worst quality, low quality, score_1, score_2, score_3, blurry, lowres, bad anatomy, extra digits, fused digits, digitigrade, realistic, detailed fur, shota, child, chibi, petite, sharp face"
+  },
+  {
+    "id": "cheese_swim40_25",
+    "category": "board_shorts",
+    "prompt": "@cheese, furry male, flat color, cel shading, anime coloring, 1boy, solo, round face, toned, abs, round nipples, shirtless, tropical print board shorts, sunglasses on head, holding coconut drink, looking at viewer, full body portrait, simple background, white background",
+    "negative_prompt": "worst quality, low quality, score_1, score_2, score_3, blurry, lowres, bad anatomy, extra digits, fused digits, digitigrade, realistic, detailed fur, shota, child, chibi, petite, sharp face"
+  },
+  {
+    "id": "cheese_swim40_26",
+    "category": "board_shorts",
+    "prompt": "@cheese, furry male, flat color, cel shading, anime coloring, 1boy, solo, round face, toned, abs, round nipples, shirtless, striped board shorts, barefoot, stretching arms up, fingers spread, looking at viewer, full body portrait, simple background, white background",
+    "negative_prompt": "worst quality, low quality, score_1, score_2, score_3, blurry, lowres, bad anatomy, extra digits, fused digits, digitigrade, realistic, detailed fur, shota, child, chibi, petite, sharp face"
+  },
+  {
+    "id": "cheese_swim40_27",
+    "category": "open_top",
+    "prompt": "@cheese, furry male, flat color, cel shading, anime coloring, 1boy, solo, round face, toned, abs, round nipples, open sleeveless vest, shirtless under jacket, short blue swim trunks, relaxed pose, looking at viewer, full body portrait, simple background, white background",
+    "negative_prompt": "worst quality, low quality, score_1, score_2, score_3, blurry, lowres, bad anatomy, extra digits, fused digits, digitigrade, realistic, detailed fur, shota, child, chibi, petite, sharp face"
+  },
+  {
+    "id": "cheese_swim40_28",
+    "category": "open_top",
+    "prompt": "@cheese, furry male, flat color, cel shading, anime coloring, 1boy, solo, round face, toned, abs, round nipples, open Hawaiian shirt, shirtless under shirt, short swim trunks, flip flops, waving, looking at viewer, full body portrait, simple background, white background",
+    "negative_prompt": "worst quality, low quality, score_1, score_2, score_3, blurry, lowres, bad anatomy, extra digits, fused digits, digitigrade, realistic, detailed fur, shota, child, chibi, petite, sharp face"
+  },
+  {
+    "id": "cheese_swim40_29",
+    "category": "open_top",
+    "prompt": "@cheese, furry male, flat color, cel shading, anime coloring, 1boy, solo, round face, toned, abs, round nipples, unzipped short-sleeve rash guard, shirtless, black swim trunks, surfboard, looking at viewer, full body portrait, simple background, white background",
+    "negative_prompt": "worst quality, low quality, score_1, score_2, score_3, blurry, lowres, bad anatomy, extra digits, fused digits, digitigrade, realistic, detailed fur, shota, child, chibi, petite, sharp face"
+  },
+  {
+    "id": "cheese_swim40_30",
+    "category": "open_top",
+    "prompt": "@cheese, furry male, flat color, cel shading, anime coloring, 1boy, solo, round face, toned, abs, round nipples, open white linen shirt, shirtless, navy swim trunks, sunglasses, hand on hip, looking at viewer, full body portrait, simple background, white background",
+    "negative_prompt": "worst quality, low quality, score_1, score_2, score_3, blurry, lowres, bad anatomy, extra digits, fused digits, digitigrade, realistic, detailed fur, shota, child, chibi, petite, sharp face"
+  },
+  {
+    "id": "cheese_swim40_31",
+    "category": "open_top",
+    "prompt": "@cheese, furry male, flat color, cel shading, anime coloring, 1boy, solo, round face, toned, abs, round nipples, open track vest, shirtless, red swim trunks, whistle, standing pose, looking at viewer, full body portrait, simple background, white background",
+    "negative_prompt": "worst quality, low quality, score_1, score_2, score_3, blurry, lowres, bad anatomy, extra digits, fused digits, digitigrade, realistic, detailed fur, shota, child, chibi, petite, sharp face"
+  },
+  {
+    "id": "cheese_swim40_32",
+    "category": "open_top",
+    "prompt": "@cheese, furry male, flat color, cel shading, anime coloring, 1boy, solo, round face, toned, abs, round nipples, mesh tank top, translucent, short black swim trunks, holding water bottle, looking at viewer, full body portrait, simple background, white background",
+    "negative_prompt": "worst quality, low quality, score_1, score_2, score_3, blurry, lowres, bad anatomy, extra digits, fused digits, digitigrade, realistic, detailed fur, shota, child, chibi, petite, sharp face"
+  },
+  {
+    "id": "cheese_swim40_33",
+    "category": "rash_guard",
+    "prompt": "@cheese, furry male, flat color, cel shading, anime coloring, 1boy, solo, round face, toned, abs, round nipples, tight half-zipped short-sleeve rash guard, blue swim trunks, goggles on head, looking at viewer, full body portrait, simple background, white background",
+    "negative_prompt": "worst quality, low quality, score_1, score_2, score_3, blurry, lowres, bad anatomy, extra digits, fused digits, digitigrade, realistic, detailed fur, shota, child, chibi, petite, sharp face"
+  },
+  {
+    "id": "cheese_swim40_34",
+    "category": "rash_guard",
+    "prompt": "@cheese, furry male, flat color, cel shading, anime coloring, 1boy, solo, round face, toned, abs, round nipples, cropped sleeveless rash guard, midriff, navel, black swim briefs, standing pose, looking at viewer, full body portrait, simple background, white background",
+    "negative_prompt": "worst quality, low quality, score_1, score_2, score_3, blurry, lowres, bad anatomy, extra digits, fused digits, digitigrade, realistic, detailed fur, shota, child, chibi, petite, sharp face"
+  },
+  {
+    "id": "cheese_swim40_35",
+    "category": "sport_swim",
+    "prompt": "@cheese, furry male, flat color, cel shading, anime coloring, 1boy, solo, round face, toned, abs, round nipples, swimming singlet, navy sleeveless bodysuit, towel around neck, both hands raised, looking at viewer, full body portrait, simple background, white background",
+    "negative_prompt": "worst quality, low quality, score_1, score_2, score_3, blurry, lowres, bad anatomy, extra digits, fused digits, digitigrade, realistic, detailed fur, shota, child, chibi, petite, sharp face"
+  },
+  {
+    "id": "cheese_swim40_36",
+    "category": "sport_swim",
+    "prompt": "@cheese, furry male, flat color, cel shading, anime coloring, 1boy, solo, round face, toned, abs, round nipples, jammers, knee-length black competition swim shorts, shirtless, swim cap, goggles, looking at viewer, full body portrait, simple background, white background",
+    "negative_prompt": "worst quality, low quality, score_1, score_2, score_3, blurry, lowres, bad anatomy, extra digits, fused digits, digitigrade, realistic, detailed fur, shota, child, chibi, petite, sharp face"
+  },
+  {
+    "id": "cheese_swim40_37",
+    "category": "sport_swim",
+    "prompt": "@cheese, furry male, flat color, cel shading, anime coloring, 1boy, solo, round face, toned, abs, round nipples, jammers, blue striped competition swim shorts, shirtless, stretching arms, looking at viewer, full body portrait, simple background, white background",
+    "negative_prompt": "worst quality, low quality, score_1, score_2, score_3, blurry, lowres, bad anatomy, extra digits, fused digits, digitigrade, realistic, detailed fur, shota, child, chibi, petite, sharp face"
+  },
+  {
+    "id": "cheese_swim40_38",
+    "category": "sport_swim",
+    "prompt": "@cheese, furry male, flat color, cel shading, anime coloring, 1boy, solo, round face, toned, abs, round nipples, lifeguard short trunks, red visor cap, whistle, megaphone in one hand, open palm, looking at viewer, full body portrait, simple background, white background",
+    "negative_prompt": "worst quality, low quality, score_1, score_2, score_3, blurry, lowres, bad anatomy, extra digits, fused digits, digitigrade, realistic, detailed fur, shota, child, chibi, petite, sharp face"
+  },
+  {
+    "id": "cheese_swim40_39",
+    "category": "sport_swim",
+    "prompt": "@cheese, furry male, flat color, cel shading, anime coloring, 1boy, solo, round face, toned, abs, round nipples, swim trunks, inflatable arm floaties, playful grin, both hands spread, looking at viewer, full body portrait, simple background, white background",
+    "negative_prompt": "worst quality, low quality, score_1, score_2, score_3, blurry, lowres, bad anatomy, extra digits, fused digits, digitigrade, realistic, detailed fur, shota, child, chibi, petite, sharp face"
+  },
+  {
+    "id": "cheese_swim40_40",
+    "category": "sport_swim",
+    "prompt": "@cheese, furry male, flat color, cel shading, anime coloring, 1boy, solo, round face, toned, abs, round nipples, shirtless, wet blue swim trunks, snorkel and diving mask on head, thumbs up, looking at viewer, full body portrait, simple background, white background",
+    "negative_prompt": "worst quality, low quality, score_1, score_2, score_3, blurry, lowres, bad anatomy, extra digits, fused digits, digitigrade, realistic, detailed fur, shota, child, chibi, petite, sharp face"
+  }
+]

@@ -1,0 +1,242 @@
+[
+  {
+    "id": "cheese_run40_01",
+    "category": "singlet",
+    "prompt": "@cheese, furry male, flat color, cel shading, anime coloring, 1boy, solo, round face, toned, abs, sleeveless running top, blue marathon singlet, short black running shorts, running shoes, headband, running pose, dynamic pose, looking at viewer, full body portrait, simple background, white background",
+    "negative_prompt": "worst quality, low quality, score_1, score_2, score_3, blurry, lowres, bad anatomy, extra digits, fused digits, digitigrade, realistic, detailed fur, shota, child, chibi, petite, sharp face"
+  },
+  {
+    "id": "cheese_run40_02",
+    "category": "singlet",
+    "prompt": "@cheese, furry male, flat color, cel shading, anime coloring, 1boy, solo, round face, toned, abs, sleeveless running top, red track singlet, short white running shorts, running shoes, sprinting pose, leaning forward, dynamic pose, looking at viewer, full body portrait, simple background, white background",
+    "negative_prompt": "worst quality, low quality, score_1, score_2, score_3, blurry, lowres, bad anatomy, extra digits, fused digits, digitigrade, realistic, detailed fur, shota, child, chibi, petite, sharp face"
+  },
+  {
+    "id": "cheese_run40_03",
+    "category": "singlet",
+    "prompt": "@cheese, furry male, flat color, cel shading, anime coloring, 1boy, solo, round face, toned, abs, sleeveless running top, neon cyan singlet, split running shorts, running shoes, jogging pose, open hands, looking at viewer, full body portrait, simple background, white background",
+    "negative_prompt": "worst quality, low quality, score_1, score_2, score_3, blurry, lowres, bad anatomy, extra digits, fused digits, digitigrade, realistic, detailed fur, shota, child, chibi, petite, sharp face"
+  },
+  {
+    "id": "cheese_run40_04",
+    "category": "singlet",
+    "prompt": "@cheese, furry male, flat color, cel shading, anime coloring, 1boy, solo, round face, toned, abs, sleeveless running top, white and navy track singlet, short running shorts, wristbands, mid-stride running pose, looking at viewer, full body portrait, simple background, white background",
+    "negative_prompt": "worst quality, low quality, score_1, score_2, score_3, blurry, lowres, bad anatomy, extra digits, fused digits, digitigrade, realistic, detailed fur, shota, child, chibi, petite, sharp face"
+  },
+  {
+    "id": "cheese_run40_05",
+    "category": "singlet",
+    "prompt": "@cheese, furry male, flat color, cel shading, anime coloring, 1boy, solo, round face, toned, abs, sleeveless running top, yellow racing singlet, black split shorts, running shoes, arm swinging, dynamic pose, looking at viewer, full body portrait, simple background, white background",
+    "negative_prompt": "worst quality, low quality, score_1, score_2, score_3, blurry, lowres, bad anatomy, extra digits, fused digits, digitigrade, realistic, detailed fur, shota, child, chibi, petite, sharp face"
+  },
+  {
+    "id": "cheese_run40_06",
+    "category": "tank",
+    "prompt": "@cheese, furry male, flat color, cel shading, anime coloring, 1boy, solo, round face, toned, abs, white athletic tank top, short blue running shorts, running shoes, sweatband, jogging pose, 3/4 view, looking at viewer, full body portrait, simple background, white background",
+    "negative_prompt": "worst quality, low quality, score_1, score_2, score_3, blurry, lowres, bad anatomy, extra digits, fused digits, digitigrade, realistic, detailed fur, shota, child, chibi, petite, sharp face"
+  },
+  {
+    "id": "cheese_run40_07",
+    "category": "tank",
+    "prompt": "@cheese, furry male, flat color, cel shading, anime coloring, 1boy, solo, round face, toned, abs, black fitted tank top, gray running shorts, running shoes, wireless earphones, running pose, fingers spread, looking at viewer, full body portrait, simple background, white background",
+    "negative_prompt": "worst quality, low quality, score_1, score_2, score_3, blurry, lowres, bad anatomy, extra digits, fused digits, digitigrade, realistic, detailed fur, shota, child, chibi, petite, sharp face"
+  },
+  {
+    "id": "cheese_run40_08",
+    "category": "tank",
+    "prompt": "@cheese, furry male, flat color, cel shading, anime coloring, 1boy, solo, round face, toned, abs, cropped athletic tank top, midriff, short navy running shorts, running shoes, dynamic running pose, looking at viewer, full body portrait, simple background, white background",
+    "negative_prompt": "worst quality, low quality, score_1, score_2, score_3, blurry, lowres, bad anatomy, extra digits, fused digits, digitigrade, realistic, detailed fur, shota, child, chibi, petite, sharp face"
+  },
+  {
+    "id": "cheese_run40_09",
+    "category": "tank",
+    "prompt": "@cheese, furry male, flat color, cel shading, anime coloring, 1boy, solo, round face, toned, abs, loose gym tank top, short red running shorts, running shoes, headband, wiping forehead while jogging, looking at viewer, full body portrait, simple background, white background",
+    "negative_prompt": "worst quality, low quality, score_1, score_2, score_3, blurry, lowres, bad anatomy, extra digits, fused digits, digitigrade, realistic, detailed fur, shota, child, chibi, petite, sharp face"
+  },
+  {
+    "id": "cheese_run40_10",
+    "category": "tank",
+    "prompt": "@cheese, furry male, flat color, cel shading, anime coloring, 1boy, solo, round face, toned, abs, teal racerback tank top, short black running shorts, running shoes, looking back while running, looking at viewer, full body portrait, simple background, white background",
+    "negative_prompt": "worst quality, low quality, score_1, score_2, score_3, blurry, lowres, bad anatomy, extra digits, fused digits, digitigrade, realistic, detailed fur, shota, child, chibi, petite, sharp face"
+  },
+  {
+    "id": "cheese_run40_11",
+    "category": "tank",
+    "prompt": "@cheese, furry male, flat color, cel shading, anime coloring, 1boy, solo, round face, toned, abs, orange athletic tank top, white running shorts, running shoes, cheering while jogging, open palm, looking at viewer, full body portrait, simple background, white background",
+    "negative_prompt": "worst quality, low quality, score_1, score_2, score_3, blurry, lowres, bad anatomy, extra digits, fused digits, digitigrade, realistic, detailed fur, shota, child, chibi, petite, sharp face"
+  },
+  {
+    "id": "cheese_run40_12",
+    "category": "tank",
+    "prompt": "@cheese, furry male, flat color, cel shading, anime coloring, 1boy, solo, round face, toned, abs, mesh sleeveless top, short blue running shorts, running shoes, marathon number bib, running pose, looking at viewer, full body portrait, simple background, white background",
+    "negative_prompt": "worst quality, low quality, score_1, score_2, score_3, blurry, lowres, bad anatomy, extra digits, fused digits, digitigrade, realistic, detailed fur, shota, child, chibi, petite, sharp face"
+  },
+  {
+    "id": "cheese_run40_13",
+    "category": "compression",
+    "prompt": "@cheese, furry male, flat color, cel shading, anime coloring, 1boy, solo, round face, toned, abs, sleeveless compression shirt, short compression shorts, running shoes, high-knee running pose, dynamic pose, looking at viewer, full body portrait, simple background, white background",
+    "negative_prompt": "worst quality, low quality, score_1, score_2, score_3, blurry, lowres, bad anatomy, extra digits, fused digits, digitigrade, realistic, detailed fur, shota, child, chibi, petite, sharp face"
+  },
+  {
+    "id": "cheese_run40_14",
+    "category": "compression",
+    "prompt": "@cheese, furry male, flat color, cel shading, anime coloring, 1boy, solo, round face, toned, abs, short-sleeve compression shirt, black running shorts, running shoes, sprinting start pose, looking at viewer, full body portrait, simple background, white background",
+    "negative_prompt": "worst quality, low quality, score_1, score_2, score_3, blurry, lowres, bad anatomy, extra digits, fused digits, digitigrade, realistic, detailed fur, shota, child, chibi, petite, sharp face"
+  },
+  {
+    "id": "cheese_run40_15",
+    "category": "compression",
+    "prompt": "@cheese, furry male, flat color, cel shading, anime coloring, 1boy, solo, round face, toned, abs, sleeveless compression top, half-tights running shorts, running shoes, stretching calf, dynamic pose, looking at viewer, full body portrait, simple background, white background",
+    "negative_prompt": "worst quality, low quality, score_1, score_2, score_3, blurry, lowres, bad anatomy, extra digits, fused digits, digitigrade, realistic, detailed fur, shota, child, chibi, petite, sharp face"
+  },
+  {
+    "id": "cheese_run40_16",
+    "category": "compression",
+    "prompt": "@cheese, furry male, flat color, cel shading, anime coloring, 1boy, solo, round face, toned, abs, navy compression tank, white split running shorts, running shoes, pumping arms, running pose, looking at viewer, full body portrait, simple background, white background",
+    "negative_prompt": "worst quality, low quality, score_1, score_2, score_3, blurry, lowres, bad anatomy, extra digits, fused digits, digitigrade, realistic, detailed fur, shota, child, chibi, petite, sharp face"
+  },
+  {
+    "id": "cheese_run40_17",
+    "category": "track_jacket",
+    "prompt": "@cheese, furry male, flat color, cel shading, anime coloring, 1boy, solo, round face, toned, abs, open unzipped track jacket, white tank top underneath, short running shorts, running shoes, jogging pose, looking at viewer, full body portrait, simple background, white background",
+    "negative_prompt": "worst quality, low quality, score_1, score_2, score_3, blurry, lowres, bad anatomy, extra digits, fused digits, digitigrade, realistic, detailed fur, shota, child, chibi, petite, sharp face"
+  },
+  {
+    "id": "cheese_run40_18",
+    "category": "track_jacket",
+    "prompt": "@cheese, furry male, flat color, cel shading, anime coloring, 1boy, solo, round face, toned, abs, lightweight windbreaker, half-zipped, short black running shorts, running shoes, dynamic running pose, looking at viewer, full body portrait, simple background, white background",
+    "negative_prompt": "worst quality, low quality, score_1, score_2, score_3, blurry, lowres, bad anatomy, extra digits, fused digits, digitigrade, realistic, detailed fur, shota, child, chibi, petite, sharp face"
+  },
+  {
+    "id": "cheese_run40_19",
+    "category": "track_jacket",
+    "prompt": "@cheese, furry male, flat color, cel shading, anime coloring, 1boy, solo, round face, toned, abs, sleeveless track vest, bare arms, short navy running shorts, running shoes, headband, running pose, looking at viewer, full body portrait, simple background, white background",
+    "negative_prompt": "worst quality, low quality, score_1, score_2, score_3, blurry, lowres, bad anatomy, extra digits, fused digits, digitigrade, realistic, detailed fur, shota, child, chibi, petite, sharp face"
+  },
+  {
+    "id": "cheese_run40_20",
+    "category": "track_jacket",
+    "prompt": "@cheese, furry male, flat color, cel shading, anime coloring, 1boy, solo, round face, toned, abs, cropped windbreaker jacket, athletic tank top, running shorts, running shoes, mid-stride pose, looking at viewer, full body portrait, simple background, white background",
+    "negative_prompt": "worst quality, low quality, score_1, score_2, score_3, blurry, lowres, bad anatomy, extra digits, fused digits, digitigrade, realistic, detailed fur, shota, child, chibi, petite, sharp face"
+  },
+  {
+    "id": "cheese_run40_21",
+    "category": "shirtless",
+    "prompt": "@cheese, furry male, flat color, cel shading, anime coloring, 1boy, solo, round face, toned, abs, round nipples, shirtless, short blue running shorts, running shoes, headband, jogging pose, dynamic pose, looking at viewer, full body portrait, simple background, white background",
+    "negative_prompt": "worst quality, low quality, score_1, score_2, score_3, blurry, lowres, bad anatomy, extra digits, fused digits, digitigrade, realistic, detailed fur, shota, child, chibi, petite, sharp face"
+  },
+  {
+    "id": "cheese_run40_22",
+    "category": "shirtless",
+    "prompt": "@cheese, furry male, flat color, cel shading, anime coloring, 1boy, solo, round face, toned, abs, round nipples, shirtless, black split running shorts, running shoes, sweatband, sprinting pose, looking at viewer, full body portrait, simple background, white background",
+    "negative_prompt": "worst quality, low quality, score_1, score_2, score_3, blurry, lowres, bad anatomy, extra digits, fused digits, digitigrade, realistic, detailed fur, shota, child, chibi, petite, sharp face"
+  },
+  {
+    "id": "cheese_run40_23",
+    "category": "shirtless",
+    "prompt": "@cheese, furry male, flat color, cel shading, anime coloring, 1boy, solo, round face, toned, abs, round nipples, shirtless, red track shorts, running shoes, towel around neck, post-run stretching, looking at viewer, full body portrait, simple background, white background",
+    "negative_prompt": "worst quality, low quality, score_1, score_2, score_3, blurry, lowres, bad anatomy, extra digits, fused digits, digitigrade, realistic, detailed fur, shota, child, chibi, petite, sharp face"
+  },
+  {
+    "id": "cheese_run40_24",
+    "category": "shirtless",
+    "prompt": "@cheese, furry male, flat color, cel shading, anime coloring, 1boy, solo, round face, toned, abs, round nipples, shirtless, navy running shorts, running shoes, water bottle in hand, light jog, looking at viewer, full body portrait, simple background, white background",
+    "negative_prompt": "worst quality, low quality, score_1, score_2, score_3, blurry, lowres, bad anatomy, extra digits, fused digits, digitigrade, realistic, detailed fur, shota, child, chibi, petite, sharp face"
+  },
+  {
+    "id": "cheese_run40_25",
+    "category": "tee",
+    "prompt": "@cheese, furry male, flat color, cel shading, anime coloring, 1boy, solo, round face, toned, abs, short-sleeve dry-fit t-shirt, white and blue, short running shorts, running shoes, dynamic running pose, looking at viewer, full body portrait, simple background, white background",
+    "negative_prompt": "worst quality, low quality, score_1, score_2, score_3, blurry, lowres, bad anatomy, extra digits, fused digits, digitigrade, realistic, detailed fur, shota, child, chibi, petite, sharp face"
+  },
+  {
+    "id": "cheese_run40_26",
+    "category": "tee",
+    "prompt": "@cheese, furry male, flat color, cel shading, anime coloring, 1boy, solo, round face, toned, abs, sleeveless hooded running top, black running shorts, running shoes, running pose, 3/4 view, looking at viewer, full body portrait, simple background, white background",
+    "negative_prompt": "worst quality, low quality, score_1, score_2, score_3, blurry, lowres, bad anatomy, extra digits, fused digits, digitigrade, realistic, detailed fur, shota, child, chibi, petite, sharp face"
+  },
+  {
+    "id": "cheese_run40_27",
+    "category": "tee",
+    "prompt": "@cheese, furry male, flat color, cel shading, anime coloring, 1boy, solo, round face, toned, abs, half-zip running pullover, short-sleeve, navy running shorts, running shoes, striding forward, looking at viewer, full body portrait, simple background, white background",
+    "negative_prompt": "worst quality, low quality, score_1, score_2, score_3, blurry, lowres, bad anatomy, extra digits, fused digits, digitigrade, realistic, detailed fur, shota, child, chibi, petite, sharp face"
+  },
+  {
+    "id": "cheese_run40_28",
+    "category": "tee",
+    "prompt": "@cheese, furry male, flat color, cel shading, anime coloring, 1boy, solo, round face, toned, abs, fitted athletic t-shirt, teal, black split shorts, running shoes, turning while jogging, looking at viewer, full body portrait, simple background, white background",
+    "negative_prompt": "worst quality, low quality, score_1, score_2, score_3, blurry, lowres, bad anatomy, extra digits, fused digits, digitigrade, realistic, detailed fur, shota, child, chibi, petite, sharp face"
+  },
+  {
+    "id": "cheese_run40_29",
+    "category": "warmup",
+    "prompt": "@cheese, furry male, flat color, cel shading, anime coloring, 1boy, solo, round face, toned, abs, white tank top, short blue running shorts, running shoes, stretching arms overhead, warm-up pose, looking at viewer, full body portrait, simple background, white background",
+    "negative_prompt": "worst quality, low quality, score_1, score_2, score_3, blurry, lowres, bad anatomy, extra digits, fused digits, digitigrade, realistic, detailed fur, shota, child, chibi, petite, sharp face"
+  },
+  {
+    "id": "cheese_run40_30",
+    "category": "warmup",
+    "prompt": "@cheese, furry male, flat color, cel shading, anime coloring, 1boy, solo, round face, toned, abs, sleeveless running top, black running shorts, running shoes, touching toes stretch, dynamic pose, looking at viewer, full body portrait, simple background, white background",
+    "negative_prompt": "worst quality, low quality, score_1, score_2, score_3, blurry, lowres, bad anatomy, extra digits, fused digits, digitigrade, realistic, detailed fur, shota, child, chibi, petite, sharp face"
+  },
+  {
+    "id": "cheese_run40_31",
+    "category": "warmup",
+    "prompt": "@cheese, furry male, flat color, cel shading, anime coloring, 1boy, solo, round face, toned, abs, blue track singlet, white running shorts, running shoes, lunge stretch, looking at viewer, looking at viewer, full body portrait, simple background, white background",
+    "negative_prompt": "worst quality, low quality, score_1, score_2, score_3, blurry, lowres, bad anatomy, extra digits, fused digits, digitigrade, realistic, detailed fur, shota, child, chibi, petite, sharp face"
+  },
+  {
+    "id": "cheese_run40_32",
+    "category": "warmup",
+    "prompt": "@cheese, furry male, flat color, cel shading, anime coloring, 1boy, solo, round face, toned, abs, black tank top, red running shorts, running shoes, shoulder stretch, standing warm-up pose, looking at viewer, full body portrait, simple background, white background",
+    "negative_prompt": "worst quality, low quality, score_1, score_2, score_3, blurry, lowres, bad anatomy, extra digits, fused digits, digitigrade, realistic, detailed fur, shota, child, chibi, petite, sharp face"
+  },
+  {
+    "id": "cheese_run40_33",
+    "category": "warmup",
+    "prompt": "@cheese, furry male, flat color, cel shading, anime coloring, 1boy, solo, round face, toned, abs, cyan running singlet, navy shorts, running shoes, high-knee warm-up drill, dynamic pose, looking at viewer, full body portrait, simple background, white background",
+    "negative_prompt": "worst quality, low quality, score_1, score_2, score_3, blurry, lowres, bad anatomy, extra digits, fused digits, digitigrade, realistic, detailed fur, shota, child, chibi, petite, sharp face"
+  },
+  {
+    "id": "cheese_run40_34",
+    "category": "warmup",
+    "prompt": "@cheese, furry male, flat color, cel shading, anime coloring, 1boy, solo, round face, toned, abs, white athletic tank, black running shorts, running shoes, tying shoelace on one knee, looking at viewer, full body portrait, simple background, white background",
+    "negative_prompt": "worst quality, low quality, score_1, score_2, score_3, blurry, lowres, bad anatomy, extra digits, fused digits, digitigrade, realistic, detailed fur, shota, child, chibi, petite, sharp face"
+  },
+  {
+    "id": "cheese_run40_35",
+    "category": "finish",
+    "prompt": "@cheese, furry male, flat color, cel shading, anime coloring, 1boy, solo, round face, toned, abs, blue marathon singlet, black running shorts, running shoes, arms raised in victory, finish line pose, looking at viewer, full body portrait, simple background, white background",
+    "negative_prompt": "worst quality, low quality, score_1, score_2, score_3, blurry, lowres, bad anatomy, extra digits, fused digits, digitigrade, realistic, detailed fur, shota, child, chibi, petite, sharp face"
+  },
+  {
+    "id": "cheese_run40_36",
+    "category": "finish",
+    "prompt": "@cheese, furry male, flat color, cel shading, anime coloring, 1boy, solo, round face, toned, abs, red track singlet, white running shorts, running shoes, leaning forward sprinting, intense expression, looking at viewer, full body portrait, simple background, white background",
+    "negative_prompt": "worst quality, low quality, score_1, score_2, score_3, blurry, lowres, bad anatomy, extra digits, fused digits, digitigrade, realistic, detailed fur, shota, child, chibi, petite, sharp face"
+  },
+  {
+    "id": "cheese_run40_37",
+    "category": "finish",
+    "prompt": "@cheese, furry male, flat color, cel shading, anime coloring, 1boy, solo, round face, toned, abs, yellow tank top, navy running shorts, running shoes, checking sports watch while jogging, looking at viewer, full body portrait, simple background, white background",
+    "negative_prompt": "worst quality, low quality, score_1, score_2, score_3, blurry, lowres, bad anatomy, extra digits, fused digits, digitigrade, realistic, detailed fur, shota, child, chibi, petite, sharp face"
+  },
+  {
+    "id": "cheese_run40_38",
+    "category": "finish",
+    "prompt": "@cheese, furry male, flat color, cel shading, anime coloring, 1boy, solo, round face, toned, abs, white sleeveless top, teal running shorts, running shoes, drinking from water bottle after run, looking at viewer, full body portrait, simple background, white background",
+    "negative_prompt": "worst quality, low quality, score_1, score_2, score_3, blurry, lowres, bad anatomy, extra digits, fused digits, digitigrade, realistic, detailed fur, shota, child, chibi, petite, sharp face"
+  },
+  {
+    "id": "cheese_run40_39",
+    "category": "finish",
+    "prompt": "@cheese, furry male, flat color, cel shading, anime coloring, 1boy, solo, round face, toned, abs, black sleeveless top, blue running shorts, running shoes, waving while jogging, open palm, looking at viewer, full body portrait, simple background, white background",
+    "negative_prompt": "worst quality, low quality, score_1, score_2, score_3, blurry, lowres, bad anatomy, extra digits, fused digits, digitigrade, realistic, detailed fur, shota, child, chibi, petite, sharp face"
+  },
+  {
+    "id": "cheese_run40_40",
+    "category": "finish",
+    "prompt": "@cheese, furry male, flat color, cel shading, anime coloring, 1boy, solo, round face, toned, abs, green track singlet, black running shorts, running shoes, side-view dynamic stride, looking at viewer, looking at viewer, full body portrait, simple background, white background",
+    "negative_prompt": "worst quality, low quality, score_1, score_2, score_3, blurry, lowres, bad anatomy, extra digits, fused digits, digitigrade, realistic, detailed fur, shota, child, chibi, petite, sharp face"
+  }
+]
